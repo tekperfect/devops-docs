@@ -53,7 +53,7 @@ This year we will be using google classroom to manage our weekly curriculum, as 
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://tekperfect.com/classroom-docs/#/)
 
 There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need.
 
@@ -129,4 +129,4 @@ Project Link: [https://github.com/tekperfect/classroom-docs/](https://github.com
 [license-url]: https://github.com/tekperfect/classroom-docs/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/company/gameheads-oakland
-[product-screenshot]: media/logos/screenshot.png
+[product-screenshot]: /media/logos/screenshot.png
