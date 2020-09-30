@@ -14,13 +14,6 @@ This year we will be using google classroom to manage our weekly curriculum, as 
 
 > Contribute -->
 
-<!--
-*** Thanks for checking out this README Template. If you have a suggestion that would
-*** make this better, please fork the repo and create a pull request or simply open
-*** an issue with the tag "enhancement".
-*** Thanks again! Now go create something AMAZING! :D
--->
-
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -113,16 +106,11 @@ Project Link: [https://github.com/tekperfect/classroom-docs/](https://github.com
 
 ## Acknowledgements
 
-- [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 - [Img Shields](https://shields.io)
 - [Choose an Open Source License](https://choosealicense.com)
 - [GitHub Pages](https://pages.github.com)
-- [Animate.css](https://daneden.github.io/animate.css)
-- [Loaders.css](https://connoratherton.com/loaders)
 - [Slick Carousel](https://kenwheeler.github.io/slick)
-- [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-- [Sticky Kit](http://leafo.net/sticky-kit)
-- [JVectorMap](http://jvectormap.com)
+- [Docsify](https://docsify.js.org/#/)
 - [Font Awesome](https://fontawesome.com)
 
 <!-- MARKDOWN LINKS & IMAGES -->
@@ -137,7 +125,7 @@ Project Link: [https://github.com/tekperfect/classroom-docs/](https://github.com
 [issues-shield]: https://img.shields.io/github/issues/tekperfect/classroom-docs.svg?style=flat-square
 [issues-url]: https://github.com/tekperfect/classroom-docs/issues
 [license-shield]: https://img.shields.io/github/license/tekperfect/classroom-docs.svg?style=flat-square
-[license-url]: https://github.com/tekperfect/classroom-docs/blob/master/LICENSE.txt
+[license-url]: https://github.com/tekperfect/classroom-docs/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/company/gameheads-oakland
 [product-screenshot]: media/logos/screenshot.png

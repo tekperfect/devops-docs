@@ -1,2 +1,4 @@
 - [Home](home.md)
 - [Getting Started](getting-started.md)
+- [Linux](linux.md)
+- [Github](github.md)

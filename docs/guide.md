@@ -1,1 +1,0 @@
-- [CONTRIBUTE](contribute.md)
