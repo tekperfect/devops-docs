@@ -29,6 +29,7 @@ This year we will be using google classroom to manage our weekly curriculum, as 
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
+![CodeQL](https://github.com/tekperfect/classroom-docs/workflows/CodeQL/badge.svg?branch=master)
 
 <!-- PROJECT LOGO -->
 <br />
