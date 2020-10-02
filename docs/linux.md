@@ -1,4 +1,4 @@
-## Intro To Linux
+<h1 align="center">Intro To Linux</h1>
 
 ### What is Linux?
 

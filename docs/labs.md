@@ -22,7 +22,7 @@
 
 ---
 
-# AWS Labs
+## AWS Labs
 
 1.
 
