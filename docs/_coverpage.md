@@ -1,4 +1,4 @@
-![logo](/media/logos/gh-logo-horizontal.png)
+![logo](/media/logos/tp-logo-cmyk.png)
 
 # DEVOPS <small>2020-2021</small>
 
