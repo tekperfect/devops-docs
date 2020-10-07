@@ -2,17 +2,7 @@
 
 <a href="https://classroom.google.com/c/MTI2MzcxMDQ2Mjcx?cjc=ny3uny2"><img src="https://i0.wp.com/www.alicekeeler.com/wp-content/uploads/2014/11/Google-Classroom-Logo1-1.png" alt="Google classroom" width="300"></a>
 
-## Classroom
 
-This year we will be using google classroom to manage our weekly curriculum, as well as this website to host any helpful walkthroughs/blogs/videos/or articles.
-
-> Linux
-
-> Github
-
-> Security
-
-> Contribute -->
 
 <!-- PROJECT SHIELDS -->
 <!--
