@@ -1,29 +1,53 @@
-## Linux Labs
+## Initial Labs
 
-1.
+# Social Media Connections
+
+Create & Share Social Platforms
+
+- Twitter
+- Github
+- Linkedin
+- Personal
+- Other / LinkTree
+
+# Github Hosted Website | Github Pages
+
+\*Prerequisites
+
+- Have Github Account
+- Git Installed
+- Command Line Basics | GitBash Basics
+
+### Create A Basic Html File On Your Terminal
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+</body>
+</html>
+
+## Linux Labs
 
 ---
 
 ## Git Labs
 
-1.
-
 ---
 
 ## Github Labs
-
-1.
 
 ---
 
 ## Kali Labs
 
-1.
-
 ---
 
 ## AWS Labs
-
-1.
 
 ---
