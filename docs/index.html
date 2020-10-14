@@ -81,6 +81,38 @@
           // the matching substring will be used to identify the index
           pathNamespaces: /^(\/(zh-cn|ru-ru))?(\/(v1|v2))?/,
         },
+        plugins: [
+          function (hook) {
+            var footer = [
+              "<hr/>",
+              "<footer>",
+              '<span><a href="https://github.com/tekperfect/devops-docs">Devops | Docs</a> &copy;2020.</span>',
+              '<span>Proudly partnered with <a href="https://gameheadsoakland.org/" target="_blank">Gameheads</a>.</span>',
+              "</footer>",
+            ].join("");
+
+            hook.afterEach(function (html) {
+              return html + footer;
+            });
+          },
+        ],
+        plugins: [
+          function (hook, vm) {
+            hook.beforeEach(function (html) {
+              let url =
+                "https://github.com/tekperfect/devops-docs/blob/master/docs/" +
+                vm.route.file;
+              let editHtml = "[📝 EDIT DOCUMENT](" + url + ")\n";
+
+              return (
+                html +
+                "\n----\n" +
+                "Last modified {docsify-updated} " +
+                editHtml
+              );
+            });
+          },
+        ],
       };
     </script>
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
