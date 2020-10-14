@@ -1,20 +1,20 @@
-- [Home](home.md)
-- [Getting Started](getting-started.md)
+- [Introduction](courses/01-Introduction/home.md)
+- [Linux](courses/02-Linux/home.md)
+- [Version Control](courses/03-Version_Control/home.md)
+- [Programming](courses/04-Programming/home.md)
+- [Virtualization](courses/05-Virtualization/home.md)
+- [Database](courses/06-Databases/home.md)
+- [Security](courses/07-Security/home.md)
+- [Web Development](courses/08-Web_Development/home.md)
+- [Networks](courses/09-Networks/home.md)
+- [Cloud Services](courses/10-Cloud_Services/home.md)
 
-### Lessons
+<!-- **Glossary**
+
+- [A+ Certification](a+Cert.md) -->
 
 ---
 
-- [Linux](linux.md)
-- [Git And Github](git-and-github.md)
-- [Kali](kali.md)
-- [Security](security.md)
-- [Networks](networks.md)
-- [Docker](docker.md)
+**Resources**
 
-### Assignments
-
----
-
-- [Labs](labs.md)
-- [Practice](practice.md)
+- [Downloads](/resources/downloads.md)

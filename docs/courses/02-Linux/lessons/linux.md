@@ -260,3 +260,48 @@ Why are these tools important?
 They are vital to protecting a public facing system that multiple people access.
 They leverage logging and alerting mechanisms to protect the OS.
 They offer vital information on the status of your operating systems security.
+
+## Linux For Vets
+
+List services running on Linux
+ps
+
+List all running services
+ps -e
+
+List all running services along with directory path associated with them which includes the process identifier
+ps -ef
+
+Use the ps command along with grep to find a particular service that is running
+
+ps -e | grep apache
+
+Apache Configuration file location
+
+Default apache index.html file location
+/var/www/html/index.html
+
+Default apache configuration file location
+/etc/apache2/sites-enabled/000-default.conf
+
+Log files are located in /var/log
+
+ls -al /var/log
+
+cat /var/log/auth
+
+Increased Security
+
+Generate a key on your windows or linux system
+
+ssh-keygen -t rsa
+
+Copy the id_ras.pub under your directory on target system using ssh and name the file authorized_keys
+
+cat .ssh/id_rsa.pub | username@xxx.xxx.xxx.xxx 'cat >> .ssh/authorized_keys'
+
+ssh username@xxx.xxx.xxx.xxx "chmod 700 .ssh; chmod 640 .ssh/authorized_keys"
+
+Now connect to the system using just the username and you should be able to authenticate without a password
+
+ssh username@xxx.xxx.xxx.xxx
