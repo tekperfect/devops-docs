@@ -1,24 +1,32 @@
-## Intro To Git
+# Intro To Git
 
-Git - The program installed on most macs, available on windows through [git](https://git-scm.com/downloads).
-Github - A cloud platform git
+Git - A program installed on most macs, available on windows with [GitBash](https://git-scm.com/downloads).
 
 ## Commands
 
-Cheatsheet
-Set your github username
-git config --global user.name "username"
-Copy a repo locally
-git clone https://github.com/username/repo_name
+- Set your github username
 
-Add a file that you have created or made changes to
-git add name_of_file.py
-Commit your changes with a comment before they are pushed
-git commit -m "this is a new file added to the repo"
-Push your code to your repo
-git push
-To view your current git configuration
-git config --list
+[filename](/courses/03-Version_Control/examples/commands.sh `:include :type=bash :fragment=config-username`)
+
+<!-- `git config --global user.name "username"` -->
+
+- Copy a repo locally
+
+`git clone https://github.com/username/repo_name`
+
+- Add a file that you have created or made changes to git add name_of_file.py
+
+- Commit your changes with a comment before they are pushed`
+
+`git commit -m "this is a new file added to the repo"`
+
+- Push your code to your repo
+
+`git push`
+
+- To view your current git configuration
+
+`git config --list`
 
 Step 0: Install git and create a GitHub account
 The first two things you'll want to do are install git and create a free GitHub account.
@@ -29,14 +37,16 @@ https://git-scm.com/download/win
 Hombrew should already be installed but if it's not run this command
 /usr/bin/ruby -e "\$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-Mac OS Install
-brew install git
+## Mac OS Install
 
-If its already installed and you need to upgrade it:
-brew upgrade git
+`brew install git`
 
-Step 1: Create a local git repository
-When creating a new project on your local machine using git, you'll first create a new repository (or often, 'repo', for short).
+> If its already installed and you need to upgrade it:
+
+`brew upgrade git`
+
+1. Create a local git repository
+   When creating a new project on your local machine using git, you'll first create a new repository (or often, 'repo', for short).
 
 To use git we'll be using the terminal. To begin, open up a terminal and move to where you want to place the project on your local machine using the cd (change directory) command. For example, if you have a 'projects' folder on your desktop, you'd do something like:
 
@@ -48,8 +58,8 @@ To initialize a git repository in the root of the folder, run the git init comma
 
 \$ git init
 
-Step 2: Add a new file to the repo
-Go ahead and add a new file to the project, using any text editor you like or running a touch command or using any other text editor
+2. Add a new file to the repo
+   Go ahead and add a new file to the project, using any text editor you like or running a touch command or using any other text editor
 
 Once you've added or modified files in a folder containing a git repo, git will notice that changes have been made inside the repo. But, git won't officially keep track of the file (that is, put it in a commit.
 
@@ -82,8 +92,8 @@ Once you've used the git add command to add all the files you want to the stagin
 
 Note: The staging environment, also called 'staging', is the new preferred term for this, but you can also see it referred to as the 'index'.
 
-Step 3: Add a file to the staging environment
-Add a file to the staging environment using the git add command.
+3. Add a file to the staging environment
+   Add a file to the staging environment using the git add command.
 
 If you rerun the git status command, you'll see that git has added the file to the staging environment (notice the "Changes to be committed" line).
 
@@ -99,8 +109,8 @@ Changes to be committed:
 
 To reiterate, the file has not yet been added to a commit, but it's about to be.
 
-Step 4: Create a commit
-It's time to create your first commit!
+4. Create a commit
+   It's time to create your first commit!
 
 Run the command git commit -m "Your message about the commit"
 
@@ -121,8 +131,8 @@ git push (push the files from your local repo to Github so they are committed to
 Git Continued
 Here are some more advanced concepts once you master the process of adding, deleting, and changing files
 
-Step 5: Create a new branch
-Now that you've made a new commit, let's try something a little more advanced.
+5. Create a new branch
+   Now that you've made a new commit, let's try something a little more advanced.
 
 Say you want to make a new feature but are worried about making changes to the main project while developing the feature. This is where git branches come in.
 Branches allow you to move back and forth between 'states' of a project. For instance, if you want to add a new page to your website you can create a new branch just for that page without affecting the main part of the project. Once you're done with the page, you can merge your changes from your branch into the master branch. When you create a new branch, Git keeps track of which commit your branch 'branched' off of, so it knows the history behind all the files.
@@ -140,7 +150,7 @@ The branch name with the asterisk next to it indicates which branch you're point
 
 Now, if you switch back to the master branch and make some more commits, your new branch won't see any of those changes until you merge those changes onto your new branch.
 
-Step 6: Create a new repository on GitHub
+6. Create a new repository on GitHub
 
 If you only want to keep track of your code locally, you don't need to use GitHub. But if you want to work with a team, you can use GitHub to collaboratively modify the project's code.
 
@@ -150,8 +160,8 @@ GitHub will ask if you want to create a new repo from scratch or if you want to 
 
 (You'll want to change the URL in the first command line to what GitHub lists in this section since your GitHub username and repo name are different.)
 
-Step 7: Push a branch to GitHub
-Now we'll push the commit in your branch to your new GitHub repo. This allows other people to see the changes you've made. If they're approved by the repository's owner, the changes can then can be merged into the master branch.
+7. Push a branch to GitHub
+   Now we'll push the commit in your branch to your new GitHub repo. This allows other people to see the changes you've made. If they're approved by the repository's owner, the changes can then can be merged into the master branch.
 
 To push changes onto a new branch on GitHub, you'll want to run git push origin yourbranchname. GitHub will automatically create the branch for you on the remote repository:
 
@@ -175,7 +185,7 @@ Now click the green button in the screenshot above. We're going to make a pull r
 
 Github Getting Fancy
 
-Step 8: Create a Pull Request (PR)
+8. Create a Pull Request (PR)
 
 A pull request (or PR) is a way to alert a repo's owners that you want to make some changes to their code. It allows them to review the code and make sure it looks good before putting your changes on the master branch.
 
@@ -185,26 +195,27 @@ Note that this button won't always be green. In some cases it'll be grey, which 
 
 Sometimes you'll be a co-owner or the sole owner of a repo, in which case you may not need to create a PR to merge your changes. However, it's still a good idea to make one so you can keep a more complete history of your updates and to make sure you always create a new branch when making changes.
 
-Step 9: Merge a PR
-Go ahead and click the green 'Merge pull request' button. This will merge your changes into the master branch.
+9. Merge a PR
+   Go ahead and click the green 'Merge pull request' button. This will merge your changes into the master branch.
 
-When you're done, I recommend deleting your branch (too many branches can become messy), so hit that grey 'Delete branch' button as well.
-
-You can double check that your commits were merged by clicking on the 'Commits' link on the first page of your new repo.
-
-This will show you a list of all the commits in that branch. You can see the one I just merged right up top (Merge pull request #2).
+> When you're done, I recommend deleting your branch (too many branches can become messy), so hit that grey 'Delete branch' button as well.
+> You can double check that your commits were merged by clicking on the 'Commits' link on the first page of your new repo.
+> This will show you a list of all the commits in that branch. You can see the one I just merged right up top (Merge pull request #2).
 
 You can also see the hash code of the commit on the right hand side. A hash code is a unique identifier for that specific commit. It's useful for referring to specific commits and when undoing changes (use the git revert <hash code number> command to backtrack).
 
-Step 10: Get changes on GitHub back to your computer
-Right now, the repo on GitHub looks a little different than what you have on your local machine. For example, the commit you made in your branch and merged into the master branch doesn't exist in the master branch on your local machine.
+10. Get changes on GitHub back to your computer
+    Right now, the repo on GitHub looks a little different than what you have on your local machine. For example, the commit you made in your branch and merged into the master branch doesn't exist in the master branch on your local machine.
 
-In order to get the most recent changes that you or others have merged on GitHub, use the git pull origin master command (when working on the master branch).
+> In order to get the most recent changes that you or others have merged on GitHub, use the git pull origin master command (when working on the master branch).
 
-\$ git pull origin master
+`\$ git pull origin master
+
 remote: Counting objects: 1, done.
+
 remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
-Unpacking objects: 100% (1/1), done.
+
+Unpacking objects: 100% (1/1), done.`
 From https://github.com/cubeton/mynewrepository
 
 - branch master -> FETCH_HEAD

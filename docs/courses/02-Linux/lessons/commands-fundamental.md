@@ -1,4 +1,4 @@
-## Bash
+# Commands | Fundamentals
 
 Bash is a shell ...
 
