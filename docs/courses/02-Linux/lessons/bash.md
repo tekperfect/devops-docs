@@ -1,8 +1,12 @@
+## Bash
+
+Bash is a shell ...
+
 ## Basic Commands
 
 **cd**
 
-> Examples
+\* Examples
 
 ```bash
 man cd

@@ -1,15 +1,3 @@
-## Initial Labs
-
-# Social Media Connections
-
-Create & Share Social Platforms
-
-- Twitter
-- Github
-- Linkedin
-- Personal
-- Other / LinkTree
-
 # Github Hosted Website | Github Pages
 
 \*Prerequisites
@@ -31,23 +19,3 @@ Create & Share Social Platforms
 
 </body>
 </html>
-
-## Linux Labs
-
----
-
-## Git Labs
-
----
-
-## Github Labs
-
----
-
-## Kali Labs
-
----
-
-## AWS Labs
-
----

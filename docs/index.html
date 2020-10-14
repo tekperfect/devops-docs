@@ -20,17 +20,17 @@
       window.$docsify = {
         el: "#app",
         name: "Devops Classroom",
-        logo: "./media/logos/gh-logo-horizontal.png",
-        homepage: "home.md",
+        logo: "./media/logos/tekperfect-text.png",
+        homepage: "_home.md",
         coverpage: true,
         alias: {
-          "/.*/_sidebar.md": "/_sidebar.md",
+          "/courses/.*/_sidebar.md": "/_sidebar.md",
         },
         repo: "",
         loadNavbar: true,
         loadSidebar: true,
         autoHeader: true,
-        subMaxLevel: 2,
+        subMaxLevel: 3,
         markdown: {
           renderer: {
             code(code, lang) {
@@ -39,13 +39,6 @@
           },
         },
         search: "auto", // default
-
-        search: [
-          "/", // => /README.md
-          "/bash", // => /guide.md
-          "/docker", // => /get-started.md
-          "/security", // => /zh-cn/README.md
-        ],
 
         // complete configuration parameters
         search: {
@@ -92,14 +85,4 @@
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
   </body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cesar | Portfolio</title>
-  </head>
-  <body></body>
 </html>
