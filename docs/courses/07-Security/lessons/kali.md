@@ -1,4 +1,4 @@
-## Security Fundamentals
+## Kali Setup
 
 Why Kali?
 

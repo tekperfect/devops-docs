@@ -1,4 +1,4 @@
-![logo](/media/logos/gh-logo-horizontal.png)
+![logo](/media/logos/tekperfect-logo.png)
 
 # DEVOPS <small>2020-2021</small>
 
@@ -6,7 +6,7 @@
 
 - Docs,Links,& Walkthroughs
 
-[Classroom](https://classroom.google.com/c/MTI2MzcxMDQ2Mjcx?cjc=ny3uny2)
-[Archive](#Archive)
+[Google Drive](https://drive.google.com/drive/folders/1fNYLMtWmfz31NzLzDLVMBJAIR2lLS9Rs?usp=sharing)
+[Archive](#app)
 
 ![color](#F2F2F2)
