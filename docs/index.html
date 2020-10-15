@@ -31,7 +31,7 @@
         loadNavbar: true,
         loadSidebar: true,
         autoHeader: true,
-        subMaxLevel: 2,
+        subMaxLevel: 3,
         markdown: {
           renderer: {
             code(code, lang) {
@@ -39,12 +39,26 @@
             },
           },
         },
+
+        //  Search Bar
+
         search: "auto", // default
+        search: [
+          "/", // => /README.md
+          "/courses/01-Introduction/", // => /home
+          "/courses/02-Linux",
+          "/courses/03-Version_Control",
+          "/courses/04-Programming",
+          "/courses/05-Virtualization",
+          "/courses/06-Databases",
+          "/courses/07-Security",
+          "/courses/08-Web_Development",
+        ],
 
         // complete configuration parameters
         search: {
           maxAge: 86400000, // Expiration time, the default one day
-          paths: [], // or 'auto'
+          paths: ["auto"], // or 'auto'
           placeholder: "Type to search",
 
           // Localization
@@ -62,7 +76,7 @@
           },
 
           // Headline depth, 1 - 6
-          depth: 2,
+          depth: 6,
 
           hideOtherSidebarContent: false, // whether or not to hide other sidebar content
 
@@ -75,11 +89,20 @@
           //
           // When initialiazing an index, we look for the first path from the sidebar.
           // If it matches the prefix from the list, we switch to the corresponding index.
-          pathNamespaces: ["/zh-cn", "/ru-ru", "/ru-ru/v1"],
+          pathNamespaces: [
+            "/01-introduction",
+            "/02-Linux",
+            "/03-Version_Control",
+          ],
 
           // You can provide a regexp to match prefixes. In this case,
           // the matching substring will be used to identify the index
           pathNamespaces: /^(\/(zh-cn|ru-ru))?(\/(v1|v2))?/,
+        },
+        copyCode: {
+          buttonText: "📋 Click to Copy",
+          errorText: "x",
+          successText: "✓",
         },
         plugins: [
           function (hook) {
@@ -117,5 +140,7 @@
     </script>
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
   </body>
 </html>
