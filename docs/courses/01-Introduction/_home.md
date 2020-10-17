@@ -8,8 +8,6 @@
 
 ## Labs <!-- {docsify-ignore} -->
 
-<!-- - [Github Hosted Website | Github Pages](/courses/01-Introduction/labs/github-pages.md) -->
-
 - [Social Media Connections](/courses/01-Introduction/labs/social-media-connection.md)
 
 ## Assignments <!-- {docsify-ignore} -->

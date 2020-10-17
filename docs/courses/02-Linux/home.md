@@ -3,7 +3,7 @@
 ## Lessons <!-- {docsify-ignore} -->
 
 - [What is Linux](/courses/02-Linux/lessons/what-is-linux.md)
-- [Commands - Fundamental](/courses/02-Linux/lessons/commands-fundamental.md)
+- [Commands - Fundamental](/courses/02-Linux/lessons/commands-fundamentals.md)
 - [Commands - Advanced](/courses/02-Linux/lessons/commands-advanced.md)
 - [System Administration](/courses/02-Linux/lessons/linux-system-administration.md)
 - [System Hardening](/courses/02-Linux/lessons/linux-system-hardening.md)

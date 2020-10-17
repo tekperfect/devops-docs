@@ -32,7 +32,7 @@
 
 ---
 
-<h1 align="center">Folder and Files</h1>
+# Folder and Files
 
 The root or ground folder on any Linux OS is “/”
 From the forward slash or “/” you want to create the following folders

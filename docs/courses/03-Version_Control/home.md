@@ -4,19 +4,23 @@
 
 ---
 
-- [Git](/courses/03-Version_Control/lessons/git.md)
+**[Git](/courses/03-Version_Control/lessons/git.md)**
 
-  Git is a distributed version-control system for tracking changes in source code during software development. It is designed for coordinating work among programmers, but it can be used to track changes in any set of files. Its goals include speed, data integrity, and support for distributed, non-linear workflows.
+Git is a distributed version-control system for tracking changes in source code during software development. It is designed for coordinating work among programmers, but it can be used to track changes in any set of files. Its goals include speed, data integrity, and support for distributed, non-linear workflows.
 
-- [Github](/courses/03-Version_Control/lessons/github.md)
+**[Github](/courses/03-Version_Control/lessons/github.md)**
 
-  GitHub, Inc. is an American multinational corporation that provides hosting for software development and version control using Git. It offers the distributed version control and source code management functionality of Git, plus its own features.
+GitHub, Inc. is an American multinational corporation that provides hosting for software development and version control using Git. It offers the distributed version control and source code management functionality of Git, plus its own features.
 
 ## Labs <!-- {docsify-ignore} -->
 
 ---
 
-- [Introduction To Github | Learning Lab](https://lab.github.com/githubtraining/introduction-to-github)
+**[Github Labs](/courses/03-Version_Control/labs/github-labs.md)**
+
+<!-- **[Introduction To Github | Learning Lab](https://lab.github.com/githubtraining/introduction-to-github)** -->
+
+Signup for git labs to practice you github skills, follow the instruction to see what sections should be completed
 
 ![Git Merge Gif](https://media.giphy.com/media/cFkiFMDg3iFoI/giphy.gif)
 
@@ -24,4 +28,4 @@
 
 ---
 
-- [Github Hosted Website | Github Pages](/courses/03-Version_Control/labs/github-pages.md)
+**[Github Hosted Website | Github Pages](/courses/03-Version_Control/labs/github-pages.md)**
