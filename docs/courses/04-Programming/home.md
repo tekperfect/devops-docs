@@ -1,5 +1,5 @@
-## Lessons
+## Lessons <!-- {docsify-ignore} -->
 
-## Labs
+## Labs <!-- {docsify-ignore} -->
 
-## Assignments
+## Assignments <!-- {docsify-ignore} -->

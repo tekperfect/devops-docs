@@ -3,8 +3,8 @@
 \*Prerequisites
 
 - Have Github Account
-- Git Installed
-- Command Line Basics | GitBash Basics
+- Git Installed | [Downloads](/resources/downloads.md)
+- Command Line Fundamentals | [Linux](/courses/02-Linux/lessons/commands-fundamental.md)
 
 ### Create A Basic Html File On Your Terminal
 
