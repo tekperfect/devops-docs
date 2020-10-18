@@ -6,7 +6,7 @@
 
 ---
 
-Exercise #1 - Logging Into the Admin Console
+### Exercise #1 - Logging Into the Admin Console
 
 
 ### Directions
@@ -20,13 +20,12 @@ Exercise #1 - Logging Into the Admin Console
 
 ### Notes
 
-Notes
 
 You will normally sign into the admin console from admin.google.com. However, if you're already signed in to another G Suite service you can also access the admin console by clicking the Admin icon that can be found in the Apps Launcher.
 
 Only a user with administrator privileges can access the admin console. As the domain administrator, you can grant administrator privileges to any of your users. We will discuss this later in the course.
 
-iExercise #2 - Review your Domain Name System (DNS) Records
+### Exercise #2 - Review your Domain Name System (DNS) Records
 Introduction
 
 Before you can use any G Suite service, you must associate a verified domain with the G Suite account. Domain information is managed via a Domain registrar (hosting service) that stores Domain Name System (DNS) records for the domain. These records allow organizations to connect to online services like email or websites.
