@@ -1,4 +1,4 @@
-![Linux Pinguin](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fadminscriptbank.files.wordpress.com%2F2016%2F09%2Fbanner_linux.png&f=1&nofb=1)
+<!-- ![Linux Pinguin](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fadminscriptbank.files.wordpress.com%2F2016%2F09%2Fbanner_linux.png&f=1&nofb=1) -->
 
 ## Lessons <!-- {docsify-ignore} -->
 
@@ -16,3 +16,13 @@
 ## Assignments <!-- {docsify-ignore} -->
 
 - [Linux Practice](/practice/)
+| Week 1     | Os Basics And System Administration |   ... |
+| Week 2     |             Networking              |   ... |
+| Week 3     |             SaaS Tools              |   ... |
+| Week 4     |           Cloud Computing           |   ... |
+| Week 5     |              Security               |   ... |
+| Week 6,7,8 |    IaC (Infrastructure as Code)     |   ... |
+| Week 9,10  |          Review and repeat          |   ... |
+
+===
+
