@@ -1,15 +1,32 @@
 # Devops | Overview
 
-<img src="/media/devops-overview-1.png">
+Google Slide - [Devops| Overview](https://docs.google.com/presentation/d/1JEbiyuYNmUcD9nTRQc98r-LVI2kHJCYMv4J2JA-aSGM/edit?usp=sharing)
 
-<img src="media/devops-overview-2.png">
+## Computers & Operating Systems
+- Bash Scripting
+- Terminal / Powershell Commands
+- Install, Configure, and Troubleshoot
 
-<img src="media/devops-overview-3.png">
+## Networks
+- Wired / Wireless
+- Hardware
+- AP’s 
+- Routers
+- Switches
+- Firewalls
 
-<img src="/media/devops-overview-4.png">
+## Virtualization
+“In computing, virtualization refers to the act of creating a virtual version of something, including virtual computer hardware platforms, storage devices, and computer network resources. “ - Wikipedia
 
-<img src="/media/devops-overview-5.png">
+## Cloud Services
 
-<img src="/media/devops-overview-6.png">
+## Programming
+Python
+Javascript
+Bash / Shell
 
-<img src="/media/devops-overview-7.png">
+## Security
+User Accounts
+Passwords / 2FA
+Patching 
+Encryptions
