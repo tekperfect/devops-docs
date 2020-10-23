@@ -3,7 +3,7 @@
 ## Grep
 
 This command allows you to search all the files in the path you specified for the exact text string you are looking for
-grep 'string' /path-to-files
+' grep 'string' /path-to-files '
 
 This command allows you to search all the files in the current directory for the exact text string you are looking for
 grep 'string' *
