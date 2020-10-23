@@ -3,110 +3,110 @@
 
 ipconfig (list the ip configuration of a system)
 
-ipconfig
+`ipconfig`
 
 
 dir (list the files in the current directory)
 
-dir
+`dir`
 
 
 Change Directory
 
-cd c:\
+`cd c:\`
 
 
 Copy files from one folder to another
 Command Example:
 
-copy c:\source c:\destination
+`copy c:\source c:\destination`
 
-xcopy c:\source c:\destination
+`xcopy c:\source c:\destination`
 
 
 Track path to host or IP address
 
 
-tracert xxx.xxx.xxx.xxx
+`tracert xxx.xxx.xxx.xxx`
 
-traceroute www.google.com
+`traceroute www.google.com`
 
 
 Shows the current directory you are in
 
-echo %cd%
+`echo %cd%`
 
 
 Displays the name of the user you are logged in as
 
-echo %username%
+`echo %username%`
 
 
 View the contents of a file
 
-type filename
+`type filename`
 
 
 Edit a file
 
-edit filename
+`edit filename`
 
 
 Powershell command that ead the last few lines of file
 
-Get-Content filename
+`Get-Content filename`
 
 
 Connect to a remote windows system
 
-mstsc 192.168.1.1 or mstsc windows.tekperfect.com
+`mstsc 192.168.1.1` or `mstsc windows.tekperfect.com`
 
 
 systeminfo (displays system information about your computer)
 
-systeminfo
+`systeminfo`
 
 
 See all network connections your computer has open
 
-net use 
+`net use`
 
 
 route print or netstat -r (see your routing table and network connections)
 
-netstat -na 
+`netstat -na` 
 
 
 Ping (send and echo or are you alive command to a system)
 
-ping google.com
+`ping google.com`
 
-ping 192.168.1.1
+`ping 192.168.1.1`
 
 
 nslookup (lookup domain name)
 
-nslookup google.com
+`nslookup google.com`
 
 
 mkdir (create a directory)
 
-mkdir directory_name
+`mkdir directory_name`
 
 
 shutdown (shutdown and computer)
 
-shutdown /r
+`shutdown /r`
 
 
 Redirect output of a command to a file
 
-ping > c:\filename.txt
+`ping > c:\filename.txt`
 
 
 Append the output of a command to a file
 
-tracert >> c:\filename.txt
+`tracert >> c:\filename.txt`
 
 
 ## Powershell commands
@@ -115,22 +115,22 @@ tracert >> c:\filename.txt
 Install Active Directory using the following commands from Powershell. You will need to specify the domain name when running the third command.
 
 
-get-windowsfeature
+`get-windowsfeature`
 
 
-install-windowsfeature AD-Domain-Services
+`install-windowsfeature AD-Domain-Services`
 
 
-Install-ADDSForest -CreateDnsDelegation:$false -DatabasePath “C:\Windows\NTDS” -DomainMode “Win2012R2” -DomainName “domain_name.com” -DomainNetbiosName “DOMAIN_NAME” -ForestMode “Win2012R2” -InstallDns:$true -LogPath “C:\Windows\NTDS” -NoRebootOnCompletion:$false -SysvolPath “C:\Windows\SYSVOL” -Force:$true
+`Install-ADDSForest -CreateDnsDelegation:$false -DatabasePath “C:\Windows\NTDS” -DomainMode “Win2012R2” -DomainName “domain_name.com” -DomainNetbiosName “DOMAIN_NAME” -ForestMode “Win2012R2” -InstallDns:$true -LogPath “C:\Windows\NTDS” -NoRebootOnCompletion:$false -SysvolPath “C:\Windows\SYSVOL” -Force:$true`
 
 
-Add-WindowsFeature RSAT-AD-PowerShell
+`Add-WindowsFeature RSAT-AD-PowerShell`
 
 
 Install IIS using the following commands from Powershell.
 
 
-import-module ServerManager
+`import-module ServerManager`
 
 
 Add-WindowsFeature Web-Server
@@ -139,19 +139,16 @@ Add-WindowsFeature Web-Server
 Create AD User from commands in Powershell.
 
 
-New-ADUser -Name "New_User" -UserPrincipalName New_User@domain_name.com
+`New-ADUser -Name "New_User" -UserPrincipalName New_User@domain_name.com`
 
 
-Set-ADAccountPassword -Identity “New_User”
+`Set-ADAccountPassword -Identity “New_User”`
 
 
 Create AD Groups from commands in Powershell.
 
 
-New-ADGroup -name GroupName -GroupScope Global
-Windows Shortcut Commands
-
-
+`New-ADGroup -name GroupName -GroupScope Global`
 
 
 ## Change Login Banner on Windows via Group Policy
@@ -190,39 +187,50 @@ Change these to whatever you want.
 ## Active Directory
 
 1. To quickly list all the groups in your domain, with members, run this command:
+
 dsquery group -limit 0 | dsget group -members –expand
 
 2. To find all users whose accounts are set to have a non-expiring password, run this command:
+
 dsquery * domainroot -filter “(&(objectcategory=person)(objectclass=user)(lockoutTime=*))” -limit 0
 
 3. To list all the FSMO role holders in your forest, run this command:
+
 netdom query fsmo
 
 4. To refresh group policy settings, run this command:
+
 gpupdate
 
 5. To check Active Directory replication on a domain controller, run 
 this command:
+
 repadmin /replsummary
 
 6. To force replication from a domain controller without having to go 
 through to Active
 Directory Sites and Services, run this command:
+
 repadmin /syncall
 
 7. To see what server authenticated you (or if you logged on with 
 cached credentials) you can run either of these commands:
+
 set l
+
 echo %logonserver%
 
 8. To see what account you are logged on as, run this command:
+
 whoami
 
 9. To see what security groups you belong to, run this command:
+
 whoami /groups
 
 10. To see the domain account policy (password requirements, lockout 
 thresholds, etc) run this command:
+
 net accounts
 
 
