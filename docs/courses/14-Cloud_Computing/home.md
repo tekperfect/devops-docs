@@ -1,10 +1,12 @@
 
-# **📋 Dev Ops: System Administration**
+# **📋 Dev Ops: Computer Setup**
 
 1. [👋 Welcome](#👋-welcome)
 1. [💡 Prerequisites](#💡-prerequisites)
-1. [📦 Exercise 1](#📦-package-manager)
-1. [⬛ Exercise 2](#⬛-terminal)
+1. [📦 Package Manager](#📦-package-manager)
+1. [⬛ Terminal](#⬛-terminal)
+1. [📁 Explorer](#📁-explorer)
+1. [🚀 Git](#🚀-git)
 
 
 

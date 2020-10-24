@@ -1,31 +1,42 @@
-![Github Header](https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fblog.davidecoppola.com%2Fwp-content%2Fuploads%2F2016%2F11%2FGitHub-logo-header.png&f=1&nofb=1)
 
-## Lessons <!-- {docsify-ignore} -->
+# Os Basics
 
----
+1. [Course Description](#course-description)
+2. [Prerequisites](#prerequisites)
+3. [Learning Outcomes](#learning-outcomes)
+4. [Lessons](#lessons)
 
-**[Git](/courses/03-Version_Control/lessons/git.md)**
+## Course Description
 
-Git is a distributed version-control system for tracking changes in source code during software development. It is designed for coordinating work among programmers, but it can be used to track changes in any set of files. Its goals include speed, data integrity, and support for distributed, non-linear workflows.
+In this course, DevOps students will learn the core basics of python3; it practicality and versatility.
 
-**[Github](/courses/03-Version_Control/lessons/github.md)**
+## Prerequisites
 
-GitHub, Inc. is an American multinational corporation that provides hosting for software development and version control using Git. It offers the distributed version control and source code management functionality of Git, plus its own features.
+* [Tekperfect: Computer Setup](#)
 
-## Labs <!-- {docsify-ignore} -->
+## Learning Outcomes
 
----
+Students by the end of the course will be able to...
 
-**[Github Labs](/courses/03-Version_Control/labs/github-labs.md)**
+1. Understand basic coding structures
+1. Undertand libraries and modules
+1. Create basic scripts
 
-<!-- **[Introduction To Github | Learning Lab](https://lab.github.com/githubtraining/introduction-to-github)** -->
+## Lessons
 
-Signup for git labs to practice you github skills, follow the instruction to see what sections should be completed
+- [What is Linux](/courses/02-Linux/lessons/what-is-linux.md)
+- [Commands - Fundamental](/courses/02-Linux/lessons/commands-fundamentals.md)
+- [Commands - Advanced](/courses/02-Linux/lessons/commands-advanced.md)
+- [System Administration](/courses/02-Linux/lessons/linux-system-administration.md)
+- [System Hardening](/courses/02-Linux/lessons/linux-system-hardening.md)
 
-![Git Merge Gif](https://media.giphy.com/media/cFkiFMDg3iFoI/giphy.gif)
+## Labs 
 
-## Assignments <!-- {docsify-ignore} -->
+- [Basics](/courses/02-Linux/labs/linux-basics.md)
+- [Vets](/courses/02-Linux/labs/linux-vets.md)
 
----
 
-**[Github Hosted Website | Github Pages](/courses/03-Version_Control/labs/github-pages.md)**
+## Resources
+
+- [Wargames | Bandit](https://overthewire.org/wargames/bandit/)
+

@@ -1,6 +1,27 @@
-<!-- ![Linux Pinguin](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fadminscriptbank.files.wordpress.com%2F2016%2F09%2Fbanner_linux.png&f=1&nofb=1) -->
+# Os Basics
 
-## Lessons <!-- {docsify-ignore} -->
+1. [Course Description](#course-description)
+2. [Prerequisites](#prerequisites)
+3. [Learning Outcomes](#learning-outcomes)
+4. [Lessons](#lessons)
+
+## Course Description
+
+Linux is a
+
+## Prerequisites
+
+* [Tekperfect: Computer Setup](#)
+
+## Learning Outcomes
+
+Students by the end of the course will be able to...
+
+1. Understand basic coding structures
+1. Undertand libraries and modules
+1. Create basic scripts
+
+## Lessons
 
 - [What is Linux](/courses/02-Linux/lessons/what-is-linux.md)
 - [Commands - Fundamental](/courses/02-Linux/lessons/commands-fundamentals.md)
@@ -8,21 +29,14 @@
 - [System Administration](/courses/02-Linux/lessons/linux-system-administration.md)
 - [System Hardening](/courses/02-Linux/lessons/linux-system-hardening.md)
 
-## Labs <!-- {docsify-ignore} -->
+## Labs 
 
-- [Linux Basics](/courses/02-Linux/labs/linux-basics.md)
-- [Linux Vets](/courses/02-Linux/labs/linux-vets.md)
+- [Basics](/courses/02-Linux/labs/linux-basics.md)
+- [Vets](/courses/02-Linux/labs/linux-vets.md)
 
-## Assignments <!-- {docsify-ignore} -->
 
-- [Linux Practice](/practice/)
-| Week 1     | Os Basics And System Administration |   ... |
-| Week 2     |             Networking              |   ... |
-| Week 3     |             SaaS Tools              |   ... |
-| Week 4     |           Cloud Computing           |   ... |
-| Week 5     |              Security               |   ... |
-| Week 6,7,8 |    IaC (Infrastructure as Code)     |   ... |
-| Week 9,10  |          Review and repeat          |   ... |
+## Resources
 
-===
+- [Wargames | Bandit](https://overthewire.org/wargames/bandit/)
+
 
