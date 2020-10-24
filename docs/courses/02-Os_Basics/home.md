@@ -7,7 +7,7 @@
 
 ## Course Description
 
-Linux is a
+This course will introduce the core concepts of operating systems, such as processes and threads, scheduling, synchronization, memory management, file systems, input and output device management and security
 
 ## Prerequisites
 
@@ -17,8 +17,8 @@ Linux is a
 
 Students by the end of the course will be able to...
 
-1. Understand basic coding structures
-1. Undertand libraries and modules
+1. Understand operating systems
+1. Undertand setup maintanance, and security
 1. Create basic scripts
 
 ## Lessons
@@ -31,9 +31,8 @@ Students by the end of the course will be able to...
 
 ## Labs 
 
-- [Basics](/courses/02-Linux/labs/linux-basics.md)
-- [Vets](/courses/02-Linux/labs/linux-vets.md)
-
+- [Basics](/courses/02-Os_Basics/labs/linux-basics.md)
+- [Vets](/courses/02-Os_Basics/labs/linux-vets.md)
 
 ## Resources
 
