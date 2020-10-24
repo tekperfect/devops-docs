@@ -23,9 +23,9 @@ Students by the end of the course will be able to...
 
 ## Lessons
 
-- [What is Linux](/courses/02-Os_Basics/lessons/what-is-linux.md)
-- [Commands - Fundamental](/courses/02-Os_Basics/lessons/commands-fundamentals.md)
-- [Commands - Advanced](/courses/02-Os_Basics/lessons/commands-advanced.md)
+- [Linux Commands - Fundamental](/courses/02-Os_Basics/lessons/commands-fundamentals.md)
+- [Linux CommandsCommands - Advanced](/courses/02-Os_Basics/lessons/commands-advanced.md)
+- [Windows Commands - Fundamental](/courses/02-Os_Basics/lessons/windows-commands.md)
 - [System Administration](/courses/02-Os_Basics/lessons/linux-system-administration.md)
 - [System Hardening](/courses/02-Os_Basics/lessons/linux-system-hardening.md)
 
