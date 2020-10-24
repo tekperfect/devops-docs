@@ -8,17 +8,17 @@
 - Create a user named ignacio
 - Create a user named sally
 
-> For example if you wanted to create a user called marsha you would type in the following command sudo adduser marsha
+> For example if you wanted to create a user called marsha you would type in the following command `sudo adduser marsha`
 
-- Create the following groups by using the groupadd command
+**Create the following groups by using the `groupadd` command**
+
 - Create a group called engineering.
 - Create a group called finance.
 - Create a group called marketing.
 - Create a group called it.
 - Create a group called sales.
 
-> For example if you wanted to create a group called security you would type in the following command
-> `sudo groupadd security`
+> For example if you wanted to create a group called security you would type in the following command `sudo groupadd security`
 
 **Add the following users to those groups by using the `usermod` command**
 
@@ -28,7 +28,7 @@
 - Create a group called it and assign ignacio to it.
 - Create a group called sales and assign sally to it.
 
-> For example if you wanted to add marsha to the security group you would type in the following command: sudo usermod -a -G security marsha
+> For example if you wanted to add marsha to the security group you would type in the following command:  `sudo usermod -a -G security marsha`
 
 ---
 
@@ -39,7 +39,7 @@ From the forward slash or “/” you want to create the following folders
 Change directory to the root by issuing this command cd /
 Now that you are at the root of your linux box you need to create the following folder department:
 
-- Use the mkdir command to create the department folder Under the department folder you want to create the following folders sales, marketing, it, engineering, and finance. You must use the “sudo cd department” command to change into that folder once it’s created.
+- Use the `mkdir` command to create the department folder Under the department folder you want to create the following folders sales, marketing, it, engineering, and finance. You must use the `sudo cd department` command to change into that folder once it’s created.
 
 **Create a few files in each folder using the `touch` command**
 
@@ -49,7 +49,7 @@ Now that you are at the root of your linux box you need to create the following 
 - In the marketing folder create a file called campaign.ppt
 - In the finance folder create a file called payroll.xls
 
-> For example if you wanted to create a file called test.txt using the touch command you type sudo touch test.txt
+> For example if you wanted to create a file called test.txt using the `touch` command you type `sudo touch test.txt`
 
 Change the department folder permission so only members can modify the files using the chgrp command. For example, if I wanted to change the ownership of the folder called security to be owned by the group called security you would issue the following command chgrp security security
 
