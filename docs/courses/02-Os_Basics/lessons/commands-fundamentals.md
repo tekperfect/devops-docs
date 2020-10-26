@@ -58,25 +58,25 @@ curl transfers a URL. Use this command to test an application's endpoint or conn
 
 As an example, imagine your application throws an HTTP 500 error indicating it can't reach a MongoDB database:
 
-curl -I -s myapplication:5000
+`curl -I -s myapplication:5000`
 
 HTTP/1.0 500 INTERNAL SERVER ERROR
 
 The -I option shows the header information and the -s option silences the response body. Checking the endpoint of your database from your local desktop:
 
-curl -I -s database:27017
+`curl -I -s database:27017`
 
 HTTP/1.0 200 OK
 
 So what could be the problem? Check if your application can get to other places besides the database from the application host:
 
-curl -I -s https://opensource.com
+`curl -I -s https://opensource.com`
 
 HTTP/1.1 200 OK
 
 That seems to be okay. Now try to reach the database from the application host. Your application is using the database's hostname, so try that first:
 
-curl database:27017
+`curl database:27017`
 
 curl: (6) Couldn't resolve host 'database'
 
@@ -86,12 +86,12 @@ This indicates that your application cannot resolve the database because the URL
 
 After you issue curl, the output of the API call may be difficult to read. Sometimes, you want to pretty-print the JSON output to find a specific entry. Python has a built-in JSON library that can help with this. You use python -m json.tool to indent and organize the JSON. To use Python's JSON module, pipe the output of a JSON file into the python -m json.tool command.
 
-cat test.json
+`cat test.json`
 
 {"title":"Person","type":"object","properties":{"firstName":{"type":"string"},"lastName":{"type":"string"},"age":{"description":"Age in years","type":"integer","minimum":0}},"required":["firstName","lastName"]}
 To use the Python library, pipe the output to Python with the -m (module) option.
 
-cat test.json | python -m json.tool
+`cat test.json | python -m json.tool`
 
 
 {
@@ -120,7 +120,7 @@ cat test.json | python -m json.tool
 For more advanced JSON parsing, you can install jq. jq provides some options that extract specific values from the JSON input. To pretty-print like the Python module above, simply apply jq to the output.
 
 
-cat test.json | jq
+`cat test.json | jq`
 
 
 {
@@ -151,11 +151,11 @@ cat test.json | jq
 ls lists files in a directory. Sysadmins and developers issue this command quite often. In the container space, this command can help determine your container image's directory and files. Besides looking up your files, ls can help you examine your permissions. In the example below, you can't run myapp because of a permissions issue. When you check the permissions using ls -l, you realize that the permissions do not have an "x" in -rw-r--r--, which are read and write only.
 
 
-./myapp
+`./myapp`
 
 bash: ./myapp: Permission denied
 
-ls -l myapp
+`ls -l myapp`
 
 -rw-r--r--. 1 root root 33 Jul 21 18:36 myapp
 
@@ -171,14 +171,14 @@ Use tail -f to follow Apache HTTP logs and see the requests as they happen.
 The -f option indicates the "follow" option, which outputs the log lines as they are written to the file. The example has a background script that accesses the endpoint every few seconds and the log records the request. Instead of following the log in real time, you can also use tail to see the last 100 lines of the file with the -n option.
 
 
-tail -n 100 /var/log/httpd/access_log
+`tail -n 100 /var/log/httpd/access_log`
 
 
 ## cat
 
 cat concatenates and prints files. You might issue cat to check the contents of your dependencies file or to confirm the version of the application that you have already built locally.
 
-cat requirements.txt
+`cat requirements.txt`
 
 
 flask
@@ -189,7 +189,7 @@ The example above checks whether your Python Flask application has Flask listed 
 
 grep searches file patterns. If you are looking for a specific pattern in the output of another command, grep highlights the relevant lines. Use this command for searching log files, specific processes, and more. If you want to see if Apache Tomcat starts up, you might become overwhelmed by the number of lines. By piping that output to the grep command, you isolate the lines that indicate server startup.
 
-cat tomcat.log | grep org.apache.catalina.startup.Catalina.start
+`cat tomcat.log | grep org.apache.catalina.startup.Catalina.start`
 
 01-Jul-2017 18:03:47.542 INFO [main]
 
@@ -200,7 +200,7 @@ org.apache.catalina.startup.Catalina.start Server startup in 681 ms
 
 ps shows process status. Use this command to determine a running application or confirm an expected process. For example, if you want to check for a running Tomcat web server, you use ps with its options to obtain the process ID of Tomcat.
 
-ps -ef
+`ps -ef`
 
 UID        PID  PPID  C STIME TTY          TIME CMD
 root         1     0  2 18:55 ?        00:00:02 /docker-java-home/jre/bi
@@ -208,7 +208,7 @@ root        59     0  0 18:55 pts/0    00:00:00 /bin/sh
 root        75    59  0 18:57 pts/0    00:00:00 ps -ef
 For even more legibility, use ps and pipe it to grep.
 
-ps -ef | grep tomcat
+`ps -ef | grep tomcat`
 
 root         1     0  1 18:55 ?        00:00:02 /docker-java-home/jre/bi
 
@@ -217,7 +217,7 @@ root         1     0  1 18:55 ?        00:00:02 /docker-java-home/jre/bi
 
 env allows you to set or print the environment variables. During troubleshooting, you may find it useful for checking if the wrong environment variable prevents your application from starting. In the example below, this command is used to check the environment variables set on your application's host.
 
-env
+`env`
 
 PYTHON_PIP_VERSION=9.0.1
 HOME=/root
@@ -234,7 +234,7 @@ Notice that the application is using Python3 and has environment variables to co
 
 top displays and updates sorted process information. Use this tool to determine which processes are running and how much memory and CPU they consume. A common case occurs when you run an application and it dies a minute later. First, you check the application's return error, which is a memory error.
 
-tail myapp.log
+`tail myapp.log`
 
 Traceback (most recent call last):
 MemoryError
@@ -295,7 +295,7 @@ The -h option prints out the information in human-readable format. The example a
 
 To retrieve more detailed information about which files use the disk space in a directory, you can use the du command. If you wanted to find out which log takes up the most space in the /var/log directory, for example, you can use du with the -h (human-readable) option and the -s option for the total size.
 
-du -sh /var/log/*
+`du -sh /var/log/*`
 
 1.8M  /var/log/anaconda
 384K  /var/log/audit
@@ -311,7 +311,7 @@ The example above reveals the largest directory under /var/log to be /var/log/au
 
 To check the user running the application, use the id command to return the user identity. The example below uses Vagrant to test the application and isolate its development environment. After you log into the Vagrant box, if you try to install Apache HTTP Server (a dependency) the system states that you cannot perform the command as root. To check your user and group, issue the id command and notice that you are running as the "vagrant" user in the "vagrant" group.
 
-yum -y install httpd
+`yum -y install httpd`
 
 Loaded plugins: fastestmirror
 You need to be root to perform this command.
@@ -326,13 +326,13 @@ To correct this, you must run the command as a superuser, which provides elevate
 
 When you run your application binary for the first time on your host, you may receive the error message "permission denied." As seen in the example for ls, you can check the permissions of your application binary.
 
-ls -l
+`ls -l`
 
 total 4
 -rw-rw-r--. 1 vagrant vagrant 34 Jul 11 02:17 test.sh
 This shows that you don't have execution rights (no "x") to run the binary. chmod can correct the permissions to enable your user to run the binary.
 
-chmod +x test.sh
+`chmod +x test.sh`
 
 
 [vagrant@localhost ~]$ ls -l
@@ -345,7 +345,7 @@ As demonstrated in the example, this updates the permissions with execution righ
 
 A domain name server (DNS) helps resolve a URL to a set of application servers. However, you may find that a URL does not resolve, which causes a connectivity issue for your application. For example, say you attempt to access your database at the mydatabase URL from your application's host. Instead, you receive a "cannot resolve" error. To troubleshoot, you try using dig (DNS lookup utility) or nslookup (query Internet name servers) to figure out why the application can't seem to resolve the database.
 
-nslookup mydatabase
+`nslookup mydatabase`
 
 Server:   10.0.2.3
 
@@ -354,7 +354,7 @@ Address:  10.0.2.3#53
 ** server can't find mydatabase: NXDOMAIN
 Using nslookup shows that mydatabase can't be resolved. Trying to resolve with dig yields the same result.
 
-dig mydatabase
+`dig mydatabase`
 
 ; <<>> DiG 9.9.4-RedHat-9.9.4-50.el7_3.1 <<>> mydatabase
 ;; global options: +cmd
@@ -366,7 +366,7 @@ These errors could be caused by many different issues. If you can't debug the ro
 
 iptables blocks or allows traffic on a Linux host, similar to a network firewall. This tool may prevent certain applications from receiving or transmitting requests. More specifically, if your application has difficulty reaching another endpoint, iptables may be denying traffic to the endpoint. For example, imagine your application's host cannot reach Opensource.com. You use curl to test the connection.
 
-curl -vvv opensource.com
+`curl -vvv opensource.com`
 
 * About to connect() to opensource.com port 80 (#0)
 
@@ -381,7 +381,7 @@ curl -vvv opensource.com
 curl: (7) Failed connect to opensource.com:80; Connection timed out
 The connection times out. You suspect that something might be blocking the traffic, so you show the iptables rules with the -S option.
 
-iptables -S
+`iptables -S`
 
 -P INPUT DROP
 
@@ -404,7 +404,7 @@ The first three rules show that traffic drops by default. The remaining rules al
 
 You usually find SELinux (a Linux security module) enforced on an application host managed by an enterprise. SELinux provides least-privilege access to processes running on the host, preventing potentially malicious processes from accessing important files on the system. In some situations, an application needs to access a specific file but may throw an error. To check if SELinux blocks the application, use tail and grep to look for a "denied" message in the /var/log/audit logging. Otherwise, you can check to see if the box has SELinux enabled by using sestatus.
 
-sestatus
+`sestatus`
 
 SELinux status:                 enabled
 
@@ -431,7 +431,7 @@ The output above indicates that the application's host has SELinux enabled. On y
 
 When you issue so many commands for testing and debugging, you may forget the useful ones! Every shell has a variant of the history command. It shows the history of commands you have issued since the start of the session. You can use history to log which commands you used to troubleshoot your application. For example, when you issue history over the course of this article, it shows the various commands you experimented with and learned.
 
-history
+`history`
 
     1  clear
 
@@ -444,4 +444,3 @@ What if you want to execute a command in your previous history, but you don't wa
 example_history.png
 Re-execute a command in your history
 Adding ! before the command number you want to execute issues the command again.
-
