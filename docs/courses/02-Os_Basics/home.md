@@ -1,4 +1,4 @@
-# Os Basics
+# OS Basics
 
 1. [Course Description](#course-description)
 2. [Prerequisites](#prerequisites)

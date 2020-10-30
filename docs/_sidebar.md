@@ -1,6 +1,6 @@
-- **📅 Lessons**
-    - [Introduction](courses/01-Introduction/home.md)
-    - [Os Basics](courses/02-Os_Basics/home.md)
+- **[👋 Introduction](courses/01-Introduction/home.md)**
+- **📅 Topics**
+    - [OS Basics](courses/02-Os_Basics/home.md)
     - [System Administration](courses/03-System_Administration/home.md)
     - [Version Control](courses/04-Version_Control/home.md)
     - [Programming](courses/05-Programming/home.md)
