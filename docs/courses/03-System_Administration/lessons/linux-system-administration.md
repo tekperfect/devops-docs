@@ -253,3 +253,4 @@ Did you lookup things you did not understand or were confusing?
 
 Did you practice the commands and use the man command along with the command to obtain more information about the command - example… “man ls” 
 
+### [Return to SYS Admin](courses/03-System_Administration/home)
