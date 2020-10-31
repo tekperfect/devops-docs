@@ -79,7 +79,7 @@ None! Just bring yourself on time and be dedicated to learn
 
 <!-- tabs:end -->
 
-## 📏 Assignments]
+## 📏 Assignments
 - [ Computer Setup](/courses/01-Introduction/lessons/computer-setup.md)
 
 

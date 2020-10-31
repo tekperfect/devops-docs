@@ -103,3 +103,5 @@ These are some of the projects you will learn while in the program:
 14. What is DNS and how is it used?
 
 15. What is the difference between memorizing something and troubleshooting a problem?
+
+### [Return to OS Basics](courses/01-Introduction/home.md)

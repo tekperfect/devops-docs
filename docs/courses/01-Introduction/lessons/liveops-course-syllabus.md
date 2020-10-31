@@ -35,3 +35,5 @@ The LiveOps team is going to train each of you skills in the following areas.
 | 5     |              Security               |    ... |
 | 6,7,8 |    IaC (Infrastructure as Code)     |    ... |
 | 9,10  |          Review and repeat          |    ... |
+
+### [Return to OS Basics](courses/01-Introduction/home.md)
