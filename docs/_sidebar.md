@@ -10,7 +10,7 @@
     - [Web Development](courses/09-Web_Development/home.md)
     - [Networking](courses/10-Networking/home.md)
     - [G Suite Admin](courses/11-G_Suite_Admin/home.md)
-    - [SaSS Tools](courses/12-SaSS_Tools/home.md)
+    - [SaSS Tools](courses/12-Atlassian/home.md)
     - [IaC Infrustucture as Code](courses/13-Iac/home.md)
     - [Cloud Computing](courses/14-Cloud_Computing/home.md)
 <br/>

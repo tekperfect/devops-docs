@@ -1,7 +1,8 @@
 # 👋 Introduction <!-- {docsify-ignore} -->
 
+### ⏱ Agenda
 1. [📘 Course Description](#📘-course-description)
-1. [✅ Prerequisites](#✅-prerequisites)
+1. [🎯 Prerequisites](#🎯-prerequisites)
 1. [📝 Learning Outcomes](#📝-learning-outcomes)
 1. [📅 Schedule](#📅-schedule)
 1. [📏 Assignments](#📏-Assignments)
@@ -15,7 +16,7 @@ TekPerfect is partnering with GameHeads to train Bay Area youth for careers in t
 
 Think of an app or video game. You will see a gaming/social experience. But what you don’t see are the code and the foundation it is built upon. DevOps refers to the infrastructure. No matter what you want to build (app, video game, database), you will need the right infrastructure. This foundation allows the user to see the great product without all the bugs or lags or crashes.
 
-## ✅ Prerequisites
+## 🎯 Prerequisites
 None! Just bring yourself on time and be dedicated to learn
 
 ## 📝 Learning Outcomes

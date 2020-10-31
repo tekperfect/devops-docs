@@ -27,9 +27,9 @@ Students by the end of the course will be able to...
 
 ## Windows
 
-[System Administration](/courses/02-Os_Basics/lessons/linux-system-administration.md)
+[System Administration](/courses/03-System_Administration/lessons/linux-system-administration.md)
 
-[System Hardening](/courses/02-Os_Basics/lessons/linux-system-hardening.md)
+[System Hardening](/courses/03-System_Administration/lessons/linux-system-hardening.md)
 
 ## Linux
 
