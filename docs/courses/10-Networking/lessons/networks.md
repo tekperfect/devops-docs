@@ -1,9 +1,12 @@
 > Networks
 
-
 ### Personal Area Networks
 
 A personal area network (PAN) provides networking needs around an individual. An example of a PAN is where a smartphone, smartwatch, tablet, and laptop all connect and share data without the need to connect to an access point or other third-party network services. PAN networks typically use Bluetooth to communicate because it provides a low-power, short-range data-sharing capability. The network standards associated with a PAN are Bluetooth and IEEE 802.15.
+
+Here's an example of a PAN (Personal Area Network):
+
+![PAN](pan.jpg)
 
 
 ### Local Area Networks & Wide Area Networks
@@ -37,9 +40,13 @@ A WAN typically requires the use of a third party to configure and set up, which
 There are several network standard-compliant devices that make up the structure of your networks. Depending on the network's size, you might use several of these devices to build the backbone of your network. These devices are:
 
 Repeaters
+
 Hubs
+
 Bridges
+
 Switches
+
 Routers
 
 ### Network Addresses
@@ -59,6 +66,10 @@ The concept is similar to sending someone a letter in the mail. But instead of s
 Routing, in the context of networks, refers to the mechanism used to make sure that data packets follow the correct delivery path between the sending and receiving devices on different networks.
 
 For example, think about the system you are using to connect everyone on a video call and the server that's hosting the call. Multiple networks connect each person to the server hosting the call in order for everyone to communicate with one another.
+
+Here's an example of how data is transferred between computing systems:
+
+![Data Packets](packets-explained.png)
 
 ### Network communication protocols
 
@@ -141,21 +152,38 @@ The Internet Assigned Numbers Authority (IANA) manages the allocation of port nu
 ### Port number	Assignment
 
 20	File Transfer Protocol for data transfer
+
 21	File Transfer Protocol for command control
+
 22	Secure Shell for secure authentication
+
 23	Telnet remote authentication service for unencrypted text messages
+
 25	Simple Mail Transfer Protocol for email routing
+
 53	Domain Name System service
+
 80	Hypertext Transfer Protocol for use in the web
+
 110	Post Office Protocol
+
 119	Network News Transfer Protocol (NNTP)
+
 123	Network Time Protocol (NTP)
+
 143	Internet Message Access Protocol for management of digital mail
+
 161	Simple Network Management Protocol
+
 194	Internet Relay Chat (IRC)
+
 443	HTTP Secure HTTP over TLS/SSL
 
 ### Address Resolution Protocol (ARP)
+
+Here's an example of a the most common ports:
+
+![Ports](common-ports.jpg)
 
 The Address Resolution Protocol (ARP) is a communications protocol within the Internet Protocol suite. It's a request-response protocol used to resolve the media access control (MAC) address for a given IP address. ARP supports many data link layer technologies, such as Internet Protocol version 4 (IPv4), DECnet, and PUP. When an Internet Protocol version 6 (IPv6) address is resolved, the Neighbor Discovery Protocol (NDP) is used instead of ARP. Without ARP, there would be no means to resolve an IP address to a physical device address.
 
@@ -260,6 +288,10 @@ Address range	Scope	Description
 
 255.255.255.255	Subnet	Reserved for the "limited broadcast" destination address
 
+
+Here's an example of a Subnet Addressing:
+
+![Subnet Cheat Sheet](subnet-cheat-sheet.png)
 
 An IP address, also known as a network address or routing prefix, represents the address of the device or computer to send the packet of data. A subnet, or host address, represents which network or subnetwork to use. A subnet is a 32-bit number framed by using the dotted-decimal format. For example, 255.255.255.0 is a standard subnet mask.
 
