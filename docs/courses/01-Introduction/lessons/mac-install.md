@@ -14,3 +14,5 @@ Run this [script](script.exe)
 - NMap - `brew install nmap` or https://nmap.org/download.html
 - MTR (Mac) WinMTR (Windows) - `brew install mtr` (Mac Only) or [https://winmtr.en.uptodown.com/windows](https://winmtr.en.uptodown.com/windows) (Windows Only)
 - (Mac) Enhance your command line experience - `brew install zsh`
+
+### [Return to OS Basics](courses/01-Introduction/home.md)

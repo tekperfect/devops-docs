@@ -1,7 +1,6 @@
 # **📋 Dev Ops: Computer Setup**
 
 1. [👋 Welcome](#👋-welcome)
-1. [💡 Prerequisites](#💡-prerequisites)
 1. [📦 Package Manager](#📦-package-manager)
 1. [⬛ Terminal](#⬛-terminal)
 1. [📁 Explorer](#📁-explorer)
@@ -15,11 +14,6 @@ Welcome to the Tekperfect: DevOps program. This will be the start of your learni
 becoming a fellow DevOps Engineer. However before every great journey we need to prepare, here is a step to step guide to installing packanges, and preparing your computer for the journey ahead.
 
 This setup guide will be along the lines of unix based system. But due to the recent addition of WSL you can follow along too.
-
-## 💡 Prerequisites
-
-There is none!
-
 
 ## 📦 Package Manager
 
@@ -100,5 +94,4 @@ Enter a title and copy paste your **entire** ssh key ending with your email and 
 ```bash
 ssh -T git@github.com
 ```
-
-
+### [Return to OS Basics](courses/01-Introduction/home.md)
