@@ -317,5 +317,6 @@ example_history.png
 Re-execute a command in your history
 Adding ! before the command number you want to execute issues the command again.
 
-## Ubuntu Video Link
+## Ubuntu Video Link 👇🏾
 [![LINUX FUNDAMENTALS](ubuntu.png)](https://drive.google.com/file/d/1s4GHektSm3MN1VWI4JAV4lG7bf_zJiBh/view?usp=sharing)
+
