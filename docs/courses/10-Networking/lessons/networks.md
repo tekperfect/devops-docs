@@ -7,6 +7,8 @@
 1. [🍵 Subnetting](#%f0%9f%8d%b5-subnetting)
 1. [📚 Resources & Credits](#%f0%9f%93%9a-resources-amp-credits)
 
+![](./networks.png =100x20)
+
 > Networks
 
 ### Personal Area Networks
