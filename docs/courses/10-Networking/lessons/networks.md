@@ -78,7 +78,7 @@ For example, think about the system you are using to connect everyone on a video
 
 Here's an example of how data is transferred between computing systems:
 
-![Data Packets](packets-explained.png)
+![Data Packets](packets.jpeg)
 
 ### Network communication protocols
 
