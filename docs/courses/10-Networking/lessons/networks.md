@@ -1,3 +1,12 @@
+### ⏱ Agenda
+
+1. [🏆 Learning Objectives](#%f0%9f%8f%86-learning-objectives)
+1. [📖 Network Types](#%f0%9f%93%96-network-types)
+1. [🐍 Network Protocols](#%f0%9f%90%8d-network-protocols)
+1. [✏️ Ports](#%e2%9c%8f%ef%b8%8f-ports)
+1. [🍵 Subnetting](#%f0%9f%8d%b5-subnetting)
+1. [📚 Resources & Credits](#%f0%9f%93%9a-resources-amp-credits)
+
 > Networks
 
 ### Personal Area Networks
