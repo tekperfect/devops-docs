@@ -300,7 +300,7 @@ Address range	Scope	Description
 
 Here's an example of a Subnet Addressing:
 
-![Subnet Cheat Sheet](subnet-cheat-sheet.png)
+![Subnet Cheat Sheet](subnet-mask-cheat-sheet.png)
 
 An IP address, also known as a network address or routing prefix, represents the address of the device or computer to send the packet of data. A subnet, or host address, represents which network or subnetwork to use. A subnet is a 32-bit number framed by using the dotted-decimal format. For example, 255.255.255.0 is a standard subnet mask.
 
