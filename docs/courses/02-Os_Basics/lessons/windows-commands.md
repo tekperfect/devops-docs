@@ -356,4 +356,5 @@ net stop %1 && net start %1
 50. You can download a Windows port of the wget tool from here, and use it to mirror websites using this command:
 wget -mk http://www.example.com/
 
-
+## Windows Video Link 👇🏾
+[![WINDOWS AD INSTALL](windows.png)](https://drive.google.com/file/d/1N7TP8H-7-nv9IKPObkIMAFS2Q6zC3wvT/view?usp=sharing)
