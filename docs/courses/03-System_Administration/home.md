@@ -1,4 +1,4 @@
-# **💾 OS Basics**
+# **🔑 System Administration**
 
 1. [📝 Course Description](#📝-course-description)
 2. [🎯 Prerequisites](#🎯-prerequisites)
@@ -27,14 +27,6 @@ Students by the end of the course will be able to...
 
 ## Linux
 
-[System Administration](/courses/03-System_Administration/lessons/linux-system-administration.md)
 
-[System Hardening](/courses/03-System_Administration/lessons/linux-system-hardening.md)
 
 ## Windows
-
-
-[Windows System Administration](/courses/03-System_Administration/lessons/windows-system-administration)
-
-
-

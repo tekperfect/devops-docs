@@ -1,10 +1,10 @@
 # 👋 Introduction 
 
-<div style='
+<!-- <div style='
 background-color: #DFDFDF;
 color: #126893;
 margin-left: 50%;
-'>
+'> -->
 
 ### ⏱ Agenda
 1. [📘 Course Description](#📘-course-description)
@@ -14,7 +14,7 @@ margin-left: 50%;
 1. [📏 Assignments](#📏-Assignments)
 1. [🧪 Labs](#🧪-Labs)
 
-</div>
+<!-- </div> -->
 
 
 ## 📘 Course Description

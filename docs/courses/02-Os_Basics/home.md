@@ -13,7 +13,7 @@ This lesson will introduce the core concepts of operating systems, such as proce
 # 🎯 Prerequisites
 
 * [Tekperfect: Computer Setup](/lessons/computer-setup.md)
-* [Lesson 02: OS Basics](/courses/02-Os_Basics/home.md)
+* [Lesson 01: Introduction](/courses/01-Introduction/home.md)
 
 # 🏆 Learning Outcomes
 
@@ -27,6 +27,10 @@ Students by the end of the course will be able to...
 
 ## Linux
 
-
+[Linux Commands](/courses/02-Os_Basics/lessons/linux-commands.md)
 
 ## Windows
+
+[Windows Commands](/courses/02-Os_Basics/lessons/windows-commands.md)
+
+

@@ -1,28 +1,29 @@
-# Python Fundamentals
+# 🤖 Programming
 
-1. [Course Description](#course-description)
-2. [Prerequisites](#prerequisites)
-3. [Learning Outcomes](#learning-outcomes)
-4. [Lessons](#lessons)
+1. [📝 Course Description](#📝-course-description)
+2. [🎯 Prerequisites](#🎯-prerequisites)
+3. [🏆 Learning Outcomes](#🏆-learning-outcomes)
+4. [📚 Lessons](#📚-lessons)
 
-## Course Description <!-- {docsify-ignore} -->
 
-In this course, DevOps students will learn the core basics of python3; it practicality and versatility.
+# 📝 Lesson Description
 
-## Prerequisites <!-- {docsify-ignore} -->
+> In this course, DevOps students will learn the core basics of python3; it practicality and versatility.
 
-* [Tekperfect: Computer Setup](lessons/computer-setup.md)
+# 🎯 Prerequisites
 
-## Learning Outcomes <!-- {docsify-ignore} -->
+* [Tekperfect: Computer Setup](/lessons/computer-setup.md)
+* [Lesson 02: Linux Basics](/courses/02-Os_Basics/linux-basics.md)
+
+# 🏆 Learning Outcomes
 
 Students by the end of the course will be able to...
 
-1. Understand basic coding structures
-1. Undertand libraries and modules
+1. Understand operating systems
+1. Undertand setup maintanance, and security
 1. Create basic scripts
 
-## Lessons <!-- {docsify-ignore} -->
-
+# 📚 Lessons
 ## Python
 
 - [Getting Started](courses/05-Programming/lessons/getting-started.md)
@@ -32,4 +33,10 @@ Students by the end of the course will be able to...
 
 ## Javascript
 
+- [Hello Js]()
+- [Node]()
+- [Npm]()
+
 ## Html & Css
+
+- [Build A WebSite]()

@@ -1,3 +1,4 @@
+<div class="left>
 ###  This Week | Nov. 7 2020 🍂 
 
 **Lecture(s)**
@@ -17,8 +18,7 @@
 
 - [Assignment]()
 
----
----
+</div>
 
 ### Last Week | Oct. 31 2020  🎃 
 
