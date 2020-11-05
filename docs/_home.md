@@ -1,10 +1,10 @@
-###  This Week | Oct. 31 2020 🎃  💻 
+###  This Week | Nov. 7 2020 🍂 
 
 **Lecture(s)**
 
-- [Devops | 2020](https://docs.google.com/presentation/d/1edn33di_O4h5vwngEc637E-0N6hz0qkKYy1KJyBwHhs/edit?usp=sharing)
-- [Devops | Orientation](https://docs.google.com/presentation/d/1Ua53e94mrPbM3tae14Z4xNmfxcryUZLJqSkqy-Q2TtU/edit?usp=sharing)
-- [Devops | Overview](https://docs.google.com/presentation/d/1JEbiyuYNmUcD9nTRQc98r-LVI2kHJCYMv4J2JA-aSGM/edit?usp=sharing)
+- [Lesson](#)
+- [Lesson](#)
+- [Lesson](#)
 
 **Lab(s)**
 
@@ -20,13 +20,16 @@
 ---
 ---
 
-### Last Week | Oct. 24 2020
+### Last Week | Oct. 31 2020  🎃 
+
+
 
 **Lecture(s)**
 
-- [Devops | 2020](#)
-- [Devops | Orientation](#)
-- [Devops | Overview](#)
+- [Linux | Basics](/courses/02-0s_Basics/lessons/linux-commands-fundamentals.md)
+- [Linux | Fundamental Commands](/courses/02-0s_Basics/lessons/linux-commands-fundamentals.md)
+- [Linux | Administration](/courses/03-System_Administration/linux-system-administration.md)
+- [Windows| Commands](/courses/02-Os-Basics/lessons/windows-commands.md)
 
 **Lab(s)**
 
@@ -36,4 +39,4 @@
 
 **Assignment(s)**
 
-- [Download List]()
+- [Assignment](#)
