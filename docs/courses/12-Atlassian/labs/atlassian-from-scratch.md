@@ -17,6 +17,10 @@ Install JIRA
 
 Intall Confluence
 
+### How do you install both products after you download them?
+
+### What resources would you use to determine the prerequisites to install them?
+
 Configure accounts on them
 
 Setup your first JIRA project
