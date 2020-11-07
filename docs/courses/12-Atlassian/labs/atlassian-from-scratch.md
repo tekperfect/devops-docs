@@ -5,6 +5,9 @@ Launch 1 linux instance via the AWS console
 Create a label with the Key = Name and the Value = "Your_First_Name Atlassian"
 Set the disk space for the instance to 100GB
 
+While you are waiting for your instance to install got to atlassian.com and signup for an account.
+You will use this account later to generate a trial license key.
+
 Download JIRA and Confluence from Atlassians website or the following links
 
 https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/atlassian-jira-software-8.13.1-x64.bin
@@ -16,16 +19,35 @@ https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/atlassian-confluenc
 ## Intall Confluence
 
 Change the permissions on the binary file to install it
+
 What command do you use to do that?
+
 Install the software and follow the prompts and accept the defaults
+
 Once the install is complte you will be asked if you want to start Confluence choose yes and open an browser to the servers default webpage using the IP associated with your instance.
 
+Now try to go to the webpage associated with your IP address http://xxx.xxx.xxx.xxx:8090
 
-Install JIRA
+Why can't you open the page?
+
+What things should you check first?
+
+Once you get to the webpage select the trial installation and follow the default prompts
+
+### Install JIRA
 
 What command do you use to do that?
+
 Install the software and follow the prompts and accept the defaults
+
 Once the install is complte you will be asked if you want to start JIRA choose yes and open an browser to the servers default webpage using the IP associated with your instance.
+
+Now try to go to the webpage associated with your IP address http://xxx.xxx.xxx.xxx:8080
+
+Why can't you get to that page?
+
+How would you troubleshoot the issue?
+
 ### How do you install both products after you download them?
 
 ### What resources would you use to determine the prerequisites to install them?
