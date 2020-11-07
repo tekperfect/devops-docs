@@ -13,10 +13,19 @@ https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/atlassian-confluenc
 
 ### What command would you use to download these files from the command line of your instance?
 
+## Intall Confluence
+
+Change the permissions on the binary file to install it
+What command do you use to do that?
+Install the software and follow the prompts and accept the defaults
+Once the install is complte you will be asked if you want to start Confluence choose yes and open an browser to the servers default webpage using the IP associated with your instance.
+
+
 Install JIRA
 
-Intall Confluence
-
+What command do you use to do that?
+Install the software and follow the prompts and accept the defaults
+Once the install is complte you will be asked if you want to start JIRA choose yes and open an browser to the servers default webpage using the IP associated with your instance.
 ### How do you install both products after you download them?
 
 ### What resources would you use to determine the prerequisites to install them?
