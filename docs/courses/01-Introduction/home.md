@@ -1,4 +1,10 @@
-# 👋 Introduction <!-- {docsify-ignore} -->
+# 👋 Introduction 
+
+<!-- <div style='
+background-color: #DFDFDF;
+color: #126893;
+margin-left: 50%;
+'> -->
 
 ### ⏱ Agenda
 1. [📘 Course Description](#📘-course-description)
@@ -7,6 +13,8 @@
 1. [📅 Schedule](#📅-schedule)
 1. [📏 Assignments](#📏-Assignments)
 1. [🧪 Labs](#🧪-Labs)
+
+<!-- </div> -->
 
 
 ## 📘 Course Description

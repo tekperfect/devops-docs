@@ -1,29 +1,29 @@
+# 💨 Cloud Computing
 
-# **📋 Dev Ops: Computer Setup**
-
-1. [👋 Welcome](#👋-welcome)
-1. [💡 Prerequisites](#💡-prerequisites)
-1. [📦 Package Manager](#📦-package-manager)
-1. [⬛ Terminal](#⬛-terminal)
-1. [📁 Explorer](#📁-explorer)
-1. [🚀 Git](#🚀-git)
+1. [📝 Course Description](#📝-course-description)
+2. [🎯 Prerequisites](#🎯-prerequisites)
+3. [🏆 Learning Outcomes](#🏆-learning-outcomes)
+4. [📚 Lessons](#📚-lessons)
 
 
+# 📝 Lesson Description
 
-## 👋 Welcome
+> This lesson will cover virtualization. The process of visualising OS systems on your local machine. 
 
-...
+# 🎯 Prerequisites
 
-## 💡 Prerequisites
+* [Tekperfect: Computer Setup](/lessons/computer-setup.md)
+* [Lesson 01: Introduction](/courses/01-Introduction/home.md)
 
-...
+# 🏆 Learning Outcomes
+
+Students by the end of the course will be able to...
+
+1. Understand operating systems
+1. Undertand setup maintanance, and security
+1. Create basic scripts
+
+# 📚 Lessons
 
 
-## 📦 Exercise #1
 
-...
-
-
-## ⬛ Exercise #2
-
-...
