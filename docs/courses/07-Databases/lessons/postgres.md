@@ -1,25 +1,49 @@
-## Databases
+### Postgres Commands
+
+Lists all the commands you can run from Postgres
+
+`\h`
+
+Quits Postgres
+
+`\q`
+
+Connects to a specific database
+
+`\c database_name`
+
+List tables in the database you are connected to
+
+`\dt`
+
+This command creates a database
+
+`create database database_name;`
+
+List all the rows in content of a specific table
+
+`select * from table_name;`
+
+This command select a specific value in the table
+
+`select * from table_name where field_name = ‘value’`
+
+This command selects a value in the table that is a full or partial match for the value
+
+`select * from table_name where field_name like ‘value%’`
 
 
-### What is a Database
+### Postgres Commands Continued
 
-A structured set of data held in a computer, especially one that is accessible in various ways.
-For example think about all the tweets you have in your account and when you scroll through a list of tweets from your favorite celebrity. Those tweets are stored in a database and your browsing of those tweets is a query to a structured data set that is retrieved and returned in that application.
+This command updates a specific value in the table with a new value
 
+`update table_name set table_row_name = 'new_value' where table_row_name = 'old_value';`
 
-### Why are Databases Important?
+This command updates a specific value in the table with a new value
 
-They allow us to store, retrieve, and organize large amounts of data in a meaningful way. They also allow us to store and retrieve funny and mean gems like this one.
+`update table_name set table_row_name = 'new_value' where table_row_name like 'old_value%';`
 
+This command deletes a specific entry from the table
 
-### Who uses databases? Everyone
+`delete from table_name where row_name = 'value';`
 
-Common Use Cases
-
-Your social media account
-
-Your bank account
-
-Your phones contact list
-
-### Common Databases
