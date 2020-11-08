@@ -27,11 +27,11 @@ Students by the end of the course will be able to...
 
 ## Git
 
-- [Git Config](#)
+- [Git Config](/courses/04-Version_Control/lessons/git-config.md)
 
-- [Git Commands Essential](#)
+- [Git Commands Essential](/courses/04-Version_Control/lessons/git-essential.md)
 
-- [Git Commands Advanced ](#)
+- [Git Commands Advanced ](/courses/04-Version_Control/lessons/git-advanced.md)
 
 ## Github
 
