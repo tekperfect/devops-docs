@@ -41,3 +41,7 @@ Students by the end of the course will be able to...
 ## MongoDB
 
 [MongoDB](/courses/07-Databases/lessons/mongodb.md)
+
+## Database Labs
+
+[Database Labs](/courses/07-Databases/lessons/dblabs.md)
