@@ -27,12 +27,8 @@
 
 ## Jira
 
-- [Jira Server]()
+- [Jira Server](courses/12-Atlassian/lessons/jira-admin.md)
 
 ## Confluence
 
-- [Confluence Server]()
-
-
-
-
+- [Confluence Server](courses/12-Atlassian/lessons/confluence-admin.md)
