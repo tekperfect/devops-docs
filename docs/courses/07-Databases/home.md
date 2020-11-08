@@ -32,12 +32,12 @@ Students by the end of the course will be able to...
 
 ## MySQL
 
-[MySQL]/courses/07-Databases/lessons/mysql.md()
+[MySQL](/courses/07-Databases/lessons/mysql.md)
 
 ## Postgres
 
-[Postgres]/courses/07-Databases/lessons/postgres.md()
+[Postgres](/courses/07-Databases/lessons/postgres.md)
 
 ## MongoDB
 
-[MongoDB]/courses/07-Databases/lessons/mongodb.md()
+[MongoDB](/courses/07-Databases/lessons/mongodb.md)
