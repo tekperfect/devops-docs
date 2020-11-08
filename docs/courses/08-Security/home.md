@@ -25,5 +25,10 @@ Students by the end of the course will be able to...
 
 # 📚 Lessons
 
+## Kail
 
+[Security Fundamentals](/courses/08-Security/lessons/what-is.kali.md)
 
+## Security Fundamentals
+
+[Security Fundamentals](/courses/08-Security/lessons/security-fundamentals.md)
