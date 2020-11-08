@@ -26,6 +26,4 @@ Git - A program installed on most macs, available on windows with [GitBash](http
 
 - Set your github username
 
-[filename](/courses/03-Version_Control/examples/commands.sh `:include :type=bash :fragment=config-username`)
-
-<!-- `git config --global user.name "username"` -->
+`git config --global user.name "username"`
