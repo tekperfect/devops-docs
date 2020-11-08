@@ -68,11 +68,14 @@ In order to understand how to use these database you will need to import a few s
 
 Download the following files
 
-MySQL Sample Database
+## MySQL 👇🏾
+[![MySQL Sample Database](mysql.png)](https://drive.google.com/file/d/16keAvdBguWIO3TqdQJkVhiGp4FtzNNI5/view?usp=sharing)
 
-MongoDB Sample Databases
+## MongoDB 👇🏾
+[![MongoDB Sample Database](mongodb.png)](https://drive.google.com/file/d/1zAgApUPM-KHncYJWZjC1X_uCpZtBeL2z/view?usp=sharing)
 
-Postgres Sample Database
+## PostgreSQL 👇🏾
+[![PostgreSQL Sample Database](postgresql.png)](https://drive.google.com/file/d/12ChUoNQdlV9it_Nd7z4VbwRbtUTEoMgK/view?usp=sharing)
 
 Download each file and scp the files to your linux server
 
@@ -81,7 +84,6 @@ Here is an example of how to use scp
 `scp -i linux-sandbox.pem /path-to-file ubuntu@xx.xx.xxx.xx:/tmp`
 
 Once you have successfully copied the files to your linux server we can begin importing them into their appropriate databases.
-
 
 ### Importing Mongo database
 
