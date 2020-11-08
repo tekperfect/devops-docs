@@ -1,3 +1,5 @@
+### Git Basics
+
 - Copy a repo locally
 
 `git clone https://github.com/username/repo_name`

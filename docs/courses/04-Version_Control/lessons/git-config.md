@@ -1,3 +1,5 @@
+### Git Setup
+
 Step 0: Install git and create a GitHub account
 The first two things you'll want to do are install git and create a free GitHub account.
 
