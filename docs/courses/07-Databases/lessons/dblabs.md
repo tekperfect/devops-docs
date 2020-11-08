@@ -1,4 +1,4 @@
-MySql Lab
+## MySql Lab
 
 Find out what emp_no 11111 salary is?
 
@@ -13,7 +13,7 @@ Who is emp_no 11111?
 Who is emp_no 11111 manager?
 
 
-MongoDB Lab
+### MongoDB Lab
 
 
 Find all the listings associated with listing_id 5065 using db.database-name.find({field:value})
