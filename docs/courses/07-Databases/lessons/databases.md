@@ -1,67 +1,111 @@
-DEvOPS
-Databases
-Alfonso Hooker
-CEO & Founder
-TekPerfect
-alfonso@tekperfect.com
-(415) 302-7037
+## Databases
 
-## DevOps Week 13
 
-What is a database?
-Who uses databases?
-How to I access the database?
-How do I get to the data?
-What are the commands?
-Why do I need to know this?
-www.tekperfect.com
-2
+### What is a Database
 
-What is a database?
-www.tekperfect.com
-3
-A database is a collection of information organized to provide efficient retrieval.
-For example if you wanted to find hotels with vacancies within a 10 block radius of your home… that information would be compiled via a database query.
+A structured set of data held in a computer, especially one that is accessible in various ways.
+For example think about all the tweets you have in your account and when you scroll through a list of tweets from your favorite celebrity. Those tweets are stored in a database and your browsing of those tweets is a query to a structured data set that is retrieved and returned in that application.
 
-Who uses databases?
-www.tekperfect.com
-4
-Everyone on the planet…
-If you have ever searched for anything on the Internet that information is stored in a database.
-If you were looking for a partner on a dating site that likes R&B music and is a mixed martial arts fighter. That person’s information would be stored in a database.
 
-How to I access the database?
-www.tekperfect.com
-5
-Install MySQL or other database software?
-Configure the access permissions to the server?
-Verify that you can login to the database?
-Make sure the database server is started?
-Make sure the system is listening for open ports by running a netstat –na command.
+### Why are Databases Important?
 
-How do I get to the data?
-www.tekperfect.com
-6
-Login to the server via the command line
-Access the server via MySQL workbench or other popular database management tool.
+They allow us to store, retrieve, and organize large amounts of data in a meaningful way. They also allow us to store and retrieve funny and mean gems like this one.
 
-What are the commands?
-www.tekperfect.com
-7
-Login: mysql –u root –p
-USE (database name)
-SHOW tables
-SELECT \* FROM (database name) WHERE (COLUMN_NAME) = (VALUE)
-CREATE DATABASE (database name)
-DROP DATABASE (database name)
 
-Why do I need to know this?
-www.tekperfect.com
-8
-If you want to learn how to be a DBA
-If you are looking for a specific piece of information
-To provide you with alternate career paths that you would all enjoy.
+### Who uses databases? Everyone
 
-Query On
-www.tekperfect.com
-9
+Common Use Cases
+
+Your social media account
+
+Your bank account
+
+Your phones contact list
+
+### Common Databases
+
+### MySQL
+
+MySQL is an open-source relational database management system. Its name is a combination of "My", the name of co-founder Michael Widenius's daughter, and "SQL", the abbreviation for Structured Query Language.
+
+### MongoDB 
+
+MongoDB is a cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with schema. MongoDB is developed by MongoDB Inc. and licensed under the Server Side Public License.
+
+### Postgres
+
+Postgres, is a free open-source relational database system. It is designed to handle a range of workloads, from single machines to data warehouses or Web services with many concurrent users.
+
+
+Install & Verify
+
+Login to your linx instance and install mysql-server and mongodb-sever, and postgres.
+
+Verify the install by running the following command
+
+`mongo`
+
+If installed correctly you should be taken to a 
+
+`> prompt`
+
+To verify if mysql-server is installed correctly you should run the following command
+
+`sudo mysql -u root`
+
+If it is installed correctly you should be take to a 
+
+`mysql> prompt`
+
+To verify if postgres is installed correctly run the following command psql or psql postgres and you will be taken to a
+
+`admin=#` or `postgres=# prompt`
+
+
+### Sample databases
+
+In order to understand how to use these database you will need to import a few sample databases into MySQL and MongoDB
+
+Download the following files
+
+MySQL Sample Database
+
+MongoDB Sample Databases
+
+Postgres Sample Database
+
+Download each file and scp the files to your linux server
+
+Here is an example of how to use scp
+
+`scp -i linux-sandbox.pem /path-to-file ubuntu@xx.xx.xxx.xx:/tmp`
+
+Once you have successfully copied the files to your linux server we can begin importing them into their appropriate databases.
+
+
+### Importing Mongo database
+
+To import the sample MongoDB files you need to extract zip files and run the following commands
+
+`mongoimport --db database_name --type CSV --headerline --file filename.csv`
+
+Please remember to replace database_name with what you want the database to be named when creating it or use the name of the csv file as your database name for simplicity purposes
+
+
+### Importing MySQL database
+
+To import the MySQL sample you need to extract the zip file and cd into the folder you extracted the files into and then login to mysql and create a database called employees. Then import the employees database using the following commands
+
+`create database employees;`
+
+`source employees.sql;`
+
+
+### Importing Postgres database
+
+To import the sample database download the file to a folder on your linux box and run the following command. Please make sure the dvdrental.tar file is in the directory you are in before you run the command
+
+`create database dvdrental;`
+
+`pg_restore -d dvdrental dvdrental.tar`
+

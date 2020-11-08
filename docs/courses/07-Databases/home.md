@@ -25,12 +25,19 @@ Students by the end of the course will be able to...
 
 # 📚 Lessons
 
-## Linux
 
-[Linux Commands](/courses/02-Os_Basics/lessons/linux-commands.md)
+## Databases
 
-## Windows
+[Databases](/courses/07-Databases/lessons/databases.md)
 
-[Windows Commands](/courses/02-Os_Basics/lessons/windows-commands.md)
+## MySQL
 
+[MySQL]/courses/07-Databases/lessons/mysql.md()
 
+## Postgres
+
+[Postgres]/courses/07-Databases/lessons/postgres.md()
+
+## MongoDB
+
+[MongoDB]/courses/07-Databases/lessons/mongodb.md()
