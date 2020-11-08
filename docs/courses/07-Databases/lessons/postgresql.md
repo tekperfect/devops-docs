@@ -1,10 +1,12 @@
-### Postgres Commands
+PostgreSQL
 
-Lists all the commands you can run from Postgres
+### PostgreSQL Commands
+  
+Lists all the commands you can run from PostgreSQL
 
 `\h`
 
-Quits Postgres
+Quits PostgreSQL
 
 `\q`
 
@@ -33,7 +35,7 @@ This command selects a value in the table that is a full or partial match for th
 `select * from table_name where field_name like ‘value%’`
 
 
-### Postgres Commands Continued
+### PostgreSQL Commands Continued
 
 This command updates a specific value in the table with a new value
 
@@ -46,4 +48,3 @@ This command updates a specific value in the table with a new value
 This command deletes a specific entry from the table
 
 `delete from table_name where row_name = 'value';`
-

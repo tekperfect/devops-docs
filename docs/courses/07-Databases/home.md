@@ -34,9 +34,9 @@ Students by the end of the course will be able to...
 
 [MySQL](/courses/07-Databases/lessons/mysql.md)
 
-## Postgres
+## PostgreSQL
 
-[Postgres](/courses/07-Databases/lessons/postgres.md)
+[Postgres](/courses/07-Databases/lessons/postgresql.md)
 
 ## MongoDB
 
