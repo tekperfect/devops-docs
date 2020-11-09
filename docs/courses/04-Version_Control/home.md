@@ -33,18 +33,10 @@ Students by the end of the course will be able to...
 
 - [Git Commands Advanced ](/courses/04-Version_Control/lessons/git-advanced.md)
 
-## Github
+<!-- ## Github
 
 - [Github Actions](#)
 
 - [Github Issues](#)
 
-- [Github Projects](#)
-
-## Bit Bucket
-
-- [Bit Bucket Setup](#)
-
-## AWS Code Commit
-
-- [Code Commit Setup](#)
+- [Github Projects](#) -->

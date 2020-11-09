@@ -33,6 +33,7 @@
 
   .sidebar{
     background-color: #126893;
+
   }
   
   .sidebar>h1 {
@@ -48,10 +49,19 @@
     width: 300px;
   }
 
+  .sidebar-nav{
+    border-radius: 100px;
+  }
+
   .app-sub-sidebar>.active{
     margin: 1em;
-    background-color: rgb(247, 33, 33);
+    border-bottom: solid 2px #126893;
+    background-color: #12689336;
+    color: white;
+  }
 
+  .sidebar-nav>li>strong{
+    background-color: rgb(204, 204, 204);
   }
   
   .markdown-section {
@@ -179,3 +189,5 @@
     text-decoration: none;
     color: white;
   }
+
+  

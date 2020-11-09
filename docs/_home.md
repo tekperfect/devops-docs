@@ -1,42 +1,70 @@
-<div class="left>
-###  This Week | Nov. 7 2020 🍂 
 
-**Lecture(s)**
 
-- [Lesson](#)
-- [Lesson](#)
-- [Lesson](#)
+<div class="lesson-plan">
 
-**Lab(s)**
+<div class="new-content">
 
-<!-- - [Github Hosted Website | Github Pages](/courses/01) -->
+#  This Week | Nov. 14 2020 🍂
 
-- [Lab 1](#)
-- [Lab 2](#)
-
-**Assignment(s)**
-
-- [Assignment]()
+## Virtualization
+[Lessons](/courses/06-Virtualization/home.md) | [Recording]()
 
 </div>
 
-### Last Week | Oct. 31 2020  🎃 
+<div class="last-content">
 
+# Last Week | Nov. 7 2020 🍂
 
+## Sass Tools
+[Lessons](/courses/06-Virtualization/home.md) | [Recording]()
 
-**Lecture(s)**
+<div>
 
-- [Linux | Basics](/courses/02-0s_Basics/lessons/linux-commands-fundamentals.md)
-- [Linux | Fundamental Commands](/courses/02-0s_Basics/lessons/linux-commands-fundamentals.md)
-- [Linux | Administration](/courses/03-System_Administration/linux-system-administration.md)
-- [Windows| Commands](/courses/02-Os-Basics/lessons/windows-commands.md)
+<!-- tabs:start -->
 
-**Lab(s)**
+#### ** DevOps **
 
-<!-- - [Github Hosted Website | Github Pages](/courses/01) -->
+**Instructor:** Alfonso Hooker<br/>
+**Class Times:** Saturdays at 9:00 - 12:00<br/>
+**Location:** Online
 
-- [Social Media Connections](#)
+| Class | Date      | Topics                                | Assignments   | 
+|:-----:| :----:    | :----:                                | :---------:   |
+| 1     | Oct 24    | Os Basics And System Administration   | [Computer Setup](/courses/01-Introduction/lessons/computer-setup.md)| 
+| 2     | Oct 31    | Networking                            |               |
+| 3     | Nov 07    | SaaS Tools                            |               |
+| 4     | Nov 14    | Cloud Computing                       |               |
+| 5     | Nov 21    | Security                              |               |
+| 6     | Nov 28    | IaC (Infrastructure as Code)          |               |
+| 7     | Dec 05    |                *                      |               |
+| 8     | Dec 12    |                *                      |               |
+| 9     | Dec 19    | Review & Repeat                       |               | 
+| 10    | Dec 26    |                *                      |               |
 
-**Assignment(s)**
+[Devops | Overview](/courses/01-Introduction/lessons/devops-overview.md)
 
-- [Assignment](#)
+#### ** LiveOps **
+
+**Instructor:** Alfonso Hooker<br/>
+**Assistants:** Erik Salzar, Mario Alcantar<br/>
+**Class Times:** Saturdays at 12:00 - 3:00<br/>
+**Location:** Online
+
+| Class | Date      | Topics                                | Assignments   |
+|:-----:| :----:    | :----:                                | :--------:    |
+| 1     | Oct 24    | Os Basics And System Administration   |               |
+| 2     | Oct 31    | Version Control                       |               |  
+| 3     | Nov 07    | Programming                           |               | 
+| 4     | Nov 14    | Virtualization                        |               | 
+| 5     | Nov 21    | Databases                             |               | 
+| 6     | Nov 28    | Security                              |               | 
+| 7     | Dec 05    | Web Development                       |               | 
+| 8     | Dec 12    | Networking                            |               | 
+| 9     | Dec 19    | G Suite Admin                         |               | 
+| 10    | Dec 26    | Cloud Computing                       |               |
+| 11    | Jan 02    | Review & Repeat                       |               |
+
+[Live Ops Course Sylabus](/courses/01-Introduction/lessons/liveops-course-syllabus.md)
+
+<!-- tabs:end -->
+

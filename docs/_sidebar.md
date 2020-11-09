@@ -13,10 +13,9 @@
     - [SaaS Tools](courses/15-SaaS_Tools/home.md)
 
 
-- **📘 Glossary**
-    - [𝑨+ Certification](a+Cert.md)
-<br />
+<!-- - **📘 Glossary**
+    - [𝑨+ Certification](/resources/a+Cert.md) -->
 
 - **📚 Resources**
     - [Downloads](/resources/downloads.md)
-    - [Cheatsheets](/resources/cheatsheets.md)
+    <!-- - [Cheatsheets](/resources/cheatsheets.md) -->
