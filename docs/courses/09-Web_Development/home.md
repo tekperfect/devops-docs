@@ -25,11 +25,3 @@ Students by the end of the course will be able to...
 
 # 📚 Lessons
 
-## Html 
-
-
-## Css 
-
-## Js
-
-

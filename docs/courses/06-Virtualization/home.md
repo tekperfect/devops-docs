@@ -25,12 +25,3 @@ Students by the end of the course will be able to...
 
 # 📚 Lessons
 
-## Linux
-
-[Linux Commands](/courses/02-Os_Basics/lessons/linux-commands.md)
-
-## Windows
-
-[Windows Commands](/courses/02-Os_Basics/lessons/windows-commands.md)
-
-

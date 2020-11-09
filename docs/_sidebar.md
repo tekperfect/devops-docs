@@ -9,8 +9,6 @@
     - [Security](courses/08-Security/home.md)
     - [Web Development](courses/09-Web_Development/home.md)
     - [Networking](courses/10-Networking/home.md)
-    - [G Suite Admin](courses/11-G_Suite_Admin/home.md)
-    - [Atlassian](courses/12-Atlassian/home.md)
     - [IaC Infrustucture as Code](courses/13-IAC/home.md)
     - [Cloud Computing](courses/14-Cloud_Computing/home.md)
     - [SaaS Tools](courses/15-SaaS_Tools/home.md)
