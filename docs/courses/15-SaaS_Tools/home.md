@@ -1,4 +1,4 @@
-# 🚨 SaSS Tools
+# 🚨 SaaS Tools
 
 1. [📝 Course Description](#📝-course-description)
 2. [🎯 Prerequisites](#🎯-prerequisites)
@@ -25,5 +25,16 @@ Students by the end of the course will be able to...
 
 # 📚 Lessons
 
+## Jira
 
+- [Jira Server](/courses/15-SaaS_Tools/lessons/jira-admin.md)
 
+## Confluence
+
+- [Confluence Server](/courses/15-SaaS_Tools/lessons/confluence-admin.md)
+
+## G Suite Admin
+
+- [G-Suite Part 1 ](/courses/15-SaaS_Tools/lessons/g-suite-admin-part1.md)
+- [G-Suite Part 2 ](/courses/15-SaaS_Tools/lessons/g-suite-admin-part2.md)
+- [G-Suite Part 3 ](/courses/15-SaaS_Tools/lessons/g-suite-admin-part3.md)

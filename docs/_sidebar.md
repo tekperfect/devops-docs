@@ -13,7 +13,7 @@
     - [Atlassian](courses/12-Atlassian/home.md)
     - [IaC Infrustucture as Code](courses/13-IAC/home.md)
     - [Cloud Computing](courses/14-Cloud_Computing/home.md)
-    - [Sass Tools](courses/15-SaSS_Tools/home.md)
+    - [SaaS Tools](courses/15-SaaS_Tools/home.md)
 
 
 - **📘 Glossary**
