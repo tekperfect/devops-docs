@@ -25,5 +25,7 @@ Students by the end of the course will be able to...
 
 # 📚 Lessons
 
+## AWS
 
+[AWS](/courses/14-Cloud_Computing/lessons/aws.md)
 
