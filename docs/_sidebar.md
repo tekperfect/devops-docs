@@ -1,4 +1,8 @@
-- **[👋 Introduction](courses/01-Introduction/home.md)**
+- **👋 Introduction**
+    - [Schedule](/courses/01-Introduction/lessons/schedule.md)
+    - [Computer Setup](/courses/01-Introduction/lessons/computer-setup.md)
+    - [What is Devops?](/courses/01-Introduction/lessons/what-is-devops.md)
+
 - **📅 Topics**
     - [OS Basics](courses/02-Os_Basics/home.md)
     - [System Administration](courses/03-System_Administration/home.md)

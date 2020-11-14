@@ -1,3 +1,5 @@
+
+
 ### What is DevOps?
 
 TekPerfect is partnering with GameHeads to train Bay Area youth for careers in the tech industry. There are many paths to get into tech and many jobs when you think of a “developer”. Our bootcamp focuses on “DevOps” (a mixture of development and operations).
@@ -21,8 +23,8 @@ These are some of the projects you will learn while in the program:
 - Learn how to de-bug and troubleshoot computer issues
 
 ---
-
 ---
+
 
 ## Overview
 
@@ -46,7 +48,19 @@ These are some of the projects you will learn while in the program:
 - Lack of Diversity in the field presents tremendous opportunity.
 
 ---
+---
 
+## 📝 Learning Outcomes <!-- {docsify-ignore} -->
+
+- Basic operating systems installation, setup, configuration, and systems administration
+- Database setup, configuration, and administration.
+- Cloud systems support, deployment, and configuration
+- Cyber security, threat prevention, OS hardening, DoS (Denial of Service) attack prevention
+- Client Management, invoicing, and entrepreneurial skills
+- Soft skills, conflict management, communication, and escalation processes and procedures.
+- Professionalism, integration, accountability, and confidence.
+
+---
 ---
 
 ## How To Succeed

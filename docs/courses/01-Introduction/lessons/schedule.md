@@ -1,39 +1,3 @@
-# 👋 Introduction 
-
-
-### ⏱ Agenda <!-- {docsify-ignore} -->
-1. [📘 Course Description](#📘-course-description)
-1. [🎯 Prerequisites](#🎯-prerequisites)
-1. [📝 Learning Outcomes](#📝-learning-outcomes)
-1. [📅 Schedule](#📅-schedule)
-1. [📏 Assignments](#📏-Assignments)
-1. [🧪 Labs](#🧪-Labs)
-
-
-
-## 📘 Course Description <!-- {docsify-ignore} -->
-> **What is DevOps?**
-
-TekPerfect is partnering with GameHeads to train Bay Area youth for careers in the tech industry. There are many paths to get into tech and many jobs when you think of a “developer”. Our bootcamp focuses on “DevOps” (a mixture of development and operations).
-
-Think of an app or video game. You will see a gaming/social experience. But what you don’t see are the code and the foundation it is built upon. DevOps refers to the infrastructure. No matter what you want to build (app, video game, database), you will need the right infrastructure. This foundation allows the user to see the great product without all the bugs or lags or crashes.
-
-## 🎯 Prerequisites <!-- {docsify-ignore} -->
-None! Just bring yourself on time and be dedicated to learn
-
-## 📝 Learning Outcomes <!-- {docsify-ignore} -->
-
-- Basic operating systems installation, setup, configuration, and systems administration
-- Database setup, configuration, and administration.
-- Cloud systems support, deployment, and configuration
-- Cyber security, threat prevention, OS hardening, DoS (Denial of Service) attack prevention
-- Client Management, invoicing, and entrepreneurial skills
-- Soft skills, conflict management, communication, and escalation processes and procedures.
-- Professionalism, integration, accountability, and confidence.
-
-## 📅 Schedule
-> Schedule is subject to change at anytime
-
 <!-- tabs:start -->
 
 #### ** DevOps **
@@ -81,12 +45,3 @@ None! Just bring yourself on time and be dedicated to learn
 [Live Ops Course Sylabus](/courses/01-Introduction/lessons/liveops-course-syllabus.md)
 
 <!-- tabs:end -->
-
-## 📏 Assignments
-- [ Computer Setup](/courses/01-Introduction/lessons/computer-setup.md)
-
-
-## 🧪 Labs
-- [What is Devops?](https://youtu.be/_I94-tJlovg)
-- [Install Fest](/courses/01-Introduction/labs/installFest.md)
-

@@ -1,193 +1,215 @@
 :root {
-    --base-font-weight: 400;
-    --base-color: white;
-    --base-font-size: 14px;
-  
-    --sidebar-width: 22rem;
-    --sidebar-nav-link-before-content: "";
-    --sidebar-nav-link-before-content-l3: "";
-    --sidebar-name-font-weight: 500;
-  
-    --search-result-heading-font-size: 1em;
-    --search-result-item-font-size: 0.9em;
-    --search-result-heading-font-weight: 400;
-    --search-result-heading-margin: 0 0 0.1em;
-  
-    --heading-font-weight: 500;
-    --heading-h1-font-weight: 700;
-    --heading-h1-font-size: 2.5em;
-  
-    --notice-font-style: italic;
-    --notice-font-weight: 500;
-  
-    --blockquote-em-font-style: normal;
-    --blockquote-em-font-weight: 700;
-  
-    --blockquote-font-style: italic;
-    --blockquote-font-weight: 500;
-  
-    --code-font-size: 1em;
-    --code-font-weight: 500;
-    --code-tab-size: 2;
-  }
+  --base-font-weight: 400;
+  --base-color: white;
+  --base-font-size: 14px;
 
-  .sidebar{
-    background-color: #126893;
+  --sidebar-width: 22rem;
+  --sidebar-nav-link-before-content: "";
+  --sidebar-nav-link-before-content-l3: "";
+  --sidebar-name-font-weight: 500;
 
-  }
-  
-  .sidebar>h1 {
-    background-color: white;
-    margin: 0px 10px 10px 0px;
-  }
-  
-  .sidebar>h1>a>img {
-    height: 100px;
-  }
+  --search-result-heading-font-size: 1em;
+  --search-result-item-font-size: 0.9em;
+  --search-result-heading-font-weight: 400;
+  --search-result-heading-margin: 0 0 0.1em;
 
-  .sidebar>h1>a>img {
-    width: 300px;
-  }
+  --heading-font-weight: 500;
+  --heading-h1-font-weight: 700;
+  --heading-h1-font-size: 2.5em;
 
-  .sidebar-nav{
-    border-radius: 100px;
-  }
+  --notice-font-style: italic;
+  --notice-font-weight: 500;
 
-  .app-sub-sidebar>.active{
-    margin: 1em;
-    border-bottom: solid 2px #126893;
-    background-color: #12689336;
-    color: white;
-  }
+  --blockquote-em-font-style: normal;
+  --blockquote-em-font-weight: 700;
 
-  .sidebar-nav>li>strong{
-    background-color: rgb(204, 204, 204);
-  }
-  
-  .markdown-section {
-    max-width: 840px;
-  }
-  
-  .markdown-section a:hover {
-    border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
-    padding-bottom: 3px;
-  }
-  
-  .sidebar-nav>ul>li>a {
-    list-style-type: none;
-  }
-  .sidebar-nav>ul{
-    background-color: white;
-    padding: 1em;
-    margin: 0px 10px 0px 0px
-  }
-  .sidebar-nav>ul>li.active>a {
-    color: black;
-    font-size: 3rem;
-  }
+  --blockquote-font-style: italic;
+  --blockquote-font-weight: 500;
+
+  --code-font-size: 1em;
+  --code-font-weight: 500;
+  --code-tab-size: 2;
+}
+
+.sidebar>h1 {
+  background-color: white;
+  margin: 0px 10px 10px 0px;
+}
+
+.sidebar>h1>a>img {
+  height: 100px;
+}
+
+.sidebar>h1>a>img {
+  width: 300px;
+}
+
+.sidebar>li>p {
+  border-bottom: solid rgb(180, 180, 180);
+  background-color:#126893;
+  padding: 2px;
+  border-radius: 5px;
+  color: white;
+}
+
+
+.sidebar-nav>li>strong {
+  background-color: rgb(204, 204, 204);
+}
+
+
+.app-sub-sidebar>.active {
+  margin: 1em;
+  border-bottom: solid 2px #126893;
+  background-color: #12689336;
+  color: white;
+}
 
 
 
-  .sidebar-nav>ul:nth-child(1)>li>a.section-link,
-  .sidebar-nav>ul:nth-child(1)>li>ul.children>li>a.section-link {
-    display: block;
-  }
-  
-  #main>h1:nth-child(1) {
-    display: none;
-  }
-  
-  #main>h1:nth-child(1)[id] {
-    display: block;
-  }
-  
-  .sidebar ul li a {
-    color: #333;
-    font-size: 14px;
-    font-weight: 400;
-    overflow: hidden;
-    text-decoration: none;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-  
-  .sidebar ul li strong a {
-    font-weight: 700;
-  }
-  
-  .sidebar ul li ul.app-sub-sidebar li a {
-    font-weight: 400;
-  }
-  
-  .sidebar ul li ul.app-sub-sidebar li a.active {
-    font-weight: 700;
-  }
-  
-  body .docsify-copy-code-button {
-    background: none !important;
-    line-height: 1.5rem;
-    position: absolute;
-    word-wrap: normal;
-    color: #ccc;
-    font-size: .7rem;
-    font-weight: 700;
-    left: 0;
-    height: 25px;
-    top: -4px;
-    text-align: center;
-  }
-  
-  body .docsify-copy-code-button.success {
-    color: #11A31B;
-  }
-  
-  body .docsify-copy-code-button::after {}
-  
-  .app-name-link img {
-    height: 150px;
-    width: 150px;
-  }
-  
-  table>tbody>tr>td::before {
-    display: none;
-  }
-  
-  .btn-edit-on-github {
-    transition: background-color 0.5s ease;
-    border: none;
-    border-radius: 3px;
-    background-color: var(--theme-color);
-    position: absolute;
-    top: var(--sidebar-toggle-offset-top);
-    right: 0;
-    margin-right: 45px;
-    padding: 6px 10px 6px 5px;
-    height: var(--sidebar-toggle-height);
-  }
-  
-  .btn-edit-on-github a,
-  .btn-edit-on-github svg {
-    transition: color 0.5s ease;
-    color: white;
-  }
-  
-  .btn-edit-on-github a {
-    text-decoration: none;
-    position: relative;
-    font-weight: 700;
-    top: -1px;
-    padding-left: 5px;
-  }
-  
-  .btn-edit-on-github:hover {
-    cursor: pointer;
-    background-color: var(--mono-tint2);
-  }
-  
-  .btn-edit-on-github:hover svg,
-  .btn-edit-on-github:hover a {
-    text-decoration: none;
-    color: white;
-  }
+.markdown-section {
+  max-width: 840px;
+}
 
+.markdown-section a:hover {
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
+  padding-bottom: 3px;
+}
+
+.sidebar-nav>ul>li>a {
+  list-style-type: none;
+}
+
+.sidebar-nav>ul {
+  background-color: white;
+  padding: 1em;
+  margin: 0px 10px 0px 0px
+}
+
+.sidebar-nav>ul>li.active>a {
+  color: black;
+  font-size: 3rem;
+}
+
+
+
+.sidebar-nav>ul:nth-child(1)>li>a.section-link,
+.sidebar-nav>ul:nth-child(1)>li>ul.children>li>a.section-link {
+  display: block;
+}
+
+#main>h1:nth-child(1) {
+  display: none;
+}
+
+#main>h1:nth-child(1)[id] {
+  display: block;
+}
+
+.sidebar ul li a {
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+  overflow: hidden;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sidebar ul li strong a {
+  font-weight: 700;
+}
+
+.sidebar ul li ul.app-sub-sidebar li a {
+  font-weight: 400;
+}
+
+.sidebar ul li ul.app-sub-sidebar li a.active {
+  font-weight: 700;
+}
+
+body .docsify-copy-code-button {
+  background: none !important;
+  line-height: 1.5rem;
+  position: absolute;
+  word-wrap: normal;
+  color: #ccc;
+  font-size: .7rem;
+  font-weight: 700;
+  left: 0;
+  height: 25px;
+  top: -4px;
+  text-align: center;
+}
+
+body .docsify-copy-code-button.success {
+  color: #11A31B;
+}
+
+body .docsify-copy-code-button::after {}
+
+.app-name-link img {
+  height: 150px;
+  width: 150px;
+}
+
+table>tbody>tr>td::before {
+  display: none;
+}
+
+.btn-edit-on-github {
+  transition: background-color 0.5s ease;
+  border: none;
+  border-radius: 3px;
+  background-color: var(--theme-color);
+  position: absolute;
+  top: var(--sidebar-toggle-offset-top);
+  right: 0;
+  margin-right: 45px;
+  padding: 6px 10px 6px 5px;
+  height: var(--sidebar-toggle-height);
+}
+
+.btn-edit-on-github a,
+.btn-edit-on-github svg {
+  transition: color 0.5s ease;
+  color: white;
+}
+
+.btn-edit-on-github a {
+  text-decoration: none;
+  position: relative;
+  font-weight: 700;
+  top: -1px;
+  padding-left: 5px;
+}
+
+.btn-edit-on-github:hover {
+  cursor: pointer;
+  background-color: var(--mono-tint2);
+}
+
+.btn-edit-on-github:hover svg,
+.btn-edit-on-github:hover a {
+  text-decoration: none;
+  color: white;
+}
+
+.lesson-plan{
+  color: rgb(245, 123, 9);
+  background-color: seashell;
+  display: flex;
+  justify-content: space-evenly;
   
+}
+
+.new-content{
+  border: solid black;
+}
+
+.last-content{
+  color: rgb(75, 55, 36);
+  border: solid black;
+}
+
+
