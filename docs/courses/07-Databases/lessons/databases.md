@@ -39,9 +39,15 @@ Postgres, is a free open-source relational database system. It is designed to ha
 
 Install & Verify
 
-Login to your linx instance and install mysql-server and mongodb-sever, and postgres.
+Install instructions
 
-Verify the install by running the following command
+`sudo apt install postgresql`
+
+`sudo apt install mysql-server`
+
+`sudo apt install mongodb-server`
+
+Verify the installs by running the following commands
 
 `mongo`
 
@@ -57,7 +63,9 @@ If it is installed correctly you should be take to a
 
 `mysql> prompt`
 
-To verify if postgres is installed correctly run the following command psql or psql postgres and you will be taken to a
+To verify if postgres is installed correctly run the following command 
+
+`psql` and you will be taken to a
 
 `admin=#` or `postgres=# prompt`
 
