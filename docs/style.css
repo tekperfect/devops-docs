@@ -159,12 +159,17 @@ li#dash::marker{
   font-weight: 700;
 }
 
-.sidebar ul li ul.app-sub-sidebar li a {
-  list-style-type: none;
+.sidebar ul li.active > a{
+  border-right: none;
+}
+.app-sub-sidebar li{
+  text-align: center;
+}
+.app-sub-sidebar li::before {
+  content: "";
 }
 
 .sidebar ul li ul.app-sub-sidebar li a {
-  color: black;
   font-weight: 400;
 }
 

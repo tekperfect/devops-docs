@@ -94,4 +94,3 @@ Enter a title and copy paste your **entire** ssh key ending with your email and 
 ```bash
 ssh -T git@github.com
 ```
-### [Return to OS Basics](courses/01-Introduction/home.md)
