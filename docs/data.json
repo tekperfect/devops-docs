@@ -1,0 +1,27 @@
+{
+    "thisWeek" : {
+        "name" :"Group Review",
+        "date" : "Nov 14th 2020",
+        "material": [
+            {
+                "name": "Group Evaluation Exercise",
+                "link": "https://docs.google.com/presentation/d/1bsXxhgqXetY7BMA2Hybt2Get_n9Fw_0cNkKaMI5AaFM/edit"
+            }
+        ]
+    },
+    "lastWeek" : {
+        "name" :"Networks",
+        "date" : "Nov 7th 2020",
+        "material": []
+    },
+    "courses" : {
+        "OsBasics" : {
+            "lessons" : {
+                "name": "Operating Systems",
+                "link": "/courses/02-Os_Basics/lessons/",
+                "tags" : ["basics"]
+            }
+        }
+    }
+    
+}

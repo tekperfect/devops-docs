@@ -1,5 +1,5 @@
 <li id="dash">
-<a href="https://tekperfect.com/devops-docs/#/README">🏚 Dashboard</a>
+<a href="/#/README">🏚 Dashboard</a>
 </li>
 
 - 👋 Introduction
