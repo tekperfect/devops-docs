@@ -52,9 +52,30 @@
   color: white;
 }
 
+.sidebar .sidebar-nav h1{
+  text-align: center;
+}
 
 .sidebar-nav>li>strong {
   background-color: rgb(204, 204, 204);
+}
+li#dash::marker{
+  color: #79A9C2
+}
+#dash{
+  text-align: center;
+  font-size: 2em;
+  background-color: #12689390;
+  border: none;
+  border-radius: 0px;
+  margin-right: 1px;
+  text-decoration: none;
+  padding: .5em
+}
+#dash a{
+  text-decoration: none;
+  margin: .2em;
+  color: black;
 }
 
 
@@ -116,11 +137,34 @@
   white-space: nowrap;
 }
 
+
+.sidebar li{
+  background-color: white;
+  border: solid #12689390 .1em;
+  border-radius: 5px;
+  
+}
+.sidebar li li {
+  border: none;
+}
+.sidebar li > p{
+  text-align: center;
+  background-color: #12689390;
+  text-align: center;
+  margin: 0;
+  color: white;
+}
+
 .sidebar ul li strong a {
   font-weight: 700;
 }
 
 .sidebar ul li ul.app-sub-sidebar li a {
+  list-style-type: none;
+}
+
+.sidebar ul li ul.app-sub-sidebar li a {
+  color: black;
   font-weight: 400;
 }
 
