@@ -14,11 +14,11 @@ Download a copy of Kali and import the image into virtualbox
 
 Download a copy of Metasploitable and import the image into virtualbox
 ## Metasploitable VM Download 👇🏾
-[![Metasploitable](metasploitable)](https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/Metasploitable.ova)
+[![Metasploitable](metasploitable.png)](https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/Metasploitable.ova)
 
 Download a copy of Metasploitable3 and import the image into virtualbox
 ## Metasploitable3 VM Download 👇🏾
-[![Metasploitable](metasploitable3)]((https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/metasploitable3_win2k8.ova)
+[![Metasploitable3](metasploitable.png)]((https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/metasploitable3_win2k8.ova)
 
 
 ### Environment Prep
