@@ -4,6 +4,48 @@
 
 ### Why Kali?
 
+Kali linux is a customized linux distribution with a set of comprehensive security tools.
+
+### Offensive Security Concepts
+
+Network Scans - NMAP
+
+Run a NMAP scan of your home network
+
+What were the results of that scan?
+
+How would you use this information to exploit the systems in your home?
+
+How can this be applied to real world situations?
+
+Brute Force Tools - Medusa
+
+Use Medusa to brute force the Metasploitable VM
+
+Download these files to prepare for the Medusa exercise
+
+## Password Lists Download 👇🏾
+[![500 Worst Passwords](bad-password.png)]((https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/500-worst-passwords.txt.ova)
+[![10000 Worst Passwords](bad-password.png)]((https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/10000-worst-passwords.txt)
+[![100k Worst Passwords](bad-password.png)]((https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/100k-most-used-passwords.txt)
+
+
+
+medusa -C dump_targets.txt -M http
+
+medusa -H targets.txt xxx.xxx.xxx.xxx -U usernames.txt -p password_list.txt -M ftp
+
+medusa -h xxx.xxx.xxx.xxx -U usernames.txt -P password_list.txt -M ssh
+
+medusa -h xxx.xxx.xxx.xxx -u username -P password_list.txt -M http
+
+medusa -h xxx.xxx.xxx.xxx -U usernames.txt -p password_list.txt -M ssh
+
+medusa -H targets.txt xxx.xxx.xxx.xxx -U usernames.txt -p password_list.txt -M ftp
+
+Medusa is capable of using the following authenication methods -  AFP, CVS, FTP, HTTP, IMAP, MS-SQL, MySQL, NetWare NCP, NNTP, PcAnywhere, POP3, PostgreSQL, REXEC, RLOGIN, RSH, SMBNT, SMTP-AUTH, SMTP-VRFY, SNMP, SSHv2, Subversion (SVN), Telnet, VMware Authentication Daemon (vmauthd), VNC, Generic Wrapper, Web Form
+
+Online and Offline Password Cracking - John the Ripper
 
 Environment Prep
 
