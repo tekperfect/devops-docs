@@ -47,7 +47,12 @@ Medusa is capable of using the following authenication methods -  AFP, CVS, FTP,
 
 Online and Offline Password Cracking - John the Ripper
 
-Environment Prep
+## Password Hash Download 👇🏾
+[![John the Ripper](john-the-ripper.png)]((https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/password-hash.txt)
+
+john password-hash.txt
+
+### Environment Prep
 
 Download a copy of Kali and import the image into virtualbox
 
