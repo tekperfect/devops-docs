@@ -9,9 +9,16 @@ Environment Prep
 
 Download a copy of Kali and import the image into virtualbox
 
+## Kali VM Download 👇🏾
+[![Kali](kali.png)]((https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/kali-sandbox.ova)
+
 Download a copy of Metasploitable and import the image into virtualbox
+## Metasploitable VM Download 👇🏾
+[![Metasploitable](metasploitable)](https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/Metasploitable.ova)
 
 Download a copy of Metasploitable3 and import the image into virtualbox
+## Metasploitable3 VM Download 👇🏾
+[![Metasploitable](metasploitable3)]((https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/metasploitable3_win2k8.ova)
 
 
 ### Environment Prep
@@ -20,14 +27,14 @@ Step 1: Launch your Kali VM and make sure the network settings are set to bridge
 
 Step 2: Launch your Metasploit VM and make sure the network settings are set to bridged mode
 
-Step 3: If you downloaded my Kali prebuilt image use username of devops and the password “D3v0psCr3w!” otherwise use the username and password you created.
+Step 3: If you downloaded my Kali prebuilt image use username of "devops" and the password “D3v0psCr3w!” otherwise use the username and password you created.
 
 
 ### Environment Prep (cont)
 
 Step 4: Verify that your system has a similar IP to your Kali Linux VM.
 
-Step 5: For example if your IP address was 192.168.1.2 your Kali VM’s IP should be 192.168.1.xx an IP from
+Step 5: For example if your IP address was 192.168.1.2 your Kali VM’s IP should be 192.168.1.xxx where the xxx is a number between 1 and 254. 
 
 Once you have established that your environment is setup properly you are ready to begin
 
@@ -35,20 +42,20 @@ Once you have established that your environment is setup properly you are ready 
 
 Run a NMAP scan to what’s vulnerable
 
-Host only scan: nmap xxx.xxx.xxx.xxx -sn (shows what hosts are alive)
+Host only scan: `nmap xxx.xxx.xxx.xxx -sn` (shows what hosts are alive)
 
-Quick NMAP scan: nmap –F xxx.xxx.xxx.xxx (scans 100 ports per host)
+Quick NMAP scan: `nmap –F xxx.xxx.xxx.xxx` (scans 100 ports per host)
 
-Host identification scan: nmap –sV -O xxx.xxx.xxx.xxx (what’s important here)
+Host identification scan: `nmap –sV -O xxx.xxx.xxx.xxx` (what’s important here)
 
-Longer more thorough scan – nmap –p- xxx.xxx.xxx.xxx (scans all ports)
+Longer more thorough scan – `nmap –p- xxx.xxx.xxx.xxx` (scans all ports)
 
 
 ### Reconnaissance Cont
 
 When running a nmap scan you can use the following to pipe the output into a file so that you can reference the hosts that you found that might be available to exploit
 
-nmap xxx.xxx.xxx.xxx -sn > ~/ipscan.txt
+`nmap xxx.xxx.xxx.xxx -sn > ~/ipscan.txt`
 
 You can also run a scan pre and post starting your metasploitable VM and run the scan results through vimdiff to narrow down the results.
 
