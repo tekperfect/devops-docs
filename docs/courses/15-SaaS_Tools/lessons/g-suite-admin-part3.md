@@ -17,15 +17,15 @@ Contractors
 3. Create the following G Suite user accounts:
 
 First name	Last name	Email address	Employee title	Org Unit Path
-Alex	Bell	alex.bell@yourdomain	IT Manager	/Executive
-Ellie	Gray	ellie.gray@yourdomain	Executive Assistant	/Employees
-Jon	Baird	jon.baird@yourdomain	HR Business Partner	/Employees
-Lars	Ericsson	lars.ericsson@yourdomain	HR Manager	/Executive
-Samantha	Morse	samantha.morse@yourdomain	CEO	/Executive
-Timothy	Lee	timothy.lee@yourdomain	Finance Manager	/Executive
-Tom	Edison	tom.edison@yourdomain	Support Engineer	/Employees
-Will	Marconi	will.marconi@yourdomain	Support Engineer	/Employees
-Mark	Jones	mark.jones@yourdomain	Consultant	/Contractors
+Alex	Bell	alex.bell@tekperfect.org	IT Manager	/Executive
+Ellie	Gray	ellie.gray@tekperfect.org	Executive Assistant	/Employees
+Jon	Baird	jon.baird@tekperfect.org	HR Business Partner	/Employees
+Lars	Ericsson	lars.ericsson@tekperfect.org	HR Manager	/Executive
+Samantha	Morse	samantha.morse@tekperfect.org	CEO	/Executive
+Timothy	Lee	timothy.lee@tekperfect.org	Finance Manager	/Executive
+Tom	Edison	tom.edison@tekperfect.org	Support Engineer	/Employees
+Will	Marconi	will.marconi@tekperfect.org	Support Engineer	/Employees
+Mark	Jones	mark.jones@tekperfect.org	Consultant	/Contractors
 4. Complete the Adding Calendar Resources exercise from 'Introduction to G Suite'.
 
 Help Center resources
@@ -159,7 +159,7 @@ Directions
 
 1. Open a new incognito browser window and go to mail.google.com.
 
-2. Sign in as Ellie Gray ellie.gray@yourdomain
+2. Sign in as Ellie Gray ellie.gray@tekperfect.org
 
 3. Navigate to https://sites.google.com/a/yourdomain to confirm that Ellie does not have access to the Sites service.
 
@@ -173,7 +173,7 @@ You are now going to create a group and make Ellie a member. Then you will enabl
 
 Name: Access Sites
 Description: Users with access to the sites service regardless of their OU setting
-Group email: access.sites@yourdomain
+Group email: access.sites@tekperfect.org
 7. Set the 'Access type' to Restricted (Only members can post and view topics)
 
 8. Click CREATE GROUP.
