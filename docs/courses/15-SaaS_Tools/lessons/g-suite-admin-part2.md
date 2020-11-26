@@ -53,7 +53,7 @@ Thanks,
 
 Grace Lee Boggs
 
-You decide that the best way to implement this is to rename the user to grace-lee.boggs@devops.tekperfect.com to allow her to sign in and use her mail with this new username. Then add an alias of grace.boggs@devops.tekperfect.com to the account.
+You decide that the best way to implement this is to rename the user to grace-lee.boggs@tekperfect.org to allow her to sign in and use her mail with this new username. Then add an alias of grace.boggs@tekperfect.org to the account.
 
 Directions
 
@@ -78,7 +78,7 @@ Now that you have renamed the user to allow her to use her full name (Grace Lee)
 
 7. If you are not already in Grace Lee Boggs's user profile select Grace Lee Boggs from the users list.
 
-8. Expand the User information card and click on the Email aliases section. Notice here that Grace Boggs’s original email address grace.boggs@devops.tekperfect.com has been added as an alias. This is to ensure that he can still receive mail sent to his old primary address.
+8. Expand the User information card and click on the Email aliases section. Notice here that Grace Boggs’s original email address grace.boggs@tekperfect.org has been added as an alias. This is to ensure that he can still receive mail sent to his old primary address.
 
 9. Add a new alias Grace Lee’s and click SAVE.
 
@@ -421,7 +421,7 @@ We are about to commence a new project and will be installing a new expenses sys
 Whilst here he will need to have a G Suite account so we can collaborate on project documents, etc. Can you please create the following account.
 
 First name	Last name	Email address	Employee title
-Mark	Jones	mark.jones@devops.tekperfect.com	Consultant
+Mark	Jones	mark.jones@tekperfect.org	Consultant
 We would also like to keep our company directory information confidential from contract staff so can you restrict visibility so that Mark can only see users involved on the project. Please ensure he can look up my details and Jon Baird as he will be leading the implementation on our behalf. Thanks.
 
 Regards, Alexandria Ocasio-Cortez
@@ -454,7 +454,7 @@ Now we need to create Mark's account.
 
 First name: Mark
 Last name: Jones
-Primary email: mark.jones@devops.tekperfect.com
+Primary email: mark.jones@tekperfect.org
 Organizational unit: Contractors (use the pencil icon on the right to select the correct OU)
 Password: Ch@nge.me
 Ensure the 'Ask for a password change at the next sign-in' option is enabled to ensure Mark changes his password when he first signs into his account.
