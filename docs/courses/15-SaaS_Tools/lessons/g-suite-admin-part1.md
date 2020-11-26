@@ -87,7 +87,8 @@ Directions
 
 1. If you are not already signed in, sign in to your domain as the administrator at admin.google.com. You will see the following dashboard.
 
-insert exercise4-image1
+## Example Image 👇🏾
+![Example Image](google-admin-ex3a.jpg)
 
 2. Click the three horizontal lines on the top left of the screen to reveal the side menu. This menu makes it easier to see, find, and directly navigate to the information and settings in your admin console:
 
@@ -95,7 +96,8 @@ Easily scan a shorter, multi-layered menu that helps you find things quickly.
 Quickly find what you’re looking for by hovering over and clicking through the menu to drill down directly to the pages you want to see.
 The streamlined menu removes clutter for delegated admins so they will only see the menu items they have access to with their level of administrative privileges.
 
-insert exercise4-image2
+## Example Image 👇🏾
+![Example Image](google-admin-ex3b.jpg)
 
 ### Exercise #4 - Review your Company Profile
 Introduction
@@ -111,6 +113,9 @@ Directions
 3. Click the Profile section.
 
 This is where you can configure company-wide settings. Explore the various profile settings.
+
+## Example Image 👇🏾
+![Example Image](google-admin-ex4a.jpg)
 
 The 'Organization name' will be taken from the information that you provided when you signed up for G Suite. This may be your domain name or the business name you entered at that time. This name will appear to your users in many G Suite services.
 The email addresses found in the 'Contact information' section also match the information that was provided during the sign up process.
