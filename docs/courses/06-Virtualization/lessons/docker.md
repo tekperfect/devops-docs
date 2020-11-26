@@ -48,7 +48,7 @@ A few things are made harder, such as some forms of IPC (inter process communica
 
 3. From the command line run the following commands
 
-**docker** (This command should list all of the docker commands available to you)  
+`docker` (This command should list all of the docker commands available to you)  
 **docker version**  (This command should list the version of docker that is installed)  
 **docker info** (This command should list all the information about your docker environment)  
 **docker container ls** (This command should list all the docker containers you have if any)  
