@@ -146,7 +146,7 @@ Directions
 
 First name: Alfonso
 Last name: Hooker
-Primary email: alfonso.hooker@devops.tekperfect
+Primary email: alfonso.hooker@.tekperfect.org
 
 Tip: If your account has multiple domains associated with it, you will see a domain drop-down list so you can choose the correct domain for each new user. The domain is the part of the user's email address that appears after the @ symbol.
 
@@ -184,31 +184,31 @@ Email Address
 Title
 Alexandria
 Ocasio-Cortez
-alexandria.ocasio-cortez@devops.tekperfect.com
+alexandria.ocasio-cortez@tekperfect.org
 HR
 Katherine
 Johnson
-katherine.johnson@devops.tekperfect.com
+katherine.johnson@tekperfect.org
 Engineer
 Ellison
 Onizuka
-ellison.onizuka@devops.tekperfect.com
+ellison.onizuka@tekperfect.org
 Engineer
 Charles
 Hooker
-charles.hooker@devops.tekperfect.com
+charles.hooker@tekperfect.org
 CEO
 Grace Lee
 Boggs
-grace.boggs@devops.tekperfect.com
+grace.boggs@tekperfect.org
 Sales
 Jerry
 Lawson
-jerry.lawson@devops.tekperfect.com	
+jerry.lawson@tekperfect.org	
 Game Developer
 Edward James 
 Olmos
-edward.olmos@devops.tekperfect.com
+edward.olmos@tekperfect.org
 Marketing
 
 
@@ -319,7 +319,7 @@ Create the group for all employees
 
 Name: All employees
 Description: Internal mailing list for everyone.
-Group email: everyone@devops.tekperfect.com
+Group email: everyone@tekperfect.org
 4. Click NEXT.
 
 5. Set the 'Access type' to Announcement only. Anyone in the organization can view topics but only managers and owners can post.
@@ -340,7 +340,7 @@ Group email: everyone@devops.tekperfect.com
 
 13. Click SAVE.
 
-Sam can now email everyone in the organization by emailing everyone@devops.tekperfect.com.
+Sam can now email everyone in the organization by emailing everyone@tekperfect.org.
 
 Create the management group
 
@@ -348,7 +348,7 @@ Create the management group
 
 Name: Management
 Description: Executive group
-Group email: management@devops.tekperfect.com
+Group email: management@tekperfect.org
 15. Click NEXT.
 
 16. Set the 'Access type' to Restricted (Only members can post and view topics), create the group and add the following members:
@@ -362,25 +362,25 @@ The management team now has a private group in which to collaborate.
 
 Verify group settings
 
-18. Sign out and sign back in to G Suite at mail.google.com as charles.hooker@devops.tekperfect.com.
+18. Sign out and sign back in to G Suite at mail.google.com as charles.hooker@tekperfect.org.
 
-19. Send a message to everyone@devops.tekperfect.com and another message to management@devops.tekperfect.com.
+19. Send a message to everyone@tekperfect.org and another message to management@tekperfect.org.
 
 20. Open the Groups for Business service at groups.google.com.
 
 21. Click My groups. You should see the both groups listed. Open each group in turn and verify that your messages were delivered.
 
-22. Sign out and sign back in to G Suite at mail.google.com as alexandria .ocasio-cortez@devops.tekperfect.com. You should see the message sent by Charles to everyone in your inbox.
+22. Sign out and sign back in to G Suite at mail.google.com as alexandria.ocasio-cortez@tekperfect.org. You should see the message sent by Charles to everyone in your inbox.
 
-23. Send a message to everyone@devops.tekperfect.com and another message to management@devops.tekperfect.com.
+23. Send a message to everyone@tekperfect.org and another message to management@tekperfect.org.
 
 24. Refresh your inbox (you may need to do this a few times). You do not have permissions to post to either group so should receive a delivery failure report for each of the two messages.
 
 
 
-25. Send a message to everyone@devops.tekperfect.com and another message to management@devops.tekperfect.com.
+25. Send a message to everyone@tekperfect.org and another message to management@tekperfect.org.
 
-26. Refresh your inbox (you may need to do this a few times). You should receive a delivery failure report for the message sent to everyone@devops.tekperfect.com only.
+26. Refresh your inbox (you may need to do this a few times). You should receive a delivery failure report for the message sent to everyone@tekperfect.org only.
 
 27. Open the Groups for Business service at groups.google.com.
 
@@ -490,7 +490,7 @@ Explore the settings
 
 18. From the list of resources, click on the Conference room row to open the resource details. On the left hand side you will see an email address and an auto-generated resource name in the following format:
 
-Resource email: devops.tekperfect.com_1993ce917vkushojkrbuv2ckpu2t66gb68o34dpk64q3icph70@resource.calendar.google.com
+Resource email: tekperfect.org@resource.calendar.google.com
 Auto-generated resource name: Head Office-4-East-Conference room (10) [Google Meet Hardware]
 
 19. Open your Google Calendar and click the + button to the right 'Other calendars' and select Browse resources. You should now see the two resources listed. Check each of them to subscribe. The two resources should now appear in your list of calendars.
@@ -511,7 +511,7 @@ You receive this email from the CEO:
 
 Hello G Suite Admin,
 
-Thanks for creating my G Suite account. However I have to ask for a minor change. My email is samantha.morse@devops.tekperfect.com but really most people know me as just “sam”. Is there any way I can have this as my email also?
+Thanks for creating my G Suite account. However I have to ask for a minor change. My email is samantha.morse@tekperfect.org but really most people know me as just “sam”. Is there any way I can have this as my email also?
 
 Regards,
 
@@ -533,9 +533,9 @@ Directions
 
 Dear Sam,
 
-I have created a new email alias for you. In addition to your primary email address, samantha.morse@devops.tekperfect.com, you can now also receive mail sent to sam@devops.tekperfect.com.
+I have created a new email alias for you. In addition to your primary email address, samantha.morse@tekperfect.org, you can now also receive mail sent to sam@tekperfect.org.
 
-However, please be aware that you'll still need to use your primary email address: samantha.morse@devops.tekperfect.com to sign in to G Suite.
+However, please be aware that you'll still need to use your primary email address: samantha.morse@tekperfect.org to sign in to G Suite.
 
 Note that it may take up to 24 hours for the email alias to become available.
 
