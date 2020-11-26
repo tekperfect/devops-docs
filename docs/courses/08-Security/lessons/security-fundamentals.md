@@ -25,13 +25,13 @@ Use Medusa to brute force the Metasploitable VM
 Download these files to prepare for the Medusa exercise
 
 ## 500 Worst Passwords Download 👇🏾
-[![500 Worst Passwords](bad-password.png)]((https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/500-worst-passwords.txt.ova)
+[![500 Worst Passwords](bad-password.png)](https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/500-worst-passwords.txt.ova)
 
 ## 10000 Worst Passwords Download 👇🏾
-[![10000 Worst Passwords](bad-password.png)]((https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/10000-worst-passwords.txt)
+[![10000 Worst Passwords](bad-password.png)](https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/10000-worst-passwords.txt)
 
 ## 100K Worst Passwords Download 👇🏾
-[![100k Worst Passwords](bad-password.png)]((https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/100k-most-used-passwords.txt)
+[![100k Worst Passwords](bad-password.png)](https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/100k-most-used-passwords.txt)
 
 
 
@@ -52,7 +52,7 @@ Medusa is capable of using the following authenication methods -  AFP, CVS, FTP,
 Online and Offline Password Cracking - John the Ripper
 
 ## Password Hash Download 👇🏾
-[![John the Ripper](john-the-ripper.png)]((https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/password-hash.txt)
+[![John the Ripper](john-the-ripper.png)](https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/password-hash.txt)
 
 john password-hash.txt
 
@@ -61,7 +61,7 @@ john password-hash.txt
 Download a copy of Kali and import the image into virtualbox
 
 ## Kali VM Download 👇🏾
-[![Kali](kali.png)]((https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/kali-sandbox.ova)
+[![Kali](kali.png)](https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/kali-sandbox.ova)
 
 Download a copy of Metasploitable and import the image into virtualbox
 ## Metasploitable VM Download 👇🏾
@@ -69,7 +69,7 @@ Download a copy of Metasploitable and import the image into virtualbox
 
 Download a copy of Metasploitable3 and import the image into virtualbox
 ## Metasploitable3 VM Download 👇🏾
-[![Metasploitable3](metasploitable.png)]((https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/metasploitable3_win2k8.ova)
+[![Metasploitable3](metasploitable.png)](https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/metasploitable3_win2k8.ova)
 
 
 ### Environment Prep
