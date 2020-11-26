@@ -25,7 +25,7 @@ Use Medusa to brute force the Metasploitable VM
 Download these files to prepare for the Medusa exercise
 
 ## 500 Worst Passwords Download 👇🏾
-[![500 Worst Passwords](bad-password.png)](https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/500-worst-passwords.txt.ova)
+[![500 Worst Passwords](bad-password.png)](https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/500-worst-passwords.txt)
 
 ## 10000 Worst Passwords Download 👇🏾
 [![10000 Worst Passwords](bad-password.png)](https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/10000-worst-passwords.txt)
@@ -34,6 +34,7 @@ Download these files to prepare for the Medusa exercise
 [![100k Worst Passwords](bad-password.png)](https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/100k-most-used-passwords.txt)
 
 
+### Medusa Brute Force Attack
 
 medusa -C dump_targets.txt -M http
 
@@ -49,7 +50,7 @@ medusa -H targets.txt xxx.xxx.xxx.xxx -U usernames.txt -p password_list.txt -M f
 
 Medusa is capable of using the following authenication methods -  AFP, CVS, FTP, HTTP, IMAP, MS-SQL, MySQL, NetWare NCP, NNTP, PcAnywhere, POP3, PostgreSQL, REXEC, RLOGIN, RSH, SMBNT, SMTP-AUTH, SMTP-VRFY, SNMP, SSHv2, Subversion (SVN), Telnet, VMware Authentication Daemon (vmauthd), VNC, Generic Wrapper, Web Form
 
-Online and Offline Password Cracking - John the Ripper
+### Online and Offline Password Cracking - John the Ripper
 
 ## Password Hash Download 👇🏾
 [![John the Ripper](john-the-ripper.png)](https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/password-hash.txt)
@@ -244,9 +245,7 @@ Break up into two team and name your team
 
 Team with the most points wins
 
-Total possible points 400
-
-### Hacking Exercise Cont
+***Total possible points 400***
 
 120 Possible points for exploit
 
