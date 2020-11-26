@@ -239,8 +239,13 @@ When you have a meterpreter prompt type in the following command
 
 `getuid` (This will tell you which user or service account you are running as)
 
-### Create, Elevate & Gain access
+`shell` (this command will drop you into the windows command shell)
 
+Now research what commands you can run under windows to create an account that will allow you to login to your Metasploitable Windows host.
+
+*** Hint the command is `net user`***
+
+### Create, Elevate & Gain access
 
 Connect to a remote or local system via rdp with a named account that you know the password to
 
