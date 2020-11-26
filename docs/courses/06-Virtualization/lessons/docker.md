@@ -49,56 +49,44 @@ A few things are made harder, such as some forms of IPC (inter process communica
 3. From the command line run the following commands
 
 `docker` (This command should list all of the docker commands available to you)  
-**docker version**  (This command should list the version of docker that is installed)  
-**docker info** (This command should list all the information about your docker environment)  
+`docker version`  (This command should list the version of docker that is installed)  
+`docker info`(This command should list all the information about your docker environment)  
 **docker container ls** (This command should list all the docker containers you have if any)  
 
 
 ### Docker Commands
 
-**docker run image_name** - runs docker and pulls down and image if it does not exist.  
-**docker ps** - list running docker containers  
-**docker ps -a** - list all containers that you have run  
-**docker stop xxxxxxxx** - stops a container by container id or name  
-**docker rm container-name** - removes a container  
-**docker images** - list images  
-**docker rmi image_name** - removes an image by name  
-**docker pull image_name** - pulls down a docker image and does not execute the container  
-
-
-### Docker Commands
-
-**docker run image_name** - runs docker and pulls down and image if it does not exist.  
-**docker ps** - list running docker containers  
-**docker ps** -a - list all running containers  
-**docker stop xxxxxxxx** - stops a container by container id or name  
-**docker rm container-name** - removes a container  
-**docker images** - list images  
-**docker rmi image_name** - removes an image by name  
-**docker pull image_name** - pulls down a docker image and does not execute the container  
+`docker run image_name` - runs docker and pulls down and image if it does not exist.  
+`docker ps` - list running docker containers  
+`docker ps -a` - list all containers that you have run  
+`docker stop xxxxxxxx` - stops a container by container id or name  
+`docker rm container-name` - removes a container  
+`docker images` - list images  
+`docker rmi image_name`- removes an image by name  
+`docker pull image_name` - pulls down a docker image and does not execute the container  
 
 ### Docker Commands
 
-**docker exec image_name command** - executes a command on a specific container that is running.  
-**docker run image_name command**  - runs the image with a  specific command  
-**docker run -d image_name** - runs the image in the background or detached mode  
-**docker attach image_id** - to command attaches to a specific running container  
-**docker stop $(docker ps -a -q)** - Stops all containers quietly  
-**docker rmi image_id** - removes a specific image from your system  
-**docker rmi $(docker images -q) --force** - removes all docker images by force  
+`docker exec image_name command` - executes a command on a specific container that is running.  
+`docker run image_name command`  - runs the image with a  specific command  
+`docker run -d image_name` - runs the image in the background or detached mode  
+`docker attach image_id` - to command attaches to a specific running container  
+`docker stop $(docker ps -a -q)` - Stops all containers quietly  
+`docker rmi image_id` - removes a specific image from your system  
+`docker rmi $(docker images -q) --force` - removes all docker images by force  
 
 
 ### Container interaction
 
-- **docker run busybox ping 8.8.8.8** - runs the busybox container with a continuous ping to google's DNS servers.
-- **docker exec container_id cat /etc/shadow** - executes the command on a specific container that is running and displays the list of user accounts configured on that container.
-- **docker exec container_id sh** - executes the command on a specific container that is running gives you a shell to interact directly with the container
+`docker run busybox ping 8.8.8.8` - runs the busybox container with a continuous ping to google's DNS servers.
+`docker exec container_id cat /etc/shadow` - executes the command on a specific container that is running and displays the list of user accounts configured on that container.
+`docker exec container_id sh` - executes the command on a specific container that is running gives you a shell to interact directly with the container
 
 #### Run these 3 command in 2 separate terminal tabs
 
-- **docker run redis** - this command starts a container running redis
-- **docker ps** - this command list the running container that you need to grab the container ID from
-- **docker exec** -it xxxxxxxxxxxx redis-cli - this command executes the redis-cli client on the running container you just started.
+`docker run redis` - this command starts a container running redis
+`docker ps` - this command list the running container that you need to grab the container ID from
+`docker exec -it xxxxxxxxxxxx redis-cli` - this command executes the redis-cli client on the running container you just started.
 
 Remember xxxxxxxxxxxx represents the container ID you specified in your docker ps command
 
@@ -109,12 +97,12 @@ Remember xxxxxxxxxxxx represents the container ID you specified in your docker p
 
 By default containers do not interact with one another and this is by design. Let's prove this by running 2 copies of the same kind of container in separate terminal tabs.
 
-- **docker run -it busybox sh** - run this command in the first tab of your terminal
-- **docker run -it busybox sh** - run this command in the second tab of your terminal
-- **ls -al-** run this command in the first and second tab of your terminal. Each look similar correct?
+`docker run -it busybox sh` - run this command in the first tab of your terminal
+`docker run -it busybox sh` - run this command in the second tab of your terminal
+`ls -al` run this command in the first and second tab of your terminal. Each look similar correct?
 
-- **touch testfile.txt** - run this command in the first tab of your terminal
-- **ls -al-** run this command in the first and second tab of your terminal. Do they still look the same?
+`touch testfile.txt`- run this command in the first tab of your terminal
+`ls -al` run this command in the first and second tab of your terminal. Do they still look the same?
 
 Why are they different now?
 
