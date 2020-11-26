@@ -223,7 +223,21 @@ Starts the exploit against the system you specified with the set rhost command.
 
 `exploit`
 
-If your exploit is successful you should get a meterpreter prompt where you can run remote commands on the Windows host.
+If your exploit is successful you should get a meterpreter prompt where you can run remote commands on the Windows host. If you type in the following command it will tell you which level of context your account is running as
+
+`getuid`
+
+If you cannot gain elevated priviliges using the Jenkins backdoor then try this exploit
+
+`use exploit/multi/elasticsearch/script_mvel_rce`
+
+What options do you need to pay attention to when using this exploit?
+
+Hint: for the PAYLOAD you should use the java/meterpreter/reverse_tcp
+
+When you have a meterpreter prompt type in the following command
+
+`getuid` (This will tell you which user or service account you are running as)
 
 ### Create, Elevate & Gain access
 
