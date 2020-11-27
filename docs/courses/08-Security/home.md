@@ -32,3 +32,7 @@ Students by the end of the course will be able to...
 ## Security Fundamentals
 
 [Security Fundamentals](/courses/08-Security/lessons/security-fundamentals.md)
+
+## Vault Secrets Management
+
+[Vault](/courses/08-Security/lessons/vault.md)
