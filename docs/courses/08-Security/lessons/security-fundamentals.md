@@ -38,15 +38,15 @@ Download these files to prepare for the Medusa exercise
 
 medusa -C dump_targets.txt -M http
 
-medusa -H targets.txt xxx.xxx.xxx.xxx -U usernames.txt -p password_list.txt -M ftp
+medusa -H targets.txt -U usernames.txt -P password_list.txt -M ftp
 
 medusa -h xxx.xxx.xxx.xxx -U usernames.txt -P password_list.txt -M ssh
 
 medusa -h xxx.xxx.xxx.xxx -u username -P password_list.txt -M http
 
-medusa -h xxx.xxx.xxx.xxx -U usernames.txt -p password_list.txt -M ssh
+medusa -h xxx.xxx.xxx.xxx -U usernames.txt -P password_list.txt -M ssh
 
-medusa -H targets.txt xxx.xxx.xxx.xxx -U usernames.txt -p password_list.txt -M ftp
+medusa -H targets.txt  -U usernames.txt -p password -M ftp
 
 Medusa is capable of using the following authenication methods -  AFP, CVS, FTP, HTTP, IMAP, MS-SQL, MySQL, NetWare NCP, NNTP, PcAnywhere, POP3, PostgreSQL, REXEC, RLOGIN, RSH, SMBNT, SMTP-AUTH, SMTP-VRFY, SNMP, SSHv2, Subversion (SVN), Telnet, VMware Authentication Daemon (vmauthd), VNC, Generic Wrapper, Web Form
 
