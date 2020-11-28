@@ -75,7 +75,7 @@ All other commands:
 
 1. Login to your Github account
 
-2. Prepare for lesson by forking the scripts repo
+2. Prepare for lesson by forking the scripts repo https://github.com/alfonsoh/scripts.git
 
 ![Github](github-fork.png)
 
