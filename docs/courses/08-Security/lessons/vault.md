@@ -10,6 +10,8 @@ Simply put… password and other sensitive data need to be stored, transmitted, 
 
 For the purposes of this lab you will be working with a preconfigured Vault server. However, after installing Vault the process to configure the server contains a few basic steps before you can use it. Vault utilized keys and tokens to control access to the Vault and secrets stored in it. Please reference the following items you need to run in order to prepare your vault environment
 
+![Vault](vault.png)
+
 ### Step 1: Unseal Your Vault 
 
 `vault operator unseal kVurBTTpmIwaXgbhsN98WXxpAdaW2gmCmq1HH9MLoz4=`
