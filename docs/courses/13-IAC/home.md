@@ -24,3 +24,7 @@ Students by the end of the course will be able to...
 1. Create basic scripts
 
 # 📚 Lessons
+
+## Terraform
+
+[Terraform](/courses/13-IAC/lessons/terraform.md)
