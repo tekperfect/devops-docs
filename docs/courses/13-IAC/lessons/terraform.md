@@ -71,25 +71,50 @@ All other commands:
     push               Obsolete command for Terraform Enterprise legacy (v1)
     state              Advanced state management
 
+## Get the example code
+
+1. Login to your Github account
+
+2. Prepare for lesson by forking the scripts repo
+
+insert_image
+
+3. Each of you are going to do the following edit the instance.tf key name and change it to your initials+tf-ubuntu
+
+For Example: For me the key_name would be ah-tf-ubuntu.
+
+4. If you see any other references to tf-ubuntu please make sure you change them to the new key name of your initials. Not doing so will cause your deploy to fail.
+
+5. Edit your .gitignore file and add an ignore for the your initials+tf-ubuntu key
+
+For Example: I would add an entry in my .gitignore file that looked like this ah-tf-ubuntu*
+
+6. Edit the vars.tf file and replace the PATH_TO_PRIVATE_KEY and PATH_TO_PUBLIC_KEY names to the your initials+tf-ubuntu key and keyname.pub
+
+For example: I would change the default = value in the vars.tf to be "ah-tf-ubuntu" and "ah-tf-ubuntu.pub"
+
+7. Commit your changes and share the link to your code
+
+8. Once you have done so I will share the key and secret with you via lastpass so that you can deploy your code.
+
+9. Once I have checked your code you can proceed to the Terrform instructions portion of the lesson
+
+
 ### Prep your environment
 
 1. Obtain keys to deploy code
 
-2. Create a directory where you will deploy your code
+2. Create a basic deploy script for a Linux and Windows instance
 
-3. Create a .gitignore file so that important files don't get checked into your repository
+3. Run the following command to prepre your directory `terraform init`
 
-4. oCreate a basic deploy script for a Linux and Windows instance
-
-5. Run the following command to prepre your directory `terraform init`
-
-### Deploy your code 
+### Deploy your code
 
 1. Run the following commands once you believe you have all the right code in your repository
 
 2. `terraform plan` (Verifies that the code you have written will allow you to deploy the kind of infrastrcuture you are interested in)
 
-3. `terraform apply` (Deploys the code you created) 
+3. `terraform apply` (Deploys the code you created)
 
 4. `terraform destroy` (Destroys the instance created by the Terraform code you deployed)
 
@@ -99,16 +124,14 @@ All other commands:
 
 7. `terraform destroy plan-name` (Destroys infrastructure created by a specific Terraform plan)
 
-# Considerations before deploying code
+### Considerations before deploying code
 
-1. Where are you storing your secrets when deploying your code
+1. Where are you storing your secrets when deploying your code?
 
-2. How secure are the files
+2. How secure are the files?
 
-3. How do you prevent sensitive data from being checked into your repository
+3. How do you prevent sensitive data from being checked into your repository?
 
 4. What tools could you use to protect the secrets stored on your system? (Hint GPG)
 
 5. What other measure could you take to protect the code you plan to deploy?
-
-
