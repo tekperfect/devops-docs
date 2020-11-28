@@ -8,7 +8,7 @@ https://www.terraform.io/downloads.html
 
 ### Verify Install
 
-Run the following commands to verify Terrform is installed `terraform'
+Run the following commands to verify Terrform is installed `terraform`
 
 The output of the command should look something like this.
 
