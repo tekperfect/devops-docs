@@ -77,7 +77,7 @@ All other commands:
 
 2. Prepare for lesson by forking the scripts repo
 
-insert_image
+![Github](github-fork.png)
 
 3. Each of you are going to do the following edit the instance.tf key name and change it to your initials+tf-ubuntu
 
@@ -123,6 +123,8 @@ For example: I would change the default = value in the vars.tf to be "ah-tf-ubun
 6. `terrafrom apply plan-name` (Applies the Terraform plan crated by the code and deploys the infrastructure change outlined in the plan.)
 
 7. `terraform destroy plan-name` (Destroys infrastructure created by a specific Terraform plan)
+
+![Terraform](terraform.png)
 
 ### Considerations before deploying code
 
