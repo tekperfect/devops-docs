@@ -6,6 +6,16 @@ A system that allows you to secure, store and tightly control access to tokens, 
 
 Simply put… password and other sensitive data need to be stored, transmitted, and secured in a way that protect the integrity of the sensitive information while providing mechanisms to rotate or change access to that sensitive data
 
+### Understanding Vault
+
+Please review these videos from Hashicorp to obtain a greater understanding of Vaul and what it can do and common use cases.
+
+https://learn.hashicorp.com/collections/vault/getting-started
+
+### Vault Use Cases
+
+https://www.vaultproject.io/docs/use-cases
+
 ### Getting Started with Vault
 
 For the purposes of this lab you will be working with a preconfigured Vault server. However, after installing Vault the process to configure the server contains a few basic steps before you can use it. Vault utilized keys and tokens to control access to the Vault and secrets stored in it. Please reference the following items you need to run in order to prepare your vault environment
