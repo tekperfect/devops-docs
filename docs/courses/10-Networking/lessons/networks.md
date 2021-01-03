@@ -306,3 +306,58 @@ An IP address, also known as a network address or routing prefix, represents the
 In an IPv4 network, for a packet of data to be routed to the correct network and the right network device, a routing prefix is needed. A routing prefix is created by taking the subnet mask and applying a bitwise AND to the IP address.
 
 A more common way to define the subnet and the routing prefix is to use the Classless Interdomain Routing (CIDR) notation. CIDR applies to the IP address as the number of bits you want to allocate to your subnet. Using CIDR notation, at the end of the IP address, add a "/" and then the number of bits. For example, 198.51.100.0/24 is the same as using the dotted-decimal format subnet mask 255.255.255.0. It offers an address range of 198.51.100.0 to 198.51.100.255.
+
+## Network Troubleshooting
+
+When troubleshooting network related issues it is important to understand how to view and configure the various IP related connectivity options in your operating system.
+
+Here are some examples from Windows 
+
+![Windows](windows-dhcp.jpg)
+![Windows](windows-dns.jpg)
+![Windows](windows-ipconfig.jpg)
+
+Here are some examples from Mac OS
+
+![Mac](mac-dhcp.jpg)
+![Mac](mac-dns.jpg)
+![Mac](mac-ipconfig.jpg)
+
+Here are some examples from Linux
+
+![Linux](linux-dhcp.jpg)
+![linux](linux-ipconfig.jpg)
+
+When troubleshooting network issues it's importatnt that you ask yourself a few questions about the potential source of the issue.
+
+Can I connect to the Internet?
+Can I talk to all local systems on the network?
+Can I get to all or just certain websites?
+What kind of issue(s) have your experienced or has been reported?
+Do certain types of protocols or connection types fail?
+Is the issue client to clinet, client to server, or server to server?
+Is the issue internal to your organization or outbound to the Internet?
+
+### Wrong subnet mask
+
+What kinds of issues can be caused by having the incorrect subnet mask?
+
+### Incorrect or no default gateway
+
+What kinds of issues can be caused by having the incorrect or no default gateway?
+
+### Incorrect or no DNS servers
+
+What kinds of issues can be caused by having the incorrect or no DNS servers?
+
+### DNS server not responding
+
+What kinds of issues can be caused by a DNS server that is slow or not responding?
+
+### Incorrect IP address
+
+What kinds of issues can be caused obtaining or setting the wrong IP address?
+
+### Browser configured to use proxy server
+
+What kinds of issues can be caused by using a proxy server or configuring it incorrectly?
