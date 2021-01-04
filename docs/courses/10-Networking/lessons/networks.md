@@ -326,7 +326,7 @@ Here are some examples from Mac OS
 Here are some examples from Linux
 
 ![Linux](linux-dhcp.png)
-![linux](linux-ipconfig.png)
+![Linux](linux-ifconfig.png)
 
 When troubleshooting network issues it's importatnt that you ask yourself a few questions about the potential source of the issue.
 
