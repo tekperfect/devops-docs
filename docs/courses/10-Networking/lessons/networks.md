@@ -313,20 +313,20 @@ When troubleshooting network related issues it is important to understand how to
 
 Here are some examples from Windows 
 
-![Windows](windows-dhcp.jpg)
-![Windows](windows-dns.jpg)
-![Windows](windows-ipconfig.jpg)
+![Windows DHCP](windows-dhcp.png)
+![Windows DNS](windows-dns.png)
+![Windows IPConfig](windows-ipconfig.png)
 
 Here are some examples from Mac OS
 
-![Mac](mac-dhcp.jpg)
-![Mac](mac-dns.jpg)
-![Mac](mac-ipconfig.jpg)
+![Mac](mac-dhcp.png)
+![Mac](mac-dns.png)
+![Mac](mac-ipconfig.png)
 
 Here are some examples from Linux
 
-![Linux](linux-dhcp.jpg)
-![linux](linux-ipconfig.jpg)
+![Linux](linux-dhcp.png)
+![linux](linux-ipconfig.png)
 
 When troubleshooting network issues it's importatnt that you ask yourself a few questions about the potential source of the issue.
 
