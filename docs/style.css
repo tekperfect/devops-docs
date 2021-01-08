@@ -204,12 +204,12 @@ table>tbody>tr>td::before {
 }
 
 .new-content{
-  border: solid black;
+  /* border: solid black; */
 }
 
 .last-content{
   color: rgb(75, 55, 36);
-  border: solid black;
+  /* border: solid black; */
 }
 
 
