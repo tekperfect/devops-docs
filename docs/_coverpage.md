@@ -7,7 +7,7 @@
 - Docs,Links,& Walkthroughs
 
 [Google Drive](https://drive.google.com/drive/folders/1fNYLMtWmfz31NzLzDLVMBJAIR2lLS9Rs?usp=sharing)
-<a href="#/README">Archive</a>
+<a href="#/README"> Enter Classroom</a>
 
 <!-- [Archive](#) -->
 
