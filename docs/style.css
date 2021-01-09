@@ -202,14 +202,3 @@ table>tbody>tr>td::before {
   justify-content: space-evenly;
   
 }
-
-.new-content{
-  /* border: solid black; */
-}
-
-.last-content{
-  color: rgb(75, 55, 36);
-  /* border: solid black; */
-}
-
-
