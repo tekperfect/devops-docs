@@ -1134,3 +1134,7 @@ What I like best about SAM is it’s easy to use dashboard and alerting features
 
 ## Windows Video Link 👇🏾
 [![WINDOWS AD INSTALL](windows.png)](https://drive.google.com/file/d/1N7TP8H-7-nv9IKPObkIMAFS2Q6zC3wvT/view?usp=sharing)
+
+
+## Windows Server Install ISO Link 👇🏾
+[![WINDOWS SERVER ISO](iso.png)](https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/WIN_SERVER_STD_CORE_2019_64BIT.ISO)
