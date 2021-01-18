@@ -486,3 +486,7 @@ A good system Administrator must have an idea of how to read and manage logs as 
 
 ## Ubuntu Video Link 👇🏾
 [![Ubuntu](ubuntu.png)](https://drive.google.com/file/d/1s4GHektSm3MN1VWI4JAV4lG7bf_zJiBh/view?usp=sharing)
+
+
+## Ubuntu Server Image Link 👇🏾
+[![Ubuntu](ubuntu-server.png)](https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/Ubuntu_Server.ova)
