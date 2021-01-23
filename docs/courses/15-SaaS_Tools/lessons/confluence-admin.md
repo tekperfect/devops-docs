@@ -1,5 +1,44 @@
 ﻿# Confluence Admin Guide
 
+## Setting up Confluence from scratch
+
+1. Create an Ubuntu VM under VirtualBox
+
+2. Download Confluence from the following link. (https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/atlassian-confluence-7.8.3-x64.bin)
+
+3. Command to download file 
+`wget https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/atlassian-confluence-7.8.3-x64.bin`
+
+4. Make the installer executable
+
+5. `chmod +x atlassian-confluence-7.8.3-x64.bin`
+
+6. Run the installer
+
+7. `sudo ./atlassian-confluence-7.8.3-x64.bin`
+
+8. Press enter to continue
+
+9. Press 1 and enter to continue to accept the express install option
+
+10. Press i to continue your installation
+
+11. Once the installer is finished press y and enter to start Confluence on your virtual machine
+
+12. Verify Confluence is running by opening your browser and going to the IP associated with your virtual machine
+
+13. Example if the IP of my virtual machine was 192.168.1.100 I would open the browser on my system to `http://192.168.1.100:8090`
+
+14. Next you will walk through the wizard by selecting "Trial Install" or "Production Installation" if you plan to use this install longer than 30 days.
+
+15. Once you complete the wizard you should have a running Confluence instance.
+
+16. Your homework will be to review the documentation and figure out how to create a Confluence space that includes at least one image, a video, some interesting formatting and a brief description of what you want to get out of the DevOps class. If that does not sound interesting write something interesting or funny to share with the class.
+
+
+
+
+
 
 
 

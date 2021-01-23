@@ -1,6 +1,38 @@
 # Atlassain JIRA Admin Guide
 
+## Creating a JIRA Instance from scratch
 
+1. Create an Ubuntu VM in VirtualBox or AWS
+
+2. Download JIRA from the following link. `https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/atlassian-jira-software-8.13.1-x64.bin`
+
+3. Command to download file 
+`wget https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/atlassian-jira-software-8.13.1-x64.bin`
+
+4. Make the installer executable
+
+5. `chmod +x atlassian-jira-software-8.13.1-x64.bin`
+
+6. Run the installer
+
+7. `sudo ./atlassian-jira-software-8.13.1-x64.bin`
+
+8. Press enter to continue
+
+9. Press 1 and enter to continue to accept the express install option
+
+10. Press i to continue your installation
+
+11. Once the installer is finished press y and enter to start JIRA on your virtual machine
+
+12. Verify JIRA is running by opening your browser and going to the IP associated with your virtual machine
+
+13. Example if the IP of my virtual machine was 192.168.1.100 I would open the browser on my system to `http://192.168.1.100:8080`
+
+14. Next you will walk through the wizard by using the guided "Set it up for me" or if you are feeling ambitious choose the "I'll set it up myself option"
+
+15. Once you complete the wizard you should have a running JIRA instance.
+16. Your homework will be to review the documentation and figure out how to setup a JIRA project
 
 
 
