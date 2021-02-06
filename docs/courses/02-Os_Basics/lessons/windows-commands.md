@@ -1138,3 +1138,24 @@ What I like best about SAM is it’s easy to use dashboard and alerting features
 
 ## Windows Server Install ISO Link 👇🏾
 [![WINDOWS SERVER ISO](iso.png)](https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/WIN_SERVER_STD_CORE_2019_64BIT.ISO)
+
+## Windows Questions
+
+1. How do you setup Active Directory on a Windows server via the GUI?
+
+2. What is the interface you use ie... What is the name?
+
+3. How would you setup Active Directory on Windows using code or from the command line
+4. What is the name of the language you would use to install it?
+
+5. What is the extension of the script that you would run to install it?
+
+6. What additional services get installed when you install Active Directory?
+
+7. Why are those services need and what are they used for?
+
+8. Name at least one other tool or service you could install from Server Manager.
+
+9. What is a group policy and why are they important in Windows environments?
+
+10. Name one group policy related to security that you would want in a corporate environment.

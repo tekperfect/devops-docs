@@ -490,3 +490,27 @@ A good system Administrator must have an idea of how to read and manage logs as 
 
 ## Ubuntu Server Image Link 👇🏾
 [![Ubuntu](ubuntu-server.png)](https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/Ubuntu_Server.ova)
+
+## Ubuntu Questions
+
+1. How do you install Apache on Ubunut via the command line?
+
+2. What are two commands you can use to install software and services on Ubuntu?
+
+3. How would you install MySQL, MongoDB, or Postgress on Ubunutu using one command?
+
+4. What is the name of the language you would use to install it?
+
+5. What is the typical extension associate with a shell script on Linux?
+
+7. Does a script or application need an extension?
+
+8. How would you make a script of file executable?
+
+9. How would you find a file named auth.log in your Linux OS?
+
+10. Once you located the log file what command would you use to read the first few lines of the file, same question but the last few lines of the file?
+
+11. What command would you use to find a specific entry in a file?
+
+12: How would you use the same command to find multiple entries in the file but make them more visiable using color?
