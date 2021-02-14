@@ -118,3 +118,51 @@ Do you understand how and why you may want to use containers?
 What was interesting about this exercise?
 
 Can you run a container, access, interact with it, shut it down, remove it, and run commands in it?
+
+## Docker Lab
+
+Create a directory call my_first_docker
+
+Create a file called called Docker file
+
+`touch Dockerfile`
+
+Add the following code to the file using VI, VIM, Nano or any text editor of your choosing
+
+`https://github.com/alfonsoh/scripts/blob/master/docker/my_first_docker/Dockerfile`
+
+Please try to type all the code into this file instead of cutting and pasting it. It will help you understand the syntax of the code you are typing
+
+Copy the code from the html file below into a file called index.html into your my_first_docker folder
+
+`https://github.com/alfonsoh/scripts/blob/master/docker/my_first_docker/index.html`
+
+You can cut and pass the text from this file :-)
+
+Take a headshot of yourself from social media or any place you have a photo of yourself and copy it to the my_first_docker folder and name the file headshot.jpg
+
+Run the following command to build your custom docker image
+
+`docker build .` (please make sure you are in the my_first_docker when you run that command otherwise you will get an error)
+
+Once the image is built you can run the following command to launch it and verify it's working in your browser
+
+`docker run -p 8080:80 xxxxxxxxxxxxx`
+
+To verify the apache web server is running go to http://localhost:8080. It should display the web version of the resume with your photo. If you customized the html file with your personal information before building the docker container it should have your information. If not it will display the generic information from the template
+
+Now you have successfully built the image I am challenging each of your to accomplish the following
+
+## Bonus Questions
+
+1. How would you run the docker command to launch your container in detached mode so that the command prompt is returned to you.
+
+2. What command would you run to verify the container is launched on your local system
+
+3. What command would you run to make changes to the running container
+
+4. Can you launch multiple copies of this container and access them on your system 
+
+5. If you can launch multiple copies of this container, how would you do that from one command on the command line.
+
+
