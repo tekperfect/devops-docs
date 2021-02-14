@@ -123,6 +123,8 @@ Can you run a container, access, interact with it, shut it down, remove it, and 
 
 Create a directory call my_first_docker
 
+`mkdir my_first_docker`
+
 Create a file called called Docker file
 
 `touch Dockerfile`
