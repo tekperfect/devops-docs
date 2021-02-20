@@ -36,17 +36,17 @@ Download these files to prepare for the Medusa exercise
 
 ### Medusa Brute Force Attack
 
-medusa -C dump_targets.txt -M http
+`medusa -C dump_targets.txt -M http`
 
-medusa -H targets.txt -U usernames.txt -P password_list.txt -M ftp
+`medusa -H targets.txt -U usernames.txt -P password_list.txt -M ftp`
 
-medusa -h xxx.xxx.xxx.xxx -U usernames.txt -P password_list.txt -M ssh
+`medusa -h xxx.xxx.xxx.xxx -U usernames.txt -P password_list.txt -M ssh`
 
-medusa -h xxx.xxx.xxx.xxx -u username -P password_list.txt -M http
+`medusa -h xxx.xxx.xxx.xxx -u username -P password_list.txt -M http`
 
-medusa -h xxx.xxx.xxx.xxx -U usernames.txt -P password_list.txt -M ssh
+`medusa -h xxx.xxx.xxx.xxx -U usernames.txt -P password_list.txt -M ssh`
 
-medusa -H targets.txt  -U usernames.txt -p password -M ftp
+`medusa -H targets.txt  -U usernames.txt -p password -M ftp`
 
 Medusa is capable of using the following authenication methods -  AFP, CVS, FTP, HTTP, IMAP, MS-SQL, MySQL, NetWare NCP, NNTP, PcAnywhere, POP3, PostgreSQL, REXEC, RLOGIN, RSH, SMBNT, SMTP-AUTH, SMTP-VRFY, SNMP, SSHv2, Subversion (SVN), Telnet, VMware Authentication Daemon (vmauthd), VNC, Generic Wrapper, Web Form
 
@@ -68,11 +68,13 @@ Download a copy of Metasploitable and import the image into virtualbox
 ## Metasploitable VM Download 👇🏾
 [![Metasploitable](metasploitable.png)](https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/Metasploitable.ova)
 
-Download a copy of Metasploitable3 and import the image into virtualbox
-## Metasploitable3 VM Download 👇🏾
+Download a copy of the Windows Metasploitable3 and import the image into virtualbox
+## Metasploitable3 Windows VM Download 👇🏾
 [![Metasploitable3](metasploitable.png)](https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/metasploitable3_win2k8.ova)
 
-
+Download a copy of the Linux Metasploitable3 and import the image into virtualbox
+## Metasploitable3 Linux VM Download 👇🏾
+[![Metasploitable3](metasploitable.png)](https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/Metasploitable3-ub1404.ova)
 ### Environment Prep
 
 Step 1: Launch your Kali VM and make sure the network settings are set to bridged mode
