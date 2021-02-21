@@ -24,3 +24,27 @@ Multi-language support: Although penetration tools tend to be written in English
 Completely customizable: We thoroughly understand that not everyone will agree with our design decisions, so we have made it as easy as possible for our more adventurous users to customize Kali Linux to their liking, all the way down to the kernel.
 
 ARMEL and ARMHF support: Since ARM-based single-board systems like the Raspberry Pi and BeagleBone Black, among others, are becoming more and more prevalent and inexpensive, we knew that Kali’s ARM support would need to be as robust as we could manage, with fully working installations for both ARMEL and ARMHF systems. Kali Linux is available on a wide range of ARM devices and has ARM repositories integrated with the mainline distribution so tools for ARM are updated in conjunction with the rest of the distribution.
+
+# How to use Kali
+
+When attempting to use Kali Linux in a sandbox environment or an environment you are authorized to run eploits in it's recommend that your follow these steps.
+
+Step 1: Prep environment (Have a working Kali and Metasploitable VM or dedicated host with known vulnerabilities)
+
+Step 2: Verify both VM's are on the same subnet (Verify the attacker machine akayour Kali Linux box is on the same CIDR as your target host you are attempting to run the exploit against)
+
+Step 3: Scan the subnet for vunerable systems (If you do not know the IP address of the vulnerable system on your network we recommend the use of a tool like nmap to determine what systems you have on your network that could potentially be vulnerable)
+
+Step 4: Determine your target based on the number of open ports (If you find a system with a number of open ports. This may be a clear indication that that system is vulnerable to exploits and should be the source of your first exploit.
+
+Step 5: Find a vunerablity you can exploit (Once you have identified a vulnerable system it is a good idea to reasarch the types of vulnerabilities you can use to compromise the system.
+
+Step 6: Exploit and gain access to that system (After you run a successfull exploit against a system. We recommend the use of tools like meterpreter to elevate your access, create accounts on the system or to drop a backdoor for remote access to the system)
+
+Step 7: Create a new account or make a change to that system you can demonstrate to the class (Once you have access to a system the best way to speed up the compromise of that host is to create local credentails that will allow you to authenicate to the host.
+
+Step 8: Review some of the issue you had that you lost time on or were confusing (If you experience difficulty launching the exploits and getting them to work you should review the requirements to initiate and successful execute the exploit.
+
+Step 9: What other exploits could you have used (Finally the last thing you need to consider when using tools Like Kali Linux are the other potential approaches to compromising the system.
+
+Step 10: Practice, Practice, Practice (If at first you don't succeed ... You know the rest :-) )
