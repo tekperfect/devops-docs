@@ -29,6 +29,9 @@ Students by the end of the course will be able to...
 
 [Kali](/courses/08-Security/lessons/kali.md)
 
+## Metasploit Labs
+[Kali](/courses/08-Security/lessons/metasploit-labs.md)
+
 ## Security Fundamentals
 
 [Security Fundamentals](/courses/08-Security/lessons/security-fundamentals.md)
