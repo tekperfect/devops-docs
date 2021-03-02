@@ -28,3 +28,7 @@ Students by the end of the course will be able to...
 ## Terraform
 
 [Terraform](/courses/13-IAC/lessons/terraform.md)
+
+## Jenkins
+
+[Jenkins](/courses/13-IAC/lessons/jenkins.md)
