@@ -1,10 +1,35 @@
 # Terraform (Infrastrucutre as Code)
 
-### Installation and Prep
+## Installation and Prep
 
-Go to the following website and dowload the latest version of Terraform
+Go to the following website and download the latest version of Terraform
 
-https://www.terraform.io/downloads.html
+https://www.terraform.io/downloads.html or use one of the following methods below
+
+### Terraform Windows Download 👇🏾
+[![Terraform](terraform.png)](https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/terraform_0.14.7_windows_amd64.zip)
+
+### Terraform Mac/Linux Install
+`brew install terraform` (Use this method to install it for Mac)
+`apt-get install terraform` (Use this method to install it for Linux)
+
+## Install GPG
+
+### GPG Mac/Linux install 👇🏾
+`brew install gnupg` (Use this method to install it for Mac)
+`apt-get install gnupg` (Use this method to install it for Linux)
+
+### GPG Windows Download 👇🏾
+[![GPG](gpg.png)](https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/gpg4win-3.1.15.exe)
+
+## Why GPG?
+
+We are using GPG to encrypt credentials files and other sensitive files to protect them from being compromised. In a production environment it is essential to protect credentials and make sure they are not stored anywhere in clear text. This ensures two things.
+
+1. If they are leaked or compromised then the other party who gained access to them would need the password to unencrypt them.
+
+2. Encrypted credentials can be stored safely in code because they are not stored in clear text but we recommend they not be stored anywhere they can be accessed publicly.
+
 
 ### Verify Install
 
@@ -75,38 +100,38 @@ All other commands:
 
 1. Login to your Github account
 
-2. Prepare for lesson by forking the scripts repo https://github.com/alfonsoh/scripts.git
+2. Prepare for lesson by forking or cloning the scripts repo https://github.com/alfonsoh/scripts.git
 
 ![Github](github-fork.png)
 
-3. Each of you are going to do the following edit the instance.tf key name and change it to your initials+tf-ubuntu
+3. Each of you are going to do the following create a Windows, Linux, S3 bucket, and VPC using Terraform code
 
-For Example: For me the key_name would be ah-tf-ubuntu.
+4. You will each use the code in the examples folder under the terrafrom directory under the scrips folder you forked or cloned.
 
-4. If you see any other references to tf-ubuntu please make sure you change them to the new key name of your initials. Not doing so will cause your deploy to fail.
+5. Please make sure you edit your .gitignore file and entries for terraform.tfvars, any public or private keys or anything that could be potentially sensitive that you do not want checked in. This is a very important step especially if you plan to use this code in your own Github accounts. Handling credentials improperly could jeopardize the security of your environment.
 
-5. Edit your .gitignore file and add an ignore for the your initials+tf-ubuntu key
+6. As you attempt to deploy each project you may run into errors that you do not recognize. When this occurs and it will you should use sources like Stackoverflow https://stackoverflow.com/ and Google to determine how to resolve those issues.
 
-For Example: I would add an entry in my .gitignore file that looked like this ah-tf-ubuntu*
+7. If you find yourself in a situation where you cannot deploy your code you should also ask your fellow classmates and an instructor to see if they can help you resolve the issue.
 
-6. Edit the vars.tf file and replace the PATH_TO_PRIVATE_KEY and PATH_TO_PUBLIC_KEY names to the your initials+tf-ubuntu key and keyname.pub
+8. When deploying code using Terraform we request that each of individual follow three simple rules. Do not spin up infrastructure that is larger than what you need. Meaning use the free tier instances whenever possible.
 
-For example: I would change the default = value in the vars.tf to be "ah-tf-ubuntu" and "ah-tf-ubuntu.pub"
+9. After performing the lessons associated with terraform plan & terraform apply. Please use the terraform destroy to remove any infrastructure you created to avoid unnecessary costs.
 
-7. Commit your changes and share the link to your code
-
-8. Once you have done so I will share the key and secret with you via lastpass so that you can deploy your code.
-
-9. Once I have checked your code you can proceed to the Terrform instructions portion of the lesson
+10. Practice, ask questions, repeat in order to get better at your craft.
 
 
 ### Prep your environment
 
-1. Obtain keys to deploy code
+1. Obtain keys to deploy code (these are the sensitive credentials that we will encrypt to protect the integrity of the environment)
 
-2. Create a basic deploy script for a Linux and Windows instance
+2. Create a basic deploy script for the infrastructure you are creating. (Examples of scripts you can use can be found below)
 
-3. Run the following command to prepre your directory `terraform init`
+### Example Deploy and Destroy Scripts 👇🏾
+[![Deploy](bash.png)](https://github.com/alfonsoh/scripts/blob/master/bash/deploy.sh)
+[![Destroy](bash.png)](https://github.com/alfonsoh/scripts/blob/master/bash/destroy.sh)
+
+3. Run the following command to prepare your directory `terraform init`
 
 ### Deploy your code
 
@@ -124,6 +149,8 @@ For example: I would change the default = value in the vars.tf to be "ah-tf-ubun
 
 7. `terraform destroy plan-name` (Destroys infrastructure created by a specific Terraform plan)
 
+8. Once you have verified you can run the basic commands without a script then you should utilize your scripts to streamline your deploy process.
+
 ![Terraform](terraform.png)
 
 ### Considerations before deploying code
@@ -134,6 +161,6 @@ For example: I would change the default = value in the vars.tf to be "ah-tf-ubun
 
 3. How do you prevent sensitive data from being checked into your repository?
 
-4. What tools could you use to protect the secrets stored on your system? (Hint GPG)
+4. What tools could you use to protect the secrets stored on your system?
 
 5. What other measure could you take to protect the code you plan to deploy?
