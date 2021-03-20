@@ -164,3 +164,5 @@ All other commands:
 4. What tools could you use to protect the secrets stored on your system?
 
 5. What other measure could you take to protect the code you plan to deploy?
+
+6. What industry best practices are available to secure your secrets?
