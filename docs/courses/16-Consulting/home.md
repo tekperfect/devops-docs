@@ -27,18 +27,22 @@ Students by the end of the course will be able to work in the industry as a paid
 # 📚 Lessons
 
 ## Client Intake
-
+[Consulting](/courses/16-Consulting/lessons/client-intake.md)
 
 ## Client Assessment
+[Consulting](/courses/16-Consulting/lessons/client-assessment.md)
 
 
 ## Project Scoping
+[Consulting](/courses/16-Consulting/lessons/project-scoping.md)
 
 
 ## Setting Goals
+[Consulting](/courses/16-Consulting/lessons/setting-goals.md)
 
 
 ## Maintenance
+[Consulting](/courses/16-Consulting/lessons/maintenance.md)
 
 
 ## Maintaining Client Relationships
