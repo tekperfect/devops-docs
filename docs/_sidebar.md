@@ -15,6 +15,7 @@
     - [IaC Infrustucture as Code](courses/13-IAC/home.md)
     - [Cloud Computing](courses/14-Cloud_Computing/home.md)
     - [SaaS Tools](courses/15-SaaS_Tools/home.md)
+    - [Consulting](courses/16-Consulting/home.md)
 
 
 <!-- - **📘 Glossary**
