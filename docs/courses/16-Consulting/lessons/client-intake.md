@@ -1,4 +1,15 @@
-# Who is the client? 
+## Who is the client? 
+### What industry or business are they in?
+
+ - Startup
+
+ - Non Profit
+
+ - Banking/Finance
+
+ - Healthcare
+
+ - Retail 
 
 ## What do they do?
 
