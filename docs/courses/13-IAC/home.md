@@ -32,3 +32,7 @@ Students by the end of the course will be able to...
 ## Jenkins
 
 [Jenkins](/courses/13-IAC/lessons/jenkins.md)
+
+## LiveOps
+
+[LiveOps](/courses/13-IAC/lessons/liveops.md)
