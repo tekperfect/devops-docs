@@ -45,23 +45,23 @@ sudo git clone https://github.com/photonstorm/phaser-examples.git
 
 ### Environment Prep Commands 👇🏾
 
-'sudo apt install apache2'
+`sudo apt install apache2`
 
-'sudo apt install nodejs'
+`sudo apt install nodejs`
 
-'sudo apt install npm'
+`sudo apt install npm`
 
-'sudo apt install php'
+`sudo apt install php`
 
-'npm install -g grunt-cli'
+`npm install -g grunt-cli`
 
-'sudo chown -R www-data:www-data /var/www/*'
+`sudo chown -R www-data:www-data /var/www/*`
 
-'systemctl restart apache2'
+`systemctl restart apache2`
 
-Edit the '/etc/apache2/sites-enabled/000-default.conf' and point it at your project directory
+Edit the `/etc/apache2/sites-enabled/000-default.conf` and point it at your project directory
 
-The apache2 default directory is '/var/www/html'
+The apache2 default directory is `/var/www/html`
 
 ## Why do we want to do this?
 
@@ -162,4 +162,3 @@ Treat every test failure as a bug. This includes flaky tests. Extract the log, i
 Improve your test suite. You may need to rewrite some code to make tests more reliable. Have all developers commit to writing tests as carefully as they write production code. After a while, you’ll reach a point where a failed test means there’s a real bug. Eventually, you’ll hit 100% green CI builds. That’s your first mountain. Celebrate it!
 
 Stop using long-lived feature branches and start branching by abstraction using feature flags. This way everyone’s pushing to master and it’s easy to test features in development with the rest of the system. So you can detect issues right away instead of after merging months later.
-
