@@ -77,7 +77,6 @@ These are some of the projects you will learn while in the program:
 ---
 
 ## What You'll Learn
-## What you won't Learn
 
 - Basic operating systems installation, setup, configuration, and systems administration
 - Database setup, configuration, and administration.
