@@ -77,13 +77,13 @@ In order to understand how to use these database you will need to import a few s
 Download the following files
 
 ## MySQL 👇🏾
-[![MySQL Sample Database](mysql.png)](https://drive.google.com/file/d/16keAvdBguWIO3TqdQJkVhiGp4FtzNNI5/view?usp=sharing)
+[![MySQL Sample Database](mysql.png)](https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/test_db-master.zip)
 
 ## MongoDB 👇🏾
-[![MongoDB Sample Database](mongodb.png)](https://drive.google.com/file/d/1zAgApUPM-KHncYJWZjC1X_uCpZtBeL2z/view?usp=sharing)
+[![MongoDB Sample Database](mongodb.png)](https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/reviews.csv)
 
 ## PostgreSQL 👇🏾
-[![PostgreSQL Sample Database](postgresql.png)](https://drive.google.com/file/d/12ChUoNQdlV9it_Nd7z4VbwRbtUTEoMgK/view?usp=sharing)
+[![PostgreSQL Sample Database](postgresql.png)](https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/dvdrental.tar)
 
 Download each file and scp the files to your linux server
 
