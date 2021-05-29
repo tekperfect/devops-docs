@@ -1139,8 +1139,11 @@ What I like best about SAM is it’s easy to use dashboard and alerting features
 ## Windows Server Install ISO Link 👇🏾
 [![WINDOWS SERVER ISO](iso.png)](https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/WIN_SERVER_STD_CORE_2019_64BIT.ISO)
 
-## Windows Questions
+## Windows Server Image 👇🏾
+[![WINDOWS SERVER Image](windows-vm.png)](https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/windows-2019-server.ova)
 
+
+## Windows Questions
 1. How do you setup Active Directory on a Windows server via the GUI?
 
 2. What is the interface you use ie... What is the name?
