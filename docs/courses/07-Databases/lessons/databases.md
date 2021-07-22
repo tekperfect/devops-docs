@@ -119,3 +119,9 @@ To import the sample database download the file to a folder on your linux box an
 
 `pg_restore -d dvdrental dvdrental.tar`
 
+### Dynamo DB
+
+aws dynamodb create-table --cli-input-json file://create-table-movies.json --region us-west-2
+
+
+aws dynamodb create-backup --table-name td_notes --backup-name td_notes_daily
