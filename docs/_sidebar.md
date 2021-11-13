@@ -1,5 +1,4 @@
 - **👋 Introduction**
-    - [Schedule](/courses/01-Introduction/lessons/schedule.md)
     - [Computer Setup](/courses/01-Introduction/lessons/computer-setup.md)
     - [What is Devops?](/courses/01-Introduction/lessons/what-is-devops.md)
 
