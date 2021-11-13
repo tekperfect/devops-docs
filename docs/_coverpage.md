@@ -1,4 +1,4 @@
-![logo](/media/logos/TP-Mark-05-v001.png)
+![logo](/media/logos/TP-Mark-05-v001-small.png)
 
 # DEVOPS <small>2021-2022</small>
 
