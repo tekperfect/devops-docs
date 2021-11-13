@@ -1,6 +1,6 @@
-![logo](/media/logos/tp-logo-cmyk.png)
+![logo](/media/logos/TP-Mark-05-v001.png)
 
-# DEVOPS <small>2020-2021</small>
+# DEVOPS <small>2021-2022</small>
 
 > Documentation Tool For Students And Staff
 
@@ -11,4 +11,4 @@
 
 <!-- [Archive](#) -->
 
-![color](#F2F2F2)
+![color](#000000)
