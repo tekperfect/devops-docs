@@ -77,12 +77,14 @@ git config --list
 
 After we have that done, let's set up a secure way to update your projects with SSH keys:
 
-Move into your `.ssh/` folder and type the following
+Generate your ssh key
 
-**Leave the password blank**
 ```bash
 ssh-keygen -t rsa -C "EMAIL" -b 4096
 ```
+**Use a password that you will remember**
+
+Move into your `.ssh/` folder and type the following
 
 ```bash 
 cat ~/.ssh/id_rsa.pub
