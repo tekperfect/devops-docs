@@ -77,7 +77,7 @@ git config --list
 
 After we have that done, let's set up a secure way to update your projects with SSH keys:
 
-Generate your ssh key
+Generate your ssh key [Explaination](https://www.appviewx.com/education-center/what-are-ssh-keys/i)
 
 ```bash
 ssh-keygen -t rsa -C "EMAIL" -b 4096
