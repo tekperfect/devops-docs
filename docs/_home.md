@@ -30,7 +30,7 @@ The 10 videos listed below will provide you with a brief overview of what is to 
 
 ### [Databases](https://tekperfect-devops-uploads.s3.us-west-1.amazonaws.com/databases.mp4)
 
-### [IaC Infrastructure as Code](https://tekperfect-devops-uploads.s3.us-west-1.amazonaws.com/iac.mp4)
+### [IaC Infrastructure as Code](https://tekperfect-devops-uploads.s3.us-west-1.amazonaws.com/IaC.mp4)
 
 ### [Networking](https://tekperfect-devops-uploads.s3.us-west-1.amazonaws.com/networking.mp4)
 
