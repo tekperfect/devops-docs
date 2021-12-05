@@ -155,7 +155,7 @@ So if you havent already set up a [github account](https://github.com/join)
 
 Now all we have to do is set up your git in your terminal
 
-Do the folling:
+Do the following:
 ```bash
 git config --global user.name "NAME"
 git config --global user.email "EMAIL"
