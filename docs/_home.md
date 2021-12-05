@@ -24,7 +24,7 @@ Over the next 10 weeks you will be immersed in program that is designed to launc
 
 The 10 videos listed below will provide you with a brief overview of what is to come as it relates to the foundations of DevOps, IT, and Security. We call the program DevOps because DevOps is a culmulation of industry skills that are critical to running an enterprise or small business.
 
-### [Cloud Computing](https://tekperfect-devops-uploads.s3.us-west-1.amazonaws.com/cloud-computing.mp4)
+** [Cloud Computing](https://tekperfect-devops-uploads.s3.us-west-1.amazonaws.com/cloud-computing.mp4)
 
 ### [Consulting](https://tekperfect-devops-uploads.s3.us-west-1.amazonaws.com/consulting.mp4)
 
