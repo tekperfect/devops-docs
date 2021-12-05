@@ -46,7 +46,98 @@ Let's install [`oh-my-zsh`](https://github.com/ohmyzsh/ohmyzsh)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-More info on the [github page](https://github.com/ohmyzsh/ohmyzsh)
+For detailed instructions on setting up OHMYZSH follow steps 1-9 below
+
+Step 1: Install Homebrew
+
+Homebrew is a free and open-source software package management system that simplifies the installation of software on Apple’s macOS.
+
+Before installing Homebrew, we need to install the CLI tools for Xcode. Open your terminal and run the command:
+
+Install Xcode
+
+'xcode-select —-install'
+
+Install Homebrew
+
+'/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
+
+
+Step 2: Install iTerm2
+
+iTerm2 is a replacement for terminal and the successor to iTerm. Most software engineers prefer iTerm2 over the default terminal that ships with macOS as a result of its cool features. You can integrate zsh into iTerm2 to increase productivity.
+
+'brew cask install iterm2'
+
+Step 3: Install ZSH
+
+Zsh is a shell designed for interactive use, although it is also a powerful scripting language.
+By default, macOs ships with zsh located in/bin/zsh.
+Let’s install zsh using brew and make iTerm2 use it.
+
+'brew install zsh'
+
+Step 4: Install Oh My Zsh
+
+It runs on Zsh to provide cool features configurable within the ~/.zhrc config file. Install Oh My Zsh by running the command
+
+'sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"'
+
+Check the installed version
+
+'zsh --version'
+
+You can upgrade it to get the latest features it offers.
+
+'upgrade_oh_my_zsh'
+
+Step 5: Change the Default Theme
+
+Oh My Zsh comes bundled with a lot of themes. The default theme is robbyrussell, but you can change it to any theme of your choice. In this scenario, I changed it to agnoster, an already pre-installed theme.
+
+You then need to select this theme in your ~/.zshrc. To open the config file (.zshrc), run the command:
+
+'nano ~/.zshrc'
+
+Set the zsh theme and update your changes
+
+'source ~/.zhrc'
+
+Using a Custom Theme
+
+To install another theme not pre-installed, clone the repository into custom/themesdirectory. In this scenario, we’ll install agnoster,
+
+'$ git clone https://github.com/ohmyzsh/ohmyzsh/blob/master/themes/agnoster.zsh-theme'
+
+Then, select this theme in your ~/.zshrc
+
+'ZSH_THEME="powerlevel9k/agnoster"'
+
+Update your changes by running the command source ~/.zshrc
+
+Navigate to iTerm2 > Preferences > Profiles > Colors if you wish to change the background color of the terminal.
+
+
+Step 6: Install Fonts
+
+'git clone https://github.com/powerline/fonts.git'
+
+'cd fonts'
+
+'./install.sh'
+
+To change the font, navigate to iTerm2 > Preferences > Profiles > Text > Change Font.
+
+Step 7: Install Color Scheme
+Let’s change the color scheme to bring out the beauty of our terminal. Navigate to iTerm2-Color-Schemes and download the ZIP folder. Then, extract the downloaded folder cos what we need resides in the schemes folder.
+
+Navigate to iTerm2 > Preferences > Profile > Colors > Color Presets > Import
+
+Navigate to the schemes folder and select your preferred color schemes to import them.
+Click on a specific color scheme to activate it. In this scenario.
+
+You're done get back to work :-)
+
 
 ## 📁 Explorer
 
