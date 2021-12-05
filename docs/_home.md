@@ -24,21 +24,21 @@ Over the next 10 weeks you will be immersed in program that is designed to launc
 
 The 10 videos listed below will provide you with a brief overview of what is to come as it relates to the foundations of DevOps, IT, and Security. We call the program DevOps because DevOps is a culmulation of industry skills that are critical to running an enterprise or small business.
 
-** [Cloud Computing](https://tekperfect-devops-uploads.s3.us-west-1.amazonaws.com/cloud-computing.mp4)
+* [Cloud Computing](https://tekperfect-devops-uploads.s3.us-west-1.amazonaws.com/cloud-computing.mp4)
 
-### [Consulting](https://tekperfect-devops-uploads.s3.us-west-1.amazonaws.com/consulting.mp4)
+* [Consulting](https://tekperfect-devops-uploads.s3.us-west-1.amazonaws.com/consulting.mp4)
 
-### [Databases](https://tekperfect-devops-uploads.s3.us-west-1.amazonaws.com/databases.mp4)
+* [Databases](https://tekperfect-devops-uploads.s3.us-west-1.amazonaws.com/databases.mp4)
 
-### [IaC Infrastructure as Code](https://tekperfect-devops-uploads.s3.us-west-1.amazonaws.com/IaC.mp4)
+* [IaC Infrastructure as Code](https://tekperfect-devops-uploads.s3.us-west-1.amazonaws.com/IaC.mp4)
 
-### [Networking](https://tekperfect-devops-uploads.s3.us-west-1.amazonaws.com/networking.mp4)
+* [Networking](https://tekperfect-devops-uploads.s3.us-west-1.amazonaws.com/networking.mp4)
 
-### [OS Basics](https://tekperfect-devops-uploads.s3.us-west-1.amazonaws.com/os-basics-audio.mp4)
+* [OS Basics](https://tekperfect-devops-uploads.s3.us-west-1.amazonaws.com/os-basics-audio.mp4)
 
-### [Programming](https://tekperfect-devops-uploads.s3.us-west-1.amazonaws.com/programming.mp4)
+* [Programming](https://tekperfect-devops-uploads.s3.us-west-1.amazonaws.com/programming.mp4)
 
-### [SaaS Tools](https://tekperfect-devops-uploads.s3.us-west-1.amazonaws.com/saas-tools.mp4)
+* [SaaS Tools](https://tekperfect-devops-uploads.s3.us-west-1.amazonaws.com/saas-tools.mp4)
 
 ### [Security](https://tekperfect-devops-uploads.s3.us-west-1.amazonaws.com/security.mp4)
 
