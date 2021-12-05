@@ -40,6 +40,6 @@ The 10 videos listed below will provide you with a brief overview of what is to 
 
 * [SaaS Tools](https://tekperfect-devops-uploads.s3.us-west-1.amazonaws.com/saas-tools.mp4)
 
-### [Security](https://tekperfect-devops-uploads.s3.us-west-1.amazonaws.com/security.mp4)
+* [Security](https://tekperfect-devops-uploads.s3.us-west-1.amazonaws.com/security.mp4)
 
-### [Systems Administration](https://tekperfect-devops-uploads.s3.us-west-1.amazonaws.com/systems-administration.mp4)
+* [Systems Administration](https://tekperfect-devops-uploads.s3.us-west-1.amazonaws.com/systems-administration.mp4)
