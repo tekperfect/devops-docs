@@ -39,9 +39,9 @@ Students by the end of the course will be able to...
 
 ## Windows Networking
 
-[Windows Commands](/courses/02-Os_Basics/lessons/windows-networking.md)
+[Windows Networking](/courses/02-Os_Basics/lessons/windows-networking.md)
 
 ## Active Directory
 
-[Windows Commands](/courses/02-Os_Basics/lessons/active-directory.md)
+[Active Directory](/courses/02-Os_Basics/lessons/active-directory.md)
 
