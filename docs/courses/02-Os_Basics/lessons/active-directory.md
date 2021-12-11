@@ -69,9 +69,9 @@ Computer Configuration | Windows Settings | Security Settings | Local Policies |
 
 The 2 items you are looking for are:
 
-'Interactive Logon: Message Title...'
+`Interactive Logon: Message Title...`
 
-'Interactive Logon: Message Text...'
+`Interactive Logon: Message Text...`
 
 
 Change these to whatever you want.
@@ -81,74 +81,81 @@ Change these to whatever you want.
 
 To quickly list all the groups in your domain, with members, run this command:
 
-dsquery group -limit 0 | dsget group -members –expand
+`dsquery group -limit 0 | dsget group -members –expand`
 
 To find all users whose accounts are set to have a non-expiring password, run this command:
 
-dsquery * domainroot -filter “(&(objectcategory=person)(objectclass=user)(lockoutTime=*))” -limit 0
+`dsquery * domainroot -filter “(&(objectcategory=person)(objectclass=user)(lockoutTime=*))” -limit 0`
 
 To list all the FSMO role holders in your forest, run this command:
 
-netdom query fsmo
+`netdom query fsmo`
 
 To refresh group policy settings, run this command:
 
-gpupdate
+`gpupdate`
 
 To check Active Directory replication on a domain controller, run 
 this command:
 
-repadmin /replsummary
+`repadmin /replsummary`
 
 To force replication from a domain controller without having to go 
 through to Active
 Directory Sites and Services, run this command:
 
-repadmin /syncall
+`repadmin /syncall`
 
 To see what server authenticated you (or if you logged on with 
 cached credentials) you can run either of these commands:
 
-set l
+`set l`
 
-echo %logonserver%
+`echo %logonserver%`
 
 To see what account you are logged on as, run this command:
 
-whoami
+`whoami`
 
 To see what security groups you belong to, run this command:
 
-whoami /groups
+`whoami /groups`
 
 To see the domain account policy (password requirements, lockout 
 thresholds, etc) run this command:
 
-net accounts
+`net accounts`
 
 
 You can do the same thing during install by pressing SHIFT-F10 at the screen where you set your initial user password.
 Windows 7 supports several useful new keyboard shortcuts:
 
-Windows Key+G
+`Windows Key+G`
+
 Display gadgets in front of other windows.
 
-Windows Key++ (plus key)
+`Windows Key++ (plus key)`
+
 Zoom in, where appropriate.
 
-Windows Key+- (minus key)
+`Windows Key+- (minus key)`
+
 Zoom out, where appropriate.
 
-Windows Key+Up Arrow
+`Windows Key+Up Arrow`
+
 Maximize the current window.
 
-Windows Key+Down Arrow
+`Windows Key+Down Arrow`
+
 Minimize the current window.
 
-Windows Key+Left Arrow
+`Windows Key+Left Arrow`
+
 Snap to the left hand side of the screen
 
-Windows Key+Right Arrow
+`Windows Key+Right Arrow`
+
 Snap to the right hand side of the screen.
 
 To quickly launch an application as an administrator (without the right-click, run as administrator), type the name in the Search programs and files field, and then press Ctrl-Shift-Enter.
@@ -167,7 +174,8 @@ A great way to save all your command line tools and make them available across a
 Windows 2008
 
 You can free up disk space on your servers by disabling hibernate. Windows 2008 will create a hiberfil.sys equal to the amount of RAM. This is very useful with VMs that have lots of RAM but smaller C: drives. To disable hibernation, and reclaim that space, run this command:
-powercfg -h off
+
+`powercfg -h off`
 
 You can get to the complete collection of Sysinternals tools online. You can even invoke them from the run command. Use the url: http://live.sysinternals.com or the UNC path: \\live.sysinternals.com\tools.
 
@@ -175,22 +183,28 @@ Speaking of the Sysinternals tools, almost any command line in this article can 
 
 You can kill RDP sessions at the command line when you find that all the RDP sessions to a server are tied up.
 regsvr32 query.dll (You only have to do this the first time.)
-query session /server:servername
-reset session # /server:servername
+
+`query session /server:servername`
+
+`reset session # /server:servername`
 
 You can create a list of files and display the last time they were accessed, which is very useful when a network drive is low on space and users swear they have to have that copy of Office 2003 on the network. My advice? If they haven’t touched it in two years, burn it to DVD or write it to tape and then delete it from disk:
-dir /t:a /s /od >> list.txt 
+
+`dir /t:a /s /od >> list.txt` 
 
 The Microsoft Exchange Err command is one of the best all around troubleshooting tools you will find, as it can decode any hex error code you find as long as the products are installed on the machine. Download it from here.
 
 You can see all the open files on a system by running this command:
-openfiles /query
+
+`openfiles /query`
 
 You can pull all the readable data out of a corrupt file using this command:
-recover filename.ext
+
+`recover filename.ext`
 
 Need to pause a batch file for a period of time but don’t have the sleep command from the old resource kit handy? Here’s how to build a ten second delay into a script:
-ping -n 10 127.0.0.1 > NUL 2>&1
+
+`ping -n 10 127.0.0.1 > NUL 2>&1`
 
 If your Windows website has stopped responding, or is throwing a 500 error, and you are not sure what to do, you can reset IIS without having to reboot the whole server. Run this command:
 iisreset
@@ -202,10 +216,10 @@ that && trick to create a batch file called restart.cmd and use it to restart se
 net stop %1 && net start %1
 
 You can download a Windows port of the wget tool from here, and use it to mirror websites using this command:
-wget -mk http://www.example.com/
+
+`wget -mk http://www.example.com/`
 
 # Windows Security Best Practices
-
 
 ## Clean up the Domain Admins Group
 
@@ -294,7 +308,6 @@ It’s very easy to delegate admin tasks without giving staff domain admin right
 
 - Vsphere or Hyper-v Administration
 
-
 - Regular account
 
 - Account for Server Administration
@@ -381,10 +394,7 @@ The solution uses the group policy client side extension to perform all the mana
 
 If you need to use the local admin account on a computer you would retrieve the password from active directory and it would be unique to that single computer.
 
-
-
 For step by step instructions on installing LAPS see this article, How to Install Local Administrator Password Solution (LAPS)
-
 
 ## Use a Secure Admin Workstation (SAW)
 
@@ -524,11 +534,7 @@ Here are some screenshots from an analyzer that I use. The first screenshot show
 
 That is definitely not normal.
 
-
-
 In this screenshot, you can see a huge spike in logon failures. Without a log analyzer, these events would be hard to spot.
-
-
 
 ## Password Complexity Sucks (Use Passphrases Instead)
 
@@ -674,11 +680,7 @@ These DNS services gather intelligence about malicious domains from various publ
 
 Here is a video from Quad 9 that explains their DNS service.
 
-
-
 **Here is an example:**
-
-
 
 Step1: Client clicks a link that goes to example.net
 
@@ -713,8 +715,6 @@ Just staying on the latest OS will increase overall security.
 - Device Guard
 
 Here is a good video from Microsoft on Windows Server 2016 Security.
-
-
 
 ##  Use Two Factor Authentication for Remote Access
 
@@ -755,7 +755,6 @@ In the screenshot below I can easily spot a device that does not follow my compu
 minint-1bdvd67 is not something I recognize. I will need to look into this and see if it is an authorized device.
 
 
-
 ## Monitor DNS Logs for Security Threats
 Most connections start with a DNS query. All domain joined systems should be set up to use your local Windows DNS server.
 
@@ -766,8 +765,6 @@ These malicious domains are usually odd, random character domains that raises re
 Here are some screenshots of suspicious DNS lookups from my logs. These repeatedly show up in my logs for a handful of devices.
 
 I seriously doubt a user is trying to go to this site intentionally. These kinds of lookup need to be looked into to determine if it’s malicious or not.
-
-
 
 To view the DNS lookups you first need to enable the DNS debug logs on the Windows Servers.
 
@@ -780,8 +777,6 @@ Step 2: Right click and select properties
 Step 3: Click Debug Logging Tab
 
 Step 4: Check the box “Log packets for debugging
-
-
 
 Once you have the debug logs setup you can import those logs into an analyzer to quickly spot malicious activity.
 
@@ -811,11 +806,7 @@ Microsoft does improve and add new features at every level (At least this is wha
 
 I’m currently running a hybrid office 365 setup. In azure I can see several risky sign on reports.
 
-
-
 Azure alerted me to a sign on that came from China from one of our accounts.
-
-
 
 Some of these features are available with the latest ADFS version and some are included with office 365 subscription.
 
@@ -838,8 +829,6 @@ https://cloudblogs.microsoft.com/enterprisemobility/2018/03/05/azure-ad-and-adfs
 Microsoft continues to expand and add additional features to Secure Score.
 
 If you have access to this feature then take advantage of it.
-
-
 
 ## Plan for Compromise ( Have a recovery plan)
 
@@ -928,8 +917,6 @@ If you are running an older Windows version or still on Windows 7, here is how y
 
 You will be prompted to restart.
 
-
-
 **Method 2:** Disable in Registry
 
 If you are still running Windows 7 you will have to edit the registry to disable SMBv1.
@@ -941,8 +928,6 @@ Navigate to this key
 Right click the parameters key and choose New > DWORD (32-bit) value.
 
 Name the new value SMB1. It should by default be value 0 which disabled it.
-
-
 
 To disable SMBv1 across all computers you can use group policy registry preference.  This will allow you to create the above registry setting on all computers.
 
@@ -966,28 +951,22 @@ Most of the recommended settings can be set up using Group Policy and deployed t
 
 Here is a screenshot of the CIS Securesuite tool. It ran a scan on my computer and generated a report on all the settings that passed and failed.
 
-
 CIS Securesuite can also scan against other systems like cisco, vmware, linux and more.
 
 **Recommended Tool:** SolarWinds Server & Application Monitor
-
 
 This utility was designed to Monitor Active Directory and other critical services like DNS & DHCP. It will quickly spot domain controller issues, prevent replication failures, track failed logon attempts and much more.
 
 What I like best about SAM is it’s easy to use dashboard and alerting features. It also has the ability to monitor virtual machines and storage.
 
-
-
 ## Windows Video Link 👇🏾
 [![WINDOWS AD INSTALL](windows.png)](https://drive.google.com/file/d/1N7TP8H-7-nv9IKPObkIMAFS2Q6zC3wvT/view?usp=sharing)
-
 
 ## Windows Server Install ISO Link 👇🏾
 [![WINDOWS SERVER ISO](iso.png)](https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/WIN_SERVER_STD_CORE_2019_64BIT.ISO)
 
 ## Windows Server Image 👇🏾
 [![WINDOWS SERVER Image](windows-vm.png)](https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/windows-2019-server.ova)
-
 
 ## Windows Questions
 1. How do you setup Active Directory on a Windows server via the GUI?
