@@ -28,19 +28,19 @@ Students by the end of the course will be able to open a trading account, buy an
 # 📚 Lessons
 
 ## Personal Finance / Economic justice (non-crypto)
-[Client Intake](/courses/17-Crypto/lessons/personal-finance.md)
+[Personal Finance](/courses/17-Crypto/lessons/personal-finance.md)
 
 ## Cryptocurrency foundations
-[Client Assessment](/courses/17-Crypto/lessons/crypto-foundations.md)
+[Cryptocurrency foundations](/courses/17-Crypto/lessons/crypto-foundations.md)
 
 ## Tracks for further study (activities that support program operations)
-[Project Scoping](/courses/17-Crypto/lessons/study-tracks.md)
+[Tracks for further study](/courses/17-Crypto/lessons/study-tracks.md)
 
 ## Blockchain Operations
-[Setting Goals](/courses/17-Crypto/lessons/blockchain-operations.md)
+[Blockchain Operations](/courses/17-Crypto/lessons/blockchain-operations.md)
 
 ## Content Creation
-[Maintenance](/courses/17-Crypto/lessons/content-creation.md)
+[Content Creation](/courses/17-Crypto/lessons/content-creation.md)
 
 ## Developing for Web3
-[Relationships](/courses/17-Crypto/lessons/web3.md)
+[Web3](/courses/17-Crypto/lessons/web3.md)
