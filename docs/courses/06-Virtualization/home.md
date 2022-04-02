@@ -17,11 +17,11 @@
 
 # 🏆 Learning Outcomes
 
-Students by the end of the course will be able to...
+Students by the end of the course will be able to launch and manage pre built machines using Docker and create unique containers using Docker.
 
-1. Understand operating systems
-1. Undertand setup maintanance, and security
-1. Create basic scripts
+1. Understand container management
+1. Undertand and create containers
+1. Create basic scripts that can build custom containers
 
 # 📚 Lessons
 

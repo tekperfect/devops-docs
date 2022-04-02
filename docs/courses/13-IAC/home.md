@@ -8,7 +8,7 @@
 
 # 📝 Lesson Description
 
-> This lesson will cover virtualization. The process of visualising OS systems on your local machine. 
+> This lesson will cover the concepts and practices associated with building infrastructure using code. 
 
 # 🎯 Prerequisites
 
@@ -17,11 +17,11 @@
 
 # 🏆 Learning Outcomes
 
-Students by the end of the course will be able to...
+Students by the end of the course will be able to build servers, storage, and infrastructure using Terraform.
 
-1. Understand operating systems
-1. Undertand setup maintanance, and security
-1. Create basic scripts
+1. Understand how Terraform is used and maintained to build infrastructure
+1. Undertand the importance of security as it relates to IaC (Infrastrucuture as Code)
+1. Create basic scripts that will allow you to install software and services post launch of operating systems and infrastructure.
 
 # 📚 Lessons
 

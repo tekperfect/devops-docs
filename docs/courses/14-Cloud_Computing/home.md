@@ -8,7 +8,7 @@
 
 # 📝 Lesson Description
 
-> This lesson will cover virtualization. The process of visualising OS systems on your local machine. 
+> This lesson will cover virtualization in a cloud environment and all the associated concepts related to maintaining cloud infrastrucure from the command line and a GUI.
 
 # 🎯 Prerequisites
 
@@ -17,11 +17,11 @@
 
 # 🏆 Learning Outcomes
 
-Students by the end of the course will be able to...
+Students by the end of the course will be able to build cloud infrastructure using AWS.
 
-1. Understand operating systems
-1. Undertand setup maintanance, and security
-1. Create basic scripts
+1. Understand how to build and secure cloud infrastrucure
+1. Undertand how to use and estimate costs associated with various types of cloud infrastructure.
+1. Create servers, storage, and endpoints that you can interact with remotely using cloud infrastructure.
 
 # 📚 Lessons
 

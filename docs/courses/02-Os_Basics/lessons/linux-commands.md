@@ -370,10 +370,6 @@ This command allows you to search all the files in the current directory for the
 
 Replace “your_hostname” with the hostname that you want to keep.
 
-**Setting up the time zone**: Move to /usr/share/zoneinfo/your_zone and then link the zone file with /etc/localtime to set the time zone.
-
->.sudo ln -sf Kolkata /etc/localtime
-
 ## File System and Management
 
 Managing files is the most important task in Linux as all devices, directories, and packages are just a type of file in Linux.

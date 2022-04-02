@@ -8,7 +8,7 @@
 
 # 📝 Lesson Description
 
-> This lesson will cover virtualization. The process of visualising OS systems on your local machine. 
+> This lesson will cover database managment and security
 
 # 🎯 Prerequisites
 
@@ -17,11 +17,11 @@
 
 # 🏆 Learning Outcomes
 
-Students by the end of the course will be able to...
+Students by the end of the course will be able to create, manage, import, export, and modify a variety of enterprise databases.
 
-1. Understand operating systems
-1. Undertand setup maintanance, and security
-1. Create basic scripts
+1. Understand basic concepts associated with database managment
+1. Undertand setup maintanance, and security best practices as they relate to databases
+1. Create basic queries and scripts associated with database maintenance
 
 # 📚 Lessons
 

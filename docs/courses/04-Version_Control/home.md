@@ -8,7 +8,7 @@
 
 # 📝 Lesson Description
 
-This lesson will introduce the core concepts of operating systems, such as processes and threads, scheduling, synchronization, memory management, file systems, input and output device management and security
+This lesson will introduce the core concepts of creating and managing code in an enterprise environment. 
 
 # 🎯 Prerequisites
 
@@ -17,11 +17,11 @@ This lesson will introduce the core concepts of operating systems, such as proce
 
 # 🏆 Learning Outcomes
 
-Students by the end of the course will be able to...
+Students by the end of the course will be able create a repo, check in code, peer review code, commit code, and understand how code managment in a professional enviroment works and the importance of collaboration. 
 
-1. Understand operating systems
-1. Undertand setup maintanance, and security
-1. Create basic scripts
+1. Understand basic coding concepts
+1. Undertand repository managment processes and best practices
+1. Create and check in basic scripts
 
 # 📚 Lessons
 

@@ -8,7 +8,7 @@
 
 # 📝 Lesson Description
 
-> This lesson will cover virtualization. The process of visualising OS systems on your local machine. 
+> This lesson will cover the use of SaaS tools in an enterprise environment and why they are important to the operation of most businesses. 
 
 # 🎯 Prerequisites
 
@@ -17,11 +17,11 @@
 
 # 🏆 Learning Outcomes
 
-Students by the end of the course will be able to...
+Students by the end of the course will be able to manage and maintain SaaS tools in an enterprise environment along with securing, maintaining, and supporting critical SaaS infrastrucure.
 
-1. Understand operating systems
-1. Undertand setup maintanance, and security
-1. Create basic scripts
+1. Understand why system administration is vital to business operations
+1. Understand how SaaS infrastructure and SSO have become the default industry standard for productivity 
+1. Create basic scripts that allow you to automate common admin tasks.
 
 # 📚 Lessons
 

@@ -8,7 +8,7 @@
 
 # 📝 Lesson Description
 
-> This lesson will cover virtualization. The process of visualising OS systems on your local machine. 
+> This lesson will cover security concepts and best practices. The process of understanding how local and remove DoS attacks occur as well as how phishing attacks are crafted along with how to educate end users. 
 
 # 🎯 Prerequisites
 
@@ -17,11 +17,11 @@
 
 # 🏆 Learning Outcomes
 
-Students by the end of the course will be able to...
+Students by the end of the course will be able to build a system capable of scanning local and remote networks for vunerabilites and understand the basic and intermediate concepts associated with security best practices.
 
-1. Understand operating systems
-1. Undertand setup maintanance, and security
-1. Create basic scripts
+1. Understand the importance of good operating system and network security
+1. Undertand how to build security scanning devices and launch attacks in a sandbox environment 
+1. Implement and test for security best practices
 
 # 📚 Lessons
 

@@ -17,7 +17,7 @@ This lesson will introduce the core concepts of operating systems, such as proce
 
 # 🏆 Learning Outcomes
 
-Students by the end of the course will be able to...
+Students by the end of the course will be able to install an operating system run basic, intermediate, and advanced commands. Manage users, files, folders, and applications running on a Linux and Windows operating system.
 
 1. Understand operating systems
 1. Undertand setup maintanance, and security

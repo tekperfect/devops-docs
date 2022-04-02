@@ -19,9 +19,9 @@
 
 Students by the end of the course will be able to...
 
-1. Understand operating systems
-1. Undertand setup maintanance, and security
-1. Create basic scripts
+1. Understand basic python programming concepts
+1. Undertand create basic scripts that can parse data
+1. Create basic scripts that are capable of taking user input
 
 # 📚 Lessons
 ## Python
