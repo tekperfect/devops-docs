@@ -37,7 +37,6 @@ Creating these folders demonstrates how the linux file structure works.
 You have a root level folder which all other directories start from and each folder can contain a multitude of subfolders
 -->
 
-
 ## Creating files
 > Time to create some files in the directories
 ```bash

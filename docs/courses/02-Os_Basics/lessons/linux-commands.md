@@ -8,7 +8,7 @@
 
 > man | Manual
 
-- `man` is use before a linux command you'd like to know more information on. **Use `control+ z `**
+- `man` is used before a linux command you'd like to know more information abougt. **Use `control+ z `**
 
 **\* Examples**
 
@@ -23,7 +23,7 @@
 
 > pwd | Print Working Directory
 
-- `pwd` is used to print the current location you car currently at in your terminal. Remeber when you launch your terminals;
+- `pwd` is used to print the current location you are currently in via your terminal. Remeber when you launch your terminals;
 
 **\* Examples**
 
@@ -31,7 +31,7 @@
 
 > cd | Change Directory
 
-- `cd` is used to navigate your terminal files.
+- `cd` is used to navigate your terminals directory structure 
 
 **\* Examples**
 
@@ -39,7 +39,7 @@
 
 > touch | Touch
 
-- `touch` is a powerful command used to create any type of file in your file system.
+- `touch` is a powerful command used to create a blank file in your file system.
 
 **\* Examples**
 
@@ -62,7 +62,7 @@ As an example, imagine your application throws an HTTP 500 error indicating it c
 
 HTTP/1.0 500 INTERNAL SERVER ERROR
 
-The -I option shows the header information and the -s option silences the response body. Checking the endpoint of your database from your local desktop:
+The -I option shows the header information and the -s option silences the response body. Checking the endpoint of your database from your local computer:
 
 `curl -I -s database:27017`
 
@@ -101,7 +101,7 @@ bash: ./myapp: Permission denied
 
 tail displays the last part of a file. You usually don't need every log line to troubleshoot. Instead, you want to check what your logs say about the most recent request to your application. For example, you can use tail to check what happens in the logs when you make a request to your Apache HTTP server.
 
-example_tail.png
+example_tail.txt
 Use tail -f to follow Apache HTTP server logs and see the requests as they happen.
 Use tail -f to follow Apache HTTP logs and see the requests as they happen.
 
@@ -177,11 +177,9 @@ Traceback (most recent call last):
 MemoryError
 Is your application really out of memory? To confirm, use top to determine how much CPU and memory your application consumes. When issuing top, you notice a Python application using most of the CPU, with its memory usage climbing, and suspect it is your application. While it runs, you hit the "C" key to see the full command and reverse-engineer if the process is your application. It turns out to be your memory-intensive application (memeater.py). When your application has run out of memory, the system kills it with an out-of-memory (OOM) error.
 
-example_top.png
 Issuing top against an application that consumes all of its memory.
 The memory and CPU usage of the application increases, eventually being OOM-killed.
 
-example_topwithc.png
 Pressing C while running top shows the full command
 By hitting the "C" key, you can see the full command that started the application.
 
@@ -192,7 +190,6 @@ In addition to checking your own application, you can use top to debug other pro
 
 netstat shows the network status. This command shows network ports in use and their incoming connections. However, netstat does not come out-of-the-box on Linux. If you need to install it, you can find it in the net-tools package. As a developer who experiments locally or pushes an application to a host, you may receive an error that a port is already allocated or an address is already in use. Using netstat with protocol, process and port options demonstrates that Apache HTTP server already uses port 80 on the below host.
 
-example_netstat.png
 netstat verifies that Apache is running on port 80
 Using netstat -tulpn shows that Apache already uses port 80 on this machine.
 
@@ -201,7 +198,6 @@ Using netstat -tulpn shows that Apache already uses port 80 on this machine.
 
 If ip address does not work on your host, it must be installed with the iproute2 package. ip address shows the interfaces and IP addresses of your application's host. You use ip address to verify your container or host's IP address. For example, when your container is attached to two networks, ip address can show which interface connects to which network. For a simple check, you can always use the ip address command to get the IP address of the host. The example below shows that the web tier container has an IP address of 172.17.0.2 on interface eth0.
 
-example_ipaddr_0.png
 ip address shows that the IP address of eth0 is 172.17.0.2
 Using ip address shows that the IP address of the eth0 interface is 172.17.0.2
 
@@ -210,7 +206,6 @@ Using ip address shows that the IP address of the eth0 interface is 172.17.0.2
 
 lsof lists the open files associated with your application. On some Linux machine images, you need to install lsof with the lsof package. In Linux, almost any interaction with the system is treated like a file. As a result, if your application writes to a file or opens a network connection, lsof will reflect that interaction as a file. Similar to netstat, you can use lsof to check for listening ports. For example, if you want to check if port 80 is in use, you use lsof to check which process is using it. Below, you can see that httpd (Apache) listens on port 80. You can also use lsof to check the process ID of httpd, examining where the web server's binary resides (/usr/sbin/httpd).
 
-example_lsof.png
 lsof reveals the origin of process information
 Lsof shows that httpd listens on port 80. Examining httpd's process ID also shows all the files httpd needs in order to run.
 
@@ -221,7 +216,6 @@ The name of the open file in the list of open files helps pinpoint the origin of
 
 You can use df (display free disk space) to troubleshoot disk space issues. When you run your application on a container orchestrator, you might receive an error message signaling a lack of free space on the container host. While disk space should be managed and optimized by a sysadmin, you can use df to figure out the existing space in a directory and confirm if you are indeed out of space.
 
-example_df.png
 df shows all of the disk space available on the host
 Df shows the disk space for each filesystem, its absolute space, and availability.
 
@@ -313,7 +307,6 @@ When you issue so many commands for testing and debugging, you may forget the us
 
 What if you want to execute a command in your previous history, but you don't want to retype it? Use ! before the command number to re-execute.
 
-example_history.png
 Re-execute a command in your history
 Adding ! before the command number you want to execute issues the command again.
 

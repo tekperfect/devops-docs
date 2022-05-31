@@ -1,49 +1,60 @@
 # Linux For Vets
 
+To master linux administration you should be able to do the following
+
+- Modify configuration files of applications or services
+- Add disks and partition drives
+- troubleshoot netowrking issues
+- Create users, groups, and assign individuals admin priviliges
+- Create automated jobs using bash scripts in conjunction with cron
+- Grant login permissions via ssh keys
+- View and extract critical information from log files
+- Display system resource utilization and identify issues with running services
+
 ===
 
 List services running on Linux
-ps
+`ps`
 
 List all running services
-ps -e
+`ps -e`
 
 List all running services along with directory path associated with them which includes the process identifier
-ps -ef
+`ps -ef`
 
 Use the ps command along with grep to find a particular service that is running
 
-ps -e | grep apache
+`ps -e | grep apache`
 
 Apache Configuration file location
 
 Default apache index.html file location
-/var/www/html/index.html
+`/var/www/html/index.html`
 
 Default apache configuration file location
-/etc/apache2/sites-enabled/000-default.conf
+`/etc/apache2/sites-enabled/000-default.conf`
 
 Log files are located in /var/log
 
-ls -al /var/log
+`ls -al /var/log`
 
-cat /var/log/auth
+`cat /var/log/auth`
 
 Increased Security
 
 Generate a key on your windows or linux system
 
-ssh-keygen -t rsa
+`ssh-keygen -t rsa`
 
 Copy the id_ras.pub under your directory on target system using ssh and name the file authorized_keys
 
-cat .ssh/id_rsa.pub | username@xxx.xxx.xxx.xxx 'cat >> .ssh/authorized_keys'
+`cat .ssh/id_rsa.pub | username@xxx.xxx.xxx.xxx 'cat >> .ssh/authorized_keys'`
 
-ssh username@xxx.xxx.xxx.xxx "chmod 700 .ssh; chmod 640 .ssh/authorized_keys"
+`ssh username@xxx.xxx.xxx.xxx "chmod 700 .ssh; chmod 640 .ssh/authorized_keys"`
 
 Now connect to the system using just the username and you should be able to authenticate without a password
 
-ssh username@xxx.xxx.xxx.xxx
+`ssh username@xxx.xxx.xxx.xxx`
 
 ===
 Vet Student Activities

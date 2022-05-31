@@ -30,7 +30,6 @@ We are using GPG to encrypt credentials files and other sensitive files to prote
 
 2. Encrypted credentials can be stored safely in code because they are not stored in clear text but we recommend they not be stored anywhere they can be accessed publicly.
 
-
 ### Verify Install
 
 Run the following commands to verify Terrform is installed `terraform`

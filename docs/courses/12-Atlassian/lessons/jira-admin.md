@@ -1,9 +1,5 @@
 # Atlassain JIRA Admin Guide
 
-
-
-
-
 ## Using the Directory Browser
 
 ### About Directories
@@ -68,10 +64,6 @@ To add a directory,
 - 'Custom' — see Configuring a Custom Directory Connector
 
 (info) Once a directory has been configured, you will need to specify permissions for its users. You can then map the directory to appropriate applications.
-
-
-
-
 
 ## Configuring an LDAP directory connector
 
@@ -166,10 +158,6 @@ Crowd's LDAP connectors support the adding and updating of the following user at
 
 If you need support for additional LDAP attributes, the Crowd LDAP connector can be extended. With a license purchase, full source is available and the LDAP connectors can be modified to support any number of attributes.
 
-
-
-
-
 ## Configuring your Mail Server
 
 Once you have configured your mail server as described below, Crowd can send email notifications to users at specific events, such as when a user requests a password reset or a server event occurs.
@@ -243,10 +231,6 @@ If the Activation Framework is not present in your application server installati
 
 java.lang.NoClassDefFoundError: javax/activation/DataSource
 
-
-
-
-
 ## Backing Up and Restoring Data
 
 You can back up your Crowd data by exporting it to an XML file in the Crowd shared directory. The data includes:
@@ -286,10 +270,6 @@ When scheduled backups are enabled, Crowd will create a daily backup in the /bac
 While Crowd allows you to locally set the active status of users in directories without proper active status support (eg. OpenLDAP), those changes will not be stored in the backup XML. When restoring from a backup, all of those users will be subsequently reactivated.
 
 Crowd versions 3.4.6, 3.5.1, and 3.6.0 come with the possibility to export connector users to the backup file, allowing you to preserve the active flag status after a restore. This option however will increase the size of the backup file and may require increasing Crowd’s memory limits.
-
-
-
-
 
 ## Logging and Profiling
 
@@ -383,7 +363,6 @@ Refer to the section on logging levels above. Any changes made in this way will 
 6. Click the Update Logging button to save any changes you have made in the Log4j Logging section.
 
 
-
 ## Description of the loggers:
 
 **Logger**
@@ -460,9 +439,6 @@ The Crowd Administration Console does not give access to the CrowdID log setting
 
 For Crowd installations of CrowdID: {CROWDID-INSTALL}/crowd-openidserver-webapp/WEB-INF/classes/log4j.properties
 
-
-
-
 **Look and Feel**
 
 **Ask the community**
@@ -481,9 +457,4 @@ Only Crowd administrators can make changes to the look and feel of the login scr
 3. Click Save. 
 
 The login screen with your changes will be displayed to logging users from now on. If you want to go back to the default settings, click the Restore defaults button next to the Save button. 
-
-
-
-
-
 

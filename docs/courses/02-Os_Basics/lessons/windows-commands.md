@@ -42,7 +42,7 @@ Displays the name of the user you are logged in as
 `echo %username%`
 
 
-View the contents of a file
+View or edit the contents of a file
 
 `type filename`
 
@@ -52,7 +52,7 @@ Edit a file
 `edit filename`
 
 
-Powershell command that ead the last few lines of file
+Powershell command that displays the last few lines of file
 
 `Get-Content filename`
 

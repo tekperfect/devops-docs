@@ -57,4 +57,3 @@ These organizations have small to moderate investments in PCI, and ISO complianc
  - How are the devices that each staff member has managed today?
  - What are the technical capabilites of each staff member?
  - Is training a option to bring everone to the same proficiency level?
-

@@ -58,7 +58,7 @@ Write a script that will ask the user what the weather is like and return specif
 ```python
 # Sunny: Have a run!
 # Rainy: Play A board game!
-# Snowy: Make a snowing
+# Snowy: Make a snowman
 # anything else : It's always a good time to read
 ```
 Write a script that will add 20 if its greate than or equal to 10  and subtract 20 if its greater than

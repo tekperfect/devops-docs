@@ -61,5 +61,3 @@ The software utility cron also known as cron job is a time-based job scheduler i
 
 ### Run once an hour, “0 * * * *”
 `@hourly command`	
-
-### This is an excellent cron reference https://crontab.guru/examples.html

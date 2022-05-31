@@ -4,6 +4,17 @@
 
 [101 Bash Commands](https://dev.to/awwsmm/101-bash-commands-and-tips-for-beginners-to-experts-30je)
 
+To learn the basics of linux administration you should be able to do the following
+
+Basics
+
+- Navigate the operating system
+- Create, move, copy, and delete files
+- Show what services or applications are running and stop or restart those services
+- Change permissions and attributes of files and folders
+- Install applications and services
+
+
 ## The Basics
 
 > man | Manual
