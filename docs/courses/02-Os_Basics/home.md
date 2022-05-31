@@ -28,6 +28,9 @@ Students by the end of the course will be able to install an operating system ru
 ## Linux
 
 [Linux Commands](/courses/02-Os_Basics/lessons/linux-commands.md)
+## Linux
+
+[Linux Commands](/courses/02-Os_Basics/lessons/linux-vets.md)
 
 ## Linux
 
