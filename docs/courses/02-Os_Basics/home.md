@@ -25,14 +25,15 @@ Students by the end of the course will be able to install an operating system ru
 
 # 📚 Lessons
 
-## Linux
+## Linux Beginners
 
-[Linux Commands](/courses/02-Os_Basics/lessons/linux-commands.md)
-## Linux
+[Beginner Linux Commands](/courses/02-Os_Basics/lessons/linux-commands.md)
 
-[Linux Commands](/courses/02-Os_Basics/lessons/linux-vets.md)
+## Linux Vets
 
-## Linux
+[Veteran Linux Commands](/courses/02-Os_Basics/lessons/linux-vets.md)
+
+## Cron
 
 [Cron Automation](/courses/02-Os_Basics/lessons/cron.md)
 
