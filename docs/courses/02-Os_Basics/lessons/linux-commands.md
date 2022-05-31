@@ -2,7 +2,15 @@
 
 [![](https://img.talkandroid.com/uploads/2014/11/google_drive_app_icon-100x100.png)]()
 
-[101 Bash Commands](https://dev.to/awwsmm/101-bash-commands-and-tips-for-beginners-to-experts-30je)
+To have a basic understanding of the linux operating system you should be able to do the following
+
+- List files and folders in one or more directories
+- Create files and folders
+- Navigate the directory structure of the operating system
+- Copy, move, and delete files
+- Display the contents of a file and edit them
+- Install and uninstall packages
+- List applications and services installed on the operating systems
 
 ## The Basics
 
