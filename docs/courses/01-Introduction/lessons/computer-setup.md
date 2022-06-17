@@ -25,13 +25,23 @@ Paste this in your macOS Terminal or Linux shell prompt.
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
-Now that you have homebrew let's install all the other packages, and no worries we have a script for that!
+If you are running windows we recommend that you install the Chocolatey package manager which can be installed from here [chocolatey](https://chocolatey.org/install)
+
+Now that you have homebrew or chocolatey installed let's install all the other packages, and no worries we have a script for that!
 
 ```bash
 curl -s -L https://raw.githubusercontent.com/alfonsoh/scripts/master/bash/devops-setup.sh | bash
 ```
 
 This will install: `wget`, `caskroom/cask` , `docker`, `python3`, `git`, `kubernates`, and `virtual box` 
+
+In the Windows environment you can install most of the packages by running the following command after Chocolatey has been installed 
+
+`choco install wget`
+`choco install docker`
+`choco install python`
+`choco install git`
+`choco install kubernetes-cli`
 
 
 ## ⬛ Terminal
