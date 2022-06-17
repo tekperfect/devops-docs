@@ -29,10 +29,6 @@ Students by the end of the course will be able to build servers, storage, and in
 
 [Terraform](/courses/13-IAC/lessons/terraform.md)
 
-## Jenkins
-
-[Jenkins](/courses/13-IAC/lessons/jenkins.md)
-
 ## LiveOps
 
 [LiveOps](/courses/13-IAC/lessons/liveops.md)
