@@ -2,9 +2,9 @@
 
 ### What is DevOps?
 
-TekPerfect is partnering with GameHeads to train Bay Area youth for careers in the tech industry. There are many paths to get into tech and many jobs when you think of a “developer”. Our bootcamp focuses on “DevOps” (a mixture of development and operations).
+DevOps is the combination of cultural philosophies, practices, and tools that increases an organization's ability to deliver applications and services at high velocity: evolving and improving products at a faster pace than organizations using traditional software development and infrastructure management processes.
 
-Think of an app or video game. You will see a gaming/social experience. But what you don’t see are the code and the foundation it is built upon. DevOps refers to the infrastructure. No matter what you want to build (app, video game, database), you will need the right infrastructure. This foundation allows the user to see the great product without all the bugs or lags or crashes.
+Think of an application or video game and all the infrastructure and services required to support that game. Without said infrastrucure and experienced professionals to run it your websites, games, and social media platforms would not run well or be available 24x7.
 
 ![How Tech Products Are Built](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi1.wp.com%2Flinuxlearningcentre.com%2Fwp-content%2Fuploads%2F2019%2F08%2Fdevops..jpg%3Ffit%3D4000%252C2238&f=1&nofb=1)
 
