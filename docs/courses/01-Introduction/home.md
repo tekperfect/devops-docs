@@ -14,9 +14,9 @@
 ## 📘 Course Description <!-- {docsify-ignore} -->
 > **What is DevOps?**
 
-TekPerfect is partnering with GameHeads to train Bay Area youth for careers in the tech industry. There are many paths to get into tech and many jobs when you think of a “developer”. Our bootcamp focuses on “DevOps” (a mixture of development and operations).
+DevOps is the combination of cultural philosophies, practices, and tools that increases an organization's ability to deliver applications and services at high velocity: evolving and improving products at a faster pace than organizations using traditional software development and infrastructure management processes.
 
-Think of an app or video game. You will see a gaming/social experience. But what you don’t see are the code and the foundation it is built upon. DevOps refers to the infrastructure. No matter what you want to build (app, video game, database), you will need the right infrastructure. This foundation allows the user to see the great product without all the bugs or lags or crashes.
+Think of an application or video game and all the infrastructure and services required to support that game. Without said infrastrucure and experienced professionals to run it your websites, games, and social media platforms would not run well or be available 24x7.
 
 ## 🎯 Prerequisites <!-- {docsify-ignore} -->
 None! Just bring yourself on time and be dedicated to learn
@@ -30,8 +30,6 @@ None! Just bring yourself on time and be dedicated to learn
 > Schedule is subject to change at anytime
 
 #### ** DevOps **
-
-[Live Ops Course Sylabus](/courses/01-Introduction/lessons/liveops-course-syllabus.md)
 
 ## 📏 Assignments
 - [ Computer Setup](/courses/01-Introduction/lessons/computer-setup.md)
