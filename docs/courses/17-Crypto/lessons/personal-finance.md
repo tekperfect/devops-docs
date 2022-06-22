@@ -88,7 +88,7 @@ Laws today forbid discrimination based on race, color, religion, sex, national o
 
 ### Generational wealth
 
-iGenerational wealth refers to any kind of asset that families pass down to their children or grandchildren, whether in the form of cash, investment funds, stocks and bonds, properties or even entire companies.
+Generational wealth refers to any kind of asset that families pass down to their children or grandchildren, whether in the form of cash, investment funds, stocks and bonds, properties or even entire companies.
 
 What gender and ethnic groups have been allows to build this kind of wealth?
 How do you go about correcting this issue in our communities?
