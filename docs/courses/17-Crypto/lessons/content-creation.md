@@ -1,17 +1,9 @@
-## Who are the clients? 
+## Content Creation
 
-### Financial planning
+### Producing content
 
-### Budgeting
+### Finding your audience
 
-### Risk management
+### Growing your audience
 
-### Taxes
-
-### Retirement
-
-### How credit works
-
-### Discriminatory practices
-
-### Generational wealth
+### Providing value to your subscribers and supporters

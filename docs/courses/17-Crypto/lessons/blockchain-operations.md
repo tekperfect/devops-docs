@@ -1,17 +1,5 @@
-## Who are the clients? 
+## Blockchain Operations
 
-### Financial planning
+### Validators
 
-### Budgeting
-
-### Risk management
-
-### Taxes
-
-### Retirement
-
-### How credit works
-
-### Discriminatory practices
-
-### Generational wealth
+### Mining

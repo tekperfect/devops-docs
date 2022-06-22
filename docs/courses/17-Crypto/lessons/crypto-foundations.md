@@ -1,17 +1,13 @@
 ## Who are the clients? 
 
-### Financial planning
+### What is a blockchain
 
-### Budgeting
+### Technology
 
-### Risk management
+### Economics
 
-### Taxes
+### Smart contracts
 
-### Retirement
+### Game theory
 
-### How credit works
-
-### Discriminatory practices
-
-### Generational wealth
+### Privacy and lack therof in crypto
