@@ -69,7 +69,7 @@ Here are some links to applications and simple budget strategies you can use to 
 https://mint.intuit.com/
 https://docs.google.com/spreadsheets/d/1M5WJyLnM6D64jBOWWLagiflbzKXj6EsIJpWmTvcpGE0/template/preview
 
-### How credit work
+### How credit works
 
 Credit cards have a credit limit you can make purchases against. then repay at a later date.
 Carrying a balance on a credit card can trigger interest charges.
