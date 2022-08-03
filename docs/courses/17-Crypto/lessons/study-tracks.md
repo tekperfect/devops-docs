@@ -20,6 +20,9 @@ The risks of stock holdings can be offset in part by investing in a number of di
 
 ### Exponential Moving Average
 
+## EMA Example👇🏾
+[![EMA](ema.png)](https://www.investopedia.com/terms/e/ema.asp#:~:text=Finally%2C%20the%20following%20formula%20is,)%20x%20(1%2Dmultiplier))
+
 An exponential moving average (EMA) is an average price calculation over a specific time period that puts more weight on the most recent price data causing it to react faster to price change.
 
 Traders use moving averages on charts to help determine trend, direction, and strength, and are often used as entry and exit points.

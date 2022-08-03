@@ -66,9 +66,6 @@ Here are some links to applications and simple budget strategies you can use to 
 [![Budget](budget.png)](https://docs.google.com/spreadsheets/d/1M5WJyLnM6D64jBOWWLagiflbzKXj6EsIJpWmTvcpGE0/template/preview)
 
 
-https://mint.intuit.com/
-https://docs.google.com/spreadsheets/d/1M5WJyLnM6D64jBOWWLagiflbzKXj6EsIJpWmTvcpGE0/template/preview
-
 ### How credit works
 
 Credit cards have a credit limit you can make purchases against. then repay at a later date.
