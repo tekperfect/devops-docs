@@ -1,4 +1,13 @@
-## Who are the clients? 
+## Personal Finance Fundamentals
+
+> Start with a financial plan 
+> Construct a budget
+> Understand how credit works
+> Investing
+> Managing risk
+> Taxes and more taxes
+> Prepare for retirement
+> History of money
 
 ### Financial planning
 What Is a Financial Plan?
@@ -41,14 +50,32 @@ The core of a financial plan is a person’s clearly defined goals which may inc
 
 No one can tell you how to prioritize these goals. However, a professional financial planner may be able to help you choose a strategy and specific investments that will help reach your goals efficiently.
 
-### Retirement
+### How credit work
 
-The main elements of a financial plan include a retirement strategy, a risk management plan, a long-term investment plan, a tax reduction strategy, and an estate plan.
+Credit cards have a credit limit you can make purchases against. then repay at a later date.
+Carrying a balance on a credit card can trigger interest charges.
+It's important to read the fine print closely on credit card promotional offers.
+Some credit cards allow you to earn rewards on purchases in the form of points, miles or cash back.s
 
+A credit card is a physical card that can be used to make purchases, pay bills or depending on the card, withdraw cash. The simplest way to think of a credit card is as a type of short term loan.
+When you open a credit card account, your credit card company gives you a set credit limit. This is essentially an amount of money the credit card company allows you to use to make purchases or pay bills.
 
-The following elements should be addressed and revised as necessary:
+### Why should I invest in the market?
 
-Retirement strategy: No matter what your priorities are, the plan should include a strategy for accumulating the retirement income that you need.
+Stocks offer investors the greatest potential for growth (capital appreciation) over a time period. Investors willing to stick with stocks over long periods of time, generally are rewarded with strong, positive returns.
+
+But stock prices also fall. There’s no guarantee in the market, so you can lose money you invest in a specific company or fund.
+
+If a company goes out of business and its assets are liquidated, common stockholders are the last to be paid out. The company’s bondholders will be paid first, then holders of preferred stock. If you are a common stockholder, you get whatever is remaining.
+
+Even when companies aren’t in danger of failing, their stock price may fluctuate up or down. Large company stocks as a group, for example, have lost money on average about one out of every three years. If you have to sell shares on a day when the stock price is below the price you paid for the shares, you will lose money on the sale.
+
+Market fluctuations can be unnerving to some investors. A stock’s price can be affected by factors inside the company, such as a faulty product, or by events the company has no control over, such as war, market manupilation, bad press, or failure in leadership.
+
+Stocks usually are one part of an investor’s holdings. If you are young and saving for a long-term goal such as retirement, you may want to hold more stocks than bonds. Investors nearing or in retirement may want to hold more bonds than stocks.
+
+The risks of stock holdings can be offset in part by investing in a number of different stocks. Investing in other kinds of assets that are not stocks, such as bonds, is another way to offset some of the risks of owning stocks.
+
 
 ### Risk management
 
@@ -66,16 +93,16 @@ The United States of America has separate federal, state, and local governments 
 
 Taxes fall much more heavily on labor income than on capital income. Divergent taxes and subsidies for different forms of income and spending can also constitute a form of indirect taxation of some activities over others. For example, individual spending on higher education can be said to be "taxed" at a high rate, compared to other forms of personal expenditure which are formally recognized as investments.
 
-### How credit work
+### Retirement
 
-Credit cards have a credit limit you can make purchases against. then repay at a later date.
-Carrying a balance on a credit card can trigger interest charges. 
-It's important to read the fine print closely on credit card promotional offers.
-Some credit cards allow you to earn rewards on purchases in the form of points, miles or cash back.s
+The main elements of a financial plan include a retirement strategy, a risk management plan, a long-term investment plan, a tax reduction strategy, and an estate plan.
 
-A credit card is a physical card that can be used to make purchases, pay bills or depending on the card, withdraw cash. The simplest way to think of a credit card is as a type of short term loan.
-When you open a credit card account, your credit card company gives you a set credit limit. This is essentially an amount of money the credit card company allows you to use to make purchases or pay bills.
 
+The following elements should be addressed and revised as necessary:
+
+Retirement strategy: No matter what your priorities are, the plan should include a strategy for accumulating the retirement income that you need
+
+### History of money
 ### Discriminatory practices
 
 Laws today protect borrowers from discriminatory lending practices, but that wasn’t always the case. For decades U.S. banks denied mortgages to Black families—and those belonging to other racial and ethnic minority groups—who lived in certain areas “redlined” by a federal government agency called the Home Owners’ Loan Corporation (HOLC).
