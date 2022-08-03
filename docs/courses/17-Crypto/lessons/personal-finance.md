@@ -50,6 +50,18 @@ The core of a financial plan is a person’s clearly defined goals which may inc
 
 No one can tell you how to prioritize these goals. However, a professional financial planner may be able to help you choose a strategy and specific investments that will help reach your goals efficiently.
 
+Here are some links to applications and simple budget strategies you can use to keep your finances under control
+
+## Budget App👇🏾
+[![Budget](budget.png)](https://mint.intuit.com/)
+
+## Budget Tracker 👇🏾
+[![Budget](budget.png)](https://docs.google.com/spreadsheets/d/1M5WJyLnM6D64jBOWWLagiflbzKXj6EsIJpWmTvcpGE0/template/preview)
+
+
+https://mint.intuit.com/
+https://docs.google.com/spreadsheets/d/1M5WJyLnM6D64jBOWWLagiflbzKXj6EsIJpWmTvcpGE0/template/preview
+
 ### How credit work
 
 Credit cards have a credit limit you can make purchases against. then repay at a later date.
