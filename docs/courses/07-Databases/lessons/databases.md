@@ -106,10 +106,41 @@ Please remember to replace database_name with what you want the database to be n
 
 To import the MySQL sample you need to extract the zip file and cd into the folder you extracted the files into and then login to mysql and create a database called employees. Then import the employees database using the following commands
 
+### Select Queries
+
+`select * from titles where title = 'Engineer';`
+
+`select * from titles where emp_no < 10025;`
+
+`select * from titles where emp_no > 499990;`
+
+`select * from titles;`
+
+### Show and Use
+
+`show tables;`
+
+`show databases;`
+
+`use database_name;`
+
+`show columns from salaries;`
+
+### Create, Update, Insert
+
+`CREATE TABLE table_name (column1 type,column2 type,column3 type,column4 type);`
+
+`INSERT INTO table_name (column1,column2,column3,column4) VALUES ('column1_value','column2_value','column3_value','column4_value);`
+
+`update table_name set value=value_update where column_name=value and column_value='current_value';`
+
 `create database employees;`
 
 `source employees.sql;`
 
+`mysql -u root -p databas_name < importfile.sql`
+
+mysqldump -u root -p databas_name > dumpfile.sql
 
 ### Importing Postgres database
 
