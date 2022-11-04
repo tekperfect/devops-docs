@@ -4,6 +4,7 @@
 
 To have a basic understanding of the linux operating system you should be able to do the following
 
+- Navigate the files system and understand the basics of the directory structure
 - List files and folders in one or more directories
 - Create files and folders
 - Navigate the directory structure of the operating system
