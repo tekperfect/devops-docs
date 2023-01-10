@@ -44,3 +44,9 @@ Students by the end of the course will be able to open a trading account, buy an
 
 ## Developing for Web3
 [Web3](/courses/17-Crypto/lessons/web3.md)
+
+## Cryptography
+[Cryptography](/courses/17-Crypto/lessons/cryptography.md)
+
+## Bitcoin
+[bitcoin](/courses/17-Crypto/lessons/bitcoin.md)
