@@ -13,6 +13,92 @@ To have a basic understanding of the linux operating system you should be able t
 - Install and uninstall packages
 - List applications and services installed on the operating systems
 
+## Below is the list of some file management comamnds in Linux:
+
+#### COMMAND    DESCRIPTION
+
+- **cd**        - Used to change the current directory
+- **ls**        - Used to list the directories and files in a directory
+- **vi**        - A good text editor to edit files
+- **touch**     - Used to create new files
+- **nano**      - A good text editor to edit files
+- **cp**        - Used to copy files and directories.
+- **mv**        - Used to move files and directories.
+- **rm**        - Used to remove files and directories.
+- **fdisk**     - Used to partition disks and to work with file systems
+- **mount**     - Used to mount a file system or a device
+
+You can also read the file management in Linux from the article https://www.geeksforgeeks.org/file-management-in-linux/
+
+## Networking Commands
+
+Networking commands play an important role in system Administration and a good system Administrator must have good hands-on networking commands. Here is a list of such commands that are mostly used for networking in Linux.
+
+#### COMMAND    DESCRIPTION
+
+- **route** -   used to view and manipulate ip routing tables.
+- **ping**      - Used to send some packets to a server and receive them back in case of a good network connection.
+- **traceroute** -      Used to trace the path taken by the traffic.
+- **nslookup**  - Used for querying the Domain Name System to obtain domain name or IP address mapping, or other DNS records.
+- **ifconfig** -        Used to view and change the configuration of the network interfaces on your system
+- **tracepath** -       Used to traces path to destination discovering MTU along this path
+- **ssh** -     Provides a secure encrypted connection between two hosts over an insecure network
+- **telnet** -  Used to test if a port is open and even to work with telnet protocol.
+- **curl** -    Used to transfer data to or from a server, using any of the supported protocols.
+- **scp** -     Used to securely copy files and directories between two locations over a network.
+- **w** -       Provides a quick summary of every user logged into a computer
+- **netcat** -  used for performing any operation in Linux related to TCP, UDP, or UNIX-domain sockets
+- **nmap** -    Used for network exploration and security auditing
+- **netstat** -         Used for for monitoring network connections both incoming and outgoing as well as viewing routing tables, interface statistics etc
+- **ip** -      Used to assign an address to a network interface and/or configure network interface parameters on Linux operating systems
+
+To learn more about Linux networking commands then read the article Linux Networking Tools
+
+### Managing Users and Group in Linux
+
+A system administrator has to manage the users working on the system. Users are the accounts which are logged in to your system or may log in to the system. Each user in Linux has a unique UID to identify the user. All information of the users is stored in /etc/passwd file and all hashed passwords are stored in /etc/shadow file. There are basically 2 types of user in Linux on the basis of their rights to access.
+
+- Superuser or Administrator
+- General users
+
+Each user may or may not be a part of a group which is a collection of users. To learn more about users in Linux go through the article Users in Linux System Administration. Here is a list of commands that are used to manage users.
+
+#### COMMAND    DESCRIPTION
+- **usermod** -         Used to modify users and their respective settings
+- **useradd** -         Used to add a new user
+- **su and sudo** -     Used to change the user and work with root
+- **chage** -   Used to change the user’s aging/expiry information
+- **groupdel** -        Used to delete a group
+- **gpasswd** -         Used to change password of group
+- **groupmod** -        Used to modify group and its settings
+- **groupadd** -        Used to add a new group
+
+To learn more about how to manage users read the article User Management in Linux
+
+To learn more about how to manage groups read the article Group Management in Linux
+
+### System Diagnostics/Monitor Performance
+
+A System Administrator should be able to diagnose problems in a system and even to monitor the performance of the system so that it may be improved. Here is the list of some useful commands for the same.
+
+#### COMMAND    DESCRIPTION
+
+- **top** -     Used to display the running processes.
+- **vmstat** -  Used to get information about processes, memory, paging, block IO, disk and CPU scheduling
+- **lsof** -    Used to check list of open files.
+- **htop** -    Used to determine the cause of load of each process
+- **iostat** -  Used to monitor IO devices loading
+- **nmon** -    It displays performance about the CPU, MEMORY, NETWORK, DISKS, FILE SYSTEM, NFS, TOP PROCESSES, RESOURCES, AND POWER MICRO-PARTITION
+
+### Reading and Analysing Logs
+A good system Administrator must have an idea of how to read and manage logs as they give a lot of crucial and required information.
+
+#### COMMAND    DESCRIPTION
+- **dmesg** -   Used to print the message buffer of the kernel
+- **tail** -    Used to print details from the log files located in the folder /var/log
+- **journalctl** -      Used to read systemd logs
+
+
 ## The Basics
 
 > man | Manual
@@ -351,54 +437,6 @@ What if you want to execute a command in your previous history, but you don't wa
 Re-execute a command in your history
 Adding ! before the command number you want to execute issues the command again.
 
-# Commands | Advanced
-
->  grep | search for string in files or a specified path
-
-This command allows you to search all the files in the path you specified for the exact text string you are looking for
-
-**\* Examples**
-
-`grep 'string' /path-to-files`
-
-This command allows you to search all the files in the current directory for the exact text string you are looking for
-
-`grep 'string' *`
-
-This command allows you to search all the files in the current directory and subdirectories for the exact text string you are looking for… Note you may need to use sudo to run this command since it may need to traverse multiple directories
-
-`grep -r 'string' *`
-
-This command allows you to search all the files in the current directory for the text string you are looking for ignoring case
-
-`grep -i 'string' *`
-
-This command allows you to search all the files in the current directory for the text string you are looking for and it displays the filename and line the specific string is found in.
-
-`grep -w 'string' *`
-
-
-This command allows you to search all the files in the current directory for the text string you are looking for, ignores the case of the string, displays the filename the specific string is found in along with displaying the string in red.
-
-`egrep -Rwi --color 'string' *`
-
-This command allows you to search all the files in the current directory for the text string you are looking for, and only displays the filename and the text string you searched for.
-
-`grep -o 'string' *`
-
-This command allows you to search all the files in the current directory for the text string you are looking for, and only displays the filename the string is found in.
-
-`grep -l 'string' *`
-
-This command allows you to search all the files in the current directory for the text string you are looking for, and only displays the filename, the text string you searched for along with the line number the string was found on.
-
-`grep -n 'string' *`
-
-
-This command allows you to search all the files in the current directory for the text string you are looking for, and displays the filename along with a count of the number of times the string was found in a particular file.
-
-`grep -c 'string' *`
-
 # Some Basic Configurations
 
 **Set the Hostname**: Open terminal and enter the following command in order to change the hostname.
@@ -417,93 +455,6 @@ Managing files is the most important task in Linux as all devices, directories, 
 2. To learn more about Linux file hierarchy structure you can read the article Linux File System Hierarchy
 
 3. To get the difference between Linux and Windows File System read the article Windows vs Linux
-
-## Below is the list of some file management comamnds in Linux:
-
-#### COMMAND	DESCRIPTION
-
-- **cd**	- Used to change the current directory
-- **ls**	- Used to list the directories and files in a directory
-- **vi**	- A good text editor to edit files
-- **touch**	- Used to create new files
-- **nano**	- A good text editor to edit files
-- **cp**	- Used to copy files and directories.
-- **mv**	- Used to move files and directories.
-- **rm**	- Used to remove files and directories.
-- **fdisk**	- Used to partition disks and to work with file systems
-- **mount**	- Used to mount a file system or a device
-
-You can also read the file management in Linux from the article https://www.geeksforgeeks.org/file-management-in-linux/
-
-## Networking Commands
-
-Networking commands play an important role in system Administration and a good system Administrator must have good hands-on networking commands. Here is a list of such commands that are mostly used for networking in Linux.
-
-#### COMMAND	DESCRIPTION
-
-- **route** - 	used to view and manipulate ip routing tables.
-- **ping**	- Used to send some packets to a server and receive them back in case of a good network connection.
-- **traceroute** -	Used to trace the path taken by the traffic.
-- **nslookup**	- Used for querying the Domain Name System to obtain domain name or IP address mapping, or other DNS records.
-- **ifconfig** -	Used to view and change the configuration of the network interfaces on your system
-- **tracepath** -	Used to traces path to destination discovering MTU along this path
-- **ssh** -	Provides a secure encrypted connection between two hosts over an insecure network
-- **telnet** -	Used to test if a port is open and even to work with telnet protocol.
-- **curl** - 	Used to transfer data to or from a server, using any of the supported protocols.
-- **scp** - 	Used to securely copy files and directories between two locations over a network.
-- **w** - 	Provides a quick summary of every user logged into a computer
-- **netcat** -	used for performing any operation in Linux related to TCP, UDP, or UNIX-domain sockets
-- **nmap** -	Used for network exploration and security auditing
-- **netstat** - 	Used for for monitoring network connections both incoming and outgoing as well as viewing routing tables, interface statistics etc
-- **ip** - 	Used to assign an address to a network interface and/or configure network interface parameters on Linux operating systems
-
-To learn more about Linux networking commands then read the article Linux Networking Tools
-
-### Managing Users and Group in Linux
-
-A system administrator has to manage the users working on the system. Users are the accounts which are logged in to your system or may log in to the system. Each user in Linux has a unique UID to identify the user. All information of the users is stored in /etc/passwd file and all hashed passwords are stored in /etc/shadow file. There are basically 2 types of user in Linux on the basis of their rights to access.
-
-- Superuser or Administrator
-- General users
-
-Each user may or may not be a part of a group which is a collection of users. To learn more about users in Linux go through the article Users in Linux System Administration. Here is a list of commands that are used to manage users.
-
-#### COMMAND	DESCRIPTION
-- **usermod** - 	Used to modify users and their respective settings
-- **useradd** - 	Used to add a new user
-- **su and sudo** -	Used to change the user and work with root
-- **chage** - 	Used to change the user’s aging/expiry information
-- **groupdel** - 	Used to delete a group
-- **gpasswd** - 	Used to change password of group
-- **groupmod** -	Used to modify group and its settings
-- **groupadd** - 	Used to add a new group
-
-To learn more about how to manage users read the article User Management in Linux
-
-To learn more about how to manage groups read the article Group Management in Linux
-
-### System Diagnostics/Monitor Performance
-
-A System Administrator should be able to diagnose problems in a system and even to monitor the performance of the system so that it may be improved. Here is the list of some useful commands for the same.
-
-#### COMMAND	DESCRIPTION
-
-- **top** - 	Used to display the running processes.
-- **vmstat** - 	Used to get information about processes, memory, paging, block IO, disk and CPU scheduling
-- **lsof** - 	Used to check list of open files.
-- **htop** - 	Used to determine the cause of load of each process
-- **iostat** - 	Used to monitor IO devices loading
-- **nmon** - 	It displays performance about the CPU, MEMORY, NETWORK, DISKS, FILE SYSTEM, NFS, TOP PROCESSES, RESOURCES, AND POWER MICRO-PARTITION
-
-### Reading and Analysing Logs
-A good system Administrator must have an idea of how to read and manage logs as they give a lot of crucial and required information.
-
-#### COMMAND	DESCRIPTION
-- **dmesg** - 	Used to print the message buffer of the kernel
-- **tail** - 	Used to print details from the log files located in the folder /var/log
-- **journalctl** - 	Used to read systemd logs
-
-
 
 **Test BASH Skills with "Wargames"**
 
