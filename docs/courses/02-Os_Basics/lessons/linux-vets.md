@@ -136,7 +136,7 @@ Just type w and press enter to commit the changes to the disk
 `sudo mount -t auto /dev/sdX1 /media/disk`
 
 
-Apache Configuration file location
+### Apache Configuration file location
 
 Default apache index.html file location
 `/var/www/html/index.html`
@@ -150,7 +150,7 @@ Log files are located in /var/log
 
 `cat /var/log/auth`
 
-Increased Security
+### Increased Security
 
 Generate a key on your windows or linux system
 
@@ -175,7 +175,7 @@ Vet students these activities are designed to determine if you have mastered the
 
 What I am looking for is an understanding and explanation of these concepts along with showing that you can execute them without a great deal of assistance.
 
-Applications and Services
+### Applications and Services
 
 How do you list all services running on your linux server?
 
@@ -183,7 +183,7 @@ How would you use the grep command to find the process ID for a specific service
 
 How would you use the grep and ps command to locate the directory the process is running under?
 
-Configuration and Logging
+### Configuration and Logging
 
 Now that you understand processes and the file structure how would you modify the configuration of the apache2 server and where are those files located?
 
@@ -191,7 +191,7 @@ How would you change the default web page for apache to reflect that you underst
 
 What other commands could you use in Linux to make a copy of a website so that you did not have to build one from scratch?
 
-Configuration and Logging
+### Configuration and Logging
 
 The next section of exercises that you will embark on involve the use and gathering of data from log files?
 
@@ -199,7 +199,7 @@ What is the default location log files are written to in linux?
 
 What kind of tools could you install on your system to prevent unauthorized access to your server?
 
-Increasing Security
+### Increasing Security
 
 Configure your Ubuntu server so that you can access if via ssh without a password but make it more secure.
 Generate a key on your windows or linux system
@@ -208,7 +208,7 @@ Set the appropriate permissions on the files
 Connect to the Ubuntu server with username and IP only without a password.
 Why is this more secure than a standard username and password?
 
-Questions?
+### Questions?
 
 Did you understand all of the exercises?
 Did you lookup things you did not understand or were confusing?
