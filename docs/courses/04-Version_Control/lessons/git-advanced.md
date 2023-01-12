@@ -24,7 +24,7 @@ You can also see the hash code of the commit on the right hand side. A hash code
 
 > In order to get the most recent changes that you or others have merged on GitHub, use the git pull origin master command (when working on the master branch).
 
-`\$ git pull origin master
+`git pull origin master`
 
 remote: Counting objects: 1, done.
 
@@ -45,7 +45,7 @@ Now we can use the git log command again to see all new commits.
 
 (You may need to switch branches back to the master branch. You can do that using the git checkout master command.)
 
-\$ git log
+`git log`
 commit 6e270786db0e5ffd3e2cfc5edede89b64b83762c
 Merge: 4f1cb17 5381b7c
 Author: Your Name <your_email@yourdomain.com>
