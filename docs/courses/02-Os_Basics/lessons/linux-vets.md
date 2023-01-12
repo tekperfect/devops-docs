@@ -74,6 +74,68 @@ This command allows you to search all the files in the current directory for the
 
 `grep -c 'string' *`
 
+### Formatting Disks in Linux
+
+`lsblk (list the partitions)`
+
+`lsblk -f (list the partitions)`
+
+
+`mkfs [options] [-t type fs-options] device [size]`
+
+`sudo mkfs -t ext4 /dev/sdb1 (formatting it as ext)`
+
+`sudo mkfs -t vfat /dev/sdb1 (formatting it at FAT32)`
+
+`lsblk -f`
+
+### Creating a mount point
+
+`sudo mkdir -p [mountpoint]`
+
+`sudo mount -t auto /dev/sdb1 [mountpoint]`
+
+`lsblk -f`
+
+
+### Other formatting disk options
+
+`sudo gdisk /dev/sdX`
+
+`Command (? for help): n`
+
+`Partition number (1-128, default 1): 1`
+
+`First sector (34-6291455966, default = 2048) or {+-}size{KMGTP}:` 
+`Last sector (2048-6291455966, default = 6291455966) or {+-}size{KMGTP}:`
+
+Just press enter to accept the defaults
+
+`Command (? for help): w`
+
+`Final checks complete. About to write GPT data. THIS WILL OVERWRITE EXISTING
+PARTITIONS!!`
+
+`Do you want to proceed? (Y/N): y`
+`OK; writing new GUID partition table (GPT) to /dev/sdb.`
+`The operation has completed successfully.`
+
+Just type w and press enter to commit the changes to the disk
+
+
+### Now create a new files system on the disks you just created
+
+`sudo mkfs -t ext4 /dev/sdX1`
+
+### Create mount for the new disk
+
+`sudo mkdir -p /media/disk`
+`sudo mount /dev/sdb1 /media/disk`
+
+`sudo mount -t auto /dev/sdX1 [mountpoint]`
+`sudo mount -t auto /dev/sdX1 /media/disk`
+
+
 Apache Configuration file location
 
 Default apache index.html file location
