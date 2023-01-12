@@ -49,3 +49,7 @@ Students by the end of the course will be able to install an operating system ru
 
 [Active Directory](/courses/02-Os_Basics/lessons/active-directory.md)
 
+## Windows Best Practices 
+
+[Windows](/courses/02-Os_Basics/lessons/windows-best-practices.md)
+
