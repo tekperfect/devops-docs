@@ -1,7 +1,7 @@
 # Windows Security Best Practices
 
 
-## 1. Clean up the Domain Admins Group
+## Clean up the Domain Admins Group
 
 - There should be no day to day user accounts in the Domain Admins group, the only exception is the default Domain Administrator account.
 
@@ -40,7 +40,7 @@ This is what the bad guys are after.
 - This is a huge accomplishment and will greatly reduce your attack surface.
 
 
-## 2. Use at Least Two Accounts (Regular and Admin Account)
+## Use at Least Two Accounts (Regular and Admin Account)
 
 - You should not be logging in every day with an account that is a local admin or has privileged access (Domain Admin).
 
@@ -99,7 +99,7 @@ It’s very easy to delegate admin tasks without giving staff domain admin right
 
 By using two accounts and implementing the least administrative privileged model you will greatly reduce your security risks and avoid situations like scenario 1.
 
-## 3. Secure The Domain Administrator account
+## Secure The Domain Administrator account
 
 - Every domain includes an Administrator account, this account by default is a member of the Domain Admins group.
 
@@ -120,7 +120,7 @@ In addition, Microsoft has several recommendations for securing the built in Adm
 
 For more details on securing the Domain Administrator account see this Microsoft article, Securing Built in Administrator Accounts in Active Directory
 
-## 4. Disable the Local Administrator Account (on all computers)
+## Disable the Local Administrator Account (on all computers)
 The local administrator account is a well known account in Domain environments and is not needed.
 
 **Not needed, is that true?**
@@ -155,7 +155,7 @@ What if the network is down or the NIC card died, what if you need to drop it fr
 
 For more details see the following article, Securing local administrator accounts and groups
 
-## 5. Use Local Administrator Password Solution (LAPS)
+## Use Local Administrator Password Solution (LAPS)
 
 **Local administrator Password Solution (LAPS)** is becoming a popular tool to handle the local admin password on all computers.
 
@@ -180,7 +180,7 @@ If you need to use the local admin account on a computer you would retrieve the 
 For step by step instructions on installing LAPS see this article, How to Install Local Administrator Password Solution (LAPS)
 
 
-## 6. Use a Secure Admin Workstation (SAW)
+## Use a Secure Admin Workstation (SAW)
 
 A **secure admin workstation** is a dedicated system that should only be used to perform administrative tasks with your privileged account.
 
@@ -233,7 +233,7 @@ It may seem like a hassle but I actually find it more convenient this way. I can
 
 https://docs.microsoft.com/en-us/windows-server/identity/securing-privileged-access/privileged-access-workstations
 
-## 7. Enable Audit policy Settings with Group Policy
+## Enable Audit policy Settings with Group Policy
 
 Ensure the following Audit Policy settings are configured in group policy and applied to all computers and servers.
 
@@ -283,7 +283,7 @@ Malicious activity often starts on workstations, if you’re not monitoring all 
 
 In the next section, I’ll cover what events you should be monitoring.
 
-## 8. Monitor Active Directory Events for Signs of Compromise
+## Monitor Active Directory Events for Signs of Compromise
 
 You should be monitoring the following Active Directory events to help detect compromise and abnormal behavior on the network.
 
@@ -324,7 +324,7 @@ In this screenshot, you can see a huge spike in logon failures. Without a log an
 
 
 
-## 9. Password Complexity Sucks (Use Passphrases Instead)
+## Password Complexity Sucks (Use Passphrases Instead)
 
 8 characters with complexity is no longer a secure password. Instead, use a minimum of 12 characters and train users on passphrases.
 
@@ -368,7 +368,7 @@ If your organization must meet certain standards then make sure those standards 
 
 Also be sure to update your companies written policy.
 
-## 10. Use Descriptive Security Group Names
+## Use Descriptive Security Group Names
 
 First of all, make sure you apply permissions to resources with security groups not individual accounts, this makes managing resources much easier.
 
@@ -408,7 +408,7 @@ Again, this has a very specific name and helps identify what it should be used f
 
 You can come up with your own naming convention just get specific with the name and avoid generic one word group names.
 
-## 11. Cleanup Old Active Directory User & Computer Accounts
+## Cleanup Old Active Directory User & Computer Accounts
 
 - You need to have a procedure in place to detect unused user and computer accounts in Active Directory.
 
@@ -420,7 +420,7 @@ I run a process each month to detect and remove unused accounts.
 
 Here is a step by step guide I wrote for how to clean up old accounts in Active Directory. 
 
-## 12. Do NOT Install Additional Software or Roles on Domain Controllers
+## Do NOT Install Additional Software or Roles on Domain Controllers
 
 - Domain controllers should have limited software and roles installed on them.
 
@@ -436,7 +436,7 @@ More software, more roles = increased security risks.
 
 Keep your DCs lean and clean.
 
-## 13. Continues Patch Management & Vulnerability Scanning
+## Continues Patch Management & Vulnerability Scanning
 
 Attackers are quick to exploit known vulnerabilities.
 
@@ -452,7 +452,7 @@ There are a large number of vulnerability and scanning tools available, see my l
 - Deploy automated updated to 3rd party software
 - Identify out of date software that is no longer supported and get it updated.
 
-## 14. Use DNS Services to Block Malicious Domains
+## Use DNS Services to Block Malicious Domains
 
 You can prevent a lot of malicious traffic from entering your network by blocking malicious DNS lookups.
 
@@ -492,7 +492,7 @@ I’m currently using Quad9, it’s free and easy to setup.
 
 Also, most IPS (Intrusion Prevention Systems) systems support the ability to check DNS lookups against a list of malicious domains.
 
-## 15. Run Critical Infrastructure on latest Windows Operating System
+## Run Critical Infrastructure on latest Windows Operating System
 
 With each new version of Windows OS, Microsoft includes built in security features and enhancements.
 
@@ -510,7 +510,7 @@ Here is a good video from Microsoft on Windows Server 2016 Security.
 
 
 
-## 16. Use Two Factor Authentication for Remote Access
+## Use Two Factor Authentication for Remote Access
 
 - Compromised accounts are very common and this can provide attackers remote access to your systems through VPN, Citrix, or other remote access systems.
 
@@ -534,7 +534,7 @@ If your using Office 365 and depending on what package you have MFA may be inclu
 - RSA
 - Microsoft MFA
 
-## 17. Monitor DHCP Logs for Connected Devices
+## Monitor DHCP Logs for Connected Devices
 
 You should know what is connected to your network if you have multiple locations with lots of users and computers this can be challenging.
 
@@ -550,7 +550,7 @@ minint-1bdvd67 is not something I recognize. I will need to look into this and s
 
 
 
-## 18. Monitor DNS Logs for Security Threats
+## Monitor DNS Logs for Security Threats
 Most connections start with a DNS query. All domain joined systems should be set up to use your local Windows DNS server.
 
 With this setup, you can log every internal and external DNS lookup. When a client device makes a connection to a malicious site it will log that site name in the DNS logs.
@@ -583,7 +583,7 @@ Once you have the debug logs setup you can import those logs into an analyzer to
 
 You can also convert the log file to a csv to make it easier to read and filter.
 
-## 19. Use Latest ADFS and Azure Security Features
+## Use Latest ADFS and Azure Security Features
 
 **ADFS and Azure** have some great security features. These features will help with password spraying, account compromise, phishing and so on.
 
@@ -621,7 +621,7 @@ Definitely check out all the available security features in ADFS, Office 365 and
 
 https://cloudblogs.microsoft.com/enterprisemobility/2018/03/05/azure-ad-and-adfs-best-practices-defending-against-password-spray-attacks/
 
-## 20. Use Office 365 Secure Score
+## Use Office 365 Secure Score
 
 - Secure score analyzes your office 365 organization security based on activity and security settings.
 
@@ -637,7 +637,7 @@ If you have access to this feature then take advantage of it.
 
 
 
-## 21. Plan for Compromise ( Have a recovery plan)
+## Plan for Compromise ( Have a recovery plan)
 
 If your network was compromised today or hit with RansomWare, what would you do?
 
@@ -662,7 +662,7 @@ A good incident response plan could have limited the impact and enabled services
 
 NIST has a great guide on computer security incident handling, https://nvlpubs.nist.gov/nistpubs/specialpublications/nist.sp.800-61r2.pdf
 
-## 22. Document Delegation to Active Directory
+## Document Delegation to Active Directory
 
 The best way to control access to Active Directory and related resources is to use Security Groups.
 
@@ -674,7 +674,7 @@ Don’t just allow users to be added to these custom groups without an approval 
 
 Know what groups are delegated to what resources, document it and make sure your team is on the same page.
 
-## 23. Lock Down Service Accounts
+## Lock Down Service Accounts
 
 **Service accounts** are those accounts that run an executable, task or service, AD authentication, etc.
 
@@ -698,7 +698,7 @@ Don’t allow that to happen, there are ways to make it work without DA access.
 - Deny logon as a batch
 - Require vendors to make their software work without domain admin rights
 
-## 24. Disable SMBv1
+## Disable SMBv1
 
 - SMBv1 is 30 years old and Microsoft says to stop using it (They have been saying that for a long time).
 
@@ -742,7 +742,7 @@ Name the new value SMB1. It should by default be value 0 which disabled it.
 
 To disable SMBv1 across all computers you can use group policy registry preference.  This will allow you to create the above registry setting on all computers.
 
-## 25. Use Security Baselines and Benchmarks
+## Use Security Baselines and Benchmarks
 
 A default install of the Windows Operating system has many features, services, default settings and enabled ports that are not secure.
 
