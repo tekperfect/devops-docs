@@ -33,20 +33,11 @@ Students by the end of the course will be able to open a trading account, buy an
 ## Cryptocurrency foundations
 [Cryptocurrency foundations](/courses/17-Crypto/lessons/crypto-foundations.md)
 
-## Tracks for further study (activities that support program operations)
-[Tracks for further study](/courses/17-Crypto/lessons/study-tracks.md)
-
-## Blockchain Operations
-[Blockchain Operations](/courses/17-Crypto/lessons/blockchain-operations.md)
-
-## Content Creation
-[Content Creation](/courses/17-Crypto/lessons/content-creation.md)
-
-## Developing for Web3
-[Web3](/courses/17-Crypto/lessons/web3.md)
+## Investing and Technical Analysis
+[Investing and Technical Analysis](/courses/17-Crypto/lessons/study-tracks.md)
 
 ## Cryptography
 [Cryptography](/courses/17-Crypto/lessons/cryptography.md)
 
-## Bitcoin
-[bitcoin](/courses/17-Crypto/lessons/bitcoin.md)
+## Bitcoin Etherum and Alt Coins
+[Bitcoin Etherum and Alt Coins](/courses/17-Crypto/lessons/bitcoin.md)
