@@ -1,5 +1,0 @@
-## Blockchain Operations
-
-### Validators
-
-### Mining

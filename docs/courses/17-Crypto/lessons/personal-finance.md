@@ -1,21 +1,5 @@
 ## Personal Finance Fundamentals
 
-> * Start with a financial plan 
-
-> * Construct a budget
-
-> * Understand how credit works
-
-> * Investing
-
-> * Managing risk
-
-> * Taxes and more taxes
-
-> * Prepare for retirement
-
-> * History of money
-
 ### Financial planning
 What Is a Financial Plan?
 

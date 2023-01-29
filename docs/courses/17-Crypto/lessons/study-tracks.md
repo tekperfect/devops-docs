@@ -80,7 +80,6 @@ A buy signal would be generated when the 20 day EMA (green line) crosses above t
 
 The blue arrows represent the buy signals, while the red arrows show the sell signals.
 
-
 Provide dynamic support and resistance levels: Exponential moving average periods like the 20, 50, 100 and 200 can also work as support and resistance zones, which is the key to price action and profit in the market.
 Trend trading: Other traders use the EMA to track the primary trend. If the stock closes beyond the average, the trader exits the trade.
 Limitations of EMA
@@ -142,10 +141,8 @@ As shown on the following chart, when MACD falls below the signal line, it is a 
 
 Crossovers are more reliable when they conform to the prevailing trend. If MACD crosses above its signal line after a brief downside correction within a longer-term uptrend, it qualifies as a bullish confirmation and the likely continuation of the uptrend.
 
-
 Example of Rapid Rises or Falls
 When MACD rises or falls rapidly (the shorter-term moving average pulls away from the longer-term moving average), it is a signal that the security is overbought or oversold and will soon return to normal levels. Traders will often combine this analysis with the RSI or other technical indicators to verify overbought or oversold conditions.
-
 
 How do traders use moving average convergence/divergence (MACD)?
 Traders use MACD to identify changes in the direction or strength of a stock’s price trend. MACD can seem complicated at first glance, because it relies on additional statistical concepts such as the exponential moving average (EMA). But fundamentally, MACD helps traders detect when the recent momentum in a stock’s price may signal a change in its underlying trend. This can help traders decide when to enter, add to, or exit a position.
@@ -154,12 +151,10 @@ MACD is based on EMAs (more weight is placed on the most recent data), which mea
 
 ### RSI
 
-
 What Is the Relative Strength Index (RSI)?
 The relative strength index (RSI) is a momentum indicator used in technical analysis. RSI measures the speed and magnitude of a security's recent price changes to evaluate overvalued or undervalued conditions in the price of that security.
 
 The RSI is displayed as an oscillator (a line graph) on a scale of zero to 100. The indicator was developed by J. Welles Wilder Jr. and introduced in his seminal 1978 book, New Concepts in Technical Trading Systems.
-1
 
 The RSI can do more than point to overbought and oversold securities. It can also indicate securities that may be primed for a trend reversal or corrective pullback in price. It can signal when to buy and sell. Traditionally, an RSI reading of 70 or above indicates an overbought situation. A reading of 30 or below indicates an oversold condition.
 
