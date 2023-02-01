@@ -29,37 +29,37 @@ Open your chrome browser and go to https://chrome.google.com/webstore/search/met
 
 Install the Metamask Cromee extension
 
-![Metamask1](1.metamask.png)]
+![Metamask1](1.metamask.png)
 
 Click on the "Add to Chrome" button
 
-![Metamask2](2.metamask.png)]
+![Metamask2](2.metamask.png)
 
 Now click on the "Add Extension button"
 
-![Metamask3](3.metamask.png)]
+![Metamask3](3.metamask.png)
 
 Once the extension is installed you will be prompted to create a wallet or import an existing one
 
-![Metamask4](4.metamask.png)]
+![Metamask4](4.metamask.png)
 
 For the purposes of this exercise we are going to create a new wallet by clicking on the "Create a new wallet" button
 
 You will be prompted with a disclaimer to help improve the quality of Metamask you can agree or select no thanks depending on your comfort level with the statement.
 
-![Metamask5](5.metamask.png)]
+![Metamask5](5.metamask.png)
 
 You will be prompted to create a password for your wallet this password will be used to login to Metamask to access your wallet. Please note the password must be at least 8 characters but we recommend a 12 or more character password that utilized uppercase, lowercase, numbers, and special characters.
 
-![Metamask6](6.metamask.png)]
+![Metamask6](6.metamask.png)
 
 You will be prompted to watch a video to secure your wallet. It's a 90 second video on best practices. I would not recommend skipping it because the information about securing your wallet is extremely important and then click on the secure my wallet recommended button
 
-![Metamask7](7.metamask.png)]
+![Metamask7](7.metamask.png)
 
 Next you will be taken to a screen where your 12-word secret pharase will be revealed please make sure you are in a place where no one can see this 12 word phrase because it would provide them with access to your wallet. When you are ready click on the reveal secret recovery phase button.
 
-![Metamask8](8.metamask.png)]
+![Metamask8](8.metamask.png)
 
 Once the 12-word passphase is revealed you should store it in a secure location such as a password manager, a piece of paper that you store in a safe, or a safe deposit box of some kind. Please note anyone with access to any of these online or offline places could potentially obtain access to your wallet.
 
@@ -68,8 +68,8 @@ Next you will be promoted to confirm the phrase before you continue which may re
 Finally you will be promoted to confirm your wallet has been created successfully. You can click on the Got it button or click on the advanced configuration option to make additional changes. We recommend completing the wallet setup and return to the configuration later once you understand the various options to configuring a wallet.
 
 
-![Metamask9](9.metamask.png)]
-![Metamask10](10.metamask.png)]
-![Metamask11](11.metamask.png)]
+![Metamask9](9.metamask.png)
+![Metamask10](10.metamask.png)
+![Metamask11](11.metamask.png)
 
 Once the setup is complete you will be taken to a screen wher you can reveal the wallet address to send funds to in addition to a place for you to buy, sell, and swap crypto currency.
