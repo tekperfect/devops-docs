@@ -73,3 +73,6 @@ Finally you will be promoted to confirm your wallet has been created successfull
 ![Metamask11](11.metamask.png)
 
 Once the setup is complete you will be taken to a screen wher you can reveal the wallet address to send funds to in addition to a place for you to buy, sell, and swap crypto currency.
+
+
+![Metamask12](12.metamask.png)
