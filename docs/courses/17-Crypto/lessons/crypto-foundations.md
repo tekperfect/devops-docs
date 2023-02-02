@@ -25,6 +25,8 @@ Szabo defined smart contracts as computerized transaction protocols that execute
 
 In his paper, Szabo also proposed the execution of a contract for synthetic assets, such as derivatives and bonds. Szabo wrote: "These new securities are formed by combining securities (such as bonds) and derivatives (options and futures) in a wide variety of ways. Very complex term structures for payments can now be built into standardized contracts and traded with low transaction costs, due to computerized analysis of these complex term structures.
 
+![Smartcontracts](1.smartcontract.png)
+
 ### Create a Wallet
 
 Open your chrome browser and go to https://chrome.google.com/webstore/search/metamask
