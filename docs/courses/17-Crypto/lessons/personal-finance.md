@@ -1,20 +1,18 @@
 ## Personal Finance Fundamentals
 
 ### Financial planning
-What Is a Financial Plan?
 
-A financial plan is a document provides a clear picture of an individuals financial situation and financial goals as they relate to the future. It also includes the methology and execution strategy to achieve those goals. A financial plan begins with a thorough analysis of an individuals financial situation and future expectations. This plan can start of very simple with very specific goals that are attributed to savings and cash flow and gradually become more complicated and intricate and include stock investment, portfolio diversification, and retirement goals.
+A financial plan is a document provides a clear picture of an individuals financial outlook. It also includes the strategy an individual utilizes to meet their financial goals. A financial plan begins with a thorough analysis of an individuals financial situation and future expectations. This plan can begin with a simple budget to obtain a greater understanding of ones cash flow and then introducing more advanced financial instruments including stocks, 401k's, IRA's, options, futures, and other financial instruments that would be instrumental to helping you achieve your retirement goals. 
 
-Things to note when building a finacial plan.
+Things to consider when constructing a finacial plan.
 
-The plan should be as comprehensive as possible  but also customized to meet the needs and financial maturity of the individual. The plan should also take into consideration the individual’s personal and family situations, risk tolerance, and future expectations.
-The plan starts with a calculation of the person’s current net worth, cash flow, and ends with a strategy.
+The financial plan should be thorough and realistic but also customized to meet the financial goals of the individual. The plan should also take into consideration the individual’s spending habits, family obligations, risk tolerance, and future goals. The plan must include calculation of the person’s current net worth, cash flow, and include a strategy.
 
-
-The Fundamentals of a solid financial plan should also take into consideration if the assistance of a financial planner is needed. However, the first steps to the plan should include gathering all the necessary information to  understand your present financial situation and make sure it is documented well by performing the following tasks.
+The Fundamentals of a solid financial plan should also take into consideration if the assistance of a financial planner is necessary. However, the first steps to the plan should include gathering all the necessary information to understand your present financial situation and make sure it is well documented by calculating the following financial metrics.
 
 
-Calculating net worth
+Net Worth
+
 To figure out your current net worth, list all of the following:
 
 Your assets: This may include a home and a car, cash in the bank, money invested in a 401(k) plan, and anything else of value that you own.
@@ -33,7 +31,7 @@ If your expenses are unpredectiable, then it would be wise to review 12 months o
 
 It is also wise to keep an eye on cash withdrawals or spending that is not easily tracked. This can create a false sense of your cash flow which may result in an incomplete picture of your financial situation. 
 
-Invest the appropriate amount of time to document your income and basic housing expenses like rent or mortgage payments, utilities, credit card interest, and home furnishings. Add categories for food, clothing, transportation, medical insurance, and non-covered medical expenses, then document separately your real spending on entertainment, dining out, and vacation/travel.
+Invest the appropriate amount of time to document your income and basic housing expenses like rent or mortgage payments, utilities, and credit card payments, Adding categories for food, clothing, transportation, and medical insurance, then document separately your real spending on entertainment, dining out, and travel.
 
 Considering your priorities
 
@@ -52,29 +50,13 @@ Here are some links to applications and simple budget strategies you can use to 
 
 ### How credit works
 
-Credit cards have a credit limit you can make purchases against. then repay at a later date.
-Carrying a balance on a credit card can trigger interest charges.
-It's important to read the fine print closely on credit card promotional offers.
-Some credit cards allow you to earn rewards on purchases in the form of points, miles or cash back.s
+Credit cards have a credit limit you can make purchases against. then repay at a later date. However, one should also be congizant that carrying a balance on a credit card can trigger interest charges.
 
-A credit card is a physical card that can be used to make purchases, pay bills or depending on the card, withdraw cash. The simplest way to think of a credit card is as a type of short term loan.
-When you open a credit card account, your credit card company gives you a set credit limit. This is essentially an amount of money the credit card company allows you to use to make purchases or pay bills.
+### Why invest?
 
-### Why should I invest in the market?
+Stocks offer investors the greatest potential for growth over a time period. Investors willing to stick with stocks over long periods of time, generally are rewarded with strong, positive returns or dividens.
 
-Stocks offer investors the greatest potential for growth (capital appreciation) over a time period. Investors willing to stick with stocks over long periods of time, generally are rewarded with strong, positive returns.
-
-But stock prices also fall. There’s no guarantee in the market, so you can lose money you invest in a specific company or fund.
-
-If a company goes out of business and its assets are liquidated, common stockholders are the last to be paid out. The company’s bondholders will be paid first, then holders of preferred stock. If you are a common stockholder, you get whatever is remaining.
-
-Even when companies aren’t in danger of failing, their stock price may fluctuate up or down. Large company stocks as a group, for example, have lost money on average about one out of every three years. If you have to sell shares on a day when the stock price is below the price you paid for the shares, you will lose money on the sale.
-
-Market fluctuations can be unnerving to some investors. A stock’s price can be affected by factors inside the company, such as a faulty product, or by events the company has no control over, such as war, market manupilation, bad press, or failure in leadership.
-
-Stocks usually are one part of an investor’s holdings. If you are young and saving for a long-term goal such as retirement, you may want to hold more stocks than bonds. Investors nearing or in retirement may want to hold more bonds than stocks.
-
-The risks of stock holdings can be offset in part by investing in a number of different stocks. Investing in other kinds of assets that are not stocks, such as bonds, is another way to offset some of the risks of owning stocks.
+But stock prices also fall. There’s no guarantee in the market, so you can lose money you've invested. It is also equally important to pay attetion to market fluctuations. Interest rates, product recalls, reputation, and poor leadership are just a few of the factors that can impact a companies stock price and profitability. The risks associated with owning one individual can be offset in part by investing in a number of different stocks, ETF's, or bonds.
 
 
 ### Risk management
@@ -89,9 +71,9 @@ A financial plan is designed to help you make the best use of your money and ach
 
 ### Taxes
 
-The United States of America has separate federal, state, and local governments with taxes imposed at each of these levels. Taxes are levied on income, payroll, property, sales, capital gains, dividends, imports, estates and gifts, as well as various fees. In 2020, taxes collected by federal, state, and local governments amounted to 25.5% of GDP, below the OECD average of 33.5% of GDP. The United States had the seventh-lowest tax revenue-to-GDP ratio among OECD countries in 2020, with a higher ratio than Mexico, Colombia, Chile, Ireland, Costa Rica, and Turkey.[1]
+The United States of America has separate federal, state, and local governments with taxes imposed at each of these levels. Taxes are levied on income, payroll, property, sales, capital gains, dividends, imports, and estates. 
 
-Taxes fall much more heavily on labor income than on capital income. Divergent taxes and subsidies for different forms of income and spending can also constitute a form of indirect taxation of some activities over others. For example, individual spending on higher education can be said to be "taxed" at a high rate, compared to other forms of personal expenditure which are formally recognized as investments.
+Taxes on income from an employer or contract are higher that taxes on investments. This directly translates into businesses and investors paying less taxes on their profits. Additionally, the poor have fewer tax breaks available to them because the tax shelters are designed to benefit the wealthy.
 
 ### Retirement
 
@@ -102,20 +84,17 @@ The following elements should be addressed and revised as necessary:
 
 Retirement strategy: No matter what your priorities are, the plan should include a strategy for accumulating the retirement income that you need
 
-### History of money
 ### Discriminatory practices
 
-Laws today protect borrowers from discriminatory lending practices, but that wasn’t always the case. For decades U.S. banks denied mortgages to Black families—and those belonging to other racial and ethnic minority groups—who lived in certain areas “redlined” by a federal government agency called the Home Owners’ Loan Corporation (HOLC).
+The laws today try to protect borrowers from discriminatory lending practices. For decades U.S. banks denied mortgages to Black families—and other POC people of color minority groups—who lived in certain areas “redlined” by a federal government agency called the Home Owners’ Loan Corporation (HOLC).
 
-Lending discrimination occurs when lenders base credit decisions on factors other than the applicant’s creditworthiness.
-Denying financial services to residents of certain neighborhoods due to race or ethnicity is called redlining.
-The discriminatory practice of redlining made it impossible for many members of racial and ethnic minority groups to qualify for mortgage loans.
-Redlining is one factor behind the racial wealth gap that persists in the U.S. today.
-Laws today forbid discrimination based on race, color, religion, sex, national origin, handicap, familial status, age, and whether you receive public assistance income. However, these practices have evolved to continue to deny indiviudals who have traditionally not be able to participate in the economy that allows most people to gain generational wealth.``
+Lending discrimination occurs when lenders base credit decisions on factors other than the applicant’s creditworthiness. Denying financial services to residents of certain neighborhoods due to race or ethnicity is called redlining.
+The discriminatory practice of redlining made it impossible for many members of the POC community for mortgage loans. Redlining is one of the many factors behind the racial wealth gap that persists in the U.S. today. Laws today prohibit discrimination based on race, color, religion, sex, national origin, handicap, familial status, age, and income. However, these practices have evolved to continue to deny indiviudals who have traditionally not be able to participate in the economy that allows most people to gain generational wealth.``
 
 ### Generational wealth
 
 Generational wealth refers to any kind of asset that families pass down to their children or grandchildren, whether in the form of cash, investment funds, stocks and bonds, properties or even entire companies.
 
-What gender and ethnic groups have been allows to build this kind of wealth?
+What gender and ethnic groups have been allowed to build this kind of wealth?
+
 How do you go about correcting this issue in our communities?
