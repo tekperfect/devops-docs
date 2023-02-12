@@ -1,41 +1,26 @@
 ### Bitcoin
 
-Currently, there are just over 18,800 000 Bitcoins in existence. Bitcoins are created by a process known as “Bitcoin mining” and distributed in the form of Bitcoin block rewards.
+Bitcoin is the most recognized and widely used cryptocurrency. It leverages the use of a decentralized protocol, cryptography, and a method to obtain consensus on the state of a periodically updated public transaction ledger called a blockchain. 
 
-The bitcoin mining process sees every transaction on the Bitcoin network checked and verified by the distributed network. This is done through a complex process where specialized computers compete to solve algorithms. The computer that successfully solves the algorithm and confirms the Bitcoin transactions within a block on the blockchain is then rewarded with Bitcoins for its work. This is a very simple and brief explanation of how new Bitcoins are created. 
+Bitcoin is a form of digital currency that exists independently of any government, state, or financial institution, and can be transferred globally without the need for a centralized intermediary, bank or other financial institution and is a financial instrument that cannot be altered.
 
-Currently, the reward for Bitcoin mining is 6.25 BTC for each successful block mined, and this happens about every 10 minutes. 
+Bitcoin can be described in many ways. However, it is fundamentally different in from fiat currency. Primarily because it encompases many technical features, hosts a multitude of integrations, and includes a clearly defined process for making changes to the protocol.
 
-Every 4 years, the reward rate is halved, in an event called “the halving.” This gradual decrease of issuing new Bitcoin is why it will be about another 120 years until all Bitcoins have been mined.
+Bitcoin or BTC the ticket symbol can be referenced in many ways. However, the name of the currency and it functions is interchangable.
 
-If anyone would like a detailed history of how and why bitcoin was created here is a link to the whitepaper
+Bitcoin was launched anonymously in January 2009 by Satoshi Nakamoto. Bitcoin popularity and price continue to be volatile ranging from 6 cents to over 65K. Although its regulatory status varies by region and country it continues to evolve as a method of building wealth, along with paying for good and services across the globe. In June 2021, El Salvador became the first country to mandate Bitcoin as legal tender.
+
+As we move toward a global economy where boarders are less relevant the use of crypto currency will allow for individuals, small businesses, and corporations to leverage it to reduce the costs and barriers associated with the purchase of goods and services along with allowing for greater transparency and protections by utilizing the blockchain.
+
+For additional information about bitcoin you can visit the complete history of it origins.
 
 https://bitcoin.org/bitcoin.pdf
 
-A Hedge Against Banking
-The text embedded in the coinbase of the genesis block gives a clear indication of Satoshi Nakamoto’s motive to create a new currency. The message is a headline from an article in the January 3, 2009 edition of The [London] Times. The article detailed the British government’s failure to stimulate the economy following the 2007–08 financial crisis.
-
-A huge driver for Bitcoins creation was Nakamoto’s concern about “too-big-to-fail” financial institutions. Nakomoto wanted Bitcoin to be able to provide individuals a way to have full control over their finances, without a corporate middleman. 
-
-This is what is meant when Bitcoin is described as “trustless”. Traditionally, parties sending money have relied on a middleman, usually a bank, to facilitate the transaction. 
-
-With Bitcoin and blockchain technology, both sending and receiving parties don’t need to trust each other to make a transaction with Bitcoin. The protocols, or the code, of Bitcoin allow the system to work and achieve consensus without a third party. 
-
-Without having to trust the entity with which you are transacting, true peer-to-peer transactions can take place.
-
-Exchanges Centralized and Decentralized
 
 For most digital currency investors, the centralized cryptocurrency exchange is one of the most important vehicles for transacting. Centralized cryptocurrency exchanges are online platforms used to buy and sell cryptocurrencies. They are the most common means that investors use to buy and sell cryptocurrency holdings.
 
 Some investors may find the concept of a "centralized" exchange to be somewhat misleading, as digital currencies themselves are often billed as "decentralized." What does it mean for an exchange of this type to be "centralized," and why are these exchanges so crucial for the success of the cryptocurrency industry as a whole?
 
-
-Use of Third Parties
-In the term "centralized cryptocurrency exchange," the idea of centralization refers to the use of a middle man or third party to help conduct transactions. Buyers and sellers alike trust this middle man to handle their assets. This is common in a bank setup, where a customer trusts the bank to hold his or her money.
-
-The reason for this setup is that banks offer security and monitoring that an individual cannot accomplish on his or her own. In the case of a centralized cryptocurrency exchange, the same principle applies. Transactors trust not only that the exchange will safely complete their transactions for them, but also that it will make use of the network of users in the exchange in order to find trading partners.
-
-In the case of cryptocurrencies, which are often stored in digital wallets, an individual can lose hundreds or thousands of dollars in digital currency holdings simply by forgetting the key to a wallet. An exchange will not allow this to happen, as it safeguards the holdings in place of the individual investor.
 
 Differences Between Centralized and Decentralized Exchanges
 Centralized exchanges can be used to conduct trades from fiat to cryptocurrency (or vice versa). They can also be used to conduct trades between two different cryptocurrencies. While this may seem to cover all of the potential transaction types, there is still a market for another type of cryptocurrency exchange as well.
