@@ -75,3 +75,13 @@ Once the setup is complete you will be taken to a screen wher you can reveal the
 
 
 ![Metamask12](12.metamask.png)
+
+*** Understanding Risks
+
+The risks associated with hot and cold wallets and understanding the differences are as follows. Hot wallets are connected to the internet via a mobile device or compute, while cold wallets are hardware devices that allow you to store you assets offline.
+
+Leveraging the use of plugins like Metamask come with some inherent risk such as malware or default settings that could all full access to your crypto assets. As long as these risks are understood and mitigated with the use of cold wallets as a method to store the bulk of your invesstments in a secure fashion crypto currency can be traded with minimal risk. Additionally the use of multiple profiles can also reduce the risk of compromise as long as ample security practices are used and proper storage of passwords and passphrases are managed properly.
+
+The use of cold wallets such as a ledger will require you to generate a private key to manage your crypto assets. In addition to this key you will also need to securely document and store a 24-word recovery phrase. This phrase is used to recover the private keys. It is also recommended that when using a ledger that it be locked at all times unless in use to be certain no one else can use the device.
+
+
