@@ -82,6 +82,9 @@ kubectl create deployment ngix-depl --image=nginx
 # List all namespaces
 'kubectl get namespaces'
 
+# Create a namespaces
+'kubectl create namespaces namespace-name'
+
 # Namespace Definitions
 # kube-system is a default namespace that should not be used or modified in anyway and control system process
 # kube-public contains publically accessiable data and includes a configuration map and cluster information that is accessiable without authenication to view it you can run the command 'kubectl cluster-info'
@@ -100,4 +103,20 @@ kubectl create deployment ngix-depl --image=nginx
 # Change the default namespace
 'kubens new-namespace'
 
-#Ingress definitions and usage
+#List Ingress of all or specific namespaces
+'kubectl get all -n namespace-name'
+'kubectl get ingress  -n namespace-name'
+'kubectl get all -n kubernetes-dashboard'
+'kubectl get ingress -n kubernetes-dashboard'
+
+# Command to obtain token for dashboard admin
+'kubectl -n kubernetes-dashboard describe secret $(kubectl -n kubernetes-dashboard get secret | grep dashboard-admin | awk '{print $1}')'
+
+# Command  to launch the dashboard for Kubernetes
+'kubectl proxy'
+
+#Command to add an initial password for a kubernetes wordpress with MySQL deployment
+kubectl create secret generic mysql-pass --from-literal=password=password
+
+#Command to see what node port a particular application is running on
+minikube service --all
