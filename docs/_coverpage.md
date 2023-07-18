@@ -1,6 +1,6 @@
 ![logo](/media/logos/TP-Mark-05-v002-small.png)
 
-# DEVOPS <small>2022</small>
+# DEVOPS <small>2023</small>
 
 > Documentation Tool For Students And Staff
 
