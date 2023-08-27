@@ -54,19 +54,19 @@ devops@devops-student:/usr/local$ `cd`
 
 devops@devops-student:~$
  
-9. Change your present working Directory to “/usr/local/lib/”, change it to “/home/devops/Desktop/ ”, in one line command, by moving up in the directory till ‘/’ then using absolute path.
+9. Change your present working Directory to “/usr/local/lib/”, change it to “/home/devops/Desktop/ ”, in one line command, by moving up in the directory till ‘/’ then using absolute path
 
 devops@devops-student:/usr/local/lib/$ `cd ../../../home/devops/Desktop/` 
 
 devops@devops-student:~/Desktop$
 
-10. Change from current working directory to /var/www/html without typing in full using TAB.
+10. Change from current working directory to /var/www/html without typing in full using TAB
 
 devops@devops-student:/var/www/html$ `cd /v<TAB>/w<TAB>/h<TAB>`
 
 devops@devops-student:/var/www/html$
 
-11. Navigate from your current working directory to /var/l__ _, Oops! You forgot the name of directory and not supposed to use TAB.
+11. Navigate from your current working directory to /var/l__ _, Oops! You forgot the name of directory and not supposed to use TAB
 
 devops@devops-student:~$ `cd /var/l*` 
 
@@ -81,14 +81,14 @@ devops@devops-student:~$
 
 13. What are pushd and popd in Linux?
 
-Pushd and popd are Linux commands in bash and certain other shell which saves current working directory location to memory and bring to the directory from memory as current working directory, respectively as well as changes directory.
+Pushd and popd are Linux commands in bash and certain other shell which saves current working directory location to memory and bring to the directory from memory as current working directory, respectively as well as changes directory
 
 devops@devops-student:~$ `pushd /var/www/html`
 
 /var/www/html `~`
 devops@devops-student:/var/www/html$
  
-The above command saves the current location to memory and changes to the requested directory. As soon as popd is fired, it fetch the saved directory location from memory and makes it current working directory.
+The above command saves the current location to memory and changes to the requested directory. As soon as popd is fired, it fetch the saved directory location from memory and makes it current working directory
 
 devops@devops-student:/var/www/html$ `popd ~`
 devops@devops-student:/var/www/html$ 
@@ -99,7 +99,7 @@ devops@devops-student:/var/www/html$
 
 devops@devops-student:~$ `cd ~/`
 
-16. Change to the directory with white space.
+16. Change to the directory with white space
 devops@devops-student:~$ `cd busted\ directory/`
 
 
@@ -115,6 +115,71 @@ or
 devops@devops-student:~$ `cd "busted directory"/` 
 devops@devops-student:~/busted directory$
 
-16. Change from current working directory to Downloads and list all its settings with one command.
+16. Change from current working directory to Downloads and list all its settings with one command
 
 devops@devops-student:/usr$ `cd ~/Downloads && ls`
+
+## LS Command Lab 
+
+**\* Examples**
+
+ls -m	Lists directory contents separated by a comma.
+ls -Q	Displays directory contents enclosed by quotation marks.
+ls -l	Displays files in a long-list format.
+ls -lh	Display file size in a human-readable format.
+ls -g	Omits group ownership column.
+ls -F	Adds a forward slash to directories.
+ls -i	Display inode number of files and directories.
+ls -a	Display all files including hidden files.
+ls *.	Filters files according to the file extension.
+ls -la	Displays all files and directories in long list format.
+ls -R	Display files and directories recursively.
+ls -r	Sort Files in reverse.
+ls -X	Sort files alphabetically by file extension.
+ls -tl	Display files according to file creation date and time.
+ls -n	List UIDs and GIDs.
+
+**\* Lab Exercises**
+
+
+1. devops@devops-student:~$ `cd ~/`
+
+2. devops@devops-student:~$ `ls -m`
+
+3. devops@devops-student:~$ `cd example1`
+
+4. devops@devops-student:~$ `ls -Q`
+
+5. devops@devops-student:~$ `cd ..`
+
+6. devops@devops-student:~$ `cd example2`
+
+7. devops@devops-student:~$ `ls -l`
+
+8. devops@devops-student:~$ `ls -lh`
+
+9. devops@devops-student:~$ `ls -g`
+
+10. devops@devops-student:~$ `ls -F`
+
+11. devops@devops-student:~$ `ls -i`
+
+12. devops@devops-student:~$ `ls -a`
+
+13. devops@devops-student:~$ `ls *.`
+
+14. devops@devops-student:~$ `cd ..`
+
+15. devops@devops-student:~$ `ls -la`
+
+16. devops@devops-student:~$ `ls -R`
+
+17. devops@devops-student:~$ `cd example2`
+
+18. devops@devops-student:~$ `ls -r`
+
+19. devops@devops-student:~$ `ls -X`
+
+20. devops@devops-student:~$ `ls -tl`
+
+21. devops@devops-student:~$ `ls -n`
