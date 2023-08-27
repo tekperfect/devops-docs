@@ -53,3 +53,5 @@ Students by the end of the course will be able to install an operating system ru
 
 [Windows](/courses/02-Os_Basics/lessons/windows-best-practices.md)
 
+## Student Labs
+[Student Labs](/courses/02-Os_Basics/lessons/labs.md)
