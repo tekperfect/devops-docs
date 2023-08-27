@@ -7,221 +7,220 @@
 
 1. Change from current directory to /usr/local
 
-devops@devops-student:~$ `cd /usr/local`
-
-devops@devops-student:/usr/local$ 
+$ `cd /usr/local`
 
 2. Change from current directory to /usr/local/lib directory
 
-devops@devops-student:/usr/local$ `cd /usr/local/lib` 
-
-devops@devops-student:/usr/local/lib$ 
+$ `cd /usr/local/lib` 
 
 3. Change from current working directory to /usr/local/lib using relative path.
 
-devops@devops-student:/usr/local$ `cd lib` 
-
-devops@devops-student:/usr/local/lib$ 
+$ `cd lib` 
 
 4. Switch back to previous directory where you working earlier
 
-devops@devops-student:/usr/local/lib$ `cd - /usr/local` 
-devops@devops-student:/usr/local$
+$ `cd - /usr/local` 
 
 5. Change Current directory to parent directory or move up one directory
 
-devops@devops-student:/usr/local/lib$ `cd ..` 
-
-devops@devops-student:/usr/local$ 
+$ `cd ..` 
 
 6. Show last working directory from where we moved (use ‘–‘ switch) as shown.
 
-devops@devops-student:/usr/local$ `cd -- /home/devops`
+$ `cd -- /home/devops`
 
 7. Move up two directories up from where you are now
 
-devops@devops-student:/usr/local$ `cd ../ ../` 
-
-devops@devops-student:/usr$
+$ `cd ../ ../` 
 
 8. Move to your home directory from anywhere
 
-devops@devops-student:/usr/local$ `cd ~` 
+$ `cd ~` 
 
 or
 
-devops@devops-student:/usr/local$ `cd` 
+$ `cd` 
 
-devops@devops-student:~$
- 
 9. Change your present working Directory to “/usr/local/lib/”, change it to “/home/devops/Desktop/ ”, in one line command, by moving up in the directory till ‘/’ then using absolute path
 
-devops@devops-student:/usr/local/lib/$ `cd ../../../home/devops/Desktop/` 
-
-devops@devops-student:~/Desktop$
+$ `cd ../../../home/devops/Desktop/` 
 
 10. Change from current working directory to /var/www/html without typing in full using TAB
 
-devops@devops-student:/var/www/html$ `cd /v<TAB>/w<TAB>/h<TAB>`
-
-devops@devops-student:/var/www/html$
+$ `cd /v<TAB>/w<TAB>/h<TAB>`
 
 11. Navigate from your current working directory to /var/l__ _, Oops! You forgot the name of directory and not supposed to use TAB
 
-devops@devops-student:~$ `cd /var/l*` 
+$ `cd /var/l*` 
 
-devops@devops-student:/var/l$ 
 Note: This will move to ‘lib‘ only if there is only one directory starting with ‘l‘. If more than one directory starting with ‘l‘ exist, and no more criteria is provided in command line, it will move to the first directory starting with ‘l‘, alphabetically
 
 12. You need to navigate to your home folder ‘devops‘ home directory, without using TAB.
 
-devops@devops-student:/etc$ `cd /home/dev?` 
-
-devops@devops-student:~$
+$ `cd /home/dev?` 
 
 13. What are pushd and popd in Linux?
 
 Pushd and popd are Linux commands in bash and certain other shell which saves current working directory location to memory and bring to the directory from memory as current working directory, respectively as well as changes directory
 
-devops@devops-student:~$ `pushd /var/www/html`
+$ `pushd /var/www/html`
 
-/var/www/html `~`
-devops@devops-student:/var/www/html$
- 
 The above command saves the current location to memory and changes to the requested directory. As soon as popd is fired, it fetch the saved directory location from memory and makes it current working directory
 
 devops@devops-student:/var/www/html$ `popd ~`
-devops@devops-student:/var/www/html$ 
 
 14. Change to a directory containing white spaces. (BTW I am not a fan of directories that contain white space because it makes it difficult to reference directories in scripts and navigate them via the command line)
 
 15. Change to your home directory
 
-devops@devops-student:~$ `cd ~/`
+$ `cd ~/`
 
 16. Change to the directory with white space
-devops@devops-student:~$ `cd busted\ directory/`
 
-
-devops@devops-student:~/busted directory$
+$ `cd busted\ directory/`
 
 or
 
-devops@devops-student:~$ `cd 'busted directory'` 
-devops@devops-student:~/busted directory$ 
+$ `cd 'busted directory'` 
 
 or 
 
-devops@devops-student:~$ `cd "busted directory"/` 
-devops@devops-student:~/busted directory$
+$ `cd "busted directory"/` 
 
 16. Change from current working directory to Downloads and list all its settings with one command
 
-devops@devops-student:/usr$ `cd ~/Downloads && ls`
+$ `cd ~/Downloads && ls`
 
 ## LS Command Lab
 
 **\* Examples**
 
-ls -m	Lists directory contents separated by a comma.
-ls -Q	Displays directory contents enclosed by quotation marks.
-ls -l	Displays files in a long-list format.
-ls -lh	Display file size in a human-readable format.
-ls -g	Omits group ownership column.
-ls -F	Adds a forward slash to directories.
-ls -i	Display inode number of files and directories.
-ls -a	Display all files including hidden files.
-ls *.	Filters files according to the file extension.
-ls -la	Displays all files and directories in long list format.
-ls -R	Display files and directories recursively.
-ls -r	Sort Files in reverse.
-ls -X	Sort files alphabetically by file extension.
-ls -tl	Display files according to file creation date and time.
-ls -n	List UIDs and GIDs.
-
 **\* Lab Exercises**
 
+CD to your home directory
 
-1. devops@devops-student:~$ `cd ~/`
+1. $ `cd ~/`
 
-2. devops@devops-student:~$ `ls -m`
+Lists directory contents separated by a comma.
 
-3. devops@devops-student:~$ `cd example1`
+2. $ `ls -m`
 
-4. devops@devops-student:~$ `ls -Q`
+CD to the ascii-art directory you extracted from the zip file
 
-5. devops@devops-student:~$ `cd ..`
+3. $ `cd ascii-art`
 
-6. devops@devops-student:~$ `cd example2`
+Displays directory contents enclosed by quotation marks
 
-7. devops@devops-student:~$ `ls -l`
+4. $ `ls -Q`
 
-8. devops@devops-student:~$ `ls -lh`
+Displays files in a long-list format
 
-9. devops@devops-student:~$ `ls -g`
+5. $ `ls -l`
 
-10. devops@devops-student:~$ `ls -F`
+Display file size in a human-readable format
 
-11. devops@devops-student:~$ `ls -i`
+6. $ `ls -lh`
 
-12. devops@devops-student:~$ `ls -a`
+Omits group ownership column
 
-13. devops@devops-student:~$ `ls *.`
+7. $ `ls -g`
 
-14. devops@devops-student:~$ `cd ..`
+Adds a forward slash to directories
 
-15. devops@devops-student:~$ `ls -la`
+8. $ `ls -F`
 
-16. devops@devops-student:~$ `ls -R`
+Display inode number of files and directories
 
-17. devops@devops-student:~$ `cd example2`
+9. $ `ls -i`
 
-18. devops@devops-student:~$ `ls -r`
+Display all files including hidden files
 
-19. devops@devops-student:~$ `ls -X`
+10. $ `ls -a`
 
-20. devops@devops-student:~$ `ls -tl`
+Filters files according to the file extension.
 
-21. devops@devops-student:~$ `ls -n`
+11. $ `ls *.`
 
-## LS Command Lab
+Displays all files and directories in long list format.
+
+12. $ `ls -la`
+
+Display files and directories recursively
+
+13. $ `ls -R`
+
+Sort Files in reverse
+
+14. $ `ls -r`
+
+Sort files alphabetically by file extension
+
+15. $ `ls -X`
+
+Display files according to file creation date and time
+
+16. $ `ls -tl`
+
+List UIDs and GIDs
+
+17. $ `ls -n`
+
+## Touch Command Lab
 
 **\* Lab Examples**
 
-touch file_name (This creates a file with the name ‘File1‘).
-
-touch File1_name File2_name File3_name (This command creates several files at once).
-
-touch -a fileName (This command changes access time of the file)
-
-touch -c fileName )This command is used to check whether a file is created or not. If not created then don’t create it. This command avoids creating files).
-
-touch -c-d fileName (This command is used to update access and modification time.) 
-
-touch -m fileName (This is used to change the modification time only. It only updates last modification time).
-
-touch -d "1 Jan 2023" devops-students.txt (This command is used to change only modification date.)
-
-touch -r second_file_name first_file_name (This command is used to use the timestamp of another file.)
 
 touch -t YYMMDDHHMM fileName (This is used to create a file using a specified time.)
 
 **\* Lab Exercises**
 
-1. devops@devops-student: `touch your-face`
-2. devops@devops-student: `touch your-nose your-eyes your-hair`
-3. devops@devops-student: `ls -al`
-4. Make note of the time and date stamp of the files you created
-5. devops@devops-student: `touch -a your-face`
-6. devops@devops-student: `touch -c your-nose`
-7. devops@devops-student: `touch -c-d your-face`
-8. devops@devops-student: `touch -m your-hair`
-8. Run the ls command and make note of the modification times of the files
-9. devops@devops-student: `touch -d "1 Jan 2023" your-face`
-10. devops@devops-student: `touch -r your-nose your-face`
-11. Make note of the time and date stamps of the files
-12. devops@devops-student: `touch -t 2302050555 your-hair`
-13. What was the result of that command?
+This creates a file 
+
+1. $ `touch your-face`
+
+This command creates several files at once
+
+2. $ `touch your-nose your-eyes your-hair`
+
+This command displays the long directory listing of the files in a folder
+
+3. $ `ls -al`
+
+** Make note of the time and date stamp of the files you created
+
+This command changes access time of the file
+
+4. $ `touch -a your-face`
+
+This command is used to check whether a file is created or not. If not created then don’t create it. This command avoids creating files
+
+5. $ `touch -c your-nose`
+
+This command is used to update access and modification time
+
+6. $ `touch -c-d your-face`
+
+This is used to change the modification time only. It only updates last modification time
+
+7. $ `touch -m your-hair`
+
+** Run the ls command and make note of the modification times of the files
+
+This command is used to change only modification date
+
+8. $ `touch -d "1 Jan 2023" your-face`
+
+This command is used to use the timestamp of another file
+
+9. $ `touch -r your-nose your-face`
+
+** Make note of the time and date stamps of the files
+
+This is used to create a file using a specified time
+
+10. $ `touch -t 2302050555 your-hair`
+
+** What was the result of that command?
 
 # MKDIR, CP, MV, & RM Labs
 
