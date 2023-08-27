@@ -299,3 +299,93 @@ touch -t YYMMDDHHMM fileName (This is used to create a file using a specified ti
 29. `rmdir ~/kitchen/trash`
 
 30. `rm -r ~/kitchen`
+
+# CAT, TAIL, & HEAD Labs
+
+To view a single file 
+
+1. cat apple
+
+To view multiple files
+
+2. cat apples bananas
+
+To view a file with line numbers
+
+3. cat -n pizza
+
+Use cat to create a new file from the contents of another file
+
+4. cat grapes > old-raisins
+
+Cat command can append the contents of one file to the end of another file
+
+5. cat bread >> butter 
+
+Display contents of file in reverse order
+
+6. tac milk
+
+Display the contents of a file if the file has a lot of content and can’t fit in the terminal
+
+7. cat bread | more
+
+Copy the contents of multiple files into a new file
+
+8. cat "cherries" "grapes" "banana" "apple" > fruit-salad
+
+Display  the first 10 lines of a file
+
+9. head fruit-salad
+
+Display the last 10 lines of a file
+
+10. tail fruit-salad
+
+Display the first 26 lines of a file
+
+11. head -n 26 fruit-salad
+
+Display the last 34 lines of a file
+
+12. tail -n 34 fruit-salad
+
+Actively display the contents of a file as its being written to
+
+13. tail -f file_name
+
+# INSTALLING, REMOVING, AND MANAGING APPLICATIONS AND SERVICES
+
+**\* Lab Exercises**
+
+Installing applications
+
+1. sudo apt install python3-pip
+
+2. sudo apt install neofetch
+
+3. sudo apt install ncdu
+
+4. sudo apt install nnn
+
+
+Removing applications
+
+5. sudo apt remove neofetch
+
+6. sudo apt remove ncdu
+
+7. sudo apt remove nnn
+
+Managing Applications and Services
+
+
+8. sudo systemctl status apache2
+
+9. sudo systemctl stop apache2
+
+10. sudo systemctl start apache2
+
+11. sudo systemctl restart apache2
+
+12. apt list --installed
