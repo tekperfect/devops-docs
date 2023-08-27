@@ -222,3 +222,80 @@ touch -t YYMMDDHHMM fileName (This is used to create a file using a specified ti
 11. Make note of the time and date stamps of the files
 12. devops@devops-student: `touch -t 2302050555 your-hair`
 13. What was the result of that command?
+
+# MKDIR, CP, MV, & RM Labs
+
+**\* Lab Exercises**
+
+Make some directories
+
+1. `mkdir kitchen`
+
+2. `cd kitchen`
+
+3. `mkdir refrigerator`
+
+4. `mkdir trash`
+
+5. `mkdir sink`
+
+6. `mkdir compost`
+
+
+Copy some files
+
+7. `cp ~/ascii-art/* ~/kitchen/refrigerator`
+
+8. `cp ~/refrigerator/milk spoiled-milk`
+
+9. `cp ~/refrigerator/eggs rotten-eggs`
+
+10. `cp ~/refrigerator/bananas rotten-bananas`
+
+11. `cp ~/refrigerator/grapes raisins`
+
+12. `cp ~/refrigerator/meat to rotten-meat`
+
+
+Check what's in the directories
+
+
+13. Run an ls command on each of the 5 directories you created individually
+
+14. Run an ls command on each of the 5 directories you created collectively
+
+15. What is the difference between those commands?
+
+
+Move some files around
+
+16. `mv ~/kitchen/refrigerator/spoiled-milk ~/sink`
+
+17. `mv ~/kitchen/refrigerator/rotten-eggs ~/compost`
+
+18. `mv ~/kitchen/refrigerator/rotten-bananas ~/compost`
+
+19. `mv ~/kitchen/refrigerator/raisins ~/compost`
+
+20. `mv ~/kitchen/refrigerator/rotten-meat ~/trash`
+
+Delete some files and directories
+
+21. `rm ~/kitchen/sink/milk`
+
+22. `rmdir ~/kitchen/compost`
+23. `rmdir ~/kitchen/trash`
+
+24. What error did you get when you ran those commands?
+
+25. How would you solve it?
+
+26. `rm ~/kitchen/compost/*`
+
+27. `rm -d ~/kitchen/trash/rotten-meat` (what's unique about this commnad)
+
+28. `rmdir ~/kitchen/compost`
+
+29. `rmdir ~/kitchen/trash`
+
+30. `rm -r ~/kitchen`
