@@ -227,7 +227,7 @@ touch -t YYMMDDHHMM fileName (This is used to create a file using a specified ti
 
 **\* Lab Exercises**
 
-Make some directories
+** Make some directories
 
 1. `mkdir kitchen`
 
@@ -242,7 +242,7 @@ Make some directories
 6. `mkdir compost`
 
 
-Copy some files
+** Copy some files
 
 7. `cp ~/ascii-art/* ~/kitchen/refrigerator`
 
@@ -257,7 +257,7 @@ Copy some files
 12. `cp ~/refrigerator/meat to rotten-meat`
 
 
-Check what's in the directories
+** Check what's in the directories
 
 
 13. Run an ls command on each of the 5 directories you created individually
@@ -267,7 +267,7 @@ Check what's in the directories
 15. What is the difference between those commands?
 
 
-Move some files around
+** Move some files around
 
 16. `mv ~/kitchen/refrigerator/spoiled-milk ~/sink`
 
@@ -279,7 +279,7 @@ Move some files around
 
 20. `mv ~/kitchen/refrigerator/rotten-meat ~/trash`
 
-Delete some files and directories
+** Delete some files and directories
 
 21. `rm ~/kitchen/sink/milk`
 
