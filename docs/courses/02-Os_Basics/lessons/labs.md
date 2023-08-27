@@ -4,21 +4,25 @@
 
 **\* Examples**
 
+
 1. Change from current directory to /usr/local
 
 devops@devops-student:~$ `cd /usr/local`
 
 devops@devops-student:/usr/local$ 
+
 2. Change from current directory to /usr/local/lib directory
 
 devops@devops-student:/usr/local$ `cd /usr/local/lib` 
 
 devops@devops-student:/usr/local/lib$ 
+
 3. Change from current working directory to /usr/local/lib using relative path.
 
 devops@devops-student:/usr/local$ `cd lib` 
 
 devops@devops-student:/usr/local/lib$ 
+
 4. Switch back to previous directory where you working earlier
 
 devops@devops-student:/usr/local/lib$ `cd - /usr/local` 
