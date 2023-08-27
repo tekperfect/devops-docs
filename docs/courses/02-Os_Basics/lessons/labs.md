@@ -119,7 +119,7 @@ devops@devops-student:~/busted directory$
 
 devops@devops-student:/usr$ `cd ~/Downloads && ls`
 
-## LS Command Lab 
+## LS Command Lab
 
 **\* Examples**
 
@@ -183,3 +183,42 @@ ls -n	List UIDs and GIDs.
 20. devops@devops-student:~$ `ls -tl`
 
 21. devops@devops-student:~$ `ls -n`
+
+## LS Command Lab
+
+**\* Lab Examples**
+
+touch file_name (This creates a file with the name ‘File1‘).
+
+touch File1_name File2_name File3_name (This command creates several files at once).
+
+touch -a fileName (This command changes access time of the file)
+
+touch -c fileName )This command is used to check whether a file is created or not. If not created then don’t create it. This command avoids creating files).
+
+touch -c-d fileName (This command is used to update access and modification time.) 
+
+touch -m fileName (This is used to change the modification time only. It only updates last modification time).
+
+touch -d "1 Jan 2023" devops-students.txt (This command is used to change only modification date.)
+
+touch -r second_file_name first_file_name (This command is used to use the timestamp of another file.)
+
+touch -t YYMMDDHHMM fileName (This is used to create a file using a specified time.)
+
+**\* Lab Exercises**
+
+1. devops@devops-student: `touch your-face`
+2. devops@devops-student: `touch your-nose your-eyes your-hair`
+3. devops@devops-student: `ls -al`
+4. Make note of the time and date stamp of the files you created
+5. devops@devops-student: `touch -a your-face`
+6. devops@devops-student: `touch -c your-nose`
+7. devops@devops-student: `touch -c-d your-face`
+8. devops@devops-student: `touch -m your-hair`
+8. Run the ls command and make note of the modification times of the files
+9. devops@devops-student: `touch -d "1 Jan 2023" your-face`
+10. devops@devops-student: `touch -r your-nose your-face`
+11. Make note of the time and date stamps of the files
+12. devops@devops-student: `touch -t 2302050555 your-hair`
+13. What was the result of that command?
