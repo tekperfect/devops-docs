@@ -304,55 +304,55 @@ touch -t YYMMDDHHMM fileName (This is used to create a file using a specified ti
 
 To view a single file 
 
-1. cat apple
+1. `cat apple`
 
 To view multiple files
 
-2. cat apples bananas
+2. `cat apples bananas`
 
 To view a file with line numbers
 
-3. cat -n pizza
+3. `cat -n pizza`
 
 Use cat to create a new file from the contents of another file
 
-4. cat grapes > old-raisins
+4. `cat grapes > old-raisins`
 
 Cat command can append the contents of one file to the end of another file
 
-5. cat bread >> butter 
+5. `cat bread >> butter` 
 
 Display contents of file in reverse order
 
-6. tac milk
+6. `tac milk`
 
 Display the contents of a file if the file has a lot of content and can’t fit in the terminal
 
-7. cat bread | more
+7. `cat bread | more`
 
 Copy the contents of multiple files into a new file
 
-8. cat "cherries" "grapes" "banana" "apple" > fruit-salad
+8. `cat "cherries" "grapes" "banana" "apple" > fruit-salad`
 
 Display  the first 10 lines of a file
 
-9. head fruit-salad
+9. `head fruit-salad`
 
 Display the last 10 lines of a file
 
-10. tail fruit-salad
+10. `tail fruit-salad`
 
 Display the first 26 lines of a file
 
-11. head -n 26 fruit-salad
+11. `head -n 26 fruit-salad`
 
 Display the last 34 lines of a file
 
-12. tail -n 34 fruit-salad
+12. `tail -n 34 fruit-salad`
 
 Actively display the contents of a file as its being written to
 
-13. tail -f file_name
+13. `tail -f file_name`
 
 # INSTALLING, REMOVING, AND MANAGING APPLICATIONS AND SERVICES
 
@@ -360,32 +360,41 @@ Actively display the contents of a file as its being written to
 
 Installing applications
 
-1. sudo apt install python3-pip
+1. `sudo apt install python3-pip`
 
-2. sudo apt install neofetch
+2. `sudo apt install neofetch`
 
-3. sudo apt install ncdu
+3. `sudo apt install ncdu`
 
-4. sudo apt install nnn
+4. `sudo apt install nnn`
 
 
 Removing applications
 
-5. sudo apt remove neofetch
+5. `sudo apt remove neofetch`
 
-6. sudo apt remove ncdu
+6. `sudo apt remove ncdu`
 
-7. sudo apt remove nnn
+7. `sudo apt remove nnn`
 
 Managing Applications and Services
 
+Show status of Apache web services
 
-8. sudo systemctl status apache2
+8. `sudo systemctl status apache2`
 
-9. sudo systemctl stop apache2
+Stop Apache web services
 
-10. sudo systemctl start apache2
+9. `sudo systemctl stop apache2`
 
-11. sudo systemctl restart apache2
+Start Apache web services
 
-12. apt list --installed
+10. `sudo systemctl start apache2`
+
+Restart Apache web services
+
+11. `sudo systemctl restart apache2`
+
+List all install packages
+
+12. `apt list --installed`
