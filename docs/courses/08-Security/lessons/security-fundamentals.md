@@ -104,6 +104,27 @@ Host identification scan: `nmap –sV -O xxx.xxx.xxx.xxx` (what’s important he
 
 Longer more thorough scan – `nmap –p- xxx.xxx.xxx.xxx` (scans all ports)
 
+Nmap scan of entire class C network
+`sudo nmap -sT xxx.xxx.xxx.0/24`
+
+Nmap scan of single host on ports 80 and 443
+`sudo nmap -sT -p 80,443 xxx.xxx.xxx.xxx`
+
+Nmap scan stealth scan of single host
+`sudo nmap -sS xxx.xxx.xxx.xxx`
+
+Nmap scan of single host to identify OS
+`sudo nmap -O xxx.xxx.xxx.xxx`
+
+Nmap scan of single host to identify OS with addiional detail
+`sudo nmap -A xxx.xxx.xxx.xxx`
+
+Nmap scan stealth scan of single host with decoy IP to evade detection
+`sudo nmap -sS xxx.xxx.xxx.xxx xxx.xxx.xxx.xxx`
+
+Nmap scan or single host using all know vunerabilities
+`sudo nmap -script vuln xxx.xxx.xxx.xxx`
+
 
 ### Reconnaissance Cont
 
