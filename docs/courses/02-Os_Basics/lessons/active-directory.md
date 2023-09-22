@@ -127,8 +127,9 @@ thresholds, etc) run this command:
 `net accounts`
 
 
-You can do the same thing during install by pressing SHIFT-F10 at the screen where you set your initial user password.
-Windows 7 supports several useful new keyboard shortcuts:
+## System Administration and the GUI 
+
+Windows supports several useful keyboard shortcuts:
 
 `Windows Key+G`
 
@@ -159,21 +160,15 @@ Snap to the left hand side of the screen
 Snap to the right hand side of the screen.
 
 To quickly launch an application as an administrator (without the right-click, run as administrator), type the name in the Search programs and files field, and then press Ctrl-Shift-Enter.
-Here are some tips that can save you from buying commercial software:
 
 Need to make a quick screencast to show someone how to do 
 something? The Problem Steps Recorder can create an MHTML file that shows what you have done by creating a screen capture each time you take an action. Click the Start button and type ‘psr’ to open the Problem Steps Recorder.
 
-Need to burn a disc? The isoburn.exe can burn ISO and IMG files. You can right click a file and select burn, or launch it from the command line.
+Windows includes a screen scraping tool called the Snipping Tool. I have tons of users request a license for SnagIt, only to find this free tool (it’s under Accessories) does what they need.
 
-Windows 7 includes a screen scraping tool called the Snipping Tool. I have tons of users request a license for SnagIt, only to find this free tool (it’s under Accessories) does what they need.
+A great way to save all your command line tools and make them available across all your computers is to install Dropbox or Google Drive, create a folder to save all your scripts and tools, and add that folder to your path. That way, they can be called from the command line or any other scripts, and if you update a script, it will carry across to any other machine you have.
 
-You can download this bootable security scanner from Microsoft that will run off a USB key, which is very useful if you suspect a machine has a virus.
-
-A great way to save all your command line tools and make them available across all your computers is to install Dropbox, create a folder to save all your scripts and tools, and add that folder to your path. That way, they can be called from the command line or any other scripts, and if you update a script, it will carry across to any other machine you have.
-Windows 2008
-
-You can free up disk space on your servers by disabling hibernate. Windows 2008 will create a hiberfil.sys equal to the amount of RAM. This is very useful with VMs that have lots of RAM but smaller C: drives. To disable hibernation, and reclaim that space, run this command:
+You can free up disk space on your servers by disabling hibernate. Windows will create a hiberfil.sys equal to the amount of RAM. This is very useful with VMs that have lots of RAM but smaller C: drives. To disable hibernation, and reclaim that space, run this command:
 
 `powercfg -h off`
 
@@ -191,8 +186,6 @@ regsvr32 query.dll (You only have to do this the first time.)
 You can create a list of files and display the last time they were accessed, which is very useful when a network drive is low on space and users swear they have to have that copy of Office 2003 on the network. My advice? If they haven’t touched it in two years, burn it to DVD or write it to tape and then delete it from disk:
 
 `dir /t:a /s /od >> list.txt` 
-
-The Microsoft Exchange Err command is one of the best all around troubleshooting tools you will find, as it can decode any hex error code you find as long as the products are installed on the machine. Download it from here.
 
 You can see all the open files on a system by running this command:
 
@@ -213,7 +206,7 @@ You can use && to string multiple commands together; they will run sequentially.
 
 If you find yourself restarting services frequently, you can use 
 that && trick to create a batch file called restart.cmd and use it to restart services:
-net stop %1 && net start %1
+`net stop %1 && net start %1`
 
 You can download a Windows port of the wget tool from here, and use it to mirror websites using this command:
 
