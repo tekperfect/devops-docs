@@ -32,10 +32,10 @@ Step 0: Install git and create a GitHub account
 The first two things you'll want to do are install git and create a free GitHub account.
 
 Windows install
-https://git-scm.com/download/win
+`https://git-scm.com/download/win`
 
 Hombrew should already be installed but if it's not run this command
-/usr/bin/ruby -e "\$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 
 ## Mac OS Install
 
@@ -76,7 +76,7 @@ Untracked files:
 
 myproject.py
 
-What this basically says is, "Hey, we noticed you created a new file called myproject.py, but unless you use the 'git add' command we aren't going to do anything with it."
+What this basically says is, "Hey, we noticed you created a new file called myproject.py, but unless you use the `git add` command we aren't going to do anything with it."
 
 The staging environment, the commit, are one of the most confusing parts when you're first learning git is the concept of the staging environment and how it relates to a commit.
 
@@ -86,7 +86,7 @@ Commits make up the essence of your project and allow you to go back to the stat
 
 So, how do you tell git which files to put into a commit? This is where the staging environment or index come in. As seen in Step 2, when you make changes to your repo, git notices that a file has changed but won't do anything with it (like adding it in a commit).
 
-To add a file to a commit, you first need to add it to the staging environment. To do this, you can use the git add <filename> command (see Step 3 below).
+To add a file to a commit, you first need to add it to the staging environment. To do this, you can use the `git add <filename>` command (see Step 3 below).
 
 Once you've used the git add command to add all the files you want to the staging environment, you can then tell git to package them into a commit using the git commit command.
 
@@ -97,13 +97,13 @@ Note: The staging environment, also called 'staging', is the new preferred term 
 
 If you rerun the git status command, you'll see that git has added the file to the staging environment (notice the "Changes to be committed" line).
 
-\$ git status
+\$ `git status`
 On branch master
 
 Initial commit
 
 Changes to be committed:
-(use "git rm --cached <file>..." to unstage)
+(use `git rm --cached <file>...` to unstage)
 
     new file:   myproject.py
 
@@ -112,21 +112,21 @@ To reiterate, the file has not yet been added to a commit, but it's about to be.
 4. Create a commit
    It's time to create your first commit!
 
-Run the command git commit -m "Your message about the commit"
+Run the command `git commit -m "Your message about the commit`
 
-\$ git commit -m "This is my first commit!"
+\$ `git commit -m "This is my first commit!"`
 [master (root-commit) a694n2c] This is my first commit!
 1 file changed, 1 insertion(+)
 create mode 39904 myproject.py
 
-The message at the end of the commit should be something related to what the commit contains - maybe it's a new feature, maybe it's a bug fix, maybe it's just fixing a typo. Don't put a message like "dumb code" or "blah blah blah". That makes the other people who see your angry.
+The message at the end of the commit should be something related to what the commit contains - maybe it's a new feature, maybe it's a bug fix, maybe it's just fixing a typo. Don't put a message like "dumb code" or "blah blah blah". That makes the other people who have to read your code angry.
 
 Adding files and committing them to your branch. This is a brief list of command to add a file to your branch and push it to Github
 
-git clone https://github.com/username/branch_name (Clone your branch to a directory on your system)
-git add filename.py (add a file to your branch.. Please make sure you are in the directory or you specify the path to your directory when using the git add command)
-git commit -m "Good description of commit" (command to commit to files to your local repo)
-git push (push the files from your local repo to Github so they are committed to your branch)
+`git clone https://github.com/username/branch_name` (Clone your branch to a directory on your system)
+`git add filename.py` (add a file to your branch.. Please make sure you are in the directory or you specify the path to your directory when using the git add command)
+`git commit -m "Good description of commit"` (command to commit to files to your local repo)
+`git push` (push the files from your local repo to Github so they are committed to your branch)
 
 Git Continued
 Here are some more advanced concepts once you master the process of adding, deleting, and changing files
@@ -141,7 +141,7 @@ Let's say you are on the master branch and want to create a new branch to develo
 
 After running the above command, you can use the git branch command to confirm that your branch was created:
 
-\$ git branch
+\$ `git branch`
 master
 
 - my-website-branch
@@ -165,7 +165,7 @@ GitHub will ask if you want to create a new repo from scratch or if you want to 
 
 To push changes onto a new branch on GitHub, you'll want to run git push origin yourbranchname. GitHub will automatically create the branch for you on the remote repository:
 
-\$ git push origin my-website-branch
+\$ `git push origin my-website-branch`
 Counting objects: 3, done.
 Delta compression using up to 8 threads.
 Compressing objects: 100% (2/2), done.
@@ -209,7 +209,7 @@ You can also see the hash code of the commit on the right hand side. A hash code
 
 > In order to get the most recent changes that you or others have merged on GitHub, use the git pull origin master command (when working on the master branch).
 
-`\$ git pull origin master
+`\$ `git pull origin master`
 
 remote: Counting objects: 1, done.
 
@@ -230,7 +230,7 @@ Now we can use the git log command again to see all new commits.
 
 (You may need to switch branches back to the master branch. You can do that using the git checkout master command.)
 
-\$ git log
+\$ `git log`
 commit 6e270786db0e5ffd3e2cfc5edede89b64b83762c
 Merge: 4f1cb17 5381b7c
 Author: Your Name <your_email@yourdomain.com>
@@ -270,4 +270,6 @@ You've successfully made a PR and merged your code to the master branch. Congrat
 
 I also recommend finding some time to work with your team on simulating a smaller group project like we did here. Have your team make a new folder with your team name, and add some files with text to it. Then, try pushing those changes to this remote repo. That way, your team can start making changes to files they didn't originally create and practice using the PR feature. And, use the git blame and git history tools on GitHub to get familiar with tracking which changes have been made in a file and who made those changes.
 
-The more you use git, the more comfortable you'll... Don’t git got. (I know terrible joke.)
+The more you use git, the more comfortable you'll... wait for it... GIT!
+
+ Don’t git got. (I know the jokes are terrible.)
