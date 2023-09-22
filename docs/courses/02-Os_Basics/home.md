@@ -37,10 +37,6 @@ Students by the end of the course will be able to install an operating system ru
 
 [Cron Automation](/courses/02-Os_Basics/lessons/cron.md)
 
-## Windows
-
-[Windows Commands](/courses/02-Os_Basics/lessons/windows-commands.md)
-
 ## Windows Networking
 
 [Windows Networking](/courses/02-Os_Basics/lessons/windows-networking.md)
