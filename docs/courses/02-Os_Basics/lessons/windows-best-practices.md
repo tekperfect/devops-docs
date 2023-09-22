@@ -175,8 +175,6 @@ The solution uses the group policy client side extension to perform all the mana
 
 If you need to use the local admin account on a computer you would retrieve the password from active directory and it would be unique to that single computer.
 
-
-
 For step by step instructions on installing LAPS see this article, How to Install Local Administrator Password Solution (LAPS)
 
 
@@ -306,8 +304,6 @@ Some log analyzers come pre built with Active Directory security reports and oth
 
 Here are some of the most popular log analyzers.
 
-- Elk Stack
-- Lepid
 - Splunk
 - ManageEngine ADAudit Plus
 - Windows Event Forwarding
@@ -318,11 +314,7 @@ Here are some screenshots from an analyzer that I use. The first screenshot show
 
 That is definitely not normal.
 
-
-
 In this screenshot, you can see a huge spike in logon failures. Without a log analyzer, these events would be hard to spot.
-
-
 
 ## Password Complexity Sucks (Use Passphrases Instead)
 
@@ -436,7 +428,7 @@ More software, more roles = increased security risks.
 
 Keep your DCs lean and clean.
 
-## Continues Patch Management & Vulnerability Scanning
+## Patch Management & Vulnerability Scanning
 
 Attackers are quick to exploit known vulnerabilities.
 
