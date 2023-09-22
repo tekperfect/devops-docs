@@ -272,4 +272,4 @@ I also recommend finding some time to work with your team on simulating a smalle
 
 The more you use git, the more comfortable you'll... wait for it... GIT!
 
- Don’t git got. (I know the jokes are terrible.)
+Don’t git got. (I know the jokes are terrible.)

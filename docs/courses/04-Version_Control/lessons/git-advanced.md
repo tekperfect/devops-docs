@@ -85,5 +85,10 @@ You've successfully made a PR and merged your code to the master branch. Congrat
 
 I also recommend finding some time to work with your team on simulating a smaller group project like we did here. Have your team make a new folder with your team name, and add some files with text to it. Then, try pushing those changes to this remote repo. That way, your team can start making changes to files they didn't originally create and practice using the PR feature. And, use the git blame and git history tools on GitHub to get familiar with tracking which changes have been made in a file and who made those changes.
 
-The more you use git, the more comfortable you'll... Don’t git got. (I know terrible joke.)
-This is the end of the lesson
+The more you use git, the more comfortable you'll... wait for it... GIT!
+
+Don’t git got. (I know the jokes are terrible.)
+
+If you work hard you will eventually "GIT" it
+
+Sorry that was the last one :-)
