@@ -5,7 +5,7 @@
 ## Install OS & Prep
 
 Download the iso from 
-You will use this ISO to build your Windows 2019 Server 
+You will use this ISO to build your Windows 2022 Server 
 If you have any trouble with installing the OS please ask for help.
 Once the OS is installed you will need to install the following services using the “Server Manager” wizard.
 IIS, & FTP can be installed by clicking on the “Add Roles and Features” selection.

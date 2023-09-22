@@ -67,7 +67,7 @@ $ `pushd /var/www/html`
 
 The above command saves the current location to memory and changes to the requested directory. As soon as popd is fired, it fetch the saved directory location from memory and makes it current working directory
 
-devops@devops-student:/var/www/html$ `popd ~`
+$ `popd ~`
 
 14. Change to a directory containing white spaces. (BTW I am not a fan of directories that contain white space because it makes it difficult to reference directories in scripts and navigate them via the command line)
 
