@@ -358,49 +358,4 @@ What kinds of issues can be caused by a DNS server that is slow or not respondin
 
 What kinds of issues can be caused obtaining or setting the wrong IP address?
 
-### Browser configured to use proxy server
-
-### What kinds of issues can be caused by using a proxy server or configuring it incorrectly?
-
-Start capturing on the client side
-
-Determing what traffic should be there and what traffic should not be there
-
-Narrow down the time when you are looking at trace files
-
-Narrow down the filters
-
-ip.addr == x.x.x.x (filter by IP address)
-
-ip.addr == x.x.x.x && ip.addr == x.x.x.x (filter by a couple of IP's)
-
-ip.src == xxxx && ip.dst == xxxx - for a destination (source and destination filter)
-
-http or dns (filter by http or dns)
-
-tcp.port==xxx
-
-tcp.flags.reset==1
-
-tcp contains xxx (searching for something specific in the packet filter like a term)
-
-
-http.request (filters to just http requests)
-
-!(arp or icmp or dns) (filter out possible things that are not useful)
-
-info.contains== "Who has"
-
-frame contains “string”: searches for a string in all the frame content, independently of being IP, IPv6, UDP, TCP or any other protocol above layer 2.
-ip contains “string”: searches for the string in the content of any IP packet, regardless of the transport protocol.
-udp contains “string” or tcp contains “texto”: by now you already know…
-
-arp (will just filter on arp traffic which will allow you to display if someone is running an nmap scan)
-
-dns.flags.rcode != 0 (Indicates which dns requests couldn't be correctly resolved.)
-
-!(eth.addr == ff:ff:ff:ff:ff:ff arp or icmp or stp)
-
-You can also filter on dns and tcp
-
 Focus on what's important
