@@ -25,8 +25,6 @@ To have a basic understanding of the linux operating system you should be able t
 - **cp**        - Used to copy files and directories.
 - **mv**        - Used to move files and directories.
 - **rm**        - Used to remove files and directories.
-- **fdisk**     - Used to partition disks and to work with file systems
-- **mount**     - Used to mount a file system or a device
 
 You can also read the file management in Linux from the article https://www.geeksforgeeks.org/file-management-in-linux/
 
@@ -64,13 +62,15 @@ A system administrator has to manage the users working on the system. Users are 
 Each user may or may not be a part of a group which is a collection of users. To learn more about users in Linux go through the article Users in Linux System Administration. Here is a list of commands that are used to manage users.
 
 #### COMMAND    DESCRIPTION
+- **chown** -           Used to change ownership of files and folders
+- **chgrp** -           Used to change group ownership of files and folders
 - **usermod** -         Used to modify users and their respective settings
 - **useradd** -         Used to add a new user
 - **su and sudo** -     Used to change the user and work with root
-- **chage** -   Used to change the user’s aging/expiry information
 - **groupdel** -        Used to delete a group
 - **gpasswd** -         Used to change password of group
 - **groupmod** -        Used to modify group and its settings
+- **groupadd** -        Used to add a new group
 - **groupadd** -        Used to add a new group
 
 To learn more about how to manage users read the article User Management in Linux
@@ -94,8 +94,11 @@ A System Administrator should be able to diagnose problems in a system and even 
 A good system Administrator must have an idea of how to read and manage logs as they give a lot of crucial and required information.
 
 #### COMMAND    DESCRIPTION
+- **tail** -    Used to print details from log or text files starting at the bottom of the file
+- **head** -    Used to print details from log or text  files starting at the top of the file
+- **cat** -     Used to list the contents of a text or log file
+- **grep** -    Used to parce the contents of a text or log file based on a specific string or criteria
 - **dmesg** -   Used to print the message buffer of the kernel
-- **tail** -    Used to print details from the log files located in the folder /var/log
 - **journalctl** -      Used to read systemd logs
 
 
