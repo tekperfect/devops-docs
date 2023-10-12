@@ -113,7 +113,7 @@ Display all files including hidden files
 
 Filters files according to the file extension.
 
-11. $ `ls *.`
+11. $ `ls *`
 
 Displays all files and directories in long list format.
 
