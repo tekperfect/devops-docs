@@ -13,15 +13,11 @@ $ `cd /usr/local`
 
 $ `cd /usr/local/lib` 
 
-3. Change from current working directory to /usr/local/lib using relative path.
-
-$ `cd lib` 
-
-4. Switch back to previous directory where you working earlier
+3. Switch back to previous directory where you working earlier
 
 $ `cd /usr/local` 
 
-5. Change Current directory to parent directory or move up one directory
+4. Change Current directory to parent directory or move up one directory
 
 $ `cd ..` 
 
@@ -49,17 +45,7 @@ $ `cd ../../../home/parallels/Desktop/`
 
 $ `cd /v<TAB>/w<TAB>/h<TAB>`
 
-11. Navigate from your current working directory to /var/l__ _, Oops! You forgot the name of directory and not supposed to use TAB
-
-$ `cd /var/l*` 
-
-Note: This will move to ‘lib‘ only if there is only one directory starting with ‘l‘. If more than one directory starting with ‘l‘ exist, and no more criteria is provided in command line, it will move to the first directory starting with ‘l‘, alphabetically
-
-12. You need to navigate to your home folder ‘parallels‘ home directory, without using TAB.
-
-$ `cd /home/par?` 
-
-13. What are pushd and popd in Linux?
+11. What are pushd and popd in Linux?
 
 Pushd and popd are Linux commands in bash and certain other shell which saves current working directory location to memory and bring to the directory from memory as current working directory, respectively as well as changes directory
 
@@ -67,15 +53,15 @@ $ `pushd /var/www/html`
 
 The above command saves the current location to memory and changes to the requested directory. As soon as popd is fired, it fetch the saved directory location from memory and makes it current working directory
 
-$ `popd ~`
+$ `popd -n`
 
-14. Change to a directory containing white spaces. (BTW I am not a fan of directories that contain white space because it makes it difficult to reference directories in scripts and navigate them via the command line)
+12. Change to a directory containing white spaces. (BTW I am not a fan of directories that contain white space because it makes it difficult to reference directories in scripts and navigate them via the command line)
 
-15. Change to your home directory
+13. Change to your home directory
 
 $ `cd ~/`
 
-16. Change from current working directory to Downloads and list all its settings with one command
+14. Change from current working directory to Downloads and list all its settings with one command
 
 $ `cd ~/Downloads && ls`
 
