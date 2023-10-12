@@ -172,27 +172,23 @@ This command is used to check whether a file is created or not. If not created t
 
 This command is used to update access and modification time
 
-6. $ `touch -c-d your-face`
-
-This is used to change the modification time only. It only updates last modification time
-
-7. $ `touch -m your-hair`
+6. $ `touch -m your-hair`
 
 ** Run the ls command and make note of the modification times of the files
 
 This command is used to change only modification date
 
-8. $ `touch -d "1 Jan 2023" your-face`
+7. $ `touch -d "1 Jan 2023" your-face`
 
 This command is used to use the timestamp of another file
 
-9. $ `touch -r your-nose your-face`
+8. $ `touch -r your-nose your-face`
 
 ** Make note of the time and date stamps of the files
 
 This is used to create a file using a specified time
 
-10. $ `touch -t 2302050555 your-hair`
+9. $ `touch -t 2302050555 your-hair`
 
 ** What was the result of that command?
 
