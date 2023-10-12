@@ -27,7 +27,7 @@ $ `cd ..`
 
 6. Show last working directory from where we moved (use ‘–‘ switch) as shown.
 
-$ `cd -- /home/devops`
+$ `cd -- /home/parallels`
 
 7. Move up two directories up from where you are now
 
@@ -41,9 +41,9 @@ or
 
 $ `cd` 
 
-9. Change your present working Directory to “/usr/local/lib/”, change it to “/home/devops/Desktop/ ”, in one line command, by moving up in the directory till ‘/’ then using absolute path
+9. Change your present working Directory to “/usr/local/lib/”, change it to “/home/parallels/Desktop/ ”, in one line command, by moving up in the directory till ‘/’ then using absolute path
 
-$ `cd ../../../home/devops/Desktop/` 
+$ `cd ../../../home/parallels/Desktop/` 
 
 10. Change from current working directory to /var/www/html without typing in full using TAB
 
@@ -55,9 +55,9 @@ $ `cd /var/l*`
 
 Note: This will move to ‘lib‘ only if there is only one directory starting with ‘l‘. If more than one directory starting with ‘l‘ exist, and no more criteria is provided in command line, it will move to the first directory starting with ‘l‘, alphabetically
 
-12. You need to navigate to your home folder ‘devops‘ home directory, without using TAB.
+12. You need to navigate to your home folder ‘parallels‘ home directory, without using TAB.
 
-$ `cd /home/dev?` 
+$ `cd /home/par?` 
 
 13. What are pushd and popd in Linux?
 
@@ -75,18 +75,6 @@ $ `popd ~`
 
 $ `cd ~/`
 
-16. Change to the directory with white space
-
-$ `cd busted\ directory/`
-
-or
-
-$ `cd 'busted directory'` 
-
-or 
-
-$ `cd "busted directory"/` 
-
 16. Change from current working directory to Downloads and list all its settings with one command
 
 $ `cd ~/Downloads && ls`
@@ -97,15 +85,15 @@ $ `cd ~/Downloads && ls`
 
 **\* Lab Exercises**
 
-CD to your home directory
+CD to your downloads directory
 
-1. $ `cd ~/`
+1. $ `cd ~/Downloads`
 
 Lists directory contents separated by a comma.
 
 2. $ `ls -m`
 
-CD to the ascii-art directory you extracted from the zip file
+CD to the ascii-art directory you extracted from the zip file if you did not extract the zip file run the `unzip ascii-art.zip` command
 
 3. $ `cd ascii-art`
 
@@ -352,6 +340,14 @@ Display the last 34 lines of a file
 Actively display the contents of a file as its being written to
 
 13. `tail -f file_name`
+
+# COMMAND COMPLETION LAB
+
+1. Change directories to the `/home/parallels/Downloads/command-completion/` folder if you have not extracted the zip file your downloaded please use the command `unzip command-completion.zip` to extract the files.
+
+2. Once you are inside the command-completion folder you need to do the following copy the text files in the directory to the folder name associated with them for example copy the file called assertivenesses.txt to the folder assertivenesses. The subsuquent files need to be copied into the folders that are nested under the assertiveness folder. This is where command completion will come in hand when using the copy command.
+
+3. Extra credit - What command would you run to concatenate all the files in the folder into one file name combined into the folder named abcedefghijklmnopqrstuvwxyz which is located under the zookeepers folder.
 
 # INSTALLING, REMOVING, AND MANAGING APPLICATIONS AND SERVICES
 
