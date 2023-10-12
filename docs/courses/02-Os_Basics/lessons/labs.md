@@ -19,7 +19,7 @@ $ `cd lib`
 
 4. Switch back to previous directory where you working earlier
 
-$ `cd - /usr/local` 
+$ `cd /usr/local` 
 
 5. Change Current directory to parent directory or move up one directory
 
