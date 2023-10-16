@@ -212,6 +212,7 @@ This is used to create a file using a specified time
 
 
 ** Copy some files
+** For this lab please note that the directories you need to copy the files from or to may not exist so you will need to create them. The purpose of this exercise is not only to use the copy command but to also identify how to properly use and understand the syntax of the source and destination of the copy command.
 
 7. `cp ~/ascii-art/* ~/kitchen/refrigerator`
 
@@ -375,3 +376,88 @@ Restart Apache web services
 List all install packages
 
 12. `apt list --installed`
+
+# CREATING AND DELETING USERS
+# When creating users please specify the username in lower case characters and use a password that is at least 8 characters and is not a dictionary word. Weak passwords are the foundation of compromised systems and environments.
+
+1. `sudo adduser username` Then follow the prompts to enter the password and full name you can skip the other options related to room number and phone number by just hitting enter.
+
+2. `sudo deluser username` This command deletes a user please note that once the user is deleted it cannot be recovered. If the data and information pertaining to the account needs to be maintained you should just reset the password on the account and set the shell on the account to dev null.
+
+# PERMISSIONS GROUPS AND OWNERSHIP
+
+1. Login to your Ubuntu instance from your Mac with the newly created account based on your name.
+
+2. Create a file called get-history.sh using the touch command.
+
+3. Edit the file using vi, vim, or pico or any other editor of your choosing.
+
+4. Put the following text into the file `history > ~/my-command-history.txt`
+
+5. Save the file and exit it. Do you remeber how to do that in vi?
+
+6. Now run the following command to make the file executable.
+
+7. `sudo chmod 755 get-history.sh`
+
+8. Run the script by running this command `./get-history.sh`
+
+9. Congratulations you just created your first script
+
+10. Bonus question what is an alternate chmod command you could run on the get-history.sh file to achieve the same result as `sudo chmod 755 get-history.sh`. Hint: The command uses letters instead of numbers.
+
+11. Now we are going to copy that script to another directory and change ownership of it
+
+12. Run this command to copy the file to the /tmp folder `sudo cp get-history.sh /tmp`
+
+13. Now change to the /tmp directory. Do you know how to do that ?
+
+14. Once you are in the directory run the following command.
+
+15. Run the `ls -al` command to make note of the current file ownership.
+
+16. Now run the command `sudo chown parallels get-history.sh`
+
+17. Run the `ls -al` command again to make note of the current file ownership. What changed?
+
+18. Now lets create a group by running the following command.
+
+19. `sudo groupadd devops`
+
+20. Run the `ls -al` command again to make note of the current file group ownership.
+
+21. Now run the following command `sudo chgrp devops get-history.sh`
+
+22. Run the `ls -al` command again to make note of the current file group ownership. What changed?
+
+23. Now I want you to do the following to complete these labs. Create 5 new users with the following names: `barack sonia hiro priyanka dwayne` Their full names when creating he accounts should be `Barack Obama Sonia Sotomayor Hiro Murai Priyanka Chopra Dwayne Johnson`.
+
+24. Now create 5 groups `finance hr it marketing sales`
+
+25. Create 6 diretories the first directory should be called companydata and it should be located off of the root folder so if you ran a pwd command in the folder is should look like this `/groupdata`. Now the other 5 directories should be located under the groupdata folder and be called `finance hr it marketing sales`
+
+26. Now change the group ownership of each of the folders you just created to correspond to the name group. For example the it group should be owned by the it group. 
+
+27. Once you have completed these exercised please run the get-history.sh command and drop the file into the individual google drive that I will share with each of you.
+
+## IDENTIFY SYSTEM PROCESSES
+
+1. To list running processes on the system run the following command.
+
+2. `ps -e`
+
+3. To list running processes with the location of the executable or binary they are associated with run the following command.
+
+4. `ps -elf`
+
+5. To list the process id associated with the apache service you should have already installed on your Ubuntu VM run the following command.
+
+6. `ps -e | grep apache` Take note of the process id number associated with the service.
+
+7. Now run the following command to restart the apache service.
+
+8. `sudo /etc/init.d/apache2 restart`
+
+9. Now run the ps command with the grep command again and see if you can identify the difference.
+
+10. Understanding how to identify processes and services on your Ubuntu is an essential part of managing the systems. Please practice these commands so that you understand how they work.
