@@ -1,17 +1,48 @@
+## Windows 11 Usage and Maintenance
+
+1. Run the disk cleanup application and select the appropriate items to remove from the system. This task will allow an administrator to remove temporary files and other items from the recycle bin to free up disk space and make the system run more efficiently.
+
+2. Disk defragmenter is a tool used to reorganize files into consecutative blocks stored on the drive and is useful with older systems with mechaniical drives but with the introduction of SSD drives it is not used very often. However, I do recommend running the tool and understanding how it works in order to be familar with it in case you need to use the tool on an older system or server.
+
+3. Task Manager - Is an application you use to see or monitor what system processes are running on a desktop or server. If an application is using too much memory or CPU resources this is where you would find the running application and stop it or restart it depending on the state that it is in.
+
+4. Disk Management - This tool allows you to create and partition drives attached to your Windows Server or Worksation. In order to understad the use of disk partitioning you will work with your instrutor to create two temporary disks and partition them as a spanned volume in order to create a RAID 1 drive.
+
+5. RAID - This term stands for Redundant Array of Independant disks and is most commonly used to create RAID 0, RAID 1, and RAID 5 disks. Your instructor will explain them in greater detail.
+
+6. Event Viewer - This application is used to access logs associated with the interworkings of the operating system. These logs report on administrative, application, security, system, and other events necessary to troubleshoot any potential issues with the operating system.
+
+7. Creating Users - Under Windows server and workstation you can use the following application to create local accounts.
+
+8. Settings - Under the settings application you can select Accounts which will allow you to create a local user. Please note when creating users they by default do not have administrator rights.
+
+9. The other option to create local accounts is to use the following command via the command line `net user USER-NAME PASSWORD /add` for example if you were going to create the account barack you would use the following command `net user barack Ch@nge.me /add` please note that when using this command the password is displayed in clear text and it is adviseable to have the user change it immediately after they login for security purposes.
+
+10. Windows Patching - To patch a Windows server or workstation you can use the Windows Update application located under Settings. This application allows you to download and review updates prior to installing them.
+
+11. Another method of reviewing and installing updates is to install and use the Windows Update Powershell module.
+
+12. In order to use this tool you must use the following commands.
+
+13. `Get-ExecutionPolicy -List` This command displays the execution policy of your sytem by default it should be set to restricted. This means that script and unsiged software modules cannot be installed.
+
+14. `Set-ExecutionPolicy RemoteSigned` This command sets the execution policy of your local system so that generally safe modules and scripts can be run on your workstation or server.
+
+15. `Set-ExecutionPolicy Unrestricted` This command allows you to run any modue or script on your workstation or server and should only be used in select cases where you have to run a script or module you created that is from a trusted source.
+
+16. For the purposes of running Windows updates from the command line having the ExecutionPolicy set to RemoteSigned is preferred.
+
+17. After you have the execution policy set appropriately you will need to run the following commands.
+
+18. `Install-Module PSWindowsUpdate` - This command install the Windows update module so you can list, view, and install updates from the command line via PowerShell.
+
+19. `Get-WindowsUpdate` - This command will list the available updates for your systems.
+
+20. `Get-WindowsUpdate -Install -Verbose` - This command will download and install all updates.
+
+21. `Get-WindowsUpdate -Severity Important -Install -Verbose` - This command will install and download updates based on a specific severity level. Typically it is a safe practice to download and install all updates. However, patching is a process and should be tested with non production systems prior to deploying widespread updates.
+
 ## Patching Windows
-
-**\* Examples**
-
-Run Windows Updates
-
-1. `UsoClient StartScan` – Start the scan for available updates
-2. `UsoClient StartDownload` – Download but not install the updates or patches you scanned for.
-3. `UsoClient StartInstall` – Install all downloaded updates.
-4. `UsoClient ScanInstallWait` – Scans, downloads, and installs the updates
-5. `UsoClient RestartDevice` – Restarts your computer to complete the update installation
-6. `UsoClient ResumeUpdate` – Resumes the installation of update after reboot
-7. `UsoClient RefreshSettings` – Refresh the update settings to the default
-
 
 ## Add Printers
 
