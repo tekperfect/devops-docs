@@ -378,7 +378,8 @@ List all install packages
 12. `apt list --installed`
 
 # CREATING AND DELETING USERS
-# When creating users please specify the username in lower case characters and use a password that is at least 8 characters and is not a dictionary word. Weak passwords are the foundation of compromised systems and environments.
+
+When creating users please specify the username in lower case characters and use a password that is at least 8 characters and is not a dictionary word. Weak passwords are the foundation of compromised systems and environments.
 
 1. `sudo adduser username` Then follow the prompts to enter the password and full name you can skip the other options related to room number and phone number by just hitting enter.
 
@@ -436,7 +437,7 @@ List all install packages
 
 25. Create 6 diretories the first directory should be called companydata and it should be located off of the root folder so if you ran a pwd command in the folder is should look like this `/groupdata`. Now the other 5 directories should be located under the groupdata folder and be called `finance hr it marketing sales`
 
-26. Now change the group ownership of each of the folders you just created to correspond to the name group. For example the it group should be owned by the it group. 
+26. Now change the group ownership of each of the folders you just created to correspond to the name group. For example the it group should be owned by the it group. If you need a add a users to a specific group you can run the following command `sudo usermod -a -G adm username`. For example if you wanted to add barack to the it group you would run the following command `sudo usermod -a -G it barack`. 
 
 27. Once you have completed these exercised please run the get-history.sh command and drop the file into the individual google drive that I will share with each of you.
 
@@ -461,3 +462,4 @@ List all install packages
 9. Now run the ps command with the grep command again and see if you can identify the difference.
 
 10. Understanding how to identify processes and services on your Ubuntu is an essential part of managing the systems. Please practice these commands so that you understand how they work.
+
