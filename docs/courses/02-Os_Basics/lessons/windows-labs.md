@@ -18,6 +18,8 @@
 
 9. The other option to create local accounts is to use the following command via the command line `net user USER-NAME PASSWORD /add` for example if you were going to create the account barack you would use the following command `net user barack Ch@nge.me /add` please note that when using this command the password is displayed in clear text and it is adviseable to have the user change it immediately after they login for security purposes.
 
+## Patching Windows
+
 10. Windows Patching - To patch a Windows server or workstation you can use the Windows Update application located under Settings. This application allows you to download and review updates prior to installing them.
 
 11. Another method of reviewing and installing updates is to install and use the Windows Update Powershell module.
@@ -42,9 +44,7 @@
 
 21. `Get-WindowsUpdate -Severity Important -Install -Verbose` - This command will install and download updates based on a specific severity level. Typically it is a safe practice to download and install all updates. However, patching is a process and should be tested with non production systems prior to deploying widespread updates.
 
-## Patching Windows
-
-## Add Printers
+## Adding Printers
 
 ** Add a printer Windows 10
 
@@ -60,9 +60,8 @@ When Printers & scanners screen opens, click Add a Printers or scanner. Then, wa
 
 If your printer is detected, proceed to install the drivers. As I mentioned at the beginning of this Itechguide, Windows 10 may not have a driver for your printer. In that instance, you have to manually download the driver. However, if your printer is NOT automatically detected, use the steps below to install your printer.
 
-You are Done
 
-However If not then following the remaining steps should help
+However if that does not work then following the remaining steps should help
 
 Click The printer that I want isn’t listed. The Find a printer by other options screen will open.
 
