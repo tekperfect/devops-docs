@@ -144,7 +144,6 @@
 ##  👇🏾
 [![Archive ZipFile](zip-files.png)](https://drive.google.com/file/d/1vRstOKzrtxRIrByvAh0ZwyqMmnAvVhYz/view?usp=sharing)
 
-
 # INSTALLING APPLICATIONS AND SERVICES
 
 **\* Lab Exercises**
@@ -155,7 +154,11 @@ Installing applications
 
 2. `sudo apt install mysql-server`
 
-3. `sudo apt install postgresssql`
+3. `sudo apt install postgresql`
+
+4. `sudo apt install unzip`
+
+5. `sudo apt install net-tools`
 
 # RECONFIGURE APACHE WEB SERVER 
 
@@ -173,7 +176,7 @@ Fun with Apache2
 
 5. After you have confirmed you have a backup copy of the index.html file edit the original index.html file located in the /var/www/html folder by using the vi command.
 
-6. While in vi change the the following `<title>Apache2 Ubuntu Default Page: It works</title>` to <title>Apache2 Ubuntu Default Page: Your Name is the best</title>.
+6. While in vi change the the following in the index.html`It works!` to `Your Name is the best`.
 
 7. Obviously you want to use your actual name place of Your Name.
 
@@ -181,3 +184,33 @@ Fun with Apache2
 
 ##  👇🏾
 [![VI Cheatsheet](cheatsheet.png)](https://www.atmos.albany.edu/daes/atmclasses/atm350/vi_cheat_sheet.pdf)
+
+9. Save the changes and restart apache. Do know how to save changes in a file that you are editing in vi? (Hint <esc key> :wq)
+
+10. To restart apache you need to run the following command `sudo /etc/init.d/apache2 restart`
+
+11. Now open browser on your mac and plug in the IP address of your ubuntu server VM. Do you know what the IP address is and how to find it?
+
+12. You should see the edited Apache2 page with your name is the best. If you don't see that then you may have missed a step or have a typo in the changes you made.
+
+13. If that change is successfull then I want to scp all the labs files you downloaded earlier and copy them to the your /tmp folder on your Ubuntu server using the scp command. Remeber the sytax for the command is `scp filename_you_want_to_copy username@xxx.xxx.xxx.xxx:/tmp`
+
+14. If you want to copy all the files in zip files you downloaded on your mmac with one scp command what would that command look like. The individual that can answer that question will get something special.
+
+15. After you have all of the zip files copied over to your Ubuntu server VM move the files from your /tmp folder to your home folder.
+
+16. What is the command to move the files from the /tmp folder to your home folder?
+
+17. Once the files are in your home folder. Use the unzip command to unzip the files?
+
+18. How do you know if the files are unzipped?
+
+19. After you have unzipped all the files copy the sample-1.png file located in images folder to /var/www/html.
+
+20. Now edit the index.html file located in /var/www/html with vi and change the line `<img src="icons/ubuntu-logo.png" alt="Ubuntu Logo"` to `<img src="icons/sample-1.png" alt="Ubuntu Logo"`   
+
+21. Save the changes to the index.html file and restart apache.
+
+22. Open or refresh the browser page you opened before to see what changes occured with your apache instance.
+
+23. I know these exercisses are challenging but if you master the navigation, copy, move, remove, editing, searching, and locating of files you will be able navigate the linux files system from a command line with ease.
