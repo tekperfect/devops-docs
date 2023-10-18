@@ -165,7 +165,7 @@ Installing applications
 7. Now create 5 groups `finance hr it marketing sales` using the following command `sudo groupadd group_name`
 
 8. Create 6 diretories the first directory should be called companydata and it should be located off of the root folder so if you ran a pwd command in the folder is should look like this `/groupdata`. Now the other 5 directories should be located under the groupdata folder and be called `finance hr it marketing sales`
-/barack
+
 
 9. Use the sudo usermod command to add each of the users to one of the groups you just created `sudo usermod -a -G groupName userName` 
 
