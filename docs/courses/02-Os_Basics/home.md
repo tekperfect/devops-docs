@@ -54,3 +54,6 @@ Students by the end of the course will be able to install an operating system ru
 
 ## Windows Student Labs
 [Student Labs](/courses/02-Os_Basics/lessons/windows-labs.md)
+
+## Milestone 1 Labs
+[Student Labs](/courses/02-Os_Basics/lessons/milestone1-labs.md)
