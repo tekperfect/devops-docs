@@ -113,9 +113,9 @@
 
 1. Download all the lab files below to your mac
 ##  👇🏾
-[![Sample Movie ZipFiles](zip-file.png)](https://drive.google.com/file/d/1BjuZErHky_DfhOVEwkn7S7F9CkmEAjAd/view?usp=sharing)
+[![Sample Movie ZipFiles](zip-files.png)](https://drive.google.com/file/d/1BjuZErHky_DfhOVEwkn7S7F9CkmEAjAd/view?usp=sharing)
 
 
 2. Download all the lab files below to your mac
 ##  👇🏾
-[![Log ZipFiles](zip-file.png)](https://drive.google.com/file/d/1GF5T3qE9_3AZHzEGo35JyoUuu-2k7H14/view?usp=sharing)
+[![Log ZipFiles](zip-files.png)](https://drive.google.com/file/d/1GF5T3qE9_3AZHzEGo35JyoUuu-2k7H14/view?usp=sharing)
