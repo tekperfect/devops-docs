@@ -113,9 +113,71 @@
 
 1. Download all the lab files below to your mac
 ##  👇🏾
-[![Sample Movie ZipFiles](zip-files.png)](https://drive.google.com/file/d/1BjuZErHky_DfhOVEwkn7S7F9CkmEAjAd/view?usp=sharing)
+[![Sample Movie ZipFile](zip-files.png)](https://drive.google.com/file/d/1BjuZErHky_DfhOVEwkn7S7F9CkmEAjAd/view?usp=sharing)
 
 
 2. Download all the lab files below to your mac
 ##  👇🏾
-[![Log ZipFiles](zip-files.png)](https://drive.google.com/file/d/1GF5T3qE9_3AZHzEGo35JyoUuu-2k7H14/view?usp=sharing)
+[![Log ZipFile](zip-files.png)](https://drive.google.com/file/d/1GF5T3qE9_3AZHzEGo35JyoUuu-2k7H14/view?usp=sharing)
+
+3. Download all the lab files below to your mac
+##  👇🏾
+[![Images ZipFile](zip-files.png)](https://drive.google.com/file/d/1qVdhfbcsgO9g-apxSeWvwKZKRDeA72QJ/view?usp=sharing)
+
+4. Download all the lab files below to your mac
+##  👇🏾
+[![Documents ZipFile](zip-files.png)](https://drive.google.com/file/d/1F4zWNMxjjstetWg-A2h7jKk8lAmmgsGg/view?usp=sharing)
+
+5. Download all the lab files below to your mac
+##  👇🏾
+[![Command Completion ZipFile](zip-files.png)](https://drive.google.com/file/d/1i8aF6x4lcAcF9AmJiNnFTlz37n0RQCKf/view?usp=sharing)
+
+6. Download all the lab files below to your mac
+##  👇🏾
+[![Audio ZipFile](zip-files.png)](https://drive.google.com/file/d/1jhyk2yc7DQTfXYueNzxz-ktAr8dTKv7n/view?usp=sharing)
+
+7. Download all the lab files below to your mac
+##  👇🏾
+[![Ascii Art ZipFile](zip-files.png)](https://drive.google.com/file/d/1PFVQBhvivw5yMVlENjvidRQQyfPpApZk/view?usp=sharing)
+
+8. Download all the lab files below to your mac
+##  👇🏾
+[![Archive ZipFile](zip-files.png)](https://drive.google.com/file/d/1vRstOKzrtxRIrByvAh0ZwyqMmnAvVhYz/view?usp=sharing)
+
+
+# INSTALLING APPLICATIONS AND SERVICES
+
+**\* Lab Exercises**
+
+Installing applications
+
+1. `sudo apt install apache2`
+
+2. `sudo apt install mysql-server`
+
+3. `sudo apt install postgresssql`
+
+# RECONFIGURE APACHE WEB SERVER 
+
+**\* Lab Exercises**
+
+Fun with Apache2
+
+1. Before you start making changes to your apache server you want to backup the main index.html file to a backup folder. This will ensure you can restore the apache server to it's original configuration.
+
+2. To accomplish this taks you need to use the cd command to cd to the /var/www/html folder.
+
+3. Create a directory in the /var/www/html folder called backup and copy the /var/www/html/index.html file into the backup folder.
+
+4. Once you can confirm you have the back folder and the copy of the index.html folder run a pwd command while in the /var/www/html folder and you should see a folder called back cd into the backup folder and run an ls -al command and you should see the index.html file. If you do not then you either created the folder in the wrong location or you copy command did not work properly make sure you use sudo with most of your commands since you will be creating files and folders in priviliged directories.
+
+5. After you have confirmed you have a backup copy of the index.html file edit the original index.html file located in the /var/www/html folder by using the vi command.
+
+6. While in vi change the the following `<title>Apache2 Ubuntu Default Page: It works</title>` to <title>Apache2 Ubuntu Default Page: Your Name is the best</title>.
+
+7. Obviously you want to use your actual name place of Your Name.
+
+8. This exercise may be tricky for folks please reference the vi cheatsheet if you have any trouble editing the file.
+
+##  👇🏾
+[![VI Cheatsheet](cheatsheet.png)](https://www.atmos.albany.edu/daes/atmclasses/atm350/vi_cheat_sheet.pdf)
