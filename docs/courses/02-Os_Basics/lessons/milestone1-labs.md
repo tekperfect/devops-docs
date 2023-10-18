@@ -108,3 +108,14 @@
 27. Once the installation is complete and your system is rebooted you shold be taken to a blank login screen where you will enter the username and password you created.
 
 28. If you encounter any errors or issues during the installation please ask your instructor for assistance.
+
+# Download Lab Files
+
+1. Download all the lab files below to your mac
+##  👇🏾
+[![Sample Movie ZipFiles](zip-file.png)](https://drive.google.com/file/d/1BjuZErHky_DfhOVEwkn7S7F9CkmEAjAd/view?usp=sharing)
+
+
+2. Download all the lab files below to your mac
+##  👇🏾
+[![Log ZipFiles](zip-file.png)](https://drive.google.com/file/d/1GF5T3qE9_3AZHzEGo35JyoUuu-2k7H14/view?usp=sharing)
