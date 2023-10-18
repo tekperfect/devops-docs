@@ -1,6 +1,6 @@
 # Milestone 1 Lab
 
-## Build and Ubuntu Server
+## Build an Ubuntu Server
 
 1. Download the ubuntu server image from the following link below.
 
