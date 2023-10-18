@@ -112,36 +112,36 @@
 # Download Lab Files
 
 1. Download all the lab files below to your mac
-##  👇🏾
+## Sample Videos 👇🏾
 [![Sample Movie ZipFile](zip-files.png)](https://drive.google.com/file/d/1BjuZErHky_DfhOVEwkn7S7F9CkmEAjAd/view?usp=sharing)
 
 
 2. Download all the lab files below to your mac
-##  👇🏾
+## Sample Log 👇🏾
 [![Log ZipFile](zip-files.png)](https://drive.google.com/file/d/1GF5T3qE9_3AZHzEGo35JyoUuu-2k7H14/view?usp=sharing)
 
 3. Download all the lab files below to your mac
-##  👇🏾
+## Sample Images 👇🏾
 [![Images ZipFile](zip-files.png)](https://drive.google.com/file/d/1qVdhfbcsgO9g-apxSeWvwKZKRDeA72QJ/view?usp=sharing)
 
 4. Download all the lab files below to your mac
-##  👇🏾
+## Sample Documents 👇🏾
 [![Documents ZipFile](zip-files.png)](https://drive.google.com/file/d/1F4zWNMxjjstetWg-A2h7jKk8lAmmgsGg/view?usp=sharing)
 
 5. Download all the lab files below to your mac
-##  👇🏾
+## Command Completion Exercises 👇🏾
 [![Command Completion ZipFile](zip-files.png)](https://drive.google.com/file/d/1i8aF6x4lcAcF9AmJiNnFTlz37n0RQCKf/view?usp=sharing)
 
 6. Download all the lab files below to your mac
-##  👇🏾
+## Audio Files 👇🏾
 [![Audio ZipFile](zip-files.png)](https://drive.google.com/file/d/1jhyk2yc7DQTfXYueNzxz-ktAr8dTKv7n/view?usp=sharing)
 
 7. Download all the lab files below to your mac
-##  👇🏾
+## Ascii Art Exercises 👇🏾
 [![Ascii Art ZipFile](zip-files.png)](https://drive.google.com/file/d/1PFVQBhvivw5yMVlENjvidRQQyfPpApZk/view?usp=sharing)
 
 8. Download all the lab files below to your mac
-##  👇🏾
+## Sample Archives 👇🏾
 [![Archive ZipFile](zip-files.png)](https://drive.google.com/file/d/1vRstOKzrtxRIrByvAh0ZwyqMmnAvVhYz/view?usp=sharing)
 
 # INSTALLING APPLICATIONS AND SERVICES
@@ -160,7 +160,29 @@ Installing applications
 
 5. `sudo apt install net-tools`
 
+6. Now I want you to do the following to complete these labs. Create 5 new users with the following names: `barack sonia hiro priyanka dwayne` Their full names when creating he accounts should be `Barack Obama Sonia Sotomayor Hiro Murai Priyanka Chopra Dwayne Johnson`.
+
+7. Now create 5 groups `finance hr it marketing sales` using the following command `sudo groupadd group_name`
+
+8. Create 6 diretories the first directory should be called companydata and it should be located off of the root folder so if you ran a pwd command in the folder is should look like this `/groupdata`. Now the other 5 directories should be located under the groupdata folder and be called `finance hr it marketing sales`
+/barack
+
+9. Use the sudo usermod command to add each of the users to one of the groups you just created `sudo usermod -a -G groupName userName` 
+
+10. For example if you wanted to add barack to the it group you would run the following command `sudo usermod -a -G it barack`
+
+11. Now I want to use the scp command to copy all the labs files you downloaded earlier on your Mac to /tmp folder location on your Ubuntu server. Remeber the sytax for the command is `scp filename_you_want_to_copy username@xxx.xxx.xxx.xxx:/tmp`
+
+12. If you want to copy all the files in zip files you downloaded on your Mac with one scp command what would that command look like. (Hint: You would use the *.zip wildcard with the scp command.
+
+13. After you have all of the zip files are copied over to your Ubuntu server VM move the files from your /tmp folder to your home folder.
+
+14. What is the command to move the files from the /tmp folder to your home folder?
 # RECONFIGURE APACHE WEB SERVER 
+
+15. Once the files are in your home folder. Use the unzip command to unzip the files?
+
+16. How do you know if the files are unzipped?
 
 **\* Lab Exercises**
 
@@ -182,7 +204,7 @@ Fun with Apache2
 
 8. This exercise may be tricky for folks please reference the vi cheatsheet if you have any trouble editing the file.
 
-##  👇🏾
+## VI Cheatsheet 👇🏾
 [![VI Cheatsheet](cheatsheet.png)](https://www.atmos.albany.edu/daes/atmclasses/atm350/vi_cheat_sheet.pdf)
 
 9. Save the changes and restart apache. Do know how to save changes in a file that you are editing in vi? (Hint <esc key> :wq)
@@ -193,24 +215,12 @@ Fun with Apache2
 
 12. You should see the edited Apache2 page with your name is the best. If you don't see that then you may have missed a step or have a typo in the changes you made.
 
-13. If that change is successfull then I want to scp all the labs files you downloaded earlier and copy them to the your /tmp folder on your Ubuntu server using the scp command. Remeber the sytax for the command is `scp filename_you_want_to_copy username@xxx.xxx.xxx.xxx:/tmp`
+13. Copy the sample-1.png file located in images folder in your home directory to /var/www/html.
 
-14. If you want to copy all the files in zip files you downloaded on your mmac with one scp command what would that command look like. The individual that can answer that question will get something special.
+14. Now edit the index.html file located in /var/www/html with vi and change the line `<img src="icons/ubuntu-logo.png" alt="Ubuntu Logo"` to `<img src="sample-1.png" alt="Ubuntu Logo"`   
 
-15. After you have all of the zip files copied over to your Ubuntu server VM move the files from your /tmp folder to your home folder.
+15. Save the changes to the index.html file and restart apache.
 
-16. What is the command to move the files from the /tmp folder to your home folder?
+16. Open or refresh the browser page you opened before to see what changes occured with your apache instance.
 
-17. Once the files are in your home folder. Use the unzip command to unzip the files?
-
-18. How do you know if the files are unzipped?
-
-19. After you have unzipped all the files copy the sample-1.png file located in images folder to /var/www/html.
-
-20. Now edit the index.html file located in /var/www/html with vi and change the line `<img src="icons/ubuntu-logo.png" alt="Ubuntu Logo"` to `<img src="icons/sample-1.png" alt="Ubuntu Logo"`   
-
-21. Save the changes to the index.html file and restart apache.
-
-22. Open or refresh the browser page you opened before to see what changes occured with your apache instance.
-
-23. I know these exercisses are challenging but if you master the navigation, copy, move, remove, editing, searching, and locating of files you will be able navigate the linux files system from a command line with ease.
+17. I know these exercisses are challenging but if you master the navigation, copy, move, remove, editing, searching, and locating of files you will be able navigate the linux files system from a command line with ease.
