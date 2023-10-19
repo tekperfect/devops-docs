@@ -214,7 +214,7 @@ This is used to create a file using a specified time
 ** Copy some files
 ** For this lab please note that the directories you need to copy the files from or to may not exist so you will need to create them. The purpose of this exercise is not only to use the copy command but to also identify how to properly use and understand the syntax of the source and destination of the copy command.
 
-7. `cp ~/ascii-art/* ~/kitchen/refrigerator`
+7. `cp ~/ascii-art/* ~/kitchen/refrigerator/`
 
 8. `cp ~/refrigerator/milk spoiled-milk`
 
@@ -224,7 +224,7 @@ This is used to create a file using a specified time
 
 11. `cp ~/refrigerator/grapes raisins`
 
-12. `cp ~/refrigerator/meat to rotten-meat`
+12. `cp ~/refrigerator/meat rotten-meat`
 
 
 ** Check what's in the directories
