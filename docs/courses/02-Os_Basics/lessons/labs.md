@@ -214,17 +214,17 @@ This is used to create a file using a specified time
 ** Copy some files
 ** For this lab please note that the directories you need to copy the files from or to may not exist so you will need to create them. The purpose of this exercise is not only to use the copy command but to also identify how to properly use and understand the syntax of the source and destination of the copy command.
 
-7. `cp ~/ascii-art/* ~/kitchen/refrigerator/`
+7. `sudo cp ~/ascii-art/* ~/kitchen/refrigerator/`
 
-8. `cp ~/refrigerator/milk spoiled-milk`
+8. `sudo cp ~/refrigerator/milk spoiled-milk`
 
-9. `cp ~/refrigerator/eggs rotten-eggs`
+9. `sudo cp ~/refrigerator/eggs rotten-eggs`
 
-10. `cp ~/refrigerator/bananas rotten-bananas`
+10. `sudo cp ~/refrigerator/bananas rotten-bananas`
 
-11. `cp ~/refrigerator/grapes raisins`
+11. `sudo cp ~/refrigerator/grapes raisins`
 
-12. `cp ~/refrigerator/meat rotten-meat`
+12. `sudo cp ~/refrigerator/meat rotten-meat`
 
 
 ** Check what's in the directories
@@ -239,19 +239,19 @@ This is used to create a file using a specified time
 
 ** Move some files around
 
-16. `mv ~/kitchen/refrigerator/spoiled-milk ~/sink`
+16. `sudo mv ~/kitchen/refrigerator/spoiled-milk ~/sink`
 
-17. `mv ~/kitchen/refrigerator/rotten-eggs ~/compost`
+17. `sudo mv ~/kitchen/refrigerator/rotten-eggs ~/compost`
 
-18. `mv ~/kitchen/refrigerator/rotten-bananas ~/compost`
+18. `sudo mv ~/kitchen/refrigerator/rotten-bananas ~/compost`
 
-19. `mv ~/kitchen/refrigerator/raisins ~/compost`
+19. `sudo mv ~/kitchen/refrigerator/raisins ~/compost`
 
-20. `mv ~/kitchen/refrigerator/rotten-meat ~/trash`
+20. `sudo mv ~/kitchen/refrigerator/rotten-meat ~/trash`
 
 ** Delete some files and directories
 
-21. `rm ~/kitchen/sink/milk`
+21. `sudo rm ~/kitchen/sink/milk`
 
 22. `rmdir ~/kitchen/compost`
 23. `rmdir ~/kitchen/trash`
@@ -260,11 +260,11 @@ This is used to create a file using a specified time
 
 25. How would you solve it?
 
-26. `rm ~/kitchen/compost/*`
+26. `sudo rm ~/kitchen/compost/*`
 
-27. `rm -d ~/kitchen/trash/rotten-meat` (what's unique about this commnad)
+27. `sudo rm -d ~/kitchen/trash/rotten-meat` (what's unique about this commnad)
 
-28. `rmdir ~/kitchen/compost`
+28. `sudo rmdir ~/kitchen/compost/`
 
 29. `rmdir ~/kitchen/trash`
 
