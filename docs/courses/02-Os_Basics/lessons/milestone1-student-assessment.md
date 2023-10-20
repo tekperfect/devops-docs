@@ -1,5 +1,7 @@
 # Milestone 1 Assessment
 
+[![Assessment](assessment.jpeg)
+
 ## Do Your Best
 
 1. What command would you run to copy all the files in the documents folder located in your home direcotry with the .xlsx extension to the finance folder located in the groupdata folder you created in earlider exercises
