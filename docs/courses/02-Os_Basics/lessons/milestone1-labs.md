@@ -224,3 +224,28 @@ Fun with Apache2
 16. Open or refresh the browser page you opened before to see what changes occured with your apache instance.
 
 17. I know these exercisses are challenging but if you master the navigation, copy, move, remove, editing, searching, and locating of files you will be able navigate the linux files system from a command line with ease.
+
+# EXTRA CREDIT LAB
+
+1. Download the resume html template from the following link 
+## Resume Template 👇🏾
+[![Resume Template]zip-files.png)](https://drive.google.com/file/d/1aUMZ1QK42NZn7TgiCMJvcUstghlxvHEU/view?usp=sharing)
+
+2. Using the scp command copy the file to your Ubuntu server to the /tmp folder.
+
+3. Login to your Ubuntu server via your Mac terminal and copy the resume.zip file from the /tmp folder to your home directory.
+
+4. Unzip the resume.zip file in your home folder using the unzip command.
+
+5. Use the cp command to copy the entire resume folder to the /var/www/html folder.
+
+6. Use vi to Edit the apache configuration file located at /etc/apache2/sites-enabled/000-default.conf.
+
+7. Change the DocumentRoot line to point to the index.html file located in the resume folder you copied earlier. Please note the index.html file is located a few folders beneath the /var/www/html/resume directory so you will need to use the cd command to locate it.
+
+8. Update the resume template with your name and skills and customize it so that it reflects the skills you have learned so far.
+
+9. For an additional challenge find a download a picture of yourself from either your linked in profile or some other place and copy it to your Ubuntu server or specifiy a path to the file in the html code. Please ask your instructor if any of this information is unclear.
+
+10. The purpose of this exercise is to further your comfort level with using the scp, cp, cd, vi, pwd, and ls commands.
+
