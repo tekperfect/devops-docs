@@ -225,11 +225,23 @@ Fun with Apache2
 
 17. I know these exercisses are challenging but if you master the navigation, copy, move, remove, editing, searching, and locating of files you will be able navigate the linux files system from a command line with ease.
 
+# DEMO WHAT YOU KNOW
+
+1. Work with your instructor and go into a breakout room.
+
+2. Your instructor will give you an assignment that will demonstrate the use of all the commands and skills you have learned so far.
+
+3. Please remeber this is not a test you can use documenation from the google classrom to help you answer the questions. You can also use the man command and search the Internet to provide the answer to your quesitons. Please remeber to test the commands on your Ubuntu server in order to validate they are correct. You should also use the ls, ls -al, and pwd commands to validate where you are and where you want to go.
+
+4. Your instructor strongly recommends using the <tab> key so that your ssh, scp, cp, mv, rm, mkdir, adduser, chown, and chgrp commands are successful and you don't have typos.
+
+5. Good luck with the exercises and please put all the commands in the assessment file located in the google drive folder associated with your name.   
+
 # EXTRA CREDIT LAB
 
 1. Download the resume html template from the following link 
 ## Resume Template 👇🏾
-[![Resume Template]zip-files.png)](https://drive.google.com/file/d/1aUMZ1QK42NZn7TgiCMJvcUstghlxvHEU/view?usp=sharing)
+[![Resume Template]zip-files.png)](https://drive.google.com/file/d/1cAq2tDL9woEh5nRwpXIXMXCvxSFwH6BW/view?usp=sharing)
 
 2. Using the scp command copy the file to your Ubuntu server to the /tmp folder.
 
