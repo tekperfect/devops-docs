@@ -32,6 +32,8 @@ A LAN can be managed and administrated in-house.
 
 A wide area network (WAN) provides networking capabilities between two different geographical locations locally or worldwide. For example, a WAN is used to connect an organization's head office with branch offices all over the country. A WAN links multiple LANs together to create one super network. As a MAN, you use a virtual private network (VPN) to manage the connection between different LANs.	
 
+![WAN & MAN](network-types.png)
+
 
 A WAN is used to connected geographically separate offices to each other.
 
