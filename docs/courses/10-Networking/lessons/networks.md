@@ -24,7 +24,7 @@ A wide area network (WAN) provides networking capabilities between two different
 
 A LAN is a privately operated network typically contained in a single building.
 
-A LAN operates at speeds of 10 Gbps or higher.
+A LAN can operate at speeds of 10 Gbps or higher.
 
 A LAN is less congested compared to other network types.
 
@@ -35,7 +35,7 @@ A wide area network (WAN) provides networking capabilities between two different
 ![WAN & MAN](network-types.png)
 
 
-A WAN is used to connected geographically separate offices to each other.
+A WAN is used to connect geographically separate offices to each other.
 
 Multiple organizations might operate WANs.
 
@@ -49,15 +49,29 @@ A WAN typically requires the use of a third party to configure and set up, which
 
 There are several network standard-compliant devices that make up the structure of your networks. Depending on the network's size, you might use several of these devices to build the backbone of your network. These devices are:
 
-Repeaters
+1. Repeaters - A device that is used to amplify a wired or wireless signal. They are commonly used by Mobile carriers and wireless networks to retransmit signals over large distances.
 
-Hubs
+![Repeater](repeater.jpg)
 
-Bridges
+2. Hub - A hub is a networking devices which is used to transmit the signal to each port (except one port) to respond from which the signal was received. Hub is operated on Physical layer. In this packet filtering is not available. It is of two types: Active Hub, Passive Hub. 
 
-Switches
+![Hub](hub.png)
 
-Routers
+3. Switch - A Switch is a network device which is used to enable the connection establishment and connection termination on the basis of need. Switch is operated on Data link layer. In this packet filtering is available. It is type of full duplex transmission mode and it is also called efficient bridge.
+
+![Switch](switch.png)
+
+4. Bridges - A bridge in a computer network is a device used to connect multiple LANs together with a larger Local Area Network (LAN). The mechanism of network aggregation is known as bridging. The bridge is a physical or hardware device but operates at the OSI model’s data link layer and is also known as a layer of two switches. 
+
+![Bridge](bridge.png)
+
+The primary responsibility of a switch is to examine the incoming traffic and determine whether to filter or forward it. Basically, a bridge in computer networks is used to divide network connections into sections, now each section has separate bandwidth and a separate collision domain. Here bridge is used to improve network performance.
+
+5. Routers - A router is a physical or virtual appliance that passes information between two or more networks. A router inspects a given data packet's destination Internet Protocol address (IP address), calculates the best way for it to reach its destination and then forwards it accordingly.
+
+A router is a common type of gateway. It is positioned where two or more networks meet at each point of presence on the internet. Hundreds of routers might forward a single packet as it moves from one network to the next on the way to its final destination. In the Open Systems Interconnection (OSI) model, routers are associated with the network layer (Layer 3).
+
+![Router](router.png)
 
 ### Network Addresses
 
