@@ -78,6 +78,95 @@ Click "Add device" near the top right of the Printers and scanners page. Windows
 
 If your printer doesn't appear, click "Add manually." A pop-up window will present you with a few choices.
 
+## Windows Changes
+
+## Activate Windows and Upgrade it to Windows 11 Enterprise
+
+
+1. Login to your Windows 11 VM and click on the start menu and type in "Settings" and open the Settings application
+
+![Settings](settings-app.png)
+
+2. From the settings application choose "System" from the left hand navigation and scroll down to the activation selection
+
+![Settings](settings-system.png)
+
+3. Click on the change button to change the product key and enter the produce key provided by your instructor
+
+4. From this point follow along with your instructor to upgrade your verions of Windows 11 to Enterprise.
+
+5. Once the upgrade is complete you will work with your instructor to create a new local account on your Windows 11 Enterprise system.
+
+
+
+## Creating A Local Admin Account
+
+1. Login to your Windows 11 VM and click on the start menu and type in "Settings" and open the Settings application
+
+![Settings](settings-system.png)
+
+2. From the "Settings" application choose "Accounts" from the left hand navigation and scroll down to the "Other Users" selection
+
+![Settings](accounts.png)
+
+3. Now click on the add account button.
+
+4. Next you will be prompted to provide a microsoft login for this user. We don't want to do that because we are creating a local account so choose the "I don't have this person's sign-in information" link.
+
+5. Next you will be prompted to provide a couple of different accoutn options. We don't want to do that because we are creating a local account so choose the "Add a user without a Microsoft account" link.
+
+6. You will then be prompted to provide the username, password, and 3 security questions associated with the account. Please make sure you remeber the answers to these questions just in case you forget your password otherwise you will need to rebuild your VM.
+
+![New Account](new-account-username.png)
+![New Account](new-user-security-questions.png)
+
+7. Once the account is created you will need to click on the account and select the "Change Account Type" button and change it from a "Standard User" to and Administrator.
+
+8. The purpose of creating a local account with your credentials serves two purposes. Preparing for further customization of your Windows 11 VM and setting up an account that will allow us to use RDP from your Mac to your Windows 11 VM.
+
+
+9. Similar to using ssh to connect to your Ubuntu but using a different protocol and a GUI.
+
+10. Once you have made the account an administrator logout of the Admin account and back in again as the new user your created.
+
+
+## Enabling Remote Desktop
+
+
+1. Login to your Windows 11 VM and click on the start menu and type in "Settings" and open the Settings application
+
+![Settings](settings-system.png)
+
+2. From the settings application choose "System" from the left hand navigation and scroll down to the "Remote Desktop Selection"
+
+3. Now click on the slider to enable remote desktop
+
+![Remote Desktop](remote-desktop-enable.png)
+
+4. You have now successfully enable all the necessary things so that you can admin your Windows 11 system.
+
+5. Please work with your instructor to install Royal TSX on your Mac so you can initiate an RDP session to your Windows 11 VM from your Mac
+
+
+## VM Backups and Snapshots
+
+1. Now that we have made a number of changes that we would like to save and revert back to in case you run into issues with your Windows 11 VM going forward. We should shutdown your Windows ll VM and then backup the associated VM file just in case it get corrupted or you make changes that would make it difficult to revert.
+
+2. The first thing we want to do is click on your Mac's desktop and then select "Go" "Go To Folder".
+
+![Desktop](go-to-folder.png)
+
+3. In the path I want you to type in the following text "/Users/admin/Parallels" this should take you to the Parallels folder where the VM files are stored. Please be careful here. The first thing we are going to do is create a backup folder. Right click in the Window and select "New Folder" and call the folder "bakcup".
+
+4. Now right click on your "Windows 11.pvm" file and select copy and the select your "backup" folder and right click on it and select "paste".
+
+5. This should create a backup copy of your upgraded Windows 11 VM with remote desktop enabled.
+
+6. This is a good place to backup because the VM does not have a bunch of customizations but enough so that you can perform basic tasks and connect to if from your Mac.
+
+7. You can repeat these steps with any other VM's that you have cleanly shutdown that you wish to backup.
+
+## This Section Applies to Windows 2019 and 2022 Server
 
 ##  Manage and View Windows Event and Application Logs
 
