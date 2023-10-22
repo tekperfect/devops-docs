@@ -112,6 +112,8 @@ If your printer doesn't appear, click "Add manually." A pop-up window will prese
 
 3. Now click on the add account button.
 
+![Settings](add-account.png)
+
 4. Next you will be prompted to provide a microsoft login for this user. We don't want to do that because we are creating a local account so choose the "I don't have this person's sign-in information" link.
 
 5. Next you will be prompted to provide a couple of different accoutn options. We don't want to do that because we are creating a local account so choose the "Add a user without a Microsoft account" link.
