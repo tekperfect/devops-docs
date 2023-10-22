@@ -142,6 +142,8 @@ If your printer doesn't appear, click "Add manually." A pop-up window will prese
 
 2. From the settings application choose "System" from the left hand navigation and scroll down to the "Remote Desktop Selection"
 
+![Remote Desktop](remote-desktop-selection.png)
+
 3. Now click on the slider to enable remote desktop
 
 ![Remote Desktop](remote-desktop-enable.png)
