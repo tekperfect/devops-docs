@@ -1,7 +1,5 @@
 ### Ubuntu Server Networking
 
-![PAN](pan.jpg)
-
 0. ssh to your Ubuntu server
 
 1. Then backup your network configuration file of your Ubuntu server.
@@ -27,7 +25,8 @@
 
 9. Now edit `00-installer-config.yaml` and add the following lines to it.
 
-`network:
+```
+network:
   ethernets:
     enp0s5:
       addresses: [10.211.55.10/24]
@@ -39,7 +38,8 @@
         addresses: [8.8.8.8, 8.8.4.4]
       dhcp4: false
       optional: true
-  version: 2`
+  version: 2
+```
 
 10. Please note the spacing in the file is important. If you need to verify that your spacing is correct you can go to the following webiste to check it.
 
