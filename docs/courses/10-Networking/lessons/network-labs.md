@@ -1,3 +1,67 @@
+### Network Commands
+
+1. We are going to run through some basic networking commands you can run on your Mac os and Linux System
+
+2. The first command is ping.
+
+3. Type `ping google.com`
+
+4. You should see something similar to the image below. The ping command simply tells you if a host is up or down by sending ICMP packtets to the host or domain you are attempting to ping.
+
+![Ping](1.ping.png)
+
+5. To stop the ping command press control+c
+
+6. Now we are going to use the `nslookup` command
+
+7. This command performs a DNS lookup of the domain you specified. Try it with several other domains. tekperfect.com, microsoft.com, and apple.com.
+
+![Nslookup](2.nslookup.png)
+
+8. Note the differences when you use different domains
+
+9. What do you think this command is doing?
+
+10. Now we are going to run some similar commands to nslookup called host and dig.
+
+![HOST](3.host-command.png)
+
+11. Use both the host and dig command to lookup the google.com domain. What things are similar and what things are different?
+
+12. See the images below for an example of the output
+
+![DIG](5.dig-command.png)
+
+13. Now we are going to run a command called traceroute. This command displays that path your computer would take to get from your network to a particular destination, domain, host, or website on the Internet.
+
+14. Let's run a `traceroute` to google.com
+
+![Traceroute](6.traceroute.png)
+
+15. What's interesting about the output?
+
+16. Now we are going to run a command simialr to traceroute called `mtr`. However, we may need to install it by using Homebrew. Luckily Hombrew is already installed on your laptops. So to install the package you simply need to run the command `brew install mtr`.
+
+17. If the package is already installed great you just need to make sure the binary is in your path.
+
+18. To do so run the following command sudo vi /etc/paths and add the following line to the paths file.
+
+19. `/usr/local/sbin`
+
+20. This will add the mtr command to your path so that you don't have to specify the folder the binary is in when you run the command.
+
+21. Now lets run the following command `sudo mtr google.com`.
+
+![MTR](7.mtr-command.png)
+
+22. Now what do you see while running the mtr command that is different from running the traceroute command?
+
+23. What do you see that is similar while running the mtr command those similaraties are also important. Why?
+
+24. When troubleshooting network relate issues both the things that are similar and different are important.
+
+25. Practice these commands with other domains and pay attention to the output. What command would you run in conjunction with these commands to capture the output.
+
 ### Ubuntu Server Networking
 
 0. ssh to your Ubuntu server
