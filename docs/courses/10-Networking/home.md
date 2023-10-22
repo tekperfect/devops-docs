@@ -28,3 +28,6 @@
 
 - [Networks](/courses/10-Networking/lessons/networks.md)
 
+## Network Labs
+
+- [Networks](/courses/10-Networking/lessons/network-labs.md)
