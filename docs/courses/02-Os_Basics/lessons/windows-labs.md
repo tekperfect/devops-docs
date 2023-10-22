@@ -94,12 +94,11 @@ If your printer doesn't appear, click "Add manually." A pop-up window will prese
 3. Click on the change button to change the product key and enter the produce key provided by your instructor
 
 ![Windows Activation](windows-activation.png)
+![Windows Activation](windows-11-activation.png)
 
 4. From this point follow along with your instructor to upgrade your verions of Windows 11 to Enterprise.
 
 5. Once the upgrade is complete you will work with your instructor to create a new local account on your Windows 11 Enterprise system.
-
-
 
 ## Creating A Local Admin Account
 
