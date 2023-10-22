@@ -89,9 +89,11 @@ If your printer doesn't appear, click "Add manually." A pop-up window will prese
 
 2. From the settings application choose "System" from the left hand navigation and scroll down to the activation selection
 
-![Settings](settings-system.png)
+![Settings](settings-activation.png)
 
 3. Click on the change button to change the product key and enter the produce key provided by your instructor
+
+![Windows Activation](windows-activation.png)
 
 4. From this point follow along with your instructor to upgrade your verions of Windows 11 to Enterprise.
 
