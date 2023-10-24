@@ -241,7 +241,7 @@ Fun with Apache2
 
 1. Download the resume html template from the following link 
 ## Resume Template 👇🏾
-[![Resume Template]zip-files.png)](https://drive.google.com/file/d/1cAq2tDL9woEh5nRwpXIXMXCvxSFwH6BW/view?usp=sharing)
+[![Resume Template](zip-files.png)](https://drive.google.com/file/d/1cAq2tDL9woEh5nRwpXIXMXCvxSFwH6BW/view?usp=sharing)
 
 2. Using the scp command copy the file to your Ubuntu server to the /tmp folder.
 
