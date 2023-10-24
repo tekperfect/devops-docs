@@ -171,6 +171,84 @@ If your printer doesn't appear, click "Add manually." A pop-up window will prese
 
 7. You can repeat these steps with any other VM's that you have cleanly shutdown that you wish to backup.
 
+## Windows Network Troubleshooting
+
+1. Login to your Windows 11 VM and click on the start menu and type in "Control Panel" and open the Control Panel application
+
+![Control Panel](control-panel.png)
+
+2. Click on the "Network and Internet" link
+
+![Network](network-internet.png)
+
+3. Now click on the "View Network Status and Tasks" link
+
+![Network](view-network-status.png)
+
+4. Now click on the "Change Adapter Settings" link in the left hand navigation sidebar
+
+![Network](change-adapter-settings.png)
+
+5. Now right click on your Ethernet adapter and select properties
+
+![Network](ethernet-adapter-properties.png)
+
+6. Now select "Internet Protocol Version 4(TCP/IP)" selection and select the properties button
+
+![Network](tcp-ip-settings.png)
+
+7. Now that you know how to navigate to the place to change your network settings we are going to run a few basic test from the Windows command line.
+
+8. The first thing we need to do is click on your start menu and type in cmd to open a command prompt terminal.
+
+![CMD](command-prompt.png)
+
+9. In the command prompt I want you to type `ping google.com`
+
+10. Now switch over to your Mac terminal and type in the same command `ping google.com`
+
+11. What is the difference between the two commands?
+
+12. Now switch back over to your Windows 11 command prompt and type in the command `nslookup google.com`
+
+13. Now switch back over to your Mac terminal and run the same command `nslookup google.com`
+
+14. Any differences with running this command?
+
+15. Now switch back to your Windows 11 VM and type in the command `tracert google.com`
+
+16. Now switch back over to your Mac and run the command `traceroute google.com`
+
+17. Now switch back to your Windows 11 VM and type in the command `dig google.com` What happened? The command does not work correct.
+
+18. Now switch back to your Mac terminal and type in that command `dig google.com` What was the result?
+
+19. Since the dig command did not work on Windows we want to add some tools to your Windows system that will allow us to run that command.
+
+20. In the next lesson we are going to install Chocolatey which is a package manager for Windows which will allow us to instal tools from the command line.
+
+## Installing Chocolatey
+
+1. To install Chocolatey you need to go to your start menu and open Powershell as an Administrator.
+
+2. To open Powershell as an adminstrator you go to the start menu and type in Powershell and before you click on the app your right click on it and select "Run As Administrator"
+
+3. You will be prompted to confirm that you would like to run Powershell as administrator.
+
+4. From the Powershell prompt your need to paste in the following command `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))`
+
+5. Once Chocolatey is installed run the command `choco install bind-toolsonly`
+
+6. This should install the tools that will allow you to run a dig command via Windows.
+
+7. Try it out... `dig google.com`
+
+8. Great you have successfully installed a package manager on your Windows instance. Your Windows host is now prepared for additional exercises
+
+9. Please work with your instructor to test the various changes to your Windows netowrk adapter to see how each change impacts the Windows 11 VM's ability to communicate via the network 
+
+10. Please note you are going to make changes to your Window 11 VM's virtual Ethernet adapter settings by disabling DHCP and inputing static IP's along with changing the DNS settings. Please play attention to these changes and the results of the command pre and post change.
+
 ## This Section Applies to Windows 2019 and 2022 Server
 
 ##  Manage and View Windows Event and Application Logs
