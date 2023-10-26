@@ -228,3 +228,5 @@ network:
 10. Once you have located all the pertintent data share it with your fellow students each of you may have discovered something different.
 
 11. Your instructor will demonstrate how to use Wireshark to capture traffic between an insecure website and his Mac which will allow him to capture the username and password of the user using the site. After the demonstration I recommend that you try to repeat this exercise using Wireshark during class or on your own. The website he use that is vunerable to the wireshare packet capture is `http://testphp.vulnweb.com/login.php`
+
+12. Here is the link to the Wireshark cheetsheet `https://scadahacker.com/library/Documents/Cheat_Sheets/Networking%20-%20Wireshark%20-%20Display%20Filters%201.pdf`
