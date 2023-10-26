@@ -75,13 +75,15 @@
 4. For example if I were looking for the Apache configuration file I would run the following command to locate it `sudo find / -name 000-default.conf`
 
 5. After you use the find command to locate the file you have two options to back it up.
+
 5a. You can cd into the directory and use the cp command to make a backup of the file.
 5b. Or your can use the full path to the file with the cp command to make a backup of it.
+
 5c. I suggest for simplicity purposes calling the backup copy of the file `00-installer-config.yaml.backup`
 
-6. After you have made a backup of the file we are going to make changes to the file.
+6. After you have made a backup of the network configuration file we are going to make changes to proceed to proceed to the next step.
 
-7. However before we make changes to the file what command would you run to see the contents of the file without editing it.
+7. Before we make changes to the file, what command would you run to see the contents of the file without editing it. (Hint Meow).
 
 8. Your file should look something like the image below.
 
@@ -109,53 +111,101 @@ network:
 
 11. YAML Validator `https://www.yamllint.com/`
 
-12. After you have verified that your file is valid please save it and run the following commands.
+12. After you have verified that your file is valid please save it and run the following commands. By pressing <esc>+:wq and then pressing enter.
 
-13. `sudo netplan generate`
+13. Now run the following commands 
 
-14. `sudo netplan apply`
+14. `sudo netplan generate`
 
-14a. You should get disconneted
+15. `sudo netplan apply`
 
-14b. Why did you get disconnected?
+16. You should get disconneted
 
-14c. How do you reconnect to your Ubuntu server via your Mac terminal
+17. Why did you get disconnected?
 
-14d. Run the ssh command again and use the IP address you specified in the network configuration file above
+18. How do you reconnect to your Ubuntu server via your Mac terminal
 
-15. The static IP you just set on your VM will always be the IP you use to ssh to it unless we revert the `00-installer-config.yaml` file back to the default configuration.
+19. Run the ssh command again and use the IP address you specified in the network configuration file above
 
-16. How would you keep the original configuration file contents intact but invalidating them while adding the new network configuration. (Hint what is the first character in the configuration file).
+20. The static IP you just set on your VM will always be the IP you use to ssh to it unless we revert the `00-installer-config.yaml` file back to the default configuration.
 
-17. If you are unable to get back into your VM can log back into your VM via Parallels and then run the ip addr command to determine the IP address.
+21. How would you keep the original configuration file contents intact but invalidating them while adding the new network configuration. (Hint what is the first character in the configuration file).
 
-18. Once you have successfully been able to get back into your VM from the Mac terminal restore the backup copy of the `00-installer-config.yaml` and then run the `sudo netplan generate` and `sudo netplan apply` command.
+22. If you are unable to get back into your VM can log back into your VM via Parallels and then run the ip addr command to determine the IP address.
 
-19. Your IP may revert back to it's old IP addrees
+23. Once you have successfully been able to get back into your VM from the Mac terminal restore the backup copy of the `00-installer-config.yaml` and then run the `sudo netplan generate` and `sudo netplan apply` command.
 
-20. The last and final step in the changing of your Ubuntu Servers IP is to change the network adapter to bridged mode.
+24. Your IP may revert back to it's old IP addrees
 
-21. To do so you need to shutdown the Ubuntu VM and then run the following command via the Mac terminal
+25. The last and final step in the changing of your Ubuntu Servers IP is to change the network adapter to bridged mode.
 
-22. `sudo prlctl set "name of your vm" --device-set net0 --type bridged`
+26. To do so you need to shutdown the Ubuntu VM and then run the following command via the Mac terminal
 
-23. This will set the adapter of your vm to bridged mode which will allow it to operate on the same network your mac is configured for.
+27. `sudo prlctl set "name of your vm" --device-set net0 --type bridged`
 
-24. To verify that your Ubuntu server VM has obtained an IP similar to one your Mac has login to the VM directly via Parallels and run the ip addr command.
+28. This will set the adapter of your vm to bridged mode which will allow it to operate on the same network your mac is configured for.
 
-25. Once you have verified the new IP address of your VM you should be able to ssh to it via your Mac terminal.
+29. To verify that your Ubuntu server VM has obtained an IP similar to one your Mac has login to the VM directly via Parallels and run the ip addr command.
 
-26. If you VM is not accessiable via your Mac terminal after this change perform a full reboot of your VM.
+30. Once you have verified the new IP address of your VM you should be able to ssh to it via your Mac terminal.
 
-27. If you still experience issues ask your instructor for assistance.
+31. If you VM is not accessiable via your Mac terminal after this change perform a full reboot of your VM.
 
-28. This exercise is designed to get you more familar with Linux server networking and reinforce the use of the ssh command, cp command, and vi. The labs in this course are designed to have you perform operations that ensure you can safely update changes to your VM and undo those changes as you would in a regular production environment.
+32. If you still experience issues ask your instructor for assistance.
 
-29. If any parts of this lab were unclear please ask questions and assistance from your instructor.
+33. This exercise is designed to get you more familar with Linux server networking and reinforce the use of the ssh command, cp command, and vi. The labs in this course are designed to have you perform operations that ensure you can safely update changes to your VM and undo those changes as you would in a regular production environment.
 
-30. However, the goal is to get through as much of the lab as possible without assistnace and only ask for assistance when necessary..
+34. If any parts of this lab were unclear please ask questions and assistance from your instructor.
 
-## Wireshark Lab
+35. However, the goal is to get through as much of the lab as possible without assistnace and only ask for assistance when necessary..
+
+## The Curl Command (It's not a perm or a weave)
+
+1. Make sure your Ubuntu Server VM is running and it is displaying either an apache webpage or any web page at all will be sufficient.
+
+2. To verify that Apache is running from your Mac you simply need to put the IP address of your Apache server in your Mac's browser. If it returns a web page of some kind you are all set if it does not you may need to do some work or restart the service.
+
+3. With a running apache web server and IP run the following command from your Mac terminal.
+
+4. `curl -v xxx.xxx.xxx.xxx` (Where xxx.xxx.xxx.xxx) is the IP of your Ubuntu server.
+
+![Status Code](200-status-code.png)
+
+5. What's interesting about the output of this command?
+
+6. What is the status code output from the command?
+
+7. Now run the curl command again `curl -v xxx.xxx.xxx.xxx/any-web-page.html
+
+![Status Code](404-status-code.png)
+
+8. What's different about the output of the command now?
+
+9. What's the status code output from the command? 
+
+10. Now I want you to login to your Ubuntu VM and copy the index.html file to your home directory?
+
+11. What is the command to copy the index.html file to your home directory. (Hint the index.html file is located in /var/www/html.
+
+12. After you make that change I want you to go to run this command and edit the 000-default.conf file located in sudo vi /etc/apache2/sites-enabled/ and change the Document root path to point to the index.html file located in your home directory.
+
+13. Once that change has been made I want you to restart the apache service and logout of your Ubuntu server.
+
+14. Now after all those changes I want you to run one last curl command.
+
+15. `curl -v xxx.xxx.xxx.xxx`
+
+![Status Code](403-status-code.png)
+
+16. Now what is the output from running that command?
+
+17. How is it different from the previous commands?
+
+18. What's the difference between a 200, 404, and 404 return code?
+
+19. Now that you have mastered the validation the status of a website from the command line you can proceed to next exciting lab.
+ 
+## Wireshark Lab (Download it on your Mac)
 
 1. Go to the following link to download wireshark `https://www.wireshark.org/download.html`
 
