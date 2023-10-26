@@ -154,3 +154,25 @@ network:
 29. If any parts of this lab were unclear please ask questions and assistance from your instructor.
 
 30. However, the goal is to get through as much of the lab as possible without assistnace and only ask for assistance when necessary..
+
+## Wireshark Lab
+
+1. Go to the following link to download wireshark `https://www.wireshark.org/download.html`
+
+2. Please make sure you download the verion for the macOSArm version.
+
+3. After wireshare is installed we are going to perform a basic capture between your Mac and the Ubuntu instance you have running Apache.
+
+4. Please login to your Ubuntu server and note the IP address because we are going to use wireshark to create a filter. Specifically between your Mac and the Ubuntu instance.
+
+5. In order to start the process of capturing traffic between your Mac and Ubuntu server you need to start the packet capturing function on Wireshark. To do so just click on the blue Shark fin icon in the upper left portion of the application.
+
+6. Once the packet capturing has begun we are going to initiate a connection to the website running on the Ubuntu server by typing the IP of the site in the browser.
+
+7. In the filer field right below the Wireshare shark fin and the red stop button we are going to type in `http`
+
+8. This should filter the web traffic request you made to the Ubuntu server. Work with your instructor to determine what kind of data you can gather from this packet capture.
+
+9. The purpose of this exercise is to examine the packets in the capture to determine what kind of data you can find similar to the network scans we did with nmap. The data in these captures tells a story.
+
+10. Once you have located all the pertintent data share it with your fellow students each of you may have discovered something different.
