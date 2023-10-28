@@ -140,7 +140,7 @@ To import the MySQL sample you need to extract the zip file and cd into the fold
 
 `mysql -u root -p databas_name < importfile.sql`
 
-mysqldump -u root -p databas_name > dumpfile.sql
+`mysqldump -u root -p databas_name > dumpfile.sql`
 
 ### Importing Postgres database
 
@@ -150,9 +150,57 @@ To import the sample database download the file to a folder on your linux box an
 
 `pg_restore -d dvdrental dvdrental.tar`
 
-### Dynamo DB
 
-aws dynamodb create-table --cli-input-json file://create-table-movies.json --region us-west-2
+#MongoDB
 
+`wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc |  gpg --dearmor | sudo tee /usr/share/keyrings/mongodb.gpg > /dev/null`
 
-aws dynamodb create-backup --table-name td_notes --backup-name td_notes_daily
+`echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb.gpg ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list`
+
+`sudo apt update`
+
+`sudo apt install mongodb-org`
+
+`sudo service mongod start`
+
+`cat /var/log/mongodb/mongod.log | grep 27017`
+
+`sudo service mongod stop`
+
+`sudo service mongod start`
+
+`sudo service mongod restart`
+
+`cat *.json | mongoimport --collection='mycollectionname'` (imort json files)
+
+`mongoimport --db test --collection employeesdata --type csv --file employees.csv --fields _id,firstName,lastName`
+
+`mongoimport --db test --collection employees --file employeesdata.json --jsonArray`
+
+`mongoimport --db database_name --collection collection_name --authenticationDatabase admin --username <user> --password <password> --file file_path`
+
+#PostGres SQL
+
+`sudo apt install postgresql`
+
+`sudo -u postgres psql template1`
+
+`ALTER USER postgres with encrypted password 'your_password';`
+
+`sudo systemctl restart postgresql.service`
+
+`psql --host server-name-or-ip --username postgres --password --dbname template1`
+
+`quit` (To exit Postgres)
+
+`psql databasename < data_base_dump`
+
+#MySQL
+
+`sudo apt instsall mysql-server`
+
+`sudo mysql -u root -p`
+
+`quit` (To exit mysql)
+
+`mysql -u username -p database_name < file.sql` (import database)
