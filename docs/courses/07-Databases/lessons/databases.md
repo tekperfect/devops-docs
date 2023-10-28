@@ -86,11 +86,11 @@ Postgres, is a free open-source relational database system. It is designed to ha
 
 1. Type the following command to login to MongoDB
 
-`mongo`
+`mongosh`
 
-If installed correctly you should be taken to a 
+If installed correctly you should be taken to a prompt that looks like this
 
-`> prompt`
+`test>`
 
 2. Type `quit` to exit MongoDB.
 
@@ -121,13 +121,13 @@ In order to understand how to use these database you will need to import a few s
 Download the following files
 
 ## MySQL 👇🏾
-[![MySQL Sample Database](mysql.png)]()
+[![MySQL Sample Database](mysql.png)](https://drive.google.com/file/d/1wZf38Rpgy1xnEW9k78oRuVMpOt1DudyK/view?usp=sharing)
 
 ## MongoDB 👇🏾
-[![MongoDB Sample Database](mongodb.png)]()
+[![MongoDB Sample Database](mongodb.png)](https://drive.google.com/file/d/1BzyggWEWNlcaKbiqpW-Xw5oYXhZQ9Oqy/view?usp=sharing)
 
 ## PostgreSQL 👇🏾
-[![PostgreSQL Sample Database](postgresql.png)]()
+[![PostgreSQL Sample Database](postgresql.png)](https://drive.google.com/file/d/1eE2ABGi8tHG1u0TqZDaYIa-cr50QL4Mq/view?usp=sharing)
 
 Download each file and scp the files to your Ubuntu server. However, before you attempt to scp each file I want you to prep your Ubuntu server for the files so they are organized.
 
