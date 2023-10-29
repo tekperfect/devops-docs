@@ -364,34 +364,88 @@ You have successfully installed, configured, and imported databases for 3 differ
 
 2. Update a single collection document and multiple collection documents
 
-db.collection_name.update({_id:ObjectId('xxxxxxxxxxxxxxxxxx')},{$set :{field:new_value}})
+`db.collection_name.update({_id:ObjectId('xxxxxxxxxxxxxxxxxx')},{$set :{field:new_value}})
 
-db.collection_name.updateMany(field:value},{$set:{field:"new_value"}})
+`db.collection_name.updateMany(field:value},{$set:{field:"new_value"}})
 
 3. This command deletes one document from the collection
 
-db.collection_name.deleteOne( { field: "xxxxxxxxxxxxxxxxxxxxx" } )
+`db.collection_name.deleteOne( { field: "value" } )`
 
 4. This command deletes multiple documents from the collection
 
-db.collection_name.deleteMany( { field: "xxxxxxxxxxxxxxxxxxxxx" } )
+`db.collection_name.deleteMany( { field: "value" } )`
 
 5. Delete all the documents in a colleciton
 
-db.collection_name.deleteMany({})
+`db.collection_name.deleteMany({})`
 
 6. Find documents matching a specific field
 
-db.collection_name.find({field:value})
+`db.collection_name.find({field:value})`
 
 7. Find documents matching multiple fields and values
 
-db.collection_name.find({field:value, field:value})
+`db.collection_name.find({field:value, field:value})`
 
 8. Find documents matching multiple fields and values specifically equal to one field
 
-db.collection_name.find({ field: { $eq: value }, field:value})
+`db.collection_name.find({ field: { $eq: value }, field:value})`
 
 9. Find documents that do not match a specific field and value for elimination
 
-db.collection_name.find({ field: { $nq: value }})
+`db.collection_name.find({ field: { $nq: value }})`
+
+10. To insert a document into a collection you would run the following command
+
+`db.collection_name.insertOne({field: "value", field: "value", field: "value"})`
+
+11. To insert multiple documents into a collection you would run the following command
+
+`db.collection_name.insertMany([{field: "value", field: "value", field: "value"},{field: "value", field: "value", field: "value"}])`
+
+12. This is the command to delete a collection
+
+`db.collection_name.drop()`
+
+13. This is the command to delete a database
+
+`db.dropDatabase()`
+
+14. To create a collection you would use the following command
+
+`db.createCollection("collection_name")`
+
+15. Command to swith to admin mode in MongoDB
+
+`use admin`
+
+16. To create a user in MongoDB use the following command
+
+`db.createUser({"user": "username", "pwd": passwordPrompt(), "roles": ["root"]})`
+
+17. To grant a user a specific database role you can use the following command
+
+`db.grantRolesToUser("username",[{ role: "dbOwner", db:"database_name" }])`
+
+18. Here are some other useful command you should try out. Run them and let your instructor know the resultsa. Remeber to look at the output of the command before you ask a question because I want each student to draw their own conclusions as to what the commands do before your instructor describes the commands.
+
+`db.getCollectionNames()`
+
+`db.getCollectionInfos()`
+
+`db.printCollectionStats()`
+
+`db.stats()`
+
+`db.getReplicationInfo()`
+
+`db.printReplicationInfo()`
+
+`db.hello()`
+
+`db.hostInfo()`
+
+`db.serverStatus()`
+
+`db.shutdownServer()`
