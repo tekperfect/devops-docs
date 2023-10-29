@@ -281,31 +281,37 @@ ALTER DATABASE
 
 You have successfully installed, configured, and imported databases for 3 different database types.
 
-### Working With Database using Queries
+### Working With Databases using Queries
 
 1. Login to mysql  (Do you remeber the command?)
 
 2. While in mysql run the following commands to connect to the database you create.
 
-`show databases` (This command list all databases in MySQL)
+3. This command list all databases in MySQL
 
-`use employees;` (This command selecats the database employess so we can take a look at it.)
+4. `show databases`
 
-`show tables;` (This command list all tables in the selected database)
+5. This command selects the database employess so we can take a look at it.
 
-3. Now we are going to take a look around by running the following
+6. `use employees;`
 
-4. This command list all the departments in the departments table
+7. This command list all tables in the selected database
 
-`select * from departments;`
+8. `show tables;`
 
-5. This command shows the columns from the salaries table)
+9. Now we are going to take a look around by running the following
 
-`show columns from salaries;`
+10. This command list all the departments in the departments table
 
-6. This is another bulk select query please note when using the * for any given table can be an expensive query depending on the size of the table. Try this query with the other tables and see what the results are.
+11. `select * from departments;`
 
-`select * from titles;`
+12. This command shows the columns from the salaries table)
+
+13. `show columns from salaries;`
+
+14. This is another bulk select query please note when using the * for any given table can be an expensive query depending on the size of the table. Try this query with the other tables and see what the results are.
+
+15. `select * from titles;`
 
 # Targeted Queries
 
@@ -349,3 +355,43 @@ You have successfully installed, configured, and imported databases for 3 differ
 
 `mysqldump -u root -p databas_name > dumpfile.sql`
 
+
+# MongoDB Queries
+
+1. List the contents of a collection
+
+`db.collectionName.find()`
+
+2. Update a single collection document and multiple collection documents
+
+db.collection_name.update({_id:ObjectId('xxxxxxxxxxxxxxxxxx')},{$set :{field:new_value}})
+
+db.collection_name.updateMany(field:value},{$set:{field:"new_value"}})
+
+3. This command deletes one document from the collection
+
+db.collection_name.deleteOne( { field: "xxxxxxxxxxxxxxxxxxxxx" } )
+
+4. This command deletes multiple documents from the collection
+
+db.collection_name.deleteMany( { field: "xxxxxxxxxxxxxxxxxxxxx" } )
+
+5. Delete all the documents in a colleciton
+
+db.collection_name.deleteMany({})
+
+6. Find documents matching a specific field
+
+db.collection_name.find({field:value})
+
+7. Find documents matching multiple fields and values
+
+db.collection_name.find({field:value, field:value})
+
+8. Find documents matching multiple fields and values specifically equal to one field
+
+db.collection_name.find({ field: { $eq: value }, field:value})
+
+9. Find documents that do not match a specific field and value for elimination
+
+db.collection_name.find({ field: { $nq: value }})
