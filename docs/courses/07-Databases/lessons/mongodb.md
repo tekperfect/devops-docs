@@ -1,5 +1,51 @@
+### Install MongoDB
 
-MongoDB Commands
+1. This command installs gnupg
+
+`sudo apt-get install gnupg curl`
+
+2. This command runs a curl command and add the repo to your Ubuntu server
+
+`curl -fsSL https://pgp.mongodb.com/server-7.0.asc | sudo gpg -o /usr/share/keyrings/mongodb-server-7.0.gpg --dearmor`
+
+3. This command add the necessary repos to the latest version of Ubuntu
+
+`echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list`
+
+4. This updates the repositories with the changes your just made
+`sudo apt-get update`
+
+5. This command install MongoDB without prompting you
+`sudo apt-get install -y mongodb-org`
+
+
+### Verify Installation`
+
+1. This command starts the MongoDB service
+
+`sudo systemctl start mongod`
+
+2. This command checks the status of the MongoDB service
+`sudo systemctl status mongod`
+
+3. This command enables the server to run on startup after the system is rebooted
+
+`sudo systemctl enable mongod`
+
+4. This command stops the MongoDB service
+`sudo systemctl stop mongod`
+
+5. This command restarts the MongoDB service
+`sudo systemctl restart mongod`
+
+
+### Login To MongoDB
+
+1. This command allows you to login to MongoDB
+
+`mongosh`
+
+### MongoDB Commands
 
 This command to lists the databases
 
