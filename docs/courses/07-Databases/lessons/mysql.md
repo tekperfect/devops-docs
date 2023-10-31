@@ -121,9 +121,14 @@
 
 4. The student_id field should be set to only allow numbers up to 10 characters.
 
-5. The first_name and last_name field should be set to a type that will allow up to 255 characters for each field.
+5. The first_name, last_name, and email field should be set to a type that will allow up to 255 characters for each field.
 
 6. Use a insert command to add the names of each of the students from the following spreadsheet.
 
 ## Student List 👇🏾
 [![DevOps Student List](google-sheets.png)](https://docs.google.com/spreadsheets/d/1PaWf3vQISZ-j8ULh1S5hukQxL1x9xBS_VzhU8IyfXR8/edit#gid=0)
+
+Please use the previous lessons a reference to create the database, tables, and data inside the tables.
+
+7. For extra credit how would someone set the primary key for this table to the student_id field.
+
