@@ -101,8 +101,29 @@
 
 12. Create a user in MySQL
 
-`CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';`
+`creat user 'username'@'localhost' IDENTIFIED BY 'password';`
 
 13. This command grants all priviliges to a user to a specific database
 
-`GRANT ALL ON database_name TO 'username'@'localhost';';`
+`grant all on database_name to 'username'@'localhost';`
+
+14. This command grants the user permission to logon after the account is created.
+
+`grant all privileges on *.* to 'username'@'localhost' with grant option;`
+
+### Exercises for MySQL
+
+1. Create a database called devops.
+
+2. Create a table called devops_student in that database.
+
+3. The table should have the following columns student_id, first_name, last_name and email.
+
+4. The student_id field should be set to only allow numbers up to 10 characters.
+
+5. The first_name and last_name field should be set to a type that will allow up to 255 characters for each field.
+
+6. Use a insert command to add the names of each of the students from the following spreadsheet.
+
+## Student List 👇🏾
+[![DevOps Student List](google-sheets.png)](https://docs.google.com/spreadsheets/d/1PaWf3vQISZ-j8ULh1S5hukQxL1x9xBS_VzhU8IyfXR8/edit#gid=0)
