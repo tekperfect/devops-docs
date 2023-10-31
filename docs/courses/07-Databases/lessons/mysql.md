@@ -32,7 +32,7 @@
 
 3. This command list all databases in MySQL
 
-4. `show databases`
+4. `show databases;`
 
 5. This command selects the database employess so we can take a look at it.
 
