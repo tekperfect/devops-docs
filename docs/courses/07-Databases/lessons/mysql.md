@@ -77,7 +77,7 @@
 
 6. This command creates a blank database named after what you specified as the database name
 
-`create database_name;`
+`create database database_name;`
 
 7. Imports a sample database file
 
