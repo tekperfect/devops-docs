@@ -10,6 +10,10 @@ Quits PostgreSQL
 
 `\q`
 
+List Databases
+
+`\l`
+
 Connects to a specific database
 
 `\c database_name`
@@ -66,3 +70,7 @@ Create a table command
 Insert into a table command
 
 `INSERT INTO table_name (column1,column2,column3,column4) VALUES ('column1_value','column2_value','column3_value','column4_value);`
+
+Import Database
+
+`sudo -u postgres psql database_name < sql_file_name.sql`
