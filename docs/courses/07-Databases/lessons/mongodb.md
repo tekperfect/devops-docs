@@ -63,9 +63,10 @@ This command to list all the documents in a collection
 
 `db.database-name.find()`
 
-This command allows you to find all the documents that fit a specific search criteria
+This command allows you to find all the documents that fit a specific search criteria please note that the value field may require single quotes if it is not numeric.
 
 `db.database-name.find({field:value})`
+`db.database-name.find({field:'value'})`
 
 This command allows you to find the first document that matches the search criteria.
 
