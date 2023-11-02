@@ -125,10 +125,17 @@
 
 6. Use a insert command to add the names of each of the students from the following spreadsheet.
 
+7. Use this command to set the variable in MySQL to allow local file import via CSV
+
+SET GLOBAL local_infile=1;
+
+8. Run the following command to import a CSV file. Please note you must specify the path to the CSV file or have it in the directory you were in when you connected to MySQL.
+
+LOAD DATA LOCAL INFILE 'csv_file_name' INTO TABLE table_name FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' IGNORE 1 ROWS;
+
 ## Student List 👇🏾
 [![DevOps Student List](google-sheets.png)](https://docs.google.com/spreadsheets/d/1PaWf3vQISZ-j8ULh1S5hukQxL1x9xBS_VzhU8IyfXR8/edit#gid=0)
 
 Please use the previous lessons a reference to create the database, tables, and data inside the tables.
 
-7. For extra credit how would someone set the primary key for this table to the student_id field.
-
+9. For extra credit how would someone set the primary key for this table to the student_id field.
