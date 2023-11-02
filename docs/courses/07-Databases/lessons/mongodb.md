@@ -77,7 +77,7 @@ This command allows you to find the first document that matches the search crite
 
 This command allows you to add a document to an existing collection
 
-`db.collection-name.insert({field1 : value1, field2 : value2, field3 : value3 })`
+`db.collection-name.insert({field1:value1,field2:value2,field3:value3})`
 
 This command removes a document(s) based upon the field and value
 
@@ -93,7 +93,7 @@ This command allows you to find a document based on a less than value
 
 This command updates a value in a field from the original value to a new one
 
-`db.collection-name.update({field : value},{$set : {field : new_value}})`
+`db.collection-name.update({field:value},{$set:{field:new_value}})`
 
 This command tells you the size of the index
 
@@ -103,3 +103,17 @@ This command displays statistics about your collection
 
 `db.colleciton-name.stats()`
 
+### Search Collections For A Specifc String
+
+
+Find Documents that contain a string
+
+`db.collection.find({name: {$regex:/string/i}})`
+
+Find Documents that start with a string
+
+`db.collection.find({name: {$regex:/^string/i}})`
+
+Find Documents that end with a string
+
+`db.collection.find({name: {$regex:/string$/i}})` 
