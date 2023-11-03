@@ -45,3 +45,7 @@ Students by the end of the course will be able to create, manage, import, export
 ## Database Labs
 
 [Database Labs](/courses/07-Databases/lessons/dblabs.md)
+
+## Evaluation Database Labs
+
+[Database Labs](/courses/07-Databases/lessons/milestone2n3-labs.md)
