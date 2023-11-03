@@ -22,10 +22,6 @@
 
 10. What are the return status codes for a website that has a redirect and not redirected that is currently online.
 
-# MySQL Database Labs
-
-1. Download a copy of the sample database files if you don't already have them and scp them over to your Ubuntu instance.
-
 ## MySQL 👇🏾
 [![MySQL Sample Database](mysql.png)](https://drive.google.com/file/d/1wZf38Rpgy1xnEW9k78oRuVMpOt1DudyK/view?usp=sharing)
 
@@ -34,6 +30,36 @@
 
 ## PostgreSQL 👇🏾
 [![PostgreSQL Sample Database](postgresql.png)](https://drive.google.com/file/d/1eE2ABGi8tHG1u0TqZDaYIa-cr50QL4Mq/view?usp=sharing) 
+
+# Postgres Database Labs
+
+1. What command would you run to list the databases?
+
+2. What command would you run to connect to the usda database?
+
+3. What command would you run to list the tables in the usda database?
+
+4. What command would you run to list the contents of the fd_group table?
+
+5. What command would you run to add a new food group to the fd_group table in the usda database and make the new food group Junk Food with a fdgrp_cd of 4000?
+
+6. What command would you run to update the description of fdgroup_cd item # 1900 to Sugars?
+
+# MongoDB Database Labs
+
+1. What command would you run to list the databases?
+
+2. What command would you run to connect to the SampleCollections database?
+
+3. What command would you run to list the tables in the SampleCollections database?
+
+4. What command would you run to list the contents of the video_movies collection?
+
+5. What command would you run to add a new movie to the video_movise collection in the SampleCollections database and make the title Sharknado 2 Return of the Wind, and the year 2023, and the imdb tt12345678, and the type DVD?
+
+### MySQL Database Labs
+
+1. Download a copy of the sample database files if you don't already have them and scp them over to your Ubuntu instance.
 
 2. Login to your Ubuntu install and connect to your MySQL instance.
 
@@ -62,29 +88,3 @@
 14. Now that you have a combined table you have been tasked with updating the salaries of all the Engineers to 200000 in the emp_profile table.
 
 15. What command would you use to update all the Engineers in the emp_profile table  to 200000? 
-
-# Postgres Database Labs
-
-1. What command would you run to list the databases?
-
-2. What command would you run to connect to the usda database?
-
-3. What command would you run to list the tables in the usda database?
-
-4. What command would you run to list the contents of the fd_group table?
-
-5. What command would you run to add a new food group to the fd_group table in the usda database and make the new food group Junk Food with a fdgrp_cd of 4000?
-
-6. What command would you run to update the description of fdgroup_cd item # 1900 to Sugars?
-
-# MongoDB Database Labs
-
-1. What command would you run to list the databases?
-
-2. What command would you run to connect to the SampleCollections database?
-
-3. What command would you run to list the tables in the SampleCollections database?
-
-4. What command would you run to list the contents of the video_movies collection?
-
-5. What command would you run to add a new movie to the video_movise collection in the SampleCollections database and make the title Sharknado 2 Return of the Wind, and the year 2023, and the imdb tt12345678, and the type DVD?
