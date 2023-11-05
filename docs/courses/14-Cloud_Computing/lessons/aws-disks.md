@@ -1,13 +1,9 @@
-# Title 
-
-
-
 ### Adding a Disk to Ubuntu
 
 1. Using the fdisk tool you can add a new disk to your Ubuntu server and partition it so that the disk space can be mounted as a new mount point or change and existing mount point to point to the new disk
 
 
-fdisk -l
+`fdisk -l`
 
 This will list the current partitions and configurations.
 
@@ -74,3 +70,51 @@ mount /dev/sdb1 /data
 
 
 12. You have successfully partitioned, formatted, and mounted a new disk
+
+
+### Resizing an existing Ubuntu Disk
+
+Resizing an existing disk is even easier than adding a new one. The following steps will walk you through the process.
+
+
+1. Go to the EC2 instance -- > Volume attached to the instance.
+
+![Resize](1-disk-resize.png)
+
+2. Here you see the volume, click on "Actions" --> "Modify Volumes".
+
+![Resize](2-disk-resize.png)
+
+3. On the pop-up screen, specify the desired size. I have specified 30 GBs, earlier it was 8 GBs. Click on the "Modify" button, this will change the disk size to 30GBs.
+
+![Resize](3-disk-resize.png)
+
+4. Confirm the modification by clicking on the "Yes" option.
+
+
+You will see that the disk has been modified. At this point we have just changed the disk size, it is not yet available for use. Now we need to extend the volume's file system to make use of the new storage capacity.
+
+![Resize](4-disk-resize.png)
+
+5. At this point, if you check the disk space you will see that the / volume still has 7.7 GBs.
+
+`df -h`
+
+6. To extend the volume size, get information about the block devices attached to your instance using the lsblk command
+
+`lsblk`
+
+7. Check the file system type, use the following command.
+
+`blkid`
+
+8. In our case, the file system is of type ext4 of the volume. Use the following command to extend the volume of the ext4 type.
+
+`sudo resize2fs /dev/sda`
+
+9. If you check the disk size this time, you will see that the disk has been extended and now we have 28 GBs(Approx 30 GBs) for / partition.
+
+`df -h`
+
+![Resize](5-disk-resize.png)
+
