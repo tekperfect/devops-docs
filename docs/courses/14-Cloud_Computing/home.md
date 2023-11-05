@@ -33,6 +33,10 @@ Students by the end of the course will be able to build cloud infrastructure usi
 
 [AWS](/courses/14-Cloud_Computing/lessons/aws-account.md)
 
+## AWS Account
+
+[AWS](/courses/14-Cloud_Computing/lessons/aws-ec2.md)
+
 ## AWS
 
 [AWS](/courses/14-Cloud_Computing/lessons/aws.md)
