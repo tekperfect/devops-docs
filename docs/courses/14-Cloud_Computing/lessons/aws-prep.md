@@ -60,11 +60,11 @@
 
 16. What command would you use to set the permissions on the file to rw for you the owner of the file and no access groups and others. See example below for ways to add and change permissions.
 
-`linux-permissions.png`
+[![Permissions](linux-permissions.png)]
 
 17. If you want a reference of what the original permission of the authorized_keys file, please look at the image below.
 
-`authorized-key-permissions.png`
+[![Permissions](authorized-key-permissions.png)]
 
 
 ### Updating Your SSH Config
@@ -85,7 +85,7 @@
 
 6. For the first change all we are going to do is remove the # sign in front of the "#PubkeyAuthentication yes" line in sshd_config file. See example below for reference.
 
-`ssh-change-1.png`
+[![Permissions](ssh-change-1.png)]
 
 7. After this change is made you will need to restart the ssh server which will disconnect your from your Ubuntu server.
 

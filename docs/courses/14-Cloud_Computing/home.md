@@ -25,6 +25,14 @@ Students by the end of the course will be able to build cloud infrastructure usi
 
 # 📚 Lessons
 
+## AWS Prep
+
+[AWS](/courses/14-Cloud_Computing/lessons/aws-prep.md)
+
+## AWS Account
+
+[AWS](/courses/14-Cloud_Computing/lessons/aws-account.md)
+
 ## AWS
 
 [AWS](/courses/14-Cloud_Computing/lessons/aws.md)
