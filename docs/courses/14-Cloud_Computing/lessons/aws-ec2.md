@@ -91,3 +91,11 @@ When you do that the warning which states "Rules with source of 0.0.0.0/0 allow 
 10. Now with all the proper settings selected you are now ready to click on the Launch Insance button to finalize your changes and deploy your first Windows cloud based VM.
 
 11. You are now officially a cloud based DevOps Engineer... Sorta ;-)
+
+12. While we are waiting for those instances to launch we want to make sure we backup those keypairs you created to LastPass just in case you accidently delete the files.
+
+13. I recommend naming each file corresponding to the type of instance you want to launch like ubuntu.pem and windows.pem and zipping file an attaching it to a secure note with some infomation about it.
+
+14. In the future when you launch additional instances you can use these keys instead of creating new ones.
+
+15. These keys are required to ssh into Ubuntu and decrypt the administrator password for your Windows host. However, if you change your Windows password after decrypting it you must remember it because the key will not be able to decrypt a changed password on your Windows host.
