@@ -99,3 +99,10 @@ When you do that the warning which states "Rules with source of 0.0.0.0/0 allow 
 14. In the future when you launch additional instances you can use these keys instead of creating new ones.
 
 15. These keys are required to ssh into Ubuntu and decrypt the administrator password for your Windows host. However, if you change your Windows password after decrypting it you must remember it because the key will not be able to decrypt a changed password on your Windows host.
+
+16. To ssh to an instance you would type in the following command.
+
+`ssh -i pemfile_name.pem ubuntu@xxx.xxx.xxx.xxx`
+
+17. In order to obtain the Windows administrator password of a VM you will need to right click on the VM and supply the pemfile_name.pem to decrypt the password.
+
