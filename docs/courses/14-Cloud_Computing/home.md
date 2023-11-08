@@ -45,3 +45,7 @@ Students by the end of the course will be able to build cloud infrastructure usi
 
 [AWS](/courses/14-Cloud_Computing/lessons/aws-disks.md)
 
+## AWS OpenVPN
+
+[AWS](/courses/14-Cloud_Computing/lessons/aws-vpn.md)
+
