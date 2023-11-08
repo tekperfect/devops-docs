@@ -94,11 +94,11 @@ sudo passwd openvpn
 
 23. Input the username as openvpn and the password you had set.
 
-![OpenVPN](7-openvpn.png)
+![OpenVPN](8-openvpn.png)
 
 24. Once the import has completed, you are ready to use the app!
 
-![OpenVPN](8-openvpn.png)
+![OpenVPN](9-openvpn.png)
 
 25. If you run into any issues please review the steps and ask your instructor for assistance.
 
