@@ -3,11 +3,25 @@
 
 ###  What is a VPN
 
+A virtual private network (VPN) is a network designed for creating a secure connection between a computing device and a computer network, or between two networks, using an insecure communication medium such as the public Internet.
+
+A VPN can extend access to a private network (one that disallows or restricts public access) to users who do not have direct access to it, such as an office network allowing secure access from off-site over the Internet. The benefits of a VPN include security, reduced costs for dedicated communication lines, and greater flexibility for remote workers. VPNs are also used to bypass Internet censorship. Encryption is common, although not an inherent part of a VPN connection.
+
+A VPN is created by establishing a virtual point-to-point connection through the use of tunneling protocols over existing networks. A VPN available from the public Internet can provide some of the benefits of a private wide area network (WAN). From a user perspective, the resources available within the private network can be accessed remotely.
+
+![OpenVPN](vpn.png)
+
 ### Why Are They Needed?
+
+To protect your valueable data so that hackers and other individuals attempting to compromise your data cannot get access to it because it is being encrypted and transimitted via a private tunnel.
 
 ### VPN Networking
 
+One of the advantages of having a VPN or private tunnel between two networks is that resources in those networks can be accessed in a protected manner to ensure privacy is maintained.
+
 ### Security
+
+When looking at security of these networks it is important to remember to use a least priviliged use model. The principle of least privilege (PoLP) is an information security concept which maintains that a user or entity should only have access to the specific data, resources and applications needed to complete a required task and noting more.
 
 ### Setup OpenVPN
 
@@ -15,11 +29,11 @@
 
 2. Sign in to the AWS Management Console and navigate to the EC2 service.
 
-image
+![OpenVPN](1-openvpn.png)
 
 3. In the dashboard, click AWS Marketplace menu and type OpenVPN. Select the first one with the Free Tier Eligible badge.
 
-image
+![OpenVPN](2-openvpn.png)
 
 4. On the next page click Continue and Select t2.micro from the instance type list and click on Review and Launch button.
 
@@ -34,7 +48,7 @@ ssh -i "{keyname}.pem" openvpnas@xxx.xxx.xxx.xxx
 
 8. Next, type yes for the agreement, then you’ll be prompted with how you want to configure your VPN.
 
-image
+![OpenVPN](3-openvpn.png)
 
 9. Type yes for the following 2 prompts:
 
@@ -53,11 +67,11 @@ sudo passwd openvpn
 
 12. Login with openvpn and the password you just set.
 
-image
+![OpenVPN](4-openvpn.png)
 
 14. Once in the Admin dashboard of OpenVPN, click configuration and go to “VPN Settings”
 
-image
+![OpenVPN](5-openvpn.png)
 
 15. Scroll down and then apply the following changes:
 
@@ -67,7 +81,7 @@ image
 
 18. Enter custom DNS server and set Primary DNS Server to 8.8.8.8 (CloudFlare DNS) and the Secondary DNS Server to 8.8.4.4
 
-image
+![OpenVPN](6-openvpn.png)
 
 19. Save the settings and then click on Update Running Server
 
@@ -80,11 +94,11 @@ image
 
 23. Input the username as openvpn and the password you had set.
 
-image
+![OpenVPN](7-openvpn.png)
 
 24. Once the import has completed, you are ready to use the app!
 
-image
+![OpenVPN](8-openvpn.png)
 
 25. If you run into any issues please review the steps and ask your instructor for assistance.
 
