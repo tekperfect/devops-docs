@@ -72,3 +72,30 @@ Attach policies directly – Select this option to see a list of the AWS managed
 https://AWS-account-ID or alias.signin.aws.amazon.com/console
 
 Please note you should work with your instructor to setup Two Factor Authenication on both your Root account and named account. We highly recommend that no one use the root account for normal AWS cloud operations and only use it for account lockout, billing issue, and other special circumstances.
+
+
+16. For those of you struggling with logging into your root account and your named account please use the following methods to ensure you have everything you need to access both accounts.
+
+17. First start by opening Safari in a "New Private Window" this is similar to "Incognito Mode in Google Chrome". The goal is to login to your root account in one browser and attempt to login to your named user account in another browser.
+
+18. Once you have successfully accessed your root account via the Safari browser please make sure you document the folling via LastPass. The root account username and password. Both should be stored in LastPass as a secure note so you can retrieve them if you are unable to login to the root account.
+
+19. After you have successfully achieved a login to your root account via the Safari browser. You will need to open your Chrome browser and open a new tab in "Incognito mode" and attempt to login to your named user account. To accomplish this goal you need the account id which is a 12 digit number, the username, and the password you assigned to the account you created. If you need to located the account ID it can be found in the upper right hand corner of your browser window if you are logged into the root account.
+
+20. If you are unable to login to your named account or cannot launch instances from the account please make sure you have check the following.
+
+20a. From the root account reset the password to the password you believe it is by opening the IAM console and selct users from the left hand navigation windows and select the user you created; then select the Security Credentials tab, and then the "Manage Console Access" button. From this button you can reset the password to what you want by clicking the the custom password radio button. Once you have entered the new password click on the apply button.
+
+![AWS](aws-iam-passwd.png)
+
+21. If the issue is not your password that is preventing your from launching instances via your named account the issue may be related to the permissions assigned to the group you created and attached to the account.
+
+22. To resolve the group permission issues go to the IAM console and select users from the left hand navigation bar and then select the groups tab in the middle of the page and you should see the SuperAdmin group you created. This group should have the follwing permissions. If not you will need to attach the missions permission to the group.
+
+![AWS](aws-iam-group1.png)
+
+![AWS](aws-iam-group2.png)
+
+23. If you are still experiencing issues with the login after the password has been reset and you have assiged the correct policies to the groups you will need to remove the 2FA device and add it back to the account. Please note this step is only necessary if the previous two steps failed to provide you with access to AWS as the named users account and you cannot launch instances when you login to the account.
+
+24. Please consult with your instructor if you continue to have issues with either your named or root account login. If the issue is password related. Your instructor highly recommends resetting the password to the account and documenting them via LastPass as soon as you change them.
