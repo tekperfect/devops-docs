@@ -19,11 +19,11 @@ With that said we are going to create two foundational security groups for your 
 
 4. In the Secrity Group Name field type in Secure SSH, in the Incound rules type field select SSH from the dropdown menu, and from the source field select My IP from the dropdown menu, and in the description field type SSH Access From My Home IP.
 
-![Security Groups](3-ec2-security-groups.png)
+![Security Groups](3-ec2-security-group.png)
 
 5. Do not change anything in the outbound rules section and proceed to the bottom right hand side of the page and click on the create security group button.
 
-![Security Groups](4-ec2-security-groups.png)
+![Security Groups](4-ec2-security-group.png)
 
 6. Now we are going to create a security group for Windows systems.
 
@@ -33,10 +33,10 @@ With that said we are going to create two foundational security groups for your 
 
 8. In the Secrity Group Name field type in Secure RDP, in the Incound rules type field select RDP from the dropdown menu, and from the source field select My IP from the dropdown menu, and in the description field type RDP Access From My Home IP. 
 
-![Security Groups](5-ec2-security-groups.png)
+![Security Groups](5-ec2-security-group.png)
 
 9. Do not change anything in the outbound rules section and proceed to the bottom right hand side of the page and click on the create security group button.
 
-![Security Groups](6-ec2-security-groups.png)
+![Security Groups](6-ec2-security-group.png)
 
 10. You have successfully created 2 security groups that you will use on your instances going forward.
