@@ -54,14 +54,12 @@ ssh -i "{keyname}.pem" openvpnas@xxx.xxx.xxx.xxx
 
 Should client traffic be routed by default through the VPN?
 
+10. Just hit enter for the rest to have all the defaults confirmed. Once you reached the end, change the password for the user. Enter a new password twice and you’re all set.
+
 > Press ENTER for default [no]: yes
 Should client DNS traffic be routed by default through the VPN?
 
 > Press ENTER for default [no]: yes
-
-10. Just hit enter for the rest to have all the defaults confirmed. Once you reached the end, change the password for the user. Enter a new password twice and you’re all set.
-
-sudo passwd openvpn
 
 11. Next, open a browser window and type https://xxx.xxx.xxx.xxx:943/admin 
 
@@ -79,7 +77,7 @@ sudo passwd openvpn
 
 17. Change the toggle for Have clients use specific DNS servers to Yes
 
-18. Enter custom DNS server and set Primary DNS Server to 8.8.8.8 (CloudFlare DNS) and the Secondary DNS Server to 8.8.4.4
+18. Enter custom DNS server and set Primary DNS Server to 8.8.8.8 (Google DNS) and the Secondary DNS Server to 8.8.4.4
 
 ![OpenVPN](6-openvpn.png)
 
@@ -88,15 +86,19 @@ sudo passwd openvpn
 
 20. A VPN Client is required that can handle capturing the traffic you wish to send through the OpenVPN tunnel, and encrypting it, and passing it to the OpenVPN server.
 
-21. To obtain the Official OpenVPN Connect app, go to the Google Play Store on your Android device and install the Official OpenVPN Connect app.
+21. To obtain the Official OpenVPN Connect app, go to the url of your OpenVPN's server Public IPv4 IP Address found in the AWS console.  
 
-22. Open the app & start the import process by entering the IP-address of your running EC2 instance. 
+https://xxx.xxx.xxx.xxx
 
-23. Input the username as openvpn and the password you had set.
+22. You should be provided a client to download the VPN from the web UI after you provide the openvpn username and password. After you install the application you will need to launch it.
+
+23. Open the app & start the import process by entering the IP-address of your running EC2 instance xxx.xxx.xxx.xxx
+
+24. Input the username as openvpn and the password you had set.
 
 ![OpenVPN](8-openvpn.png)
 
-24. Once the import has completed, you are ready to use the app!
+25. Once the import has completed, you are ready to use the app!
 
 ![OpenVPN](9-openvpn.png)
 
