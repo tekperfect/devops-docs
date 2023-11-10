@@ -1,3 +1,94 @@
+# Installing Active Directory using the GUI
+
+1. Login to your Windows 2022 server as the Administrator
+
+2. Launch Server Manager
+
+![AD]1-AD.png)
+
+
+3. Select the Add Roles and Features option
+
+![AD]2-AD.png)
+
+4. Select Next to Continue
+
+![AD]3-AD.png)
+
+5. Select Role Based or Feature Based installation 
+
+![AD]4-AD.png)
+
+6. Make sure the Select a Server from the Server pool option is select and click next.
+
+![AD]5-AD.png)
+![AD]6-AD.png)
+![AD]5-AD.png)
+
+7. Make sure Active Directory Domain Services and DNS Server are selected and click next. You may be prompted to accept the defaults for installing these services.
+
+![AD]8-AD.png)
+
+8. Now select next to continue the installation 
+
+![AD]9-AD.png)
+
+9. Now select next to continue
+
+![AD]10-AD.png)
+
+10. Now select next to continue
+
+![AD]11-AD.png)
+
+11. Now select next to continue
+
+![AD]12-AD.png)
+
+12. Now select next to continue
+
+![AD]13-AD.png)
+
+13. The installation should begin
+
+14. Once the installation is complete click on the close button
+
+![AD]14-AD.png)
+
+15. Now go to the upper right hand corner of the screen and select the post installation task associated with promoting the server to a domain controller by selecting the "Promote this server to a domain controller" selection.
+
+![AD]15-AD.png)
+
+16. Now you will need to type in the name of the domain you are creating. The domain names typically are in the form of fully qualified domain names like tekperfect.com or microsoft.com. However, if the domain controller is public organization will often use a domain_name.internal name when creating it.
+
+![AD]16-AD.png)
+
+17. Next you will need to supply a password used to restore the domain in case of disaster. Please choose a password that will not be too difficult to remeber and store it in your password manager.
+
+![AD]17-AD.png)
+
+18. Select next to continue
+
+![AD]18-AD.png)
+
+19. Next you will need to accept the netbios name that will be used for the domain. Typially you will not need to change it and click on the next button.
+
+![AD]19-AD.png)
+
+20. Select next to continue
+
+![AD]20-AD.png)
+
+21. Select next to continue
+
+![AD]21-AD.png)
+
+22. To finalize the domain controller configuration click on the Install button.
+
+![AD]22-AD.png)
+
+23. Congratulations you have completed the installation of AD (Active Directory). Please reboot your system and login to the new domain with your Administrator credentials.
+
 # Installing Active Directory using Powershell
 
 ## Powershell commands
