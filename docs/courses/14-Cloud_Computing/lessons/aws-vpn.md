@@ -48,7 +48,10 @@ ssh -i "{keyname}.pem" openvpnas@xxx.xxx.xxx.xxx
 
 8. Next, type yes for the agreement, then you’ll be prompted with how you want to configure your VPN.
 
-![OpenVPN](3-openvpn.png)
+![OpenVPN](1-open-vpn-server-settings)
+![OpenVPN](2-open-vpn-server-settings)
+![OpenVPN](3-open-vpn-server-settings)
+![OpenVPN](4-open-vpn-server-settings)
 
 9. Type yes for the following 2 prompts:
 
