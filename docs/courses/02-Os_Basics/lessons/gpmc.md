@@ -6,20 +6,36 @@
 
 3. As part of our lesson we are going to make 3 group policy changes after you create 5 user acounts, 5 groups, and 5 OU's, Please create the following users groups and OU's.
 
+### Create Users
+
  Create a user named edgar with the full name Edgar Allen Poe
+
  Create a user named francis with the full name Francis Ford Coppola
+
  Create a user named mark with the full name Mark Ruffalo
+
  Create a user named sonia with the full name Sonia Sotomayor
+
  Create a user named sydney with the full name Sydney Park 
+
  Create a user named dwayne with the full name Dwayne Johnson 
+
  Create a user named michelle with the full name Michelle Yeoh
 
+### Create Groups
+
  Create a group called engineering
+
  Create a group called finance
+
  Create a group called marketing
+
  Create a group called it
+
  Create a group called sales
+
  Create a group called devops
+
  Create a group called security
 
 4. Assign each user to a group
