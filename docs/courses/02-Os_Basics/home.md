@@ -49,6 +49,10 @@ Students by the end of the course will be able to install an operating system ru
 
 [Windows](/courses/02-Os_Basics/lessons/windows-best-practices.md)
 
+## Group Policy Management
+
+[Windows](/courses/02-Os_Basics/lessons/gpmc.md)
+
 ## Linux Student Labs
 [Student Labs](/courses/02-Os_Basics/lessons/labs.md)
 
