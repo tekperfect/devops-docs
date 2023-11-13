@@ -348,6 +348,8 @@ To modify the password policy you will need to modify the default domain policy.
 
 4. Now navigate to Computer Configuration\Policies\Windows Settings\Security Settings\Account Policies\Password Policy
 
+![GPMC](password-policy.png)
+
 5. Now double click one of the settings to edit. For example, I’ll double chick on minimum password length. 
 
 I’m going to change this setting from 7 to 14 characters and then click apply.
@@ -358,40 +360,32 @@ I’m going to change this setting from 7 to 14 characters and then click apply.
 
 8. After you have move those changes and applied them we are going to create a group policy from scratch.
 
-9. Creating a policy from scratch is much like modifiying the default domain policy but it does not modify the default domain policy so it is easier to revert if we need to change it and we can apple it at different levels of the OU or to specific groups.
+9. Before we move on to creating a policy from scratch we are going to change the account lockout policy to lock an account after 5 failed login attempts. This is to protect account from brute force attacks. To modify the account lockout policy go "Account Policies", Account Lockout Policy, and change the duration and reset time to 10 minutes. This will slow down and attack while not keeping the user out of their account for too long if they remeber their password.
 
-9. Creating a policy from scratch is much like modifiying the default domain policy but it does not modify the default domain policy so it is easier to revert if we need to change it and we can apple it at different levels of the OU or to specific groups.
+![GPMC](account-lockout.png)
 
-9. Creating a policy from scratch is much like modifiying the default domain policy but it does not modify the default domain policy so it is easier to revert if we need to change it and we can apple it at different levels of the OU or to specific groups.
+### Create a GPO from Scratch
 
-9. Creating a policy from scratch is much like modifiying the default domain policy but it does not modify the default domain policy so it is easier to revert if we need to change it and we can apple it at different levels of the OU or to specific groups.
+1. On the left pane of the console tree, under the Domains option, right-click on the domain for which the group policy needs to be applied and click on the Create a GPO in this domain, and link it here option.
 
-9. Creating a policy from scratch is much like modifiying the default domain policy but it does not modify the default domain policy so it is easier to revert if we need to change it and we can apple it at different levels of the OU or to specific groups.
+2. Create a new group policy and name it appropriately (For example, Logon Banner). Click on OK.
 
-9. Creating a policy from scratch is much like modifiying the default domain policy but it does not modify the default domain policy so it is easier to revert if we need to change it and we can apple it at different levels of the OU or to specific groups.
+3. Right-click on the new group policy (Logon Banner) and click on Edit. This opens the GroupPolicy Management Editor.
 
-9. Creating a policy from scratch is much like modifiying the default domain policy but it does not modify the default domain policy so it is easier to revert if we need to change it and we can apple it at different levels of the OU or to specific groups.
+4. In the left pane of the Group Policy Management Editor, navigate to Computer Configuration> Policies > Windows Settings > Security Settings > Local Policies and select Security Options.
 
-9. Creating a policy from scratch is much like modifiying the default domain policy but it does not modify the default domain policy so it is easier to revert if we need to change it and we can apple it at different levels of the OU or to specific groups.
+5. On the right pane of the console, select the Interactive Logon: Message text for users attempting to logon policy. This is used to specify the text message to be displayed to the users at the time of logon.
 
-9. Creating a policy from scratch is much like modifiying the default domain policy but it does not modify the default domain policy so it is easier to revert if we need to change it and we can apple it at different levels of the OU or to specific groups.
+6. In the Security Policy Settings tab, check the Define this policy settings in the template checkbox. Enter the logon message to be displayed and click Apply and OK.
 
-10. On the left pane of the console tree, under the Domains option, right-click on the domain for which the group policy needs to be applied and click on the Create a GPO in this domain, and link it here option.
+7. Next, select the Interactive Logon: Message title for users attempting to login policy. This is used to specify the title that appears on the title bar of the Interactive logon window.
 
-11. Create a new group policy and name it appropriately (For example, Logon Banner). Click on OK.
+8. In the Security Policy Settings tab, check the Define this policy settings in the template checkbox. Enter an appropriate title and click Apply and OK.
 
-12. Right-click on the new group policy (Logon Banner) and click on Edit. This opens the GroupPolicy Management Editor.
+9. After configuring the title and text of the interactive logon message, run the following command to apply the group policy from the command line. `gpupdate /force` 
 
-13. In the left pane of the Group Policy Management Editor, navigate to Computer Configuration> Policies > Windows Settings > Security Settings > Local Policies and select Security Options.
+10. Now that we have all of these policies in place you need to test them by using one of the accounts you created. By loggin into the new server you created to verify that the logon banner, password complexity, and account lockout are working properly. To make the testing easier you may need to add the accounts you arse testing with to the domain admins group so they can logon to the server. Typically we would use a Windows 11 or 10 workstation but provisioning client machines in AWS costs money.
 
-14. On the right pane of the console, select the Interactive Logon: Message text for users attempting to logon policy. This is used to specify the text message to be displayed to the users at the time of logon.
+11. If you are interested in where the current logon banner policy is located for the domain you can find it here.
 
-15. In the Security Policy Settings tab, check the Define this policy settings in the template checkbox. Enter the logon message to be displayed and click Apply and OK.
-
-16. Next, select the Interactive Logon: Message title for users attempting to login policy. This is used to specify the title that appears on the title bar of the Interactive logon window.
-
-17. In the Security Policy Settings tab, check the Define this policy settings in the template checkbox. Enter an appropriate title and click Apply and OK.
-
-18. After configuring the title and text of the interactive logon message, run the following command to apply the group policy from the command line. `gpupdate /force` 
-
-
+![GPMC](logon-banner.png)
