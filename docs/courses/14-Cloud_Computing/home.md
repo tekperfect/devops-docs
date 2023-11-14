@@ -25,31 +25,39 @@ Students by the end of the course will be able to build cloud infrastructure usi
 
 # 📚 Lessons
 
+## AWS
+
+[AWS Basics](/courses/14-Cloud_Computing/lessons/aws.md)
+
 ## AWS Prep
 
-[AWS](/courses/14-Cloud_Computing/lessons/aws-prep.md)
+[AWS Prep](/courses/14-Cloud_Computing/lessons/aws-prep.md)
 
 ## AWS Account
 
-[AWS](/courses/14-Cloud_Computing/lessons/aws-account.md)
+[AWS Account](/courses/14-Cloud_Computing/lessons/aws-account.md)
 
 ## AWS EC2
 
-[AWS](/courses/14-Cloud_Computing/lessons/aws-ec2.md)
-
-## AWS
-
-[AWS](/courses/14-Cloud_Computing/lessons/aws.md)
+[AWS EC2](/courses/14-Cloud_Computing/lessons/aws-ec2.md)
 
 ## AWS Ubuntu Disk Management
 
-[AWS](/courses/14-Cloud_Computing/lessons/aws-disks.md)
+[AWS Disks](/courses/14-Cloud_Computing/lessons/aws-disks.md)
 
 ## AWS OpenVPN
 
-[AWS](/courses/14-Cloud_Computing/lessons/aws-vpn.md)
+[AWS OpenVPN](/courses/14-Cloud_Computing/lessons/aws-vpn.md)
 
 ## AWS Security Groups
 
-[AWS](/courses/14-Cloud_Computing/lessons/aws-secgrp.md)
+[AWS Security Groups](/courses/14-Cloud_Computing/lessons/aws-secgrp.md)
+
+## AWS S3
+
+[AWS S3](/courses/14-Cloud_Computing/lessons/aws-s3.md)
+
+## AWS RDS
+
+[AWS RDS](/courses/14-Cloud_Computing/lessons/aws-rds.md)
 
