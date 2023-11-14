@@ -65,7 +65,7 @@ To modify the password policy you will need to modify the default domain policy.
 
 5. Now double click one of the settings to edit. For example, I’ll double chick on minimum password length. 
 
-I’m going to change this setting from 7 to 14 characters and then click apply.
+I’m going to change this setting from 7 to 12 characters and then click apply.
 
 6. Next we are going to change the maximum password age to 90 days so that people onl have to change their password every three months 42 days is a little too heavy handed.
 
@@ -102,3 +102,27 @@ I’m going to change this setting from 7 to 14 characters and then click apply.
 11. If you are interested in where the current logon banner policy is located for the domain you can find it here.
 
 ![GPMC](logon-banner.png)
+
+### Adding A Server to your Domain
+
+1. To add a server to your domain you must do three things create a reverse lookup zone for the IP your server is using.
+
+2. You must also point your client or server machine to use the DNS of the domain controller
+
+3. The domain controller should only have 127.0.0.1 in it DNS settings so that it performs the lookups via it DNS settings so that when clients query for DNS records they are provided via the internal DNS server.
+
+4. Once the Domain and client settings have been confirmed you can attempt to join the server to your domain.
+
+5 On the Desktop, click the Start button, type Control Panel, and then press ENTER.
+
+6. Navigate to System and Security, and then click System.
+
+7. Under Related settings, click Rename this PC (advanced).
+
+8. Under the Computer Name tab, click Change.
+
+9. Under Member of, click Domain, type the name of the domain that you wish this server to join, and then click OK.
+
+10. You will be prompted to supply the username and password of an administrator account or domain admin account in order to join the domain properly.
+
+11. Click OK in the Computer Name/Domain Changes dialog box, and then restart the server.
