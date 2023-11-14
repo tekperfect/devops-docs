@@ -126,3 +126,45 @@ I’m going to change this setting from 7 to 12 characters and then click apply.
 10. You will be prompted to supply the username and password of an administrator account or domain admin account in order to join the domain properly.
 
 11. Click OK in the Computer Name/Domain Changes dialog box, and then restart the server.
+
+### Mapping Drives Using Group Policies
+
+1. Open the Group Policy Management Console
+
+2. In the Group Policy Management Console, Right Click and Select “Create a GPO in this domain, and Link it here”
+
+3. Name the new GPO. You can name the new GPO whatever you like,  I use “Map User Drives"
+
+4. On the GPO right click and select edit
+
+5. Navigate to User Configuration -> Preferences -> Windows Settings -> Drive Mappings
+
+6. Right Click Drive Mappings, Select New – > Mapped Drive
+
+7. Configure Drive Mapping Properties
+
+8. In the General Tab Settings
+
+In location put the path to the share/folder you want to map a drive to.
+Select a drive letter
+Choose Update for action
+Label as: This is optional but may be beneficial for users.
+
+
+9. In the Common Tab Settings
+
+Select “Run in logged on users’s security context
+
+Select Item-level Targeting
+
+Click the Targeting Button
+
+10. Select New Item
+
+Select Organization Unit then select the OU you want to target... I suggest you target the IT or DevOps group first since as administrators we typically use ourselves a guinea pigs or if you are really paranoid you create a test OU and add yourself or test account to it before you deploy any changes to the production environment. Remember when I talked aobut why testing and validation is important.
+
+11. Click OK, Click OK again to close the new drive properties. This completes the GPO creation process.
+
+12. To verify that the GPO is working you will need to reboot the users PC or server... or run gpupdate /force from the domain controller.
+
+13. You can also repeat this process to map a home drive for the user but in the mapping properties you will need to use a %username% variable so that it is associated with the user that is logging on a have the folder associated with the username created in the drive you are mapping.
