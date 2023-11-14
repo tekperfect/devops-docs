@@ -7,16 +7,22 @@
 - Create a user named mark
 - Create a user named ignacio
 - Create a user named sally
+- Create a user named steve
+- Create a user named mary
+- Create a user named alfonso
 
 > For example if you wanted to create a user called marsha you would type in the following command `sudo adduser marsha`
 
 **Create the following groups by using the `groupadd` command**
 
-- Create a group called engineering.
-- Create a group called finance.
-- Create a group called marketing.
-- Create a group called it.
-- Create a group called sales.
+- Create a group called engineering
+- Create a group called finance
+- Create a group called marketing
+- Create a group called it
+- Create a group called sales
+- Create a group called hr
+- Create a group called devops
+- Create a group called security
 
 > For example if you wanted to create a group called security you would type in the following command `sudo groupadd security`
 
@@ -27,8 +33,11 @@
 - Create a group called marketing and assign mark to it.
 - Create a group called it and assign ignacio to it.
 - Create a group called sales and assign sally to it.
+- Create a group called hr and assign steve to it.
+- Create a group called devops and assign mary to it.
+- Create a group called security and assign alfonso to it.
 
-> For example if you wanted to add marsha to the security group you would type in the following command:  `sudo usermod -a -G security marsha`
+> For example if you wanted to add alfonso to the security group you would type in the following command:  `sudo usermod -a -G security alfonso`
 
 ---
 
@@ -39,7 +48,7 @@ From the forward slash or “/” you want to create the following folders
 Change directory to the root by issuing this command cd /
 Now that you are at the root of your linux box you need to create the following folder department:
 
-- Use the `mkdir` command to create the department folder Under the department folder you want to create the following folders sales, marketing, it, engineering, and finance. You must use the `sudo cd department` command to change into that folder once it’s created.
+- Use the `mkdir` command to create the department folder Under the department folder you want to create the following folders sales, marketing, it, engineering, finance, hr, devops, and security. You must use the `sudo cd department_name` command to change into that folder once it’s created or specify the path to the folder you are creating the directory in.
 
 **Create a few files in each folder using the `touch` command**
 
@@ -48,6 +57,9 @@ Now that you are at the root of your linux box you need to create the following 
 - In the it folder create a file called script.py
 - In the marketing folder create a file called campaign.ppt
 - In the finance folder create a file called payroll.xls
+- In the devops folder create a file called deploy.tf
+- In the security folder create a file called standards.pdf
+- In the hr folder create a file called salaries.pdf
 
 > For example if you wanted to create a file called test.txt using the `touch` command you type `sudo touch test.txt`
 
@@ -75,3 +87,7 @@ Applications and Services
 You can also use the command line to identify the process identifier associated with each of the services - Hint “ps -e | grep name-of-app”
 
 Name one thing you notice about the process ID as you stop and start the service and provide one example of how to stop or kill a service. This may require additional research.
+
+Finally download the resume.zip file from the student downloads folder located in your google drive and scp the file to your Ubuntu instance. This will prepare you for the end of the weeks exercises using S3 where we are going to store images and videos that you will link to the web server you are running on your Ubuntu instance.
+
+
