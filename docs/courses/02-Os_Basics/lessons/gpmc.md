@@ -8,35 +8,23 @@
 
 ### Create Users
 
- Create a user named edgar with the full name Edgar Allen Poe
-
- Create a user named francis with the full name Francis Ford Coppola
-
- Create a user named mark with the full name Mark Ruffalo
-
- Create a user named sonia with the full name Sonia Sotomayor
-
- Create a user named sydney with the full name Sydney Park 
-
- Create a user named dwayne with the full name Dwayne Johnson 
-
- Create a user named michelle with the full name Michelle Yeoh
+ - Create a user named edgar with the full name Edgar Allen Poe
+ - Create a user named francis with the full name Francis Ford Coppola
+ - Create a user named mark with the full name Mark Ruffalo
+ - Create a user named sonia with the full name Sonia Sotomayor
+ - Create a user named sydney with the full name Sydney Park 
+ - Create a user named dwayne with the full name Dwayne Johnson 
+ - Create a user named michelle with the full name Michelle Yeoh
 
 ### Create Groups
 
- Create a group called engineering
-
- Create a group called finance
-
- Create a group called marketing
-
- Create a group called it
-
- Create a group called sales
-
- Create a group called devops
-
- Create a group called security
+ - Create a group called engineering
+ - Create a group called finance
+ - Create a group called marketing
+ - Create a group called it
+ - Create a group called sales
+ - Create a group called devops
+ - Create a group called security
 
 4. Assign each user to a group
 
@@ -135,6 +123,38 @@ I’m going to change this setting from 7 to 12 characters and then click apply.
 10. You will be prompted to supply the username and password of an administrator account or domain admin account in order to join the domain properly.
 
 11. Click OK in the Computer Name/Domain Changes dialog box, and then restart the server.
+
+### Create A File Share
+
+1. Create a folder on the server called groupdata or something similar to that and add the following folders to that folder you created.
+
+- IT
+- DevOps
+- Marketing
+- Sales
+- Finance
+- HR
+- Engineering
+- Security
+
+ Please note the name of the directories is not important you just need to use the following process to share it.
+
+2. Right-Click the Folder you'd like to set Share and Open [Properties]. Next, move to [Sharing] tab and Click [Advanced Sharing] button.
+
+3. Add Users or Groups you'd like to allow to access to Share. Click [Add] button to add necessary permissions by adding a group you would like to create the drive mapping for to the share and make sure they have read and write permissions. 
+
+
+4. Input user or group you'd like to add permissions. 
+
+5. Set permissions for user or group just added.
+
+6. For example if you were adding the IT group to the share make sure the IT group has read and write permissions.
+
+7. Click [OK] to finish sharing settings.
+
+8. When creating the drive mappings in the next exercise you must specify the servername and share name in the following format \\server_name\share_nam. For example if my server was named ES3AMAZ-DER4YE and I wanted to create the IT share drive mapping I would provide the following text in the drive mapping field
+
+`\\ES3AMAZ-DER4YE\IT`
 
 ### Mapping Drives Using Group Policies
 
