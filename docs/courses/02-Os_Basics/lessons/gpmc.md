@@ -43,7 +43,7 @@ To modify the password policy you will need to modify the default domain policy.
 
 1. Open the group policy management console 
 
-2.  Expand Domains, your domain, then group policy objects
+2. Expand Domains, your domain, then group policy objects
 
 3. Right click the default domain policy and click edit
 
@@ -98,7 +98,7 @@ I’m going to change this setting from 7 to 12 characters and then click apply.
 2. You must also point your client or server machine to use the DNS of the domain controller
 
 ![GPMC](domain-controller-info.png)
-![GPMC](member-server--dns.png)
+![GPMC](member-server-dns.png)
 
 3. The domain controller should only have 127.0.0.1 in it DNS settings so that it performs the lookups via it DNS settings so that when clients query for DNS records they are provided via the internal DNS server.
 
@@ -110,7 +110,7 @@ I’m going to change this setting from 7 to 12 characters and then click apply.
 
 4a. Once the Domain and client settings have been confirmed you can attempt to join the server to your domain.
 
-5 On the Member Server, click the Start button, type Control Panel, and then press ENTER.
+5. On the Member Server, click the Start button, type Control Panel, and then press ENTER.
 
 6. Navigate to System and Security, and then click System.
 
@@ -152,7 +152,7 @@ I’m going to change this setting from 7 to 12 characters and then click apply.
 
 7. Click [OK] to finish sharing settings.
 
-8. When creating the drive mappings in the next exercise you must specify the servername and share name in the following format \\server_name\share_nam. For example if my server was named ES3AMAZ-DER4YE and I wanted to create the IT share drive mapping I would provide the following text in the drive mapping field
+8. When creating the drive mappings in the next exercise you must specify the servername and share name in the following format `\\server_name\share_name`. For example if my server was named ES3AMAZ-DER4YE and I wanted to create the IT share drive mapping I would provide the following text in the drive mapping field
 
 `\\ES3AMAZ-DER4YE\IT`
 
