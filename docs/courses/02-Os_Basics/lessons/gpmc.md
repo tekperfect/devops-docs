@@ -109,11 +109,20 @@ I’m going to change this setting from 7 to 12 characters and then click apply.
 
 2. You must also point your client or server machine to use the DNS of the domain controller
 
+![GPMC](domain-controller-info.png)
+![GPMC](member-server--dns.png)
+
 3. The domain controller should only have 127.0.0.1 in it DNS settings so that it performs the lookups via it DNS settings so that when clients query for DNS records they are provided via the internal DNS server.
 
-4. Once the Domain and client settings have been confirmed you can attempt to join the server to your domain.
+![GPMC](domain-controller-dns.png)
 
-5 On the Desktop, click the Start button, type Control Panel, and then press ENTER.
+4.  Finally you should make a change to your security group to allow all traffice between your Windows instances to flow freely.
+
+![GPMC](ec2-security-group.png)
+
+4a. Once the Domain and client settings have been confirmed you can attempt to join the server to your domain.
+
+5 On the Member Server, click the Start button, type Control Panel, and then press ENTER.
 
 6. Navigate to System and Security, and then click System.
 
