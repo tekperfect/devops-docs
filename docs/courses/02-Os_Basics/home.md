@@ -66,4 +66,4 @@ Students by the end of the course will be able to install an operating system ru
 [Student Labs](/courses/02-Os_Basics/lessons/milestone1-student-assessment.md)
 
 ## Milestone 4 Assessment
-[Student Labs](/courses/02-Os_Basics/lessons/lab-milestone.md)
+[Student Labs](/courses/02-Os_Basics/lessons/lab-evaluation.md)
