@@ -32,7 +32,6 @@ If you feel like you have a grasp of the Active Diretory and Group policy managm
  - Create a user named Green Goblin
  - Create a user named Eric Killmonger
 
-r
  - Create a user named Black Panther
  - Create a user named Spiderman
  - Create a user named Thor
