@@ -2,23 +2,25 @@
 
 If you feel like you have a grasp of the Active Diretory and Group policy managment exercises I want you all to take on the following tasks.
 
-1. Destroy all your Windows and Ubuntu VM's except the OpenVPN one.
+1. Destroy all your Windows and Ubuntu VM's except the OpenVPN one. (This is optional if you want to keep the Windows and Ubuntu VM's around for reference purposes.
 
-2. Create 3 new VM's 2 Windows and 1 Ubuntu VM.
+2. Create 3 new VM's... 2 Windowsi VM's and 1 Ubuntu VM.
 
-3. Create 2 security groups the first security groups should be named "Secure Windows Access" and the second security group should be named "Secure Ubuntu Access.
+3. Create 2 security groups the first security groups should be named `Secure Windows Access` and the second security group should be named `Secure Ubuntu Access`.
 
-4. The "Secure Windows Access" security group should have the three rules. One RDP inbound only to your IP, one inbound only rule by my IP, one All Traffic rule for 172.31.0.0/16 and be associated with your Windows instances you created.
+4. The `Secure Windows Access` security group should have the three rules. One RDP inbound only to allow your IP to connect to it via Royal TSX or any ohther RDP client, One inbound only rule by my IP to connect to your Windows instances, one All Traffic rule for 172.31.0.0/16 and be associated with your Windows instances you created so they can talk to one another which will allow the join domain feature to work.
 
-5. The "Secure Ubuntu Access" security group should have only two rules. One SSH access inbound only for your IP and one rule ssh inbound for my IP.
+5. The `Secure Ubuntu Access` security group should have only two rules. One SSH access inbound only for your IP and one rule ssh inbound for my IP.
 
 6. For the two Windows servers one is going to be a domain controller and one is going to be a member server.
 
 7. The domain controllers computer name is going to be Thanos and the Member server is going to be named Ironman.
 
-8. On the machine named Thanos that is going to be your domain controller you are going to install Active Directory and name the domain  marvel.com.
+8. On the machine named Thanos that is going to be your domain controller you are going to install Active Directory and name the domain marvel.com.
 
 9. One the member server named Ironman you are going to create two file shares one called heroes and another called villans.
+
+9a. You are also going to create a homdrive folder directory on the Ironman server and in that directory create home drive folder for each of the heroes and villans. Please note you only need to share the homedrive folder and use the \\servname\homedrive\%username% to make the home directory for each user using the Group Policy manager.
 
 10. In Active Directory create two groups and two OU's the groups and OU's should be named heros and villians.
 
@@ -50,7 +52,7 @@ If you feel like you have a grasp of the Active Diretory and Group policy managm
 
 ### Group Policy
 
-12. Create two group policies one heroes and villians and link them to the OU's and create a drive mapping for each user that has a home drive for them and a group drive associated the group they are affiliated with.
+12. Create two group policies one heroes and villians and link them to the OU's and create a drive mapping for each user so that has a home drive for them and a group drive associated the group they are affiliated with.
 
 13. Create home drive and group drives shares on the server Ironman for all the users and one for each group heroes and villians.
 
@@ -125,21 +127,13 @@ Installing applications
 
 8. Create 6 diretories the first directory should be called groupdata and it should be located off of the root folder so if you ran a pwd command in the folder is should look like this `/groupdata`. Now the other 5 directories should be located under the groupdata folder and be called `finance hr it marketing sales`
 
-
 9. Use the sudo usermod command to add each of the users to one of the groups you just created `sudo usermod -a -G groupName userName`
 
 10. For example if you wanted to add barack to the it group you would run the following command `sudo usermod -a -G it barack`
 
-11. Now I want to use the scp command to copy all the labs files you downloaded earlier on your Mac to /tmp folder location on your Ubuntu server. Remeber the sytax for the command is `scp filename_you_want_to_copy username@xxx.xxx.xxx.xxx:/tmp`
+11. Unzip all the files you copied from your Mac to your Ubuntu server and after they are extracted you should see a corresponding directory name.
 
-12. If you want to copy all the files in zip files you downloaded on your Mac with one scp command what would that command look like. (Hint: You would use the *.zip wildcard with the scp command.
-
-13. After you have all of the zip files are copied over to your Ubuntu server VM move the files from your /tmp folder to your home folder.
-
-14. What is the command to move the files from the /tmp folder to your home folder?
 # RECONFIGURE APACHE WEB SERVER
-
-15. Once the files are in your home folder. Use the unzip command to unzip the files?
 
 Setup Apache
 
@@ -164,3 +158,5 @@ Setup Apache
 9. For an additional challenge find a download a picture of yourself from either your linked in profile or some other place and copy it to your Ubuntu server or specifiy a path to the file in the html code. Please ask your instructor if any of this information is unclear.
 
 10. The purpose of this exercise is to further your comfort level with using the scp, cp, cd, vi, pwd, and ls commands.
+
+### That's it your done the evaluation is complete!!! Congrats

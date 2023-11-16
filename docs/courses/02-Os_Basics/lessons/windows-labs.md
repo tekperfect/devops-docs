@@ -261,7 +261,6 @@ If your printer doesn't appear, click "Add manually." A pop-up window will prese
 
 ![File Share](2-file-share.png)
 
-
 3. Check a box [Share this folder] and input any Share name you like on [Share name] field. Next, Click [Permissions] button.
 
 ![File Share](3-file-share.png)
@@ -271,9 +270,11 @@ If your printer doesn't appear, click "Add manually." A pop-up window will prese
 ![File Share](4-file-share.png)
 
 5. Input user or group you'd like to add permissions.
+
 ![File Share](5-file-share.png)
 
 6. Set permissions for user or group just added.
+
 ![File Share](6-file-share.png)
 
 7. Click [OK] to finish sharing settings.
