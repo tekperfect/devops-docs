@@ -251,6 +251,33 @@ If your printer doesn't appear, click "Add manually." A pop-up window will prese
 
 ## This Section Applies to Windows 2019 and 2022 Server
 
+### Creating Shares on Windows Server
+
+1. Start by creating folder you want to share by opening file explorer and navigating to "This PC an selecting the drive you want to create a share on.
+
+![File Share](1-file-share.png)
+
+2. After you have created the folder or subfolder you wish to share. Right-Click the Folder you'd like to set Sharing and Open [Properties]. Next, move to [Sharing] tab and Click [Advanced Sharing] button.
+
+![File Share](2-file-share.png)
+
+
+3. Check a box [Share this folder] and input any Share name you like on [Share name] field. Next, Click [Permissions] button.
+
+![File Share](3-file-share.png)
+
+4 . Add Users or Groups you'd like to allow to access to Share. By default, [Everyone:Read] is granted, Remove it with [Remove] button, and next, Click [Add] button to add necessary permissions.
+
+![File Share](4-file-share.png)
+
+5. Input user or group you'd like to add permissions.
+![File Share](5-file-share.png)
+
+6. Set permissions for user or group just added.
+![File Share](6-file-share.png)
+
+7. Click [OK] to finish sharing settings.
+
 ##  Manage and View Windows Event and Application Logs
 
 View Windows Server Event logs from command line
