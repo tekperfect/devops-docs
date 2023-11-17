@@ -4,13 +4,15 @@ If you feel like you have a grasp of the Active Diretory and Group policy managm
 
 1. Destroy all your Windows and Ubuntu VM's except the OpenVPN one. (This is optional if you want to keep the Windows and Ubuntu VM's around for reference purposes.
 
-2. Create 3 new VM's... 2 Windowsi VM's and 1 Ubuntu VM.
+2. Create 2 security groups the first security groups should be named `Secure Windows Access` and the second security group should be named `Secure Ubuntu Access`. It is highly recommended that you create the security groups before you create your instances because you need to assign these security groups when you launch your VM's
 
-3. Create 2 security groups the first security groups should be named `Secure Windows Access` and the second security group should be named `Secure Ubuntu Access`.
+3. Create 3 new VM's... 2 Windows VM's and 1 Ubuntu VM.
 
-4. The `Secure Windows Access` security group should have the three rules. One RDP inbound only to allow your IP to connect to it via Royal TSX or any ohther RDP client, One inbound only rule by my IP to connect to your Windows instances, one All Traffic rule for 172.31.0.0/16 and be associated with your Windows instances you created so they can talk to one another which will allow the join domain feature to work.
+4. The `Secure Windows Access` security group should have the three rules. One RDP inbound only to allow your IP to connect to it via Royal TSX or any ohther RDP client, One inbound only rule by my IP `192.184.141.185` to connect to your Windows instances, one All Traffic rule for `172.31.0.0/16` and be associated with your Windows instances you created so they can talk to one another which will allow the join domain feature to work.
 
-5. The `Secure Ubuntu Access` security group should have only two rules. One SSH access inbound only for your IP and one rule ssh inbound for my IP.
+5. The `Secure Ubuntu Access` security group should have only two rules. One SSH access inbound only for your IP and one rule ssh inbound for my IP `192.184.141.185`.
+
+5a. After you launch your instances please share the pem files with me via lastpass so that I may verify that your security groups are setup properly. The lastpass note that you share with me should include the following. The windows pem file you used to launch your Windows instances, the pem file you used to launch your Ubuntu instances and the public IP's of all three instances. Please do not proceed until you have verfied with me that your security groups are setup properly.
 
 6. For the two Windows servers one is going to be a domain controller and one is going to be a member server.
 
@@ -20,7 +22,7 @@ If you feel like you have a grasp of the Active Diretory and Group policy managm
 
 9. One the member server named Ironman you are going to create two file shares one called heroes and another called villans.
 
-9a. You are also going to create a homdrive folder directory on the Ironman server and in that directory create home drive folder for each of the heroes and villans. Please note you only need to share the homedrive folder and use the \\servname\homedrive\%username% to make the home directory for each user using the Group Policy manager.
+9a. You are also going to create a homdrive folder directory on the Ironman server and in that directory create home drive folder for each of the heroes and villans. Please note you only need to share the homedrive folder and use the `\\servname\homedrive\%username%` to make the home directory for each user using the Group Policy manager.
 
 10. In Active Directory create two groups and two OU's the groups and OU's should be named heros and villians.
 
@@ -64,9 +66,9 @@ If you feel like you have a grasp of the Active Diretory and Group policy managm
 
 3. Next we are going to set the enforce the password history to 10 passwords 24 password is too much for most people to overcome.
 
-9. Change the account lockout policy to lock an account after 5 failed login attempts. This is to protect account from brute force attacks. To modify the account lockout policy go "Account Policies", Account Lockout Policy, and change the duration and reset time to 10 minutes. This will slow down and attack while not keeping the user out of their account for too long if they remeber their password.
+9. Change the account lockout policy to lock an account after 5 failed login attempts. This is to protect account from brute force attacks. To modify the account lockout policy go `Account Policies`, Account Lockout Policy, and change the duration and reset time to 10 minutes. This will slow down and attack while not keeping the user out of their account for too long if they remeber their password.
 
-10. Change the Logon Banner to read the following "Only heroes and villians are allowed on this domain. Humans without super powers are prohibited.
+10. Change the Logon Banner to read the following `Only heroes and villians are allowed on this domain. Humans without super powers are prohibited.`
 
 # Ubuntu Server Build
 
