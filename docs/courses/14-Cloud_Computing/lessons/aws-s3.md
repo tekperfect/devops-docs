@@ -13,18 +13,17 @@
 
 ![S3](2-s3-bucket.png)
 
-4. For Bucket name, enter a name for your bucket. The bucket name must be unique within a partition. When entering the bucket name try to make it as unique as possible because generic names are almost always taken.
+4. The bucket name must be unique. When entering the bucket name try to make it as unique as possible because generic names are almost always taken.
 
 5. Consist only of lowercase letters, numbers, dots (.), and hyphens (-). For best compatibility, we recommend that you avoid using dots (.) in bucket names, except for buckets that are used only for static website hosting. They should also begin and end with a letter or number.
 
-6. After you create the bucket, you cannot change its name.
-
+6. Remember after you create the bucket, you cannot change its name.
 
 7. Important... Please avoid including sensitive information, such as account numbers, PII or PHI in the bucket name. The bucket name is visible in the URLs that point to the objects in the bucket.
 
 8. For Region, choose the AWS Region where you want the bucket to reside.
 
-9. To minimize latency and costs and address regulatory requirements, choose a Region close to you. Objects stored in a Region never leave that Region unless you explicitly transfer them to another Region.
+9. To minimize latency and costs, choose a Region close to you. Objects stored in a Region never leave that Region unless you explicitly transfer them to another Region.
 
 10. Under Object Ownership, to disable or enable ACLs and control ownership of objects uploaded in your bucket, choose one of the following settings:
 
@@ -64,3 +63,27 @@
 27. Then select Create bucket.
 
 ![S3](3-s3-bucket.png)
+
+28. Once the bucket is created we will create a bucket policy to allow or restrict access to objects in the bucket.
+
+29. However, before we grant or restrict accesss to the bucket we should add an object to the bucket so that we can test and verify the bucket permissions.
+
+30. Since we are initially going to upload an image to use with the resume exercise from your eval please download or find a photo you want to use and follow these steps to upload a photo of yourself.
+
+### Uploading an image to S3
+
+1. Click on the Buckets option from the left hand navigation
+
+![S3](1-s3-upload.png)
+
+2. Next click on the upload button.
+
+![S3](2-s3-upload.png)
+
+3. Now click on the add files button or drag and drop the image you want to upload
+
+![S3](3-s3-upload.png)
+
+4. Once the file is uploaded can click on the file link to see the url of the file so that you can access it.
+
+5. Please work with your instruction to view the process of making changes to the resume tempalte to view where you would change the code so that the image you are using for your resume tempalte is displayed properly. 
