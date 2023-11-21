@@ -12,60 +12,57 @@
 
 5. Choose Create database, then choose Standard create.
 
-6. For Engine type, choose MariaDB, Microsoft SQL Server, MySQL, Oracle, or PostgreSQL.
+6. For Engine type, choose MySQL.
 
 ![RDS](1-rds-db.png)
+![RDS](db-endpoint-name.png)
 
-7. For Database management type, if you're using Oracle or SQL Server choose Amazon RDS or Amazon RDS Custom.
+7. For Edition choose MySQL choose the DB.
 
-8. Amazon RDS is shown here. For more information on RDS Custom, see Working with Amazon RDS Custom.
+8. MySQL has only one option for the edition.
 
-9. For Edition, if you're using Oracle or SQL Server choose the DB engine edition that you want to use.
 
-10. MySQL has only one option for the edition, and MariaDB and PostgreSQL have none.
+9. In Templates, choose the template that matches your use case. We recommend the smallest instance you can create which should be free tier.
 
-11. For Version, choose the engine version.
+10. Multi-AZ failover option (We don't need this now and it costs money)
 
-12. In Templates, choose the template that matches your use case. If you choose Production, the following are preselected in a later step:
+11. Do not Enable deletion protection option because we are going to destroy this database shortly after creating it.
 
-13. Multi-AZ failover option (We don't need this now and it costs money)
+12. Make sure you enter save the password you are using for the admin account for the database.
 
-14. Provisioned IOPS SSD (io1) storage option
+13. If you choose to change the name from admin to something else also please make sure you document that.
 
-15. Do not Enable deletion protection option because we are going to destroy this database shortly after creating it.
+14. If you want to specify a password, clear the Auto generate a password check box if it is selected.
 
-16. To enter your master password, do the following:
+15. (Optional) Change the Master username value.
 
-17. In the Settings section, open Credential Settings.
+16. Enter the same password in Master password and Confirm password.
 
-18. If you want to specify a password, clear the Auto generate a password check box if it is selected.
+17. (Optional) Set up a connection to a compute resource for this DB instance.
 
-19. (Optional) Change the Master username value.
+18. You can configure connectivity between an Amazon EC2 instance and the new DB instance during DB instance creation.
 
-20. Enter the same password in Master password and Confirm password.
+19. In the Connectivity section under VPC security group (firewall), if you select Create new, a VPC security group is created with an inbound rule that allows your local computer's IP address to access the database.
 
-21. (Optional) Set up a connection to a compute resource for this DB instance.
+20. Choose Create database.
 
-22. You can configure connectivity between an Amazon EC2 instance and the new DB instance during DB instance creation.
+21. If you chose to use an automatically generated password, the View credential details button appears on the Databases page.
 
-23. In the Connectivity section under VPC security group (firewall), if you select Create new, a VPC security group is created with an inbound rule that allows your local computer's IP address to access the database.
+22. To view the master username and password for the DB instance, choose View credential details.
 
-24. Choose Create database.
+23. To connect to the DB instance as the master user, use the username and password that appear.
 
-25. If you chose to use an automatically generated password, the View credential details button appears on the Databases page.
+24. For Databases, choose the name of the new DB instance.
 
-26. To view the master username and password for the DB instance, choose View credential details.
-
-27. To connect to the DB instance as the master user, use the username and password that appear.
-
-28. For Databases, choose the name of the new DB instance.
-
-29. On the RDS console, the details for the new DB instance appear. The DB instance has a status of Creating until the DB instance is created and ready for use. When the state changes to Available, you can connect to the DB instance. Depending on the DB instance class and storage allocated, it can take several minutes for the new instance to be available.
+25. On the RDS console, the details for the new DB instance appear. The DB instance has a status of Creating until the DB instance is created and ready for use. When the state changes to Available, you can connect to the DB instance. Depending on the DB instance class and storage allocated, it can take several minutes for the new instance to be available.
 
 ![RDS](2-rds-db.png)
 
-30. Now that you have a database setup now you need something to connect it to.
+26. Now that you have a database setup now you need something to connect it to.
 
+27. Please note if you were unable to connect an EC2 instance initially to your Ubuntu linux instance please add the following rule to the RDS security group.
+
+![RDS](rds-security-group-rule.png)
 
 ### Test Database Access
 
@@ -88,7 +85,7 @@
 2. Create Apache site for WordPress. 
 
 3. Create a file by running the following command 
-`vi /etc/apache2/sites-available/wordpress.conf` and add the following lines to the file:
+`sudo vi /etc/apache2/sites-available/wordpress.conf` and add the following lines to the file:
 
 ```
 <VirtualHost *:80>
