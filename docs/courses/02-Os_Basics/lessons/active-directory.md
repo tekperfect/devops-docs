@@ -295,6 +295,7 @@ You can use && to string multiple commands together; they will run sequentially.
 
 If you find yourself restarting services frequently, you can use 
 that && trick to create a batch file called restart.cmd and use it to restart services:
+
 `net stop %1 && net start %1`
 
 You can download a Windows port of the wget tool from here, and use it to mirror websites using this command:

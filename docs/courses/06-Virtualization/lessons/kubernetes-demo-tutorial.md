@@ -2,7 +2,7 @@ Verify that you have components need to run the cluster
 
 # Install virtualbox from https://www.virtualbox.org/
 # Install minikube (also installs kubectl which is a dependancy)
-'brew install minikube'
+`brew install minikube`
 
 # Start Minikube
 
