@@ -137,6 +137,30 @@
 
 `sudo -u www-data vi /srv/www/wordpress/wp-config.php`
 
+2a. Use the following variables to edit your wp-config.php file
+
+```
+
+// ** Database settings - You can get this info from your web host ** //
+/** The name of the database for WordPress */
+define( 'DB_NAME', 'wordpress' );
+
+/** Database username */
+define( 'DB_USER', 'admin' );
+
+/** Database password */
+define( 'DB_PASSWORD', 'xxxxx' );
+
+/** Database hostname */
+define( 'DB_HOST', 'db_name.xxxxxxxxxx.us-east-1.rds.amazonaws.com' );
+
+/** Database charset to use in creating database tables. */
+define( 'DB_CHARSET', 'utf8' );
+
+/** The database collate type. Don't change this if in doubt. */
+define( 'DB_COLLATE', '' );
+
+```
 
 3. Configure your wordpress site by opening up a url to the public IP
 
