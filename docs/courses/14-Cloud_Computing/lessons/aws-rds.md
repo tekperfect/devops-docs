@@ -112,7 +112,7 @@
 
 `sudo a2dissite 000-default`
 
-`sudo service apache2 reload`
+`sudo /etc/init.d/apache2 restart`
 
 ### Connect to your RDS MySQL instance
 
