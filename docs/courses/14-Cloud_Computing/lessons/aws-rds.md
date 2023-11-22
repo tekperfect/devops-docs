@@ -165,3 +165,7 @@ define( 'DB_COLLATE', '' );
 3. Configure your wordpress site by opening up a url to the public IP
 
 http://xxx.xxx.xxx.xxx/wp-admin
+
+4. Please note you will need to add a security group rule to allow http so that you can browse the wordpress site you created.
+
+
