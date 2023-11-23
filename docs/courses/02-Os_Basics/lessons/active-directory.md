@@ -103,11 +103,14 @@ Install Active Directory using the following commands from Powershell. You will 
 
 `Install-ADDSForest -CreateDnsDelegation:$false -DatabasePath “C:\Windows\NTDS” -DomainMode “Win2012R2” -DomainName “domain_name.com” -DomainNetbiosName “DOMAIN_NAME” -ForestMode “Win2012R2” -InstallDns:$true -LogPath “C:\Windows\NTDS” -NoRebootOnCompletion:$false -SysvolPath “C:\Windows\SYSVOL” -Force:$true`
 
+### Install AD Management Tools
 
 `Add-WindowsFeature RSAT-AD-PowerShell`
 
+`Install-WindowsFeature AD-Domain-Services -IncludeManagementTools`
 
-Install IIS using the following commands from Powershell.
+
+### Install IIS using the following commands from Powershell.
 
 
 `import-module ServerManager`
@@ -116,7 +119,7 @@ Install IIS using the following commands from Powershell.
 Add-WindowsFeature Web-Server
 
 
-Create AD User from commands in Powershell.
+### Create AD User from commands in Powershell.
 
 
 `New-ADUser -Name "New_User" -UserPrincipalName New_User@domain_name.com`
@@ -131,10 +134,10 @@ Create AD Groups from commands in Powershell.
 `New-ADGroup -name GroupName -GroupScope Global`
 
 
-## Change Login Banner on Windows via Group Policy
+### Change Login Banner on Windows via Group Policy
 
 
-# Managing Active Directory from the GUI
+### Managing Active Directory from the GUI
 
 On your server...
 
