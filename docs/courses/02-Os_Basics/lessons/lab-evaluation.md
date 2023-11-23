@@ -8,9 +8,9 @@ If you feel like you have a grasp of the Active Diretory and Group policy managm
 
 3. Create 3 new VM's... 2 Windows VM's and 1 Ubuntu VM.
 
-4. The `Secure Windows Access` security group should have the three rules. One RDP inbound only to allow your IP to connect to it via Royal TSX or any ohther RDP client, One inbound only rule by my IP `192.184.141.185` to connect to your Windows instances, one All Traffic rule for `172.31.0.0/16` and be associated with your Windows instances you created so they can talk to one another which will allow the join domain feature to work.
+4. The `Secure Windows Access` security group should have the three rules. One RDP inbound only to allow your IP to connect to it via Royal TSX or any ohther RDP client, One inbound only rule by my IP `xxx.xxx.xxx.xxx` to connect to your Windows instances, one All Traffic rule for `172.31.0.0/16` and be associated with your Windows instances you created so they can talk to one another which will allow the join domain feature to work.
 
-5. The `Secure Ubuntu Access` security group should have only two rules. One SSH access inbound only for your IP and one rule ssh inbound for my IP `192.184.141.185`.
+5. The `Secure Ubuntu Access` security group should have only two rules. One SSH access inbound only for your IP and one rule ssh inbound for my IP `xxx.xxx.xxx.xxx`.
 
 5a. After you launch your instances please share the pem files with me via lastpass so that I may verify that your security groups are setup properly. The lastpass note that you share with me should include the following. The windows pem file you used to launch your Windows instances, the pem file you used to launch your Ubuntu instances and the public IP's of all three instances. Please do not proceed until you have verfied with me that your security groups are setup properly.
 
