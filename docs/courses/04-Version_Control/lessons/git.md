@@ -242,10 +242,20 @@ Date: Thu Jan 10 17:42:15 2019 -0400
 
 This is my first commit!
 
-Step 11: Bask in your git glory
+11. Bask in your git glory
 You've successfully made a PR and merged your code to the master branch. Congratulations! If you'd like to dive a little deeper, check out the files in this Git101 folder for even more tips and tricks on using git and GitHub.
 
 I also recommend finding some time to work with your team on simulating a smaller group project like we did here. Have your team make a new folder with your team name, and add some files with text to it. Then, try pushing those changes to this remote repo. That way, your team can start making changes to files they didn't originally create and practice using the PR feature. And, use the git blame and git history tools on GitHub to get familiar with tracking which changes have been made in a file and who made those changes.
+
+### Git Troubleshooting
+
+1. Scenario 1 - You make changes to a repo or branch and when you try to commit them you receive an error message that your commit failed because the master or branch you are trying to changes has changes that were made prior to you making your changes. What do you do?
+
+`git pull -r` or `git pull --rebase origin branch_name` 
+
+2. Scenario 2 - You try to make changes to a repo or branch and when you try to commit them you receive an error message that your commit failed because the master or branch you are trying to changes has changes that were made prior to you making your changes. What do you do?
+
+`git stash` and then run a `git pull --rebase origin branch_name` and then git pop to bring back you changes and then proceed with your git add, git commit, and git push commands. 
 
 The more you use git, the more comfortable you'll... wait for it... GIT!
 
