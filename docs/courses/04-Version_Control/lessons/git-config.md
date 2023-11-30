@@ -298,7 +298,6 @@ or
 
 7. After you have verified that you have that you have the appropriate permissions click on the generate token button.
 
-11-genrate-token.png
 ![GIT](11-genrate-token.png)
 
 8. Finally you need to copy the token and save it to your lastpass account. This is an important step because if you don't save the token it will need to be regenerated and you cannot recover it.
