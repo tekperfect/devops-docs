@@ -302,6 +302,6 @@ or
 
 8. Finally you need to copy the token and save it to your lastpass account. This is an important step because if you don't save the token it will need to be regenerated and you cannot recover it.
 
-The more you use git, the more comfortable you'll... wait for it... GIT!
+** The more you use git, the more comfortable you'll... wait for it... GIT! **
 
-Don’t git got. (I know the jokes are terrible.)
+** Don’t git got. (I know the jokes are terrible.) **
