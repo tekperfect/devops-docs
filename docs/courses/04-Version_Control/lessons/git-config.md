@@ -27,7 +27,7 @@ Downloading Git for Mac
 
 `git config --global user.email "email@email.com"`
 
-`git config --global pull.rebase true `
+`git config --global pull.rebase true`
 
 ### Copy a repo locally
 
@@ -56,7 +56,9 @@ Downloading Git for Mac
 3. After the new repository is created you can use of the the following clone commands to pull down a copy of the repository.
 
 `git clone https://github.com/username/repo_name`
+
 `gh repo clone tekperfect/devops-sandbox`
+
 `git@github.com:username/repo_name`
 
 4. Add a new file to the repo by using the touch command or vi.
@@ -102,7 +104,7 @@ To reiterate, the file has not yet been added to a commit, but it's about to be.
 4. Create a commit
    It's time to create your first commit!
 
-Run the command `git commit -m "Your message about the commit`
+Run the command `git commit -m "Your message about the commit"`
 
 \$ `git commit -m "This is my first commit!"`
 [master (root-commit) a694n2c] This is my first commit!
@@ -112,6 +114,7 @@ create mode 39904 myproject.py
 The message at the end of the commit should be something related to what the commit contains - maybe it's a new feature, maybe it's a bug fix, maybe it's just fixing a typo. Don't put a message like "dumb code" or "blah blah blah". That makes the other people who have to read your code angry.
 
 `git commit -m "Good description of commit"` (command to commit to files to your local repo)
+
 `git push` (push the files from your local repo to Github so they are committed to your branch)
 
 Git Continued
@@ -128,7 +131,7 @@ Let's say you are on the master branch and want to create a new branch to develo
 
 After running the above command, you can use the git branch command to confirm that your branch was created:
 
-\$ `git branch`
+`git branch`
 master
 
 - my-website-branch
@@ -142,7 +145,8 @@ Now, if you switch back to the master branch and make some more commits, your ne
 
 To push changes onto a new branch on GitHub, you'll want to run git push origin yourbranchname. GitHub will automatically create the branch for you on the remote repository:
 
-\$ `git push origin my-website-branch`
+`git push origin my-website-branch`
+
 Counting objects: 3, done.
 Delta compression using up to 8 threads.
 Compressing objects: 100% (2/2), done.
@@ -207,7 +211,8 @@ Now we can use the git log command again to see all new commits.
 
 (You may need to switch branches back to the master branch. You can do that using the git checkout master command.)
 
-\$ `git log`
+`git log`
+
 commit 6e270786db0e5ffd3e2cfc5edede89b64b83762c
 Merge: 4f1cb17 5381b7c
 Author: Your Name <your_email@yourdomain.com>
@@ -251,11 +256,15 @@ I also recommend finding some time to work with your team on simulating a smalle
 
 1. Scenario 1 - You make changes to a repo or branch and when you try to commit them you receive an error message that your commit failed because the master or branch you are trying to changes has changes that were made prior to you making your changes. What do you do?
 
-`git pull -r` or `git pull --rebase origin branch_name` 
+`git pull -r` 
+
+or 
+
+`git pull --rebase origin branch_name` 
 
 2. Scenario 2 - You try to make changes to a repo or branch and when you try to commit them you receive an error message that your commit failed because the master or branch you are trying to changes has changes that were made prior to you making your changes. What do you do?
 
-`git stash` and then run a `git pull --rebase origin branch_name` and then git pop to bring back you changes and then proceed with your git add, git commit, and git push commands. 
+`git stash` and then run a `git pull --rebase origin branch_name` and then `git pop` to bring back you changes and then proceed with your git add, git commit, and git push commands. 
 
 ## Configure Your Profile
 
