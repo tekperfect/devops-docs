@@ -88,6 +88,80 @@
 
 23. Congratulations you have completed the installation of AD (Active Directory). Please reboot your system and login to the new domain with your Administrator credentials.
 
+### Powershell Commands
+
+List the top 5 processes using the most CPU time:
+
+`Get-Process | sort CPU | select -last 5`
+
+Get all processes that are using more than 50 MB of memory
+
+`Get-Process | where-object {$_.WorkingSet -gt 5000000000`
+
+Set Execution Policy so that only remote signed scripts can be run
+
+`Set-ExecutionPolicy -ExecutionPolicy RemoteSigned`
+
+List the current state of the execution policy
+
+`Get-ExecutionPolicy`
+
+List the Exeution Policy options
+
+`Get-ExecutionPolicy -List`
+
+Allow you to run a script if it is blocked but the current execution policy
+
+`Unblock-File -Path "filename.ps1"`
+
+List all services with the name Windows
+
+`Get-Service -Name Win*`
+
+Get infomation about multiple services by seperating the list wiht a comma
+
+`Get-Service -Name Winmgmt, WinRM, Spooler`
+
+List service by display name
+
+`Get-Service -DisplayName "Print Spooler"`
+
+List servies and their dependencies
+
+`Get-Service dhcp -DependentServices`
+
+List service details in table format
+
+`Get-Service Spooler | Format-List *`
+
+List event logs on computer
+
+`Get-EventLog -List`
+
+Get the 5 most recent event logs from a specific event log type
+
+`Get-EventLog -Newest 5 -LogName "Application"`
+
+Get error events from a specifc log type
+
+`Get-EventLog -LogName System -EntryType Error`
+
+Obtain Vent logs from multiple computerss
+
+`Get-EventLog -LogName "Windows PowerShell" -ComputerName "Server0", "Server1", "Server2"`
+
+Get all events in an event log that have include a specific word in the message value
+
+`Get-EventLog -LogName "Windows PowerShell" -Message "*failed*"`
+
+Get events from an event log with using a source and event ID:
+
+`Get-EventLog -Log "Application" -Source "Outlook" | where {$_.eventID -eq 34}`
+
+Get loge events based on specific time period
+
+`Get-EventLog -Log "Windows PowerShell" -EntryType Error -After $Jan31 -before $June1`
+
 # Installing Active Directory using Powershell
 
 ## Install AD Powershell commands
@@ -108,16 +182,6 @@
 1. `Add-WindowsFeature RSAT-AD-PowerShell`
 
 2. `Install-WindowsFeature AD-Domain-Services -IncludeManagementTools`
-
-
-### Optional Install IIS using the following commands from Powershell.
-
-
-1. `import-module ServerManager`
-
-
-2. Add-WindowsFeature Web-Server
-
 
 ### Create AD User from commands in Powershell.
 
