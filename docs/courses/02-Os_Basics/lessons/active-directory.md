@@ -96,7 +96,7 @@ List the top 5 processes using the most CPU time:
 
 Get all processes that are using more than 50 MB of memory
 
-`Get-Process | where-object {$_.WorkingSet -gt 5000000000`
+`Get-Process | where-object {$_.WorkingSet -gt 5000000000}`
 
 Set Execution Policy so that only remote signed scripts can be run
 
