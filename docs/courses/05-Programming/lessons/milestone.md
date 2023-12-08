@@ -50,12 +50,3 @@
 7. You should test the scripts functionality on either your Mac or Ubuntu system
 
 8. The Python script should make use of a library and function
-
-9. 
-
-
-### Powershell Script
-
-
-
-
