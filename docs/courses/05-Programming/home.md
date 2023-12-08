@@ -30,3 +30,4 @@ Students by the end of the course will be able to...
 - [Data Types](courses/05-Programming/lessons/data-structures.md)
 - [looping](courses/05-Programming/lessons/math-and-looping.md)
 - [Logic and Comparisons](courses/05-Programming/lessons/variables-and-data-structures.md)
+- [Milestone](courses/05-Programming/lessons/milestone.md)
