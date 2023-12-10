@@ -25,19 +25,19 @@ Use Medusa to brute force the Metasploitable VM
 Download these files to prepare for the Medusa exercise
 
 ## 100 Worst Passwords Download 👇🏾
-[![100 Worst Passwords](bad-password.png)](100-worst-passwords.txt)
+[![100 Worst Passwords](bad-password.png)](https://drive.google.com/file/d/1FfxtD9mWs42yHYLKdNEWQ4LCaS795fCn/view?usp=sharing)
 
 ## 500 Worst Passwords Download 👇🏾
-[![500 Worst Passwords](bad-password.png)](500-worst-passwords.txt)
+[![500 Worst Passwords](bad-password.png)](https://drive.google.com/file/d/15nA6025WGWqmMlECpmBBpcIiZM_W3uut/view?usp=sharing)
 
 ## 10000 Worst Passwords Download 👇🏾
-[![10000 Worst Passwords](bad-password.png)](10k-worst-passwords.txt)
+[![10000 Worst Passwords](bad-password.png)](https://drive.google.com/file/d/1lEPmONYlRsLaDwg1sQc96zrqhjA1SsBj/view?usp=sharing)
 
 ## 100K Worst Passwords Download 👇🏾
-[![100k Worst Passwords](bad-password.png)](100k-worst-passwords.txt)
+[![100k Worst Passwords](bad-password.png)](https://drive.google.com/file/d/1uqgJo-tufHYOFl78q0Z39FFlP4vzuaBL/view?usp=sharing)
 
 ## 1 Million Worst Passwords Download 👇🏾
-[![1Million Worst Passwords](bad-password.png)](1-million-worst-passwords.txt)
+[![1Million Worst Passwords](bad-password.png)](https://drive.google.com/file/d/1iJtuQ_NhhZ6IBMZkN3256Q1Nxn6Ah3rz/view?usp=sharing)
 
 
 ### Medusa Brute Force Attack
@@ -60,7 +60,7 @@ Medusa is capable of using the following authenication methods -  AFP, CVS, FTP,
 
 ## Password Hash Download 👇🏾
 
-[![John the Ripper](john-the-ripper.png)](password-hash.txt)
+[![John the Ripper](john-the-ripper.png)](https://drive.google.com/file/d/10hM-tFvCaqhmoTrZrzE1gJRMS1vm1h5X/view?usp=sharing)
 
 john password-hash.txt
 
@@ -68,20 +68,17 @@ john password-hash.txt
 
 Download a copy of Kali and import the image into virtualbox
 
-## Kali VM Download 👇🏾
-[![Kali](kali.png)](https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/kali-sandbox.ova)
+## Kali Virtualbox VM Download 👇🏾
+[![Kali](kali.png)](https://drive.google.com/file/d/1a1A3ZAww-ltCLwUiYoSewNnltXDHSWH7/view?usp=sharing)
 
 Download a copy of Metasploitable and import the image into virtualbox
-## Metasploitable VM Download 👇🏾
-[![Metasploitable](metasploitable.png)](https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/Metasploitable.ova)
+## Metasploitable Virtualbox VM Download 👇🏾
+[![Metasploitable](metasploitable.png)](https://drive.google.com/file/d/1r0P-AoztjdHj58SteZlZX5fv5l5wiIux/view?usp=sharing)
 
 Download a copy of the Windows Metasploitable3 and import the image into virtualbox
-## Metasploitable3 Windows VM Download 👇🏾
-[![Metasploitable3](metasploitable.png)](https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/metasploitable3_win2k8.ova)
+## Metasploitable3 Virtualbox Windows VM Download 👇🏾
+[![Metasploitable3](metasploitable.png)](https://drive.google.com/file/d/1sZV12O3VWJhG7w0mHnkuaPq8UCbXnMeA/view?usp=sharing)
 
-Download a copy of the Linux Metasploitable3 and import the image into virtualbox
-## Metasploitable3 Linux VM Download 👇🏾
-[![Metasploitable3](metasploitable.png)](https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/Metasploitable3-ub1404.ova)
 ### Environment Prep
 
 Step 1: Launch your Kali VM and make sure the network settings are set to bridged mode
