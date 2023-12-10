@@ -24,14 +24,20 @@ Use Medusa to brute force the Metasploitable VM
 
 Download these files to prepare for the Medusa exercise
 
+## 100 Worst Passwords Download 👇🏾
+[![100 Worst Passwords](bad-password.png)](100-worst-passwords.txt)
+
 ## 500 Worst Passwords Download 👇🏾
-[![500 Worst Passwords](bad-password.png)](https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/500-worst-passwords.txt)
+[![500 Worst Passwords](bad-password.png)](500-worst-passwords.txt)
 
 ## 10000 Worst Passwords Download 👇🏾
-[![10000 Worst Passwords](bad-password.png)](https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/10000-worst-passwords.txt)
+[![10000 Worst Passwords](bad-password.png)](10k-worst-passwords.txt)
 
 ## 100K Worst Passwords Download 👇🏾
-[![100k Worst Passwords](bad-password.png)](https://tekperfect-devops-uploads.s3-us-west-1.amazonaws.com/100k-most-used-passwords.txt)
+[![100k Worst Passwords](bad-password.png)](100k-worst-passwords.txt)
+
+## 1 Million Worst Passwords Download 👇🏾
+[![1Million Worst Passwords](bad-password.png)](1-million-worst-passwords.txt)
 
 
 ### Medusa Brute Force Attack
