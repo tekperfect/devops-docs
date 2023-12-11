@@ -31,6 +31,10 @@ I have already prepared the image via the following link 👇🏾
 
 [![Metasploitable Image](metasploitable.png)](https://drive.google.com/file/d/1do0boGVTQmc1SGWFrxyxsGMSh4v9PoUk/view?usp=sharing)
 
+Run the following command after you extract the metasploitable.vmdk from the zip file. Please note you must be in the file with the vmdk file to run the following command.
+
+`qemu-img convert -O qcow2 -c metasploitable.vmdk metasploitable.qcow2`
+
 If you want to download additional versions of Metasploitable and set them up in UTM you can go to https://app.vagrantup.com/rapid7 or search for Metasploitable VMDK via google.
 
 To import the VM in UTM you will need to extract the zip file and follow the following steps.
@@ -57,7 +61,7 @@ To import the VM in UTM you will need to extract the zip file and follow the fol
 
 11. Now in the Drive section, click on "New Drive", and then in "Import".
 
-12. Select the .qcow2 file you extracted from the zip file you downloaded
+12. Select the .qcow2 file you created with the .qco2 extension and import it.
 
 13. Click Save and start the VM.
 
