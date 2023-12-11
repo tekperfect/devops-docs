@@ -26,8 +26,13 @@ Students by the end of the course will be able to build a system capable of scan
 # 📚 Lessons
 
 ## Kail
-
 [Kali](/courses/08-Security/lessons/kali.md)
+
+## Metasploit M1 Build
+[Metasploitable](/courses/08-Security/lessons/metasploitable-m1.md)
+
+## DVWA Build
+[DVWA](/courses/08-Security/lessons/dvwa.md)
 
 ## Metasploit Labs
 [Kali](/courses/08-Security/lessons/metasploit-labs.md)
