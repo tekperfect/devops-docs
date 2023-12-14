@@ -26,11 +26,11 @@ Setup DVWA
 
 `GRANT ALL ON dvwa.* TO 'dvwa'@'localhost';`
 
-quit mysql by tying `quit`
+quit mysql by tying `quit;`
 
 4. Download and install the DVWA
 
-`cd /var/www/html'
+`cd /var/www/html`
 
 `sudo git clone https://github.com/digininja/DVWA.git`
 
