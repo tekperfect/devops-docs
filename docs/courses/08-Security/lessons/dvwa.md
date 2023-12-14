@@ -7,7 +7,9 @@ Setup DVWA
 
 1. Update your Ubuntu server
 
-`sudo apt update && sudo apt upgrade -y`
+`sudo apt update`
+
+`sudo apt upgrade -y`
 
 
 2. Install all the necessary pacakges
@@ -24,10 +26,14 @@ Setup DVWA
 
 `GRANT ALL ON dvwa.* TO 'dvwa'@'localhost';`
 
+quit mysql by tying `quit`
+
 4. Download and install the DVWA
 
 `cd /var/www/html'
-'sudo git clone https://github.com/digininja/DVWA.git`
+
+`sudo git clone https://github.com/digininja/DVWA.git`
+
 `sudo chown -R www-data:www-data /var/www/html/*`
 
 
