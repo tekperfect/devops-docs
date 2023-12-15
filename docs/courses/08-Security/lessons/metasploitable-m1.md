@@ -29,7 +29,9 @@ To build a Metaspoitable VM you will need the following tools:
 ### Download the Metasploitable Image
 I have already prepared the image via the following link 👇🏾
 
-[![Metasploitable Image](metasploitable.png)](https://drive.google.com/file/d/1do0boGVTQmc1SGWFrxyxsGMSh4v9PoUk/view?usp=sharing)
+[![Metasploitable Image](metasploitable.png)](https://drive.google.com/file/d/1N1kaYIbw3qdYe-NlQ2uyTDqdssc72XHm/view?usp=drive_link)
+
+*** Optional if you want to create a VM from scratch from the VMDK file. 👇🏾
 
 Run the following command after you extract the metasploitable.vmdk from the zip file. Please note you must be in the file with the vmdk file to run the following command.
 
@@ -61,7 +63,14 @@ To import the VM in UTM you will need to extract the zip file and follow the fol
 
 11. Now in the Drive section, click on "New Drive", and then in "Import".
 
-12. Select the .qcow2 file you created with the .qco2 extension and import it.
+12. Select the .qcow2 file you downloaded or created with the .qco2 extension and import it.
 
-13. Click Save and start the VM.
+13. Click Save and  then verify that your VM has the following settings before you start the VM.
 
+[![UTM Settings](1-utm.png)]
+
+[![UTM Settings](2-utm.png)]
+
+[![UTM Settings](3-utm.png)]
+
+[![UTM Settings](4-utm.png)]

