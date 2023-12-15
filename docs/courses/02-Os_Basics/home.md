@@ -26,31 +26,24 @@ Students by the end of the course will be able to install an operating system ru
 # 📚 Lessons
 
 ## Linux Beginners
-
 [Beginner Linux Commands](/courses/02-Os_Basics/lessons/linux-commands.md)
 
 ## Linux Vets
-
 [Veteran Linux Commands](/courses/02-Os_Basics/lessons/linux-vets.md)
 
 ## Cron
-
 [Cron Automation](/courses/02-Os_Basics/lessons/cron.md)
 
 ## Windows Networking
-
 [Windows Networking](/courses/02-Os_Basics/lessons/windows-networking.md)
 
 ## Active Directory
-
 [Active Directory](/courses/02-Os_Basics/lessons/active-directory.md)
 
 ## Windows Best Practices 
-
 [Windows](/courses/02-Os_Basics/lessons/windows-best-practices.md)
 
 ## Group Policy Management
-
 [Windows](/courses/02-Os_Basics/lessons/gpmc.md)
 
 ## Linux Student Labs
@@ -60,10 +53,4 @@ Students by the end of the course will be able to install an operating system ru
 [Student Labs](/courses/02-Os_Basics/lessons/windows-labs.md)
 
 ## Milestone 1 Labs
-[Student Labs](/courses/02-Os_Basics/lessons/milestone1-labs.md)
-
-## Milestone 1 Assessment
-[Student Labs](/courses/02-Os_Basics/lessons/milestone1-student-assessment.md)
-
-## Milestone 4 Assessment
-[Student Labs](/courses/02-Os_Basics/lessons/lab-evaluation.md)
+[Student Labs](/courses/02-Os_Basics/lessons/ubuntu-server-labs.md)
