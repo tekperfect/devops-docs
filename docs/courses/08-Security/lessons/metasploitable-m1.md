@@ -65,12 +65,12 @@ To import the VM in UTM you will need to extract the zip file and follow the fol
 
 12. Select the .qcow2 file you downloaded or created with the .qco2 extension and import it.
 
-13. Click Save and  then verify that your VM has the following settings before you start the VM.
+13. Click Save and then verify that your VM has the following settings before you start the VM. This is very important otherwise your VM will not appear on your bridged network or start properly and display the Metasploitable 2 banner after it is booted.
 
-[![UTM Settings](1-utm.png)]
+![UTM Settings](1-utm.png)
 
-[![UTM Settings](2-utm.png)]
+![UTM Settings](2-utm.png)
 
-[![UTM Settings](3-utm.png)]
+![UTM Settings](3-utm.png)
 
-[![UTM Settings](4-utm.png)]
+![UTM Settings](4-utm.png)
