@@ -2,6 +2,31 @@
 
 Here are several labs on running Metasploit from Kali on a Metasploitable3 Linux VM. Please make sure when you execute these labs you verify that home environment setup is working properly and you are able to scan the Metasploitable 3 Linux host from Kali using NMAP. Typically when you find the Metasploitable3 system it will have 5 or more open ports. This walkthrough is intended to get your familiar with the Metasploit tool and the options required to successfully execute the exploit.
 
+## Samba
+
+1. Start by searching for exploit based on port number and NMAP scan results of the NMAP -sV -O scan of your taget with the greatest number of open ports.
+
+Example: `grep exploit search samba`
+
+2. Next run the use command with the exploit based on your search. If multiple exploits are found with that specific exploit name you may need to run each one seperately.
+
+Example: `use exploit/multi/samba/usermap_script`
+
+3. Next use the `show options` command to show the options required to execute the exploit
+
+In this example the required options for samba are the following
+
+RHOSTS = IP Address of host you are attacking `xxx.xxx.xxx.xxx`
+
+RPORT = Port you are attacking which is port = `445`
+
+LRPORT = port your reverse shell will run on = `4444`
+
+4. Finally to run the exploit you can use the `run` or `exploit` command to execute it.
+
+
+## VSFTP
+
 1. Start by searching for exploit based on port number and NMAP scan results of the NMAP -sV -O scan of your taget with the greatest number of open ports.
 
 Example: `grep exploit search vsftp`
