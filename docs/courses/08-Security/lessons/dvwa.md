@@ -73,17 +73,17 @@ http://xxx.xxx.xxx.xxx/
 
 15. Please make sure your proxy settings for Burpsuite look like the settings you see in the example below.
 
-[![DVWA](1-buprsuite.png)
+[![DVWA](1-burpsuite.png)
 
-[![DVWA](2-buprsuite.png)
+[![DVWA](2-burpsuite.png)
 
-[![DVWA](3-buprsuite.png)
+[![DVWA](3-burpsuite.png)
 
-[![DVWA](4-buprsuite.png)
+[![DVWA](4-burpsuite.png)
 
-[![DVWA](5-buprsuite.png)
+[![DVWA](5-burpsuite.png)
 
-[![DVWA](6-buprsuite.png)
+[![DVWA](6-burpsuite.png)
 
 16. Now we need to configure Firefox with the same proxy settings so that you can intercept traffic between it and the DVWA server. See the illustrations below for an example of how to setup Firefox running on Kali.
 
