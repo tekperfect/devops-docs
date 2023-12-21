@@ -71,20 +71,36 @@ http://xxx.xxx.xxx.xxx/
 
 14. Accept the defaults to launch it. Please note that since you will be using community edition of burpsuite you will not be able to save your project settings so it will be a good idea to document them along the way in case you want to revisit this exercise.
 
-15. Please make sure your proxy settings for Burpsuite look like the settings you see in the example below.
+15. Now we need to configure Firefox with the same proxy settings so that you can intercept traffic between it and the DVWA server. See the illustrations below for an example of how to setup Firefox running on Kali.
+
+![DVWA](1-firefox.png)
+
+![DVWA](2-firefox.png)
+
+16. Please make sure your proxy settings for Burpsuite look like the settings you see in the example below.
+
+17. Please select the defaults for starting the burpsuite application.
 
 ![DVWA](1-burpsuite.png)
 
 ![DVWA](2-burpsuite.png)
 
+18. The dashoard is where you make changes to how you process web requests that you filter through your browser
+
 ![DVWA](3-burpsuite.png)
+
+19. The proxy setting is where you select how you intercept traffic if this option is off traffic passes normall when it is on the traffic needs to be forwarded back to the host.
 
 ![DVWA](4-burpsuite.png)
 
+20. The default proxy settings for burpsuite points to the loopback adapter `127.0.0.1` port `8080`
+
 ![DVWA](5-burpsuite.png)
 
-![DVWA](6-burpsuite.png)
+21. With the intercept on you can forward traffic and capture it along with viewing the http requests so that tney can be examined.
 
+![DVWA](6-burpsuite.png)
+ 
 ![DVWA](7-burpsuite.png)
 
 ![DVWA](8-burpsuite.png)
@@ -96,10 +112,3 @@ http://xxx.xxx.xxx.xxx/
 ![DVWA](11-burpsuite.png)
 
 ![DVWA](12-burpsuite.png)
-
-16. Now we need to configure Firefox with the same proxy settings so that you can intercept traffic between it and the DVWA server. See the illustrations below for an example of how to setup Firefox running on Kali.
-
-
-[![DVWA](1-firefox.png)
-
-[![DVWA](2-firefox.png)
