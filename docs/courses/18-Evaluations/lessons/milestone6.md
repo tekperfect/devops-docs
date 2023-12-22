@@ -21,7 +21,7 @@
 
 ### Medusa or Hydra Script
 
-![First Image](medusa.png)|![Second Image](hydra.png)|
+![First Image](medusa.png)|
 
 1. Create a bash or python script and check it into your cyber repository.
 
