@@ -14,6 +14,7 @@
     - [Cloud Computing](courses/14-Cloud_Computing/home.md)
     - [SaaS Tools](courses/15-SaaS_Tools/home.md)
     - [Consulting](courses/16-Consulting/home.md)
+    - [Evaluations](courses/18-Evaluations/home.md)
 
 
 <!-- - **📘 Glossary**
