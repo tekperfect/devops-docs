@@ -24,25 +24,20 @@ These evaluations are designed to test the students comprehension of the materia
 # 📚 Lessons
 
 ## Milestone 1 Evaluation
-[Milestones](/courses/18-Milestones/lessons/milestone1.md)
+[Milestones](/courses/18-Evaluations/lessons/milestone1.md)
 
 ## Milestone 2 Evaluation
-[Milestones](/courses/18-Milestones/lessons/milestone2.md)
+[Milestones](/courses/18-Evaluations/lessons/milestone2.md)
 
 ## Milestone 3 Evaluation
-[Milestones](/courses/18-Milestones/lessons/milestone3.md)
+[Milestones](/courses/18-Evaluations/lessons/milestone3.md)
 
 ## Milestone 4 Evaluation
-[Milestones](/courses/18-Milestones/lessons/milestone4.md)
+[Milestones](/courses/18-Evaluations/lessons/milestone4.md)
 
 ## Milestone 5 Evaluation
-[Milestones](/courses/18-Milestones/lessons/milestone5.md)
+[Milestones](/courses/18-Evaluations/lessons/milestone5.md)
 
 ## Milestone 6 Evaluation
-[Milestones](/courses/18-Milestones/lessons/milestone6.md)
+[Milestones](/courses/18-Evaluations/lessons/milestone6.md)
 
-## Milestone 7 Evaluation
-[Milestones](/courses/18-Milestones/lessons/milestone7.md)
-
-## Milestone 8 Evaluation
-[Milestones](/courses/18-Milestones/lessons/milestone8.md)
