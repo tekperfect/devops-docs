@@ -1,6 +1,6 @@
 ### Metasploit Script
 
-[![Assessment](metasploitable.png)
+![Assessment](metasploitable.png)
 
 1. Create a new repository and call it cyber.
 
