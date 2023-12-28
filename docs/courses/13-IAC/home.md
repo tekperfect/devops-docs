@@ -25,6 +25,10 @@ Students by the end of the course will be able to build servers, storage, and in
 
 # 📚 Lessons
 
+## Jenkins
+
+[Jenkins](/courses/13-IAC/lessons/jenkins.md)
+
 ## Terraform
 
 [Terraform](/courses/13-IAC/lessons/terraform.md)
