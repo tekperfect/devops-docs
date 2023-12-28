@@ -8,11 +8,9 @@ Jenkins is a CI/CD platform, which means that it allows users to Integrate (Buil
 
 ### Installation and Prep
 
-Jenkins can be setup as either a Java .Jar (Java ARchive) application or as a Docker container.
-To run Jenkins as an application, it is necessary to Download the JRE (Java Runtime Environment).
-This Method is non-persistent, and so the best way is to launch it as a Docker Container. We will run this on AWS, but let's first try to run it in our Local Machine (Localhost).
+Jenkins can be setup as either a Java .Jar (Java ARchive) application or as a Docker container. For the purposes of our lab we are going to setup and configure Jenkins using Docker. We will run this locally on your laptop via localhost.
 
-The Docker Image can be Downloaded from your Terminal
+The Docker Image can be Downloaded from your terminal on your Mac by running the following command.
 
 `docker image pull jenkins/jenkins:lts`
 
@@ -42,6 +40,7 @@ For Mac
 `lsof -i -n -P | grep LISTEN`
 
 For '-v' Choose a name for this Jenkins Instance (Ex. Jenkins1)
+
 A Volume is important because it is where all your information will be stored. It will be accessible even if your Jenkins Instance fails.
 
 After this step is completed, and you will be able to see you Jenkins Instance by typing your Localhost:PORT on any web browser
@@ -52,13 +51,13 @@ The First thing you will notice is that Jenkins will request you to input the ma
 
 `docker logs [container_id]` Please note the container ID can be obtained by running a `docker ps` command.
 
-Then, follow the steps by installing the suggested plugins (We will talk about plugins later) and keep the Jenkins url to the default Localhost:PORT which is `http://127.0.0.1:8080` or `http://localhost:8080`
+Then, you should use these steps below to launch the configuration by going to either of the URL's  `http://127.0.0.1:8080` or `http://localhost:8080`
 
-And there you have it, your own Jenkins instance.
+And there you have it, your own Jenkins instance you can configure.
 
 ## 2.The Dashboard
 
-Please use the illustration below for completing the confiugraiton of Jenkins
+Please use the illustratioasn below to complete the confiugraiton of Jenkins via the browser.
 
 ![Jenkins](1-jenkins.png)
 
@@ -110,11 +109,14 @@ The Plugin Manager is one of the most powerful parts of Jenkins. A wide array of
 
 - In order to complete the setup of the plugins you will need to install the Git plugin as well as the Terraform plugin.
 
-1. For the Git plugin you will need to specify the directory it is installed in which is the `/usr/bin`. However, in the plugin you will need to specify the path along with the name of the binary so the plugin path should read /usr/bin/git.
+1. For the Git plugin you will need to specify the directory it is installed in which is the `/usr/bin`. However, in the plugin you will need to specify the path along with the name of the binary so the plugin path should read `/usr/bin/git`.
+
+plugin-screenshot
 
 2. Finally for the Terraform plugin you will need to install Terraform inside your Jenkins instance by logging into it via Docker as root. To accomplish this task you need to run the following command. In order to obtain the container_id you need to run the `docker ps` command.
 
-`docker exec -u 0 -it <container_id> /bin/bash`
+`docker exec -u 0 -it <container_id> /bin/bash` This should get you access to the Jenkins Docker container console.
+`sudo apt install terraform` This will install Terraform which is what is required in order to execute the code in the repository.
 
 3. Please note exploring the Jenkins plugins and configuration options in Jenkins will give you insight into how CI/CD pipelines are created and configured. 
 
@@ -128,11 +130,11 @@ https://github.com/tekperfect/jenkins-terraform
 
 1. Prior to configuraiton the security on Jenkins we also need to create credentials for our CI/CD pipeline in AWS.
 
-2. This will required the use of IAM to create an account and AWS access key and secret that will be used in Jenkins.
+2. This will require the use of IAM to create an account via AWS, by using IAM you can create an  access key and secret that will be used in the Jenkins configuration.
 
 3. Please note you must take great care when creating and storing AWS credentials.
 
-4. See Illustration below for the steps on how to create the AWS IAM account and access key with the secret.
+4. See the illustrations below for the steps on how to create the AWS IAM account and access key along with the secret.
 
 ![IAM](1-iam.png)
 
@@ -160,14 +162,13 @@ https://github.com/tekperfect/jenkins-terraform
 
 1. Configure Global Security: \
 
-Go to the following url or naviagte to the place in the UI illustration below
+Go to the following url or naviagte to the place featured in the illustration below
 
 ![Jenkins](11-jenkins.png)
 
 `http://localhost:8080/manage/credentials/store/system/domain/_/`
 
-
-From the global configuration you are going to add two secret keys that you will generate from the IAM Dashboard
+From the global configuration page you are need to add two secret keys that you will generate from the IAM Dashboard
 
 They are going to be callled the `aws-access-key-id` and the `aws-secret-access-key`
 
