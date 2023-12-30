@@ -10,7 +10,7 @@ Jenkins is a CI/CD platform, which means that it allows users to Integrate (Buil
 
 Jenkins can be setup as either a Java .Jar (Java ARchive) application or as a Docker container. For the purposes of our lab we are going to setup and configure Jenkins using Docker. We will run this locally on your laptop via localhost.
 
-The Docker Image can be Downloaded from your terminal on your Mac by running the following command.
+The Docker Image can be Downloaded from your terminal on your Mac by running the following command. If you receive an error when trying to run the docker command either Docker is not installed properly or your need to start the Docker Hub application on your system.
 
 `docker image pull jenkins/jenkins:lts`
 
@@ -20,40 +20,23 @@ The Next Step is to run the container:
 
 Some comments about your command arguments
 
-For '-d', allows you to run your container in detached mode so that you have access to the terminal after running the command. Please note you can use docker ps to see which docker containers that are currently running on your sysetm.
+1. The `-d` switch  allows you to run your container in detached mode so that you have access to the terminal after running the command. Please note you can use docker ps to see which docker containers that are currently running on your sysetm.
 
-For '-p', try to use a port that is available (8081, 8082 ...). This important as selecting a port that already is being used It can cause conflicts not only for Jenkins, but for whatever other service is operating in that port. Port 8080 is used for for both web traffic and http proxies.
-
-A general way to check if something is already using the port is to open it on a web browser (Ex. type localhost:8081 or whatever port you choose) and see if you get a response.
+2. The `-p` switch specifics the port you are using to access the container. The importance of selecting a port is to make sure that port is not  already being used. It can cause conflicts not only for Jenkins, but for whatever other service is operating in that port. Port 8080 is used for for both web traffic and http proxies so just be aware.
 
 For a more thorough approach, Windows, Linux and Mac offer tools to verify you port status.
 
-For Windows type 
+For Windows type your can run the command `netstat -ab`, for Linux your can run the command `netstat -tulpn | grep LISTEN`, and for the Mac you can run the command `lsof -i -n -P | grep LISTEN`
 
-`netstat -ab`
+3. For the `-v` switch it specifies the volume or path to your local disk where your container will store it's data. It will be accessible even if your Jenkins instance fails.
 
-For Linux:
-
-`netstat -tulpn | grep LISTEN`
-
-For Mac
-`lsof -i -n -P | grep LISTEN`
-
-For '-v' Choose a name for this Jenkins Instance (Ex. Jenkins1)
-
-A Volume is important because it is where all your information will be stored. It will be accessible even if your Jenkins Instance fails.
-
-After this step is completed, and you will be able to see you Jenkins Instance by typing your Localhost:PORT on any web browser
+After this step is completed, and you will be able to see you Jenkins instance by typing your `http://Localhost:8080` from any web browser.
 
 ### Admin Configuration
 
 The First thing you will notice is that Jenkins will request you to input the master password in order to unlock the instance. You can find this password on your command line by typing:
 
 `docker logs [container_id]` Please note the container ID can be obtained by running a `docker ps` command.
-
-Then, you should use these steps below to launch the configuration by going to either of the URL's  `http://127.0.0.1:8080` or `http://localhost:8080`
-
-And there you have it, your own Jenkins instance you can configure.
 
 ## 2.The Dashboard
 
