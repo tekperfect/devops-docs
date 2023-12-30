@@ -38,35 +38,155 @@ The First thing you will notice is that Jenkins will request you to input the ma
 
 `docker logs [container_id]` Please note the container ID can be obtained by running a `docker ps` command.
 
+4. After obtaining the password you will need to input that password into the browser to continue the setup of the Jenkins server.
+
 ## 2.The Dashboard
 
 Please use the illustratioasn below to complete the confiugraiton of Jenkins via the browser.
 
+1. To begin please accept any defaults if prompted to allow Docker or Jenkins access to your disk or to proceed in the browser until your see the "Getting Started Screen" once the getting started screen. Please make sure you select the  `Install Suggested Plugins` when starting the initial configuration of Jenkins.
+
 ![Jenkins](1-jenkins.png)
+
+![Jenkins](1-2jenkins.png)
+
+2. In this step you will create a user account to manage your Jenkins instance please make sure you document and save the username and password for this instance via Lastpass.
+![Jenkins](1-3jenkins.png)
+
+3. From the instance configuration selection please accept the default of `http://localhost:8080` 
+
+![Jenkins](1-4jenkins.png)
+
+4. Now you are ready to start Jenkins by clicking on the `Start using Jenkins` button.
+![Jenkins](1-5jenkins.png)
+
+5. From the Jenkins Welcome screen we need to complete a few tasks before we begin using the CI/CD tool.
 
 ![Jenkins](2-jenkins.png)
 
+6. We will begin by selecting `Manage Jenkins` and then selecting `Plugins`.
+
 ![Jenkins](3-jenkins.png)
 
-![Jenkins](4-jenkins.png)
+7. From the plugins menu selection we need to install 3 plugins by clicking on the Available plugins and typing in the name of these three plugins seperately and installing them, These plugins are `github integration`, `github authenication', and 'terraform'.
 
+![Jenkins](4-1jenkins.png)
+
+![Jenkins](4-2jenkins.png)
+
+![Jenkins](4-3jenkins.png)
+
+8. After these plugins are downloaded and installed you should probably select the restart Jenkins after install check box at the botton of the installation screen.
+ 
 ![Jenkins](5-jenkins.png)
+
+9. Please note you will need to run the Docker command to launch Jenkins again once Jenkins has been restarted after installing the Plugins. That command is `docker run -d -p 8080:8080 -p 50000:50000 -v /Users/admin:/var/jenkins_home jenkins/jenkins`. You will also need log back into Jenkins with the username and password you created eariler.
+
+10. After logging back into Jenkins select `Manage Jenkins` and then select `Tools`. This is where we will configure the plugins you just installed.
 
 ![Jenkins](6-jenkins.png)
 
-![Jenkins](7-jenkins.png)
+11. For the Git and Terraform plugins please configure them  using the illustration below. For Git to work properly it must be pointed to the path of the binary file it needs to run the git commands.
 
-![Jenkins](8-jenkins.png)
+![Jenkins](6-1jenkins.png)
 
-![Jenkins](9-jenkins.png)
 
-![Jenkins](10-jenkins.png)
+![Jenkins](7-1jenkins.png)
+
+12. Now that you have the Github and Terraform plugins completed you may be wondering about the 3rd plugin we installed. Hold tight we will get to that one after we do some additional preparation work.
+
+13. To finish up the configuration of the Terraform plugin we need to install Terraform inside the Jenkins Docker container. To accomplish this task we need to run the following command.
+
+`docker exec -u 0 -it <container_id> /bin/bash` This should get you access to the Jenkins Docker container console.
+
+14. Do you remeber what command you need to run in order to obtain the container_id?
+
+15. Now that you are on the command line and inside the docker container you should proceed with running the following command to install Terraform
+
+`apt update`
+`apt install software-properties-common`
+`apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com buster main"`
+`apt install terraform`
+
+16. Now that Terraform is installed you can proceed with the final steps of configuring the last plugin which related to Github authenication and creating secrets for your Terraform deploy. However before we do that you need to create the account and obtain the access key and secret in AWS. Please follow the steps below to create an account to obtain the AWS access key and secret that you will store in Jenkin and your LastPass account for security purposes.
+
+## IAM Credentials
+
+1. Prior to configuraiton the security on Jenkins we also need to create credentials for our CI/CD pipeline in AWS.
+
+2. This will require the use of IAM to create an account via AWS, by using IAM you can create an  access key and secret that will be used in the Jenkins configuration.
+
+3. Please note you must take great care when creating and storing AWS credentials.
+
+4. See the illustrations below for the steps on how to create the AWS IAM account and access key along with the secret.
+
+5. Login to AWS and go to IAM
+![IAM](1-iam.png)
+
+6. From the IAM dashboard select users and click on the create user button.
+
+![IAM](2-iam.png)
+
+7. Create a new user account called terraform-deploy. Please note do not check the box to provide this account with console access because it is a code driven deploy account and will never need console access. Rember the rule about security. No account should have more priviliges than it needs to operate.
+
+![IAM](3-iam.png)
+
+8. Next please select the Super Admin group or group that you created when we setup your AWS account to grant this account admin priviliges.
+
+![IAM](4-iam.png)
+
+9. Now click on the create user button to create the users.
+ 
+![IAM](5-iam.png)
+
+10. Now with the terraform-deploy account created select it from the list so that we can create the AWS access key and secret.
+ 
+![IAM](6-iam.png)
+
+11. After selecting the account go to the `Security Credentials` tab and click on the `Create Access Key` button.
+ 
+![IAM](7-iam.png)
+
+![IAM](8-iam.png)
+
+12. From the use case option select the `Local Code` radio button and place a check mark in the `I understand ...` box.
+
+![IAM](9-iam.png)
+
+13.  In the description of the access key you can type in anything you want but it should be related to what the key is being used for.
+
+![IAM](10-iam.png)
+
+14. At this point I want you to stop and consult with your instructor to make sure your access key and secret are stored and save properly. These credentials will allow anyone with them to deploy infrastructure into your AWS account. I strongly recommend that you consult with your instructor before proceeding past this step to make certain you did it correctly.
+
+![IAM](11-iam.png)
+
+15. With the credentials properly secured we can proceed with the final configuration of the Jenkins plugin and establishing best practices for handling these credentials.
+
+## Back to Jenkins
+
+1. Login to Jenkins and go to `Manage Jenkins`, `Credentials`, `System`, `Global credentials (unrestricted)`.
 
 ![Jenkins](11-jenkins.png)
 
-![Jenkins](12-jenkins.png)
+2. From here you are going to add the AWS key, Secret, and your Github Authenication credentials.
 
-### Manage Jenkins 
+3. Please use the illustrations below as an example to setup your AWS access key, secret, and Github authenication.
+
+![Jenkins](13-jenkins.png)
+
+![Jenkins](14-jenkins.png)
+
+![Jenkins](15-jenkins.png)
+
+4. When your credentials and keys are configured they should look similar to this.
+
+![Jenkins](16-jenkins.png)o
+
+5. You have completed all the preliminary steps to setup your Jenkins environment congratulations you now need to take the final step of setting up your Jenkins job so that you can deploy to AWS.
+
+
+### Create Jenkina Jobs 
 
 #### System Configuration
 
