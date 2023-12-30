@@ -88,27 +88,29 @@ Please use the illustratioasn below to complete the confiugraiton of Jenkins via
 
 11. For the Git and Terraform plugins please configure them  using the illustration below. For Git to work properly it must be pointed to the path of the binary file it needs to run the git commands.
 
+12. For the Git plugin you will need to specify the directory it is installed in which is the `/usr/bin`. However, in the plugin you will need to specify the path along with the name of the binary so the plugin path should read `/usr/bin/git`.
+
 ![Jenkins](6-1jenkins.png)
 
 
 ![Jenkins](7-1jenkins.png)
 
-12. Now that you have the Github and Terraform plugins completed you may be wondering about the 3rd plugin we installed. Hold tight we will get to that one after we do some additional preparation work.
+13. Now that you have the Github and Terraform plugins completed you may be wondering about the 3rd plugin we installed. Hold tight we will get to that one after we do some additional preparation work.
 
-13. To finish up the configuration of the Terraform plugin we need to install Terraform inside the Jenkins Docker container. To accomplish this task we need to run the following command.
+14. To finish up the configuration of the Terraform plugin we need to install Terraform inside the Jenkins Docker container. To accomplish this task we need to run the following command.
 
 `docker exec -u 0 -it <container_id> /bin/bash` This should get you access to the Jenkins Docker container console.
 
-14. Do you remeber what command you need to run in order to obtain the container_id?
+15. Do you remeber what command you need to run in order to obtain the container_id?
 
-15. Now that you are on the command line and inside the docker container you should proceed with running the following command to install Terraform
+16. Now that you are on the command line and inside the docker container you should proceed with running the following command to install Terraform
 
 `apt update`
 `apt install software-properties-common`
 `apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com buster main"`
 `apt install terraform`
 
-16. Now that Terraform is installed you can proceed with the final steps of configuring the last plugin which related to Github authenication and creating secrets for your Terraform deploy. However before we do that you need to create the account and obtain the access key and secret in AWS. Please follow the steps below to create an account to obtain the AWS access key and secret that you will store in Jenkin and your LastPass account for security purposes.
+17. Now that Terraform is installed you can proceed with the final steps of configuring the last plugin which related to Github authenication and creating secrets for your Terraform deploy. However before we do that you need to create the account and obtain the access key and secret in AWS. Please follow the steps below to create an account to obtain the AWS access key and secret that you will store in Jenkin and your LastPass account for security purposes.
 
 ## IAM Credentials
 
@@ -121,6 +123,7 @@ Please use the illustratioasn below to complete the confiugraiton of Jenkins via
 4. See the illustrations below for the steps on how to create the AWS IAM account and access key along with the secret.
 
 5. Login to AWS and go to IAM
+
 ![IAM](1-iam.png)
 
 6. From the IAM dashboard select users and click on the create user button.
@@ -167,6 +170,19 @@ Please use the illustratioasn below to complete the confiugraiton of Jenkins via
 
 1. Login to Jenkins and go to `Manage Jenkins`, `Credentials`, `System`, `Global credentials (unrestricted)`.
 
+
+`http://localhost:8080/manage/credentials/store/system/domain/_/`
+
+From the global configuration page you are need to add two secret keys that you will generate from the IAM Dashboard
+
+They are going to be callled the `aws-access-key-id` and the `aws-secret-access-key`
+
+CAUTION "Revealing or checking these credentials into any github or online repositor can comprimise your AWS account allowing a bad actor or attacker to take over your account and spin up resources without your knowledge"
+
+These credentials should only be stored in LastPass or Jenkins in an environment that does not expose the to the public
+
+After you create the credentials and store them in Jenkins you are ready to deploy your first EC2 instance using IaC
+
 ![Jenkins](11-jenkins.png)
 
 2. From here you are going to add the AWS key, Secret, and your Github Authenication credentials.
@@ -181,137 +197,24 @@ Please use the illustratioasn below to complete the confiugraiton of Jenkins via
 
 4. When your credentials and keys are configured they should look similar to this.
 
-![Jenkins](16-jenkins.png)o
+![Jenkins](16-jenkins.png)
 
 5. You have completed all the preliminary steps to setup your Jenkins environment congratulations you now need to take the final step of setting up your Jenkins job so that you can deploy to AWS.
 
+### Create Jenkins Jobs 
 
-### Create Jenkina Jobs 
+1. To create a Jenkins job please enter the following parameters to create the job.
 
-#### System Configuration
+![Jenkins](17-jenkins.png)
 
-1. Configure System:\
+![Jenkins](18-jenkins.png)
 
-This is the control center of your Jenkins instance. It should only be accessed by the Admin since any change affects the whole system. I will explain most of these options as we learn more about the infrastructure. Also, keep in mind that more options will become available the more plugins we install.
+![Jenkins](19-jenkins.png)
 
-2. Global Tool Configuration :\
+2. You will need to copy the contents of the Jenkins file when creating your first CI/CD pipeline job
 
-This is were we configure third party tools/apps that you or your org might want to use with a specific version.
+3. After the job is created you will need to verify that the instance is deployed in your AWS account in the us-east-1 region.
 
-3. Plugin Manager:\
+4. If you were successful in getting your instance deploy please run the job again to destroy the instance per your instructors instructions.
 
-The Plugin Manager is one of the most powerful parts of Jenkins. A wide array of software tools have been created by the OSS community and will make your CI/CD infrastructure more robust. We will be using some of the most important ones, but the most important thing to remember is that Plugins also come with Versions, which means that they are interdependent and changes (Updates) to a plugin can affect others as well. Moreover, Upgrading your Jenkins version (which you will constantly need to, due to the continuing security patches) will also make some plugins incompatible. 
-
-- Here is where the mention of a Staging server first becomes important. It is always considered best practice to keep a copy of your production Jenkins environment purely for the purpose of making upgrades and making sure the overall environment remains stable.
-
-- If your Jenkins instance sits on a server with a corporate network, you might have trouble downloading plugins unless you setup the configuration for the HTTP proxy under the Advanced option.
-
-- Updating plugins will require Jenkins to "Reboot", something it can only do when no Jobs are running on the server. Make sure you schedule updates so that no one is affected by it.
-
-- We will cover the creation of new plugins for the more advanced part of this course.
-
-- In order to complete the setup of the plugins you will need to install the Git plugin as well as the Terraform plugin.
-
-1. For the Git plugin you will need to specify the directory it is installed in which is the `/usr/bin`. However, in the plugin you will need to specify the path along with the name of the binary so the plugin path should read `/usr/bin/git`.
-
-plugin-screenshot
-
-2. Finally for the Terraform plugin you will need to install Terraform inside your Jenkins instance by logging into it via Docker as root. To accomplish this task you need to run the following command. In order to obtain the container_id you need to run the `docker ps` command.
-
-`docker exec -u 0 -it <container_id> /bin/bash` This should get you access to the Jenkins Docker container console.
-`sudo apt install terraform` This will install Terraform which is what is required in order to execute the code in the repository.
-
-3. Please note exploring the Jenkins plugins and configuration options in Jenkins will give you insight into how CI/CD pipelines are created and configured. 
-
-4. Clone this repository
-
-https://github.com/tekperfect/jenkins-terraform
-
-5. You will need to copy the contents of the Jenkins file when creating your first CI/CD pipeline job
-
-#### Security
-
-1. Prior to configuraiton the security on Jenkins we also need to create credentials for our CI/CD pipeline in AWS.
-
-2. This will require the use of IAM to create an account via AWS, by using IAM you can create an  access key and secret that will be used in the Jenkins configuration.
-
-3. Please note you must take great care when creating and storing AWS credentials.
-
-4. See the illustrations below for the steps on how to create the AWS IAM account and access key along with the secret.
-
-![IAM](1-iam.png)
-
-![IAM](2-iam.png)
-
-![IAM](3-iam.png)
-
-![IAM](4-iam.png)
-
-![IAM](5-iam.png)
-
-![IAM](6-iam.png)
-
-![IAM](7-iam.png)
-
-![IAM](8-iam.png)
-
-![IAM](9-iam.png)
-
-![IAM](10-iam.png)
-
-![IAM](11-iam.png)
-
-![IAM](12-iam.png)
-
-1. Configure Global Security: \
-
-Go to the following url or naviagte to the place featured in the illustration below
-
-![Jenkins](11-jenkins.png)
-
-`http://localhost:8080/manage/credentials/store/system/domain/_/`
-
-From the global configuration page you are need to add two secret keys that you will generate from the IAM Dashboard
-
-They are going to be callled the `aws-access-key-id` and the `aws-secret-access-key`
-
-CAUTION "Revealing or checking these credentials into any github or online repositor can comprimise your AWS account allowing a bad actor or attacker to take over your account and spin up resources without your knowledge"
-
-These credentials should only be stored in LastPass or Jenkins in an environment that does not expose the to the public
-
-After you create the credentials and store them in Jenkins you are ready to deploy your first EC2 instance using IaC
-
-
-2. Manage Credentials: \
-
-This is the place where you store credentials, such as Git tokens, API ID and Secrets, Username/password combinations and more. Stored credentials are masked and can be used by anyone who had access to Configure or Build Jobs. 
-- When storing credentials you should also provide the __ID__ (The credential's nickname) and __Description__ options. They are necessary so the users know what are each of these credentials are when selecting them in their projects. Providing these two options is also best practice since if omitted, Jenkins will provide random values for its ID and make it ambiguous for the users.
-- Another good best practice is to make sure only service accounts are added to the credentials page, and prevent individuals from adding their own credentials. User credentials and Tokens usually have expiry dates, and it could be detrimental and not to say messy, that Jobs rely on these types of credentials to build. Always think about what you can do to make a system more stable.
-
-3. Configure Credential Providers:\
-
-This page allows you to disable credential type options. Not really necessary if your Admin team doesn't allow normal users to create their own credentials.
-
-4. Manage Users
-
-If you or your Admin team have an authentication (Ex: LDAP) system in place, there is no need to worry about this page, unless the Admin team wants to maintain specific elevated accounts for Admins in different sites.
-
-5. In addition to adding your AWS access key and secret key you will also need to add your github credentials in the form of your username and access token you should have created in previous code lessons. 
-
-#### Status Information
-
-1. System Information:\
-
-Provides you with a list of names for System properties, environment variables, and Plugins. They will come in handy when your Job experiences failures, since the return status will provide information about what went wrong. 
-
-- Another thing to take from this page is that the Jenkins Environment Variables can be used in your Jenkins jobs just as you would any other environment variables you create for your jobs.
-
-2. System Log
-
-### Build Executors
-
-### Verify Environment
-
-## 3.Pipelines
-
-### Create your first job
+5. The next steps in this process will include forking the code from your instructor and customizing the job so that you can utilize your own private key to access the AWS instance along with some other custom configuration changes to ensure the intance is deployed in accorgance with security best practices.
