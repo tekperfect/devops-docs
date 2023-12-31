@@ -1,6 +1,6 @@
 # Jenkins (CI/CD Pipeline) 
 
-## 1.Initial Setup
+## Initial Setup
 
 ### What is Jenkins and Why is it so widely used?
 
