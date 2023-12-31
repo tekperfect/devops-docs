@@ -40,7 +40,7 @@ The First thing you will notice is that Jenkins will request you to input the ma
 
 4. After obtaining the password you will need to input that password into the browser to continue the setup of the Jenkins server.
 
-## 2.The Dashboard
+## The Dashboard
 
 Please use the illustratioasn below to complete the confiugraiton of Jenkins via the browser.
 
@@ -48,17 +48,19 @@ Please use the illustratioasn below to complete the confiugraiton of Jenkins via
 
 ![Jenkins](1-jenkins.png)
 
-![Jenkins](1-2jenkins.png)
+![Jenkins](1-2-jenkins.png)
 
 2. In this step you will create a user account to manage your Jenkins instance please make sure you document and save the username and password for this instance via Lastpass.
-![Jenkins](1-3jenkins.png)
+
+![Jenkins](1-3-jenkins.png)
 
 3. From the instance configuration selection please accept the default of `http://localhost:8080` 
 
-![Jenkins](1-4jenkins.png)
+![Jenkins](1-4-jenkins.png)
 
 4. Now you are ready to start Jenkins by clicking on the `Start using Jenkins` button.
-![Jenkins](1-5jenkins.png)
+
+![Jenkins](1-5-jenkins.png)
 
 5. From the Jenkins Welcome screen we need to complete a few tasks before we begin using the CI/CD tool.
 
@@ -70,11 +72,11 @@ Please use the illustratioasn below to complete the confiugraiton of Jenkins via
 
 7. From the plugins menu selection we need to install 3 plugins by clicking on the Available plugins and typing in the name of these three plugins seperately and installing them, These plugins are `github integration`, `github authenication', and 'terraform'.
 
-![Jenkins](4-1jenkins.png)
+![Jenkins](4-1-jenkins.png)
 
-![Jenkins](4-2jenkins.png)
+![Jenkins](4-2-jenkins.png)
 
-![Jenkins](4-3jenkins.png)
+![Jenkins](4-3-jenkins.png)
 
 8. After these plugins are downloaded and installed you should probably select the restart Jenkins after install check box at the botton of the installation screen.
  
@@ -90,10 +92,10 @@ Please use the illustratioasn below to complete the confiugraiton of Jenkins via
 
 12. For the Git plugin you will need to specify the directory it is installed in which is the `/usr/bin`. However, in the plugin you will need to specify the path along with the name of the binary so the plugin path should read `/usr/bin/git`.
 
-![Jenkins](6-1jenkins.png)
+![Jenkins](6-1-jenkins.png)
 
 
-![Jenkins](7-1jenkins.png)
+![Jenkins](7-1-jenkins.png)
 
 13. Now that you have the Github and Terraform plugins completed you may be wondering about the 3rd plugin we installed. Hold tight we will get to that one after we do some additional preparation work.
 
@@ -106,8 +108,11 @@ Please use the illustratioasn below to complete the confiugraiton of Jenkins via
 16. Now that you are on the command line and inside the docker container you should proceed with running the following command to install Terraform
 
 `apt update`
+
 `apt install software-properties-common`
+
 `apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com buster main"`
+
 `apt install terraform`
 
 17. Now that Terraform is installed you can proceed with the final steps of configuring the last plugin which related to Github authenication and creating secrets for your Terraform deploy. However before we do that you need to create the account and obtain the access key and secret in AWS. Please follow the steps below to create an account to obtain the AWS access key and secret that you will store in Jenkin and your LastPass account for security purposes.
@@ -207,14 +212,16 @@ After you create the credentials and store them in Jenkins you are ready to depl
 
 ![Jenkins](17-jenkins.png)
 
+2. Please use the following repository when configuring the Jenkins job. `https://github.com/tekperfect/jenkins-terraform.git`
+
 ![Jenkins](18-jenkins.png)
 
 ![Jenkins](19-jenkins.png)
 
-2. You will need to copy the contents of the Jenkins file when creating your first CI/CD pipeline job
+3. You will need to copy the contents of the Jenkins file when creating your first CI/CD pipeline job
 
-3. After the job is created you will need to verify that the instance is deployed in your AWS account in the us-east-1 region.
+4. After the job is created you will need to verify that the instance is deployed in your AWS account in the us-east-1 region.
 
-4. If you were successful in getting your instance deploy please run the job again to destroy the instance per your instructors instructions.
+5. If you were successful in getting your instance deploy please run the job again to destroy the instance per your instructors instructions.
 
-5. The next steps in this process will include forking the code from your instructor and customizing the job so that you can utilize your own private key to access the AWS instance along with some other custom configuration changes to ensure the intance is deployed in accorgance with security best practices.
+6. The next steps in this process will include forking the code from your instructor and customizing the job so that you can utilize your own private key to access the AWS instance along with some other custom configuration changes to ensure the intance is deployed in accorgance with security best practices.
