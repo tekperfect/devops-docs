@@ -155,6 +155,32 @@ To verify the apache web server is running go to http://localhost:8080. It shoul
 
 Now you have successfully built the image I am challenging each of your to accomplish the following
 
+## Build, Tag, Create, and Push
+
+1. Build a docker image from a Dockerfile in the current directory with and specific a name for the image.
+
+`docker build -t image_name .`
+
+2. Run a docker image with a specific port that can be access via the local host from a specific image name
+
+`docker run -d -p xxxx:xxxx image_name`
+
+3. Build a docker image from a specific file name in the currrent directory
+
+docker build -f filename .
+
+4. Build a docker image and tag it with a remote username
+
+`docker build -t username/image_name .`
+
+5. Tag image from local image to create remote image
+
+`docker tag local_image_name username/remote_image_name`
+
+6. Push a docker image to a personal repository
+
+`docker push username/remote_image_name`
+
 ## Bonus Questions
 
 1. How would you run the docker command to launch your container in detached mode so that the command prompt is returned to you.
@@ -163,7 +189,7 @@ Now you have successfully built the image I am challenging each of your to accom
 
 3. What command would you run to make changes to the running container
 
-4. Can you launch multiple copies of this container and access them on your system 
+4. How can you launch multiple copies of this container and access them on your system 
 
 5. If you can launch multiple copies of this container, how would you do that from one command on the command line.
 
