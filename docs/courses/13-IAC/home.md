@@ -25,6 +25,10 @@ Students by the end of the course will be able to build servers, storage, and in
 
 # 📚 Lessons
 
+## Docker
+
+[Docker](/courses/13-IAC/lessons/docker.md)
+
 ## Jenkins
 
 [Jenkins](/courses/13-IAC/lessons/jenkins.md)
