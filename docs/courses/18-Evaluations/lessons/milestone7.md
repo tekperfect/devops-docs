@@ -9,7 +9,7 @@
 
 2. Create 3 Pipelines and Name them `Dev`, `Staging`, and `Production`.
 
-3. Each pipeline should be configured to use the same repository or 3 different repositories. Meaning you can use the same repository if you can figure out how to have 1 repository use different branches. Extra points for accomplishing this goal.
+3. Each pipeline should be configured to use the same repository or 3 different repositories. Meaning you can use the same repository if you can figure out how to have 1 repository use different branches. 5 extra points for accomplishing this goal.
 
 4. 1 Point for figuring out how to deploy an Ubuntu instance. This should be a given since the code already works.
 
@@ -19,7 +19,7 @@
 
 7. 1 Point for adding an additional volume to your instance meaning it should have two disk. I recommend making the second disk 10GB or less.
 
-8. 1 Point creating a VPC with terraform code
+8. 1 Point for creating a VPC with terraform code
 
 9. 1 Point for creating your Ubuntu instance and making it part of the VPC.
 
@@ -43,6 +43,6 @@
 
 19. 5 bonus points for making sure each team members code works for each of the baseline point goals.
 
-10. 10 bonus points for making sure each team members code works for the baseline and bonus point goals.
+20. 10 bonus points for making sure each team members code works for the baseline and bonus point goals.
 
 ## Deadline is Friday at 5 PM PST.
