@@ -22,6 +22,8 @@
 
 6. After running your attack on your Ubuntu instace install fail2ban on your Ubuntu instance and run a Medsa ssh brute force attack. Please use the following guide to configure fail2ban on your Ubuntu instance and then run another Medusa ssh attack against the Ubuntu instance from your Kali Linux box. 
 
+`https://www.digitalocean.com/community/tutorials/how-to-protect-ssh-with-fail2ban-on-ubuntu-20-04`
+
 7. Please configure fail2ban to block ssh access to the Ubuntu host after 5 unsuccessful login attempts.
 
 8. When launching your attack from Kail use of the of the default username and password lists provided by Kali or ones provided by your instructor.
