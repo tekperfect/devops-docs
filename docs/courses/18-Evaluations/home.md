@@ -42,5 +42,8 @@ These evaluations are designed to test the students comprehension of the materia
 [Milestones](/courses/18-Evaluations/lessons/milestone6.md)
 
 ## Milestone 7 Evaluation
-[Milestones](/courses/18-Evaluations/lessons/milestoner7.md)
+[Milestones](/courses/18-Evaluations/lessons/milestone7.md)
+
+## Milestone 8 Evaluation
+[Milestones](/courses/18-Evaluations/lessons/milestone8.md)
 
