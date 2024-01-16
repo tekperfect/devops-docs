@@ -4,7 +4,7 @@
 
 
 ## Evaluation Review 👇🏾
-![Evaluation](evaluation.png)
+![Operating Systems](os.png)
 
 1. Delete all your parallels instances and create them from scratch. At the end of creating each instance you should have the following.
  - 1 Kali Linux instance
