@@ -67,7 +67,27 @@ To import the VM in UTM you will need to extract the zip file and follow the fol
 
 13. Click Save and then verify that your VM has the following settings before you start the VM. This is very important otherwise your VM will not appear on your bridged network or start properly and display the Metasploitable 2 banner after it is booted.
 
-![UTM Settings](1-utm.png)
+![UTM Settings](utm1.png)
+
+![UTM Settings](utm2.png)
+
+![UTM Settings](utm3.png)
+
+![UTM Settings](utm4.png)
+
+![UTM Settings](utm5.png)
+
+![UTM Settings](utm6.png)
+
+![UTM Settings](utm7.png)
+
+![UTM Settings](utm8.png)
+
+![UTM Settings](utm9.png)
+
+![UTM Settings](utm10.png)
+
+![UTM Settings](utm11.png)
 
 ![UTM Settings](2-utm.png)
 
