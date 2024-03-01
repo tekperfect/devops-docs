@@ -50,7 +50,9 @@ A few things are made harder, such as some forms of IPC (inter process communica
 
 `docker` (This command should list all of the docker commands available to you)  
 `docker version`  (This command should list the version of docker that is installed)  
+
 `docker info`(This command should list all the information about your docker environment)  
+i
 **docker container ls** (This command should list all the docker containers you have if any)  
 
 
@@ -108,9 +110,7 @@ A few things are made harder, such as some forms of IPC (inter process communica
 Remember xxxxxxxxxxxx represents the container ID you specified in your docker ps command
 
 
-
 ### Container Isolation
-
 
 By default containers do not interact with one another and this is by design. Let's prove this by running 2 copies of the same kind of container in separate terminal tabs.
 
