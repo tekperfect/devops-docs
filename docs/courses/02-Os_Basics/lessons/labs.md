@@ -204,7 +204,9 @@ This is used to create a file using a specified time
 
 3. `mkdir refrigerator`
 
-4. `mkdir trash`
+4. `cd ..`
+
+5. `mkdir trash`
 
 5. `mkdir sink`
 
@@ -216,15 +218,15 @@ This is used to create a file using a specified time
 
 7. `sudo cp ~/ascii-art/* ~/kitchen/refrigerator/`
 
-8. `sudo cp ~/refrigerator/milk spoiled-milk`
+8. `sudo cp ~/kitchen/refrigerator/milk spoiled-milk`
 
-9. `sudo cp ~/refrigerator/eggs rotten-eggs`
+9. `sudo cp ~/kitchen/refrigerator/eggs rotten-eggs`
 
-10. `sudo cp ~/refrigerator/bananas rotten-bananas`
+10. `sudo cp ~/kitchen/refrigerator/bananas rotten-bananas`
 
-11. `sudo cp ~/refrigerator/grapes raisins`
+11. `sudo cp ~/kitchen/refrigerator/grapes raisins`
 
-12. `sudo cp ~/refrigerator/meat rotten-meat`
+12. `sudo cp ~/kitchen/refrigerator/meat rotten-meat`
 
 
 ** Check what's in the directories
@@ -239,15 +241,15 @@ This is used to create a file using a specified time
 
 ** Move some files around
 
-16. `sudo mv ~/kitchen/refrigerator/spoiled-milk ~/sink`
+16. `sudo mv ~/kitchen/refrigerator/spoiled-milk ~/kitchen/sink`
 
-17. `sudo mv ~/kitchen/refrigerator/rotten-eggs ~/compost`
+17. `sudo mv ~/kitchen/refrigerator/rotten-eggs ~/kitchen/compost`
 
-18. `sudo mv ~/kitchen/refrigerator/rotten-bananas ~/compost`
+18. `sudo mv ~/kitchen/refrigerator/rotten-bananas ~/kitchen/compost`
 
-19. `sudo mv ~/kitchen/refrigerator/raisins ~/compost`
+19. `sudo mv ~/kitchen/refrigerator/raisins ~/kitchen/compost`
 
-20. `sudo mv ~/kitchen/refrigerator/rotten-meat ~/trash`
+20. `sudo mv ~/kitchen/refrigerator/rotten-meat ~/kitchen/trash`
 
 ** Delete some files and directories
 
