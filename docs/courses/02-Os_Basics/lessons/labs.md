@@ -204,9 +204,7 @@ This is used to create a file using a specified time
 
 3. `mkdir refrigerator`
 
-4. `cd ..`
-
-5. `mkdir trash`
+4. `mkdir trash`
 
 5. `mkdir sink`
 
@@ -222,7 +220,7 @@ This is used to create a file using a specified time
 
 9. `sudo cp ~/kitchen/refrigerator/eggs ~/kitchen/refrigerator/rotten-eggs`
 
-10. `sudo cp ~/kitchen/refrigerator/bananas ~/kitchen/refrigerator/rotten-bananas`
+10. `sudo cp ~/kitchen/refrigerator/banana ~/kitchen/refrigerator/rotten-banana`
 
 11. `sudo cp ~/kitchen/refrigerator/grapes ~/kitchen/refrigerator/raisins`
 
@@ -253,34 +251,34 @@ This is used to create a file using a specified time
 
 ** Delete some files and directories
 
-21. `sudo rm ~/kitchen/sink/milk`
+21. `sudo rm ~/kitchen/sink/spoiled-milk`
+22. `sudo rm ~/kitchen/compost/raisins`
+23. `sudo rm ~/kitchen/compost/rotten-banana`
+24. `sudo rm ~/kitchen/compost/rotten-eggs`
+25. `rmdir ~/kitchen/compost`
+26. `rmdir ~/kitchen/trash`
 
-22. `rmdir ~/kitchen/compost`
-23. `rmdir ~/kitchen/trash`
+27. What error did you get when you ran the last commands?
 
-24. What error did you get when you ran those commands?
+28. How would you solve it?
 
-25. How would you solve it?
+29. `sudo rm -rf ~/kitchen/trash`
 
-26. `sudo rm ~/kitchen/compost/*`
+30.  What is unique about this command `sudo rm -rf ~/kitchen/trash`
 
-27. `sudo rm -d ~/kitchen/trash/rotten-meat` (what's unique about this commnad)
-
-28. `sudo rmdir ~/kitchen/compost/`
-
-29. `rmdir ~/kitchen/trash`
-
-30. `rm -r ~/kitchen`
+31. Look up the difference between `rm` `rmdir` and `rm -rf`. 
 
 # CAT, TAIL, & HEAD Labs
 
 To view a single file 
 
+0. cd to the `~/kitchen/refrigerator` directory and run the following commands
+
 1. `cat apple`
 
 To view multiple files
 
-2. `cat apples bananas`
+2. `cat apple banana`
 
 To view a file with line numbers
 
@@ -290,9 +288,11 @@ Use cat to create a new file from the contents of another file
 
 4. `cat grapes > old-raisins`
 
+   `cat butter > margarine`
+
 Cat command can append the contents of one file to the end of another file
 
-5. `cat bread >> butter` 
+5. `cat bread >> margarine` 
 
 Display contents of file in reverse order
 
@@ -304,9 +304,9 @@ Display the contents of a file if the file has a lot of content and can’t fit 
 
 Copy the contents of multiple files into a new file
 
-8. `cat "cherries" "grapes" "banana" "apple" > fruit-salad`
+8. `cat "cherries" "grapes" "banana" "apple" > fruit-bowl`
 
-Display  the first 10 lines of a file
+Display the first 10 lines of a file
 
 9. `head fruit-salad`
 
@@ -324,13 +324,13 @@ Display the last 34 lines of a file
 
 Actively display the contents of a file as its being written to
 
-13. `tail -f file_name`
+13. `tail -f file_name` You don't need to run this command but you should be aware of it's use with system logs
 
 # COMMAND COMPLETION LAB
 
-1. Change directories to the `/home/parallels/Downloads/command-completion/` folder if you have not extracted the zip file your downloaded please use the command `unzip command-completion.zip` to extract the files.
+1. Change directories to your home directory and cd to the `command-completion/` directory if you have not extracted the zip file your downloaded please use the command `unzip command-completion.zip` to extract the files.
 
-2. Once you are inside the command-completion folder you need to do the following copy the text files in the directory to the folder name associated with them for example copy the file called assertivenesses.txt to the folder assertivenesses. The subsuquent files need to be copied into the folders that are nested under the assertiveness folder. This is where command completion will come in hand when using the copy command.
+2. Once you are inside the command-completion folder you need to do the following copy the text files in the directory to the folder name associated with them for example copy the file called assertivenesses.txt to the folder assertivenesses. The subsuquent files need to be copied into the folders that are nested under the assertiveness folder. This is where command completion will come in handy when using the copy command.
 
 3. Extra credit - What command would you run to concatenate all the files in the folder into one file name combined into the folder named abcedefghijklmnopqrstuvwxyz which is located under the zookeepers folder.
 
@@ -383,7 +383,7 @@ List all install packages
 
 When creating users please specify the username in lower case characters and use a password that is at least 8 characters and is not a dictionary word. Weak passwords are the foundation of compromised systems and environments.
 
-1. `sudo adduser username` Then follow the prompts to enter the password and full name you can skip the other options related to room number and phone number by just hitting enter.
+1. `sudo adduser username` Then follow the prompts to enter the password and full name you can skip the other options related to room number and phone number by just hitting enter. Please do not use username as the user, use a name like barack or michelle.
 
 2. `sudo deluser username` This command deletes a user please note that once the user is deleted it cannot be recovered. If the data and information pertaining to the account needs to be maintained you should just reset the password on the account and set the shell on the account to dev null.
 
