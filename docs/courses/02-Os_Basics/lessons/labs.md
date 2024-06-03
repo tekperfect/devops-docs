@@ -218,15 +218,15 @@ This is used to create a file using a specified time
 
 7. `sudo cp ~/ascii-art/* ~/kitchen/refrigerator/`
 
-8. `sudo cp ~/kitchen/refrigerator/milk spoiled-milk`
+8. `sudo cp ~/kitchen/refrigerator/milk ~/kitchen/refrigerator/spoiled-milk`
 
-9. `sudo cp ~/kitchen/refrigerator/eggs rotten-eggs`
+9. `sudo cp ~/kitchen/refrigerator/eggs ~/kitchen/refrigerator/rotten-eggs`
 
-10. `sudo cp ~/kitchen/refrigerator/bananas rotten-bananas`
+10. `sudo cp ~/kitchen/refrigerator/bananas ~/kitchen/refrigerator/rotten-bananas`
 
-11. `sudo cp ~/kitchen/refrigerator/grapes raisins`
+11. `sudo cp ~/kitchen/refrigerator/grapes ~/kitchen/refrigerator/raisins`
 
-12. `sudo cp ~/kitchen/refrigerator/meat rotten-meat`
+12. `sudo cp ~/kitchen/refrigerator/meat ~/kitchen/refrigerator/rotten-meat`
 
 
 ** Check what's in the directories
