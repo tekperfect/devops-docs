@@ -439,9 +439,11 @@ When creating users please specify the username in lower case characters and use
 
 25. Create 6 diretories the first directory should be called companydata and it should be located off of the root folder so if you ran a pwd command in the folder is should look like this `/groupdata`. Now the other 5 directories should be located under the groupdata folder and be called `finance hr it marketing sales`
 
-26. Now change the group ownership of each of the folders you just created to correspond to the name group. For example the it group should be owned by the it group. If you need a add a users to a specific group you can run the following command `sudo usermod -a -G adm username`. For example if you wanted to add barack to the it group you would run the following command `sudo usermod -a -G it barack`. 
+26. Now change the group ownership of each of the folders you just created to correspond to the name group. For example the it group should be owned by the it group. To change the ownership of a file or folder you can use the chown command for example if you wanted to change the ownership of the folder name it and make the group owner it you would use the command `sudo chown :it it`. If you wanted to change the user the owns the it folder to your username the command would be `sudo chown username it`. Finally if you wanted to change the user and group ownership of the it folder you can use the following command `sudo chown username:groupname it` 
 
-27. Once you have completed these exercised please run the get-history.sh command and drop the file into the individual google drive that I will share with each of you.
+27. Now change the group membership of a user you can use the following commandf you need a add a users to a specific group you can run the following command `sudo usermod -a -G groupname username`. For example if you wanted to add barack to the it group you would run the following command `sudo usermod -a -G it barack`. 
+
+28. Once you have completed these exercised please run the get-history.sh command and drop the file into the individual google drive that I will share with each of you.
 
 ## IDENTIFY SYSTEM PROCESSES
 
