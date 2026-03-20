@@ -74,3 +74,44 @@ The keys and token output after you unseal your vault should look something like
 `vault secrets enable -address="http://3.101.119.212:8200" ssh`
 
 `vault secrets enable -address="http://3.101.119.212:8200" -max-lease-ttl=30m database`
+
+### How to Use Vault for Secrets Management in Applications
+
+#### 1. Creating Policies
+
+Policies in Vault control what a user or application can access. Policies are written in HCL (HashiCorp Configuration Language).
+
+Create a file named `app-policy.hcl`:
+```hcl
+path "cubbyhole/creds/*" {
+  capabilities = ["create", "read", "update", "delete", "list"]
+}
+```
+
+Upload the policy to Vault:
+`vault policy write -address="http://3.101.119.212:8200" app-policy app-policy.hcl`
+
+#### 2. Generating Tokens for Applications
+
+Generate a token with the specific policy assigned:
+`vault token create -address="http://3.101.119.212:8200" -policy=app-policy`
+
+You can then pass this token to your application so it can securely access secrets.
+
+#### 3. Using Secrets in Applications (CLI / Environment Variables)
+
+Typically, you will have your application use the `VAULT_TOKEN` environment variable to authenticate, and the application's Vault HTTP API client will retrieve secrets.
+
+To read a secret directly and export it to an application as an environment variable via the command line, you can do:
+
+```bash
+export DB_PASSWORD=$(vault kv get -address="http://3.101.119.212:8200" -field=foo cubbyhole/creds)
+./run-my-app.sh
+```
+
+#### 4. Using the Vault UI
+
+Vault also provides an intuitive UI. If enabled, navigate to `http://3.101.119.212:8200` in your web browser.
+1. Authenticate using your Token or chosen auth method.
+2. Navigate to the **Secrets** engines (e.g., `cubbyhole/`).
+3. Click on the path to create or view the key-value data in a web interface instead of the CLI.

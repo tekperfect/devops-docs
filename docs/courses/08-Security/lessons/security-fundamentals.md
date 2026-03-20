@@ -298,6 +298,34 @@ It’s critical to understanding security and vulnerabilities
 
 If you don’t practice using these tools you will not understand the material 
 
+### Modern Cybersecurity Tools
+
+While tools like Nmap, Medusa, and Metasploit are fundamental, the cybersecurity landscape frequently evolves. DevOps teams should be familiar with newer, automated scanning tools that integrate directly into CI/CD pipelines.
+
+#### 1. Trivy (Container & Filesystem Scanning)
+Trivy is a comprehensive and easy-to-use vulnerability scanner for containers and other artifacts.
+- To scan an image (e.g., heavily used in Docker/Kubernetes workflows):
+  `trivy image nginx:latest`
+- To scan a filesystem:
+  `trivy fs /path/to/project`
+
+#### 2. Snyk (Code & Dependency Scanning)
+Snyk helps developers find and automatically fix vulnerabilities in open source dependencies, code, and containers.
+- To test your project's dependencies:
+  `snyk test`
+- To monitor your project for newly disclosed vulnerabilities continuously:
+  `snyk monitor`
+
+#### 3. OWASP ZAP (Web Application Scanning)
+ZAP (Zet Attack Proxy) is one of the world's most popular free security tools and is actively maintained by hundreds of international volunteers. It can help you automatically find security vulnerabilities in your web applications while you are developing and testing your applications.
+- Run a quick scan from the CLI (useful in Jenkins pipelines):
+  `zap-cli quick-scan --self-contained http://target-app.local`
+
+#### 4. Wireshark and TShark (Network Protocol Analyzer)
+Understanding network traffic is still essential. Wireshark provides a graphical interface, but TShark offers equivalent capabilities for terminal environments.
+- Capture packets on an interface:
+  `tshark -i eth0`
+
 ### Hacking Exercise
 
 Use Kali to find exploits in Metasploitable and Metasploitable3

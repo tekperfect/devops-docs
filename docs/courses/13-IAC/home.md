@@ -40,3 +40,7 @@ Students by the end of the course will be able to build servers, storage, and in
 ## LiveOps
 
 [LiveOps](/courses/13-IAC/lessons/liveops.md)
+
+## Ansible
+
+[Ansible](/courses/13-IAC/lessons/ansible.md)

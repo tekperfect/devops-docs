@@ -63,3 +63,68 @@ To use Terraform safely on your Mac you can use the following program
 19.  It is recommened that you copy your code to a non cloned folder to run your Terraform commands in to prevent large files and other non essential items from being checked into your repository.
 
 20. Please practice the deployments using Terrform using Jenkins and stand alone so you understand the process of creating infrastructure using code.
+
+# Writing your first Terraform Configuration
+
+To properly use Terraform to manage infrastructure as code, you must define the resources you wish to create in files ending with `.tf`.
+
+### 1. The `main.tf` file
+
+Create a new directory for your project, navigate into it, and create a file named `main.tf`.
+
+```hcl
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 4.16"
+    }
+  }
+
+  required_version = ">= 1.2.0"
+}
+
+provider "aws" {
+  region = "us-west-2"
+}
+
+resource "aws_instance" "app_server" {
+  ami           = "ami-08d70e59c07c61a3a"
+  instance_type = "t2.micro"
+
+  tags = {
+    Name = "ExampleAppServerInstance"
+  }
+}
+```
+This is a basic configuration. It specifies the `aws` provider and explicitly states it wants to create an `aws_instance` parameter.
+
+### 2. State Management (`terraform.tfstate`)
+
+When you run `terraform apply`, Terraform creates a state file (`terraform.tfstate`) locally.
+- This file keeps track of the IDs of created resources so that Terraform knows what to update or destroy in future runs.
+- **IMPORTANT**: Do not commit your local `terraform.tfstate` file to version control (add it to `.gitignore`), as it can contain sensitive information like passwords or tokens.
+- For team environments, remote state management (e.g., using S3 and DynamoDB) is highly recommended.
+
+### 3. Variables (`variables.tf`)
+
+To make your Terraform configurations reusable, you should separate parameters into variables.
+Create `variables.tf`:
+
+```hcl
+variable "instance_name" {
+  description = "Value of the Name tag for the EC2 instance"
+  type        = string
+  default     = "ExampleAppServerInstance"
+}
+```
+
+Then update your `main.tf` to reference this variable:
+```hcl
+  tags = {
+    Name = var.instance_name
+  }
+```
+
+Now you can override variables on the command line when deploying without having to alter the codebase:
+`terraform apply -var="instance_name=MyNewServer"`
