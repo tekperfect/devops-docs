@@ -14,7 +14,6 @@
     - [SaaS Tools](courses/15-SaaS_Tools/home.md)
     - [Consulting](courses/16-Consulting/home.md)
     - [Evaluations](courses/18-Evaluations/home.md)
-    - [AI Tools](courses/19-AI_Tools/home.md)
 
 
 <!-- - **📘 Glossary**

@@ -31,3 +31,8 @@ Students by the end of the course will be able to...
 - [looping](courses/05-Programming/lessons/math-and-looping.md)
 - [Logic and Comparisons](courses/05-Programming/lessons/variables-and-data-structures.md)
 - [Milestone](courses/05-Programming/lessons/milestone.md)
+
+## AI Tools
+
+- [Building Agents with OpenAI](courses/05-Programming/lessons/openai-agents.md)
+- [Building Agents with Claude](courses/05-Programming/lessons/claude-agents.md)
