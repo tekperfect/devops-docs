@@ -1,6 +1,6 @@
 ![logo](/media/logos/TP-Mark-05-v002-small.png)
 
-# DEVOPS <small>2024</small>
+# DEVOPS <small>2026</small>
 
 > Learn How To Be A DevOps Professional
 
