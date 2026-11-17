@@ -20,12 +20,14 @@
 Students by the end of the course will be able to build a system capable of scanning local and remote networks for vunerabilites and understand the basic and intermediate concepts associated with security best practices.
 
 1. Understand the importance of good operating system and network security
-1. Undertand how to build security scanning devices and launch attacks in a sandbox environment 
+1. Understand how to build security scanning devices and launch attacks in a sandbox environment
 1. Implement and test for security best practices
+1. Correlate scan results with real-world exploitation data (CISA KEV / EPSS) and produce a ranked, prioritized vulnerability report
+1. Assess a modern containerized (Kubernetes) environment end to end: discover → scan → report → exploit
 
 # 📚 Lessons
 
-## Kail
+## Kali
 [Kali](/courses/08-Security/lessons/kali.md)
 
 ## Metasploit M1 Build
@@ -40,6 +42,18 @@ Students by the end of the course will be able to build a system capable of scan
 ## Security Fundamentals
 
 [Security Fundamentals](/courses/08-Security/lessons/security-fundamentals.md)
+
+## cve-recon (Ranked Vulnerability Reporting)
+
+[cve-recon](/courses/08-Security/lessons/cve-recon.md)
+
+> Turns a raw nmap scan into a prioritized, client-ready risk report using CISA KEV and EPSS exploitation data. Builds directly on Security Fundamentals.
+
+## Kubernetes Vulnerability Lab (Capstone)
+
+[K8s Security Lab](/courses/08-Security/lessons/k8s-security-lab.md)
+
+> The capstone that ties Docker, Kubernetes, and security together: deploy a cluster of vulnerable targets, scan it from inside with cve-recon, then identify and exploit. Requires the [Virtualization → Kubernetes](/courses/06-Virtualization/lessons/kubernetes.md) lesson first.
 
 ## Vault Secrets Management
 
